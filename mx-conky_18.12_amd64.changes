@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sun, 23 Dec 2018 12:57:51 -0500
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 18.12
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (18.12) mx; urgency=medium
+ .
+   * add scroll bar
+Checksums-Sha1:
+ 3d4ebe91e9ce89c4fed0b477d947227d4f48cba7 600 mx-conky_18.12.dsc
+ f80f18ca220c48b96c5f6efc64990223ba377604 48156 mx-conky_18.12.tar.xz
+ 25cd9a5dd4d227f4e165083b6a7940adb51f2242 70910 mx-conky_18.12_amd64.deb
+Checksums-Sha256:
+ 64724db2aa8b6fff18bd9d4a12f294ac0eb969afada98d19a0e277427462497a 600 mx-conky_18.12.dsc
+ 8301b9a8e49ad9b8351db59c6981ecba972ce0bfb07fb434be52daab43ea54db 48156 mx-conky_18.12.tar.xz
+ 84936a034a17f1d949022e55604fd29322ae8c0883ba33285f1680a806458776 70910 mx-conky_18.12_amd64.deb
+Files:
+ 50c07375d49c52d46b23fd017554be91 600 admin optional mx-conky_18.12.dsc
+ 6f12a3a4384ce00f76c7290bbb5a7d3b 48156 admin optional mx-conky_18.12.tar.xz
+ 39af817b0939136e287cf96e22eda38d 70910 admin optional mx-conky_18.12_amd64.deb
