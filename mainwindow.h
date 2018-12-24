@@ -91,6 +91,7 @@ private slots:
 
     void on_buttonCM_clicked();
 
+    void closeEvent(QCloseEvent *);
 private:
     Ui::MainWindow *ui;
     Cmd *cmd;

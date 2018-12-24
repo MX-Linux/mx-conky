@@ -29,7 +29,7 @@
 #include <QColorDialog>
 #include <QFileDialog>
 #include <QTextEdit>
-
+#include <QSettings>
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent, QString file) :
@@ -43,7 +43,10 @@ MainWindow::MainWindow(QWidget *parent, QString file) :
 
     file_name = file;
     this->setWindowTitle(tr("MX Conky"));
+
     refresh();
+    QSettings settings("MX-Linux", "mx-conky");
+    restoreGeometry(settings.value("geometery").toByteArray());
 }
 
 MainWindow::~MainWindow()
@@ -502,4 +505,10 @@ void MainWindow::on_buttonCM_clicked()
     this->hide();
     system("conky-manager");
     this->show();
+}
+
+void MainWindow::closeEvent(QCloseEvent *)
+{
+    QSettings settings("MX-Linux", "mx-conky");
+    settings.setValue("geometery", saveGeometry());
 }
