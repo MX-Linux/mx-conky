@@ -1,6 +1,7 @@
 mx-conky (18.12) mx; urgency=medium
 
   * add scroll bar
+  * save window geometry
 
  -- Adrian <adrian@mxlinux.org>  Sun, 23 Dec 2018 12:57:51 -0500
 

@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 9), lib
 Package-List:
  mx-conky deb admin optional arch=any
 Checksums-Sha1:
- f80f18ca220c48b96c5f6efc64990223ba377604 48156 mx-conky_18.12.tar.xz
+ 1eb63ee27c83f1f86dd4b06e8cfe6d88e5a76e1e 48208 mx-conky_18.12.tar.xz
 Checksums-Sha256:
- 8301b9a8e49ad9b8351db59c6981ecba972ce0bfb07fb434be52daab43ea54db 48156 mx-conky_18.12.tar.xz
+ dc8c7f57fa3a852d74d565496649c6ecbef42f3bc155706d8bd353e5bc9c62d1 48208 mx-conky_18.12.tar.xz
 Files:
- 6f12a3a4384ce00f76c7290bbb5a7d3b 48156 mx-conky_18.12.tar.xz
+ 8e3abb3ef8bf56cee580ee5980ca6406 48208 mx-conky_18.12.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwfzdoTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumPMOCACqsjYvBo4qEDccAMYvZjT2x3UZRtXb
-KjsJU3K6LIDKCbRAjY+WSy/ilIwk7WTGjycklA2b+Ha76TfS279MVhMOJq5/5O1y
-8vxvKSch/foyb9EBV+fVb2zuoFCxx4V3EQ+Lze56m/mC3u4FjrY3MVXeVDCxTfwG
-cCgVDuixhh+Qh6YzQCd9oU0oHF106OBF+YW6OAnDnoDrfRb9EJw9EXsKbRFlwpJZ
-xvzdNWsJhOWhVsBVjmt6uMhgLaPybm72pQXRBwXlaty1Te4i+S31dYb5eQuXNzbL
-vdvWf0Eaiyr9KTPUR43bPRbXaKffgEAvjF+IcFfIalCuc+qQHbwm0lZG
-=Z5Td
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwgbhcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBXUB/9KRtRSkgZbFq1KRYX3VBjlr5WpEbdM
+Qm56d6bcF/YIbtN+uIeigLJz6E7Xfb9hSmtweuw4a0gddFReJ7KD1QcFI4vD1TNv
+NitV0I56rDyyCzQ3MWAYTQDMLPKPujQnt+nSgTyFYjDnYK4q/4umakxsiMT5N6xx
+M5ytk0DM1bLwl7MRCeLqwA/fm8D9tTCOKAwkfllmNwrLWMH/0zLjTEuYJXliakER
+DPTFlGjUwzQvoA11vU3B5iJJ8dmCu2aRY5TQzUZcqv0xxeTQ/kAjWp2S0w2jwMR7
+HVaVGw7btq4+A3PDojE4fIavP+L+y2XhENdfm0i6+vnzw7RSKJ3PjPwJ
+=N75z
 -----END PGP SIGNATURE-----
