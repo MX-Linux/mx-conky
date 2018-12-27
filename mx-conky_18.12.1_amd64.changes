@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Thu, 27 Dec 2018 12:41:40 -0500
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 18.12.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (18.12.1) mx; urgency=medium
+ .
+   * open file with "Open With..." or by passing an argument at command line
+Checksums-Sha1:
+ e5a1f3c5cf5f611ed01580a824d996a5673fd886 1170 mx-conky_18.12.1.dsc
+ 4aa1d948884da991db1121aba16e81e51767162c 48292 mx-conky_18.12.1.tar.xz
+ 27ab3c0411741459d3bb82a3b27d807ba471559d 71692 mx-conky_18.12.1_amd64.deb
+Checksums-Sha256:
+ 11051bb142c9c2cc91d1279ce7ed2f52db7c09bf1f26f13e80f3f6579b786182 1170 mx-conky_18.12.1.dsc
+ 459994a1e7c135aec04db4c04184bed5b13f0eabfb3881871e438b0cc6cdac89 48292 mx-conky_18.12.1.tar.xz
+ 2f3a3189bfc0de13914e32c7aa6c79ee4805b160b6ab54280c5cc6b513859d17 71692 mx-conky_18.12.1_amd64.deb
+Files:
+ 59f04c78c790ef25ef9efa914e7f84fd 1170 admin optional mx-conky_18.12.1.dsc
+ bdf88baa06080f655a8525d2e5dcf548 48292 admin optional mx-conky_18.12.1.tar.xz
+ fd22c4c477446a0ec844495500e3aa7e 71692 admin optional mx-conky_18.12.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwlEJsTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumO9qB/0b9y6aB9DnGHgROcn9JJe58Fv3fYFW
+NTeE1dZGI9aRyz5FHJoXxpN0Bo8u1XOdvYxu553TaqRAyxjaXX5TL+HyUp8MclV/
+ZX0iRCyn7XglL5P+0qu/TMPxUVHIctb+CCU7+iCPOjquVmf1l6saT/qsuhGiwITD
+bik++5LibLQttgDt2TEslcXktU8mHUdb+qMB/ALuhENVS+fm5o11kOsLncBcqgCo
+pNnCx1wUg8FglfjM0DRA0N/bB7mWorDhzepg1A+QXySKpALahV4ZhpxLnz2MxsOq
+o4oI0QKAscIYmqUoiofF+R/OmjoSszmDo437wMN+wv/Fhb08x14AXGKb
+=P4qo
+-----END PGP SIGNATURE-----

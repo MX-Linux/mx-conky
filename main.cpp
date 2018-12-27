@@ -49,15 +49,15 @@ QString openFile(QDir dir)
     QFileDialog dialog;
     QString file_name = getRunningConky();
 
-    if (file_name != "") {
+    if (!file_name.isEmpty()) {
         return file_name;
     }
 
     QString selected = dialog.getOpenFileName(0, QObject::tr("Select Conky Manager config file"), dir.path());
-    if (selected != "") {
+    if (!selected.isEmpty()) {
         return selected;
     }
-    return "";
+    return QString();
 }
 
 void messageUpdate()
@@ -114,8 +114,13 @@ int main(int argc, char *argv[])
         // copy the mx-conky-data themes to the default folder
         system("cp -rn /usr/share/mx-conky-data/themes/* " + dir.toUtf8());
 
-        QString file = openFile(dir);
-        if (file == "") {
+        QString file;
+        if (qApp->arguments().length() >= 2 && QFile::exists(qApp->arguments().at(1))) {
+            file = qApp->arguments().at(1);
+        } else {
+            file = openFile(dir);
+        }
+        if (file.isEmpty()) {
             QMessageBox::critical(0, QObject::tr("Error"),
                                   QObject::tr("No file was selected, quiting program"));
             return 1;

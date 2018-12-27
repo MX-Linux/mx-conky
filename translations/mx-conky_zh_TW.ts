@@ -283,7 +283,7 @@
     </message>
     <message>
         <location filename="../main.cpp" line="100"/>
-        <location filename="../main.cpp" line="119"/>
+        <location filename="../main.cpp" line="124"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
@@ -293,12 +293,12 @@
         <translation>找不到 conky-manager，請先把它安裝好，再來執行 mx-conky</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="120"/>
+        <location filename="../main.cpp" line="125"/>
         <source>No file was selected, quiting program</source>
         <translation>未選擇任何檔案，程式即將結束</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="131"/>
+        <location filename="../main.cpp" line="136"/>
         <source>You must run this program as normal user</source>
         <translation>本程式必須以一般使用者的身份來執行</translation>
     </message>

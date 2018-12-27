@@ -283,7 +283,7 @@
     </message>
     <message>
         <location filename="../main.cpp" line="100"/>
-        <location filename="../main.cpp" line="119"/>
+        <location filename="../main.cpp" line="124"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
@@ -293,12 +293,12 @@
         <translation>Não foi encontrado o conky-manager; instalar o pacote antes de executar o Conky</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="120"/>
+        <location filename="../main.cpp" line="125"/>
         <source>No file was selected, quiting program</source>
         <translation>Nenhum ficheiro seleccionado; a encerrar o programa</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="131"/>
+        <location filename="../main.cpp" line="136"/>
         <source>You must run this program as normal user</source>
         <translation>Tem que executar este programa como utilizador normal </translation>
     </message>

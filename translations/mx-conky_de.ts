@@ -285,7 +285,7 @@
     </message>
     <message>
         <location filename="../main.cpp" line="100"/>
-        <location filename="../main.cpp" line="119"/>
+        <location filename="../main.cpp" line="124"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
@@ -295,12 +295,12 @@
         <translation>Konnte Conky-Manager nicht finden, bitte zuerst installieren bevor MX Conky gestartet wird</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="120"/>
+        <location filename="../main.cpp" line="125"/>
         <source>No file was selected, quiting program</source>
         <translation>Keine Datei wurde gewählt, beende Programm</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="131"/>
+        <location filename="../main.cpp" line="136"/>
         <source>You must run this program as normal user</source>
         <translation>Diese Anwendung muss als normaler Benutzer ausgeführt werden.</translation>
     </message>

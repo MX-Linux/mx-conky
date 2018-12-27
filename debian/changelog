@@ -1,3 +1,9 @@
+mx-conky (18.12.1) mx; urgency=medium
+
+  * open file with "Open With..." or by passing an argument at command line
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 27 Dec 2018 12:41:40 -0500
+
 mx-conky (18.12) mx; urgency=medium
 
   * add scroll bar
