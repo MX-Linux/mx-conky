@@ -40,22 +40,33 @@ FORMS    += \
     mainwindow.ui
 
 TRANSLATIONS += translations/mx-conky_am.ts \
+                translations/mx-conky_ar.ts \
+                translations/mx-conky_bg.ts \
                 translations/mx-conky_ca.ts \
                 translations/mx-conky_cs.ts \
                 translations/mx-conky_da.ts \
                 translations/mx-conky_de.ts \
                 translations/mx-conky_el.ts \
                 translations/mx-conky_es.ts \
+                translations/mx-conky_et.ts \
+                translations/mx-conky_eu.ts \
+                translations/mx-conky_fa.ts \
                 translations/mx-conky_fi.ts \
                 translations/mx-conky_fr.ts \
+                translations/mx-conky_he_IL.ts \
                 translations/mx-conky_hi.ts \
                 translations/mx-conky_hr.ts \
                 translations/mx-conky_hu.ts \
+                translations/mx-conky_id.ts \
                 translations/mx-conky_is.ts \
                 translations/mx-conky_it.ts \
                 translations/mx-conky_ja.ts \
+                translations/mx-conky_ja_JP.ts \
                 translations/mx-conky_kk.ts \
+                translations/mx-conky_ko.ts \
                 translations/mx-conky_lt.ts \
+                translations/mx-conky_mk.ts \
+                translations/mx-conky_nb.ts \
                 translations/mx-conky_nl.ts \
                 translations/mx-conky_pl.ts \
                 translations/mx-conky_pt.ts \
@@ -63,10 +74,13 @@ TRANSLATIONS += translations/mx-conky_am.ts \
                 translations/mx-conky_ro.ts \
                 translations/mx-conky_ru.ts \
                 translations/mx-conky_sk.ts \
+                translations/mx-conky_sl.ts \
                 translations/mx-conky_sq.ts \
+                translations/mx-conky_sr.ts \
                 translations/mx-conky_sv.ts \
                 translations/mx-conky_tr.ts \
                 translations/mx-conky_uk.ts \
+                translations/mx-conky_zh_CN.ts \
                 translations/mx-conky_zh_TW.ts
 
 RESOURCES += \

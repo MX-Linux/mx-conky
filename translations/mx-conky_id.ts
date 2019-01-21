@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="id" version="2.1">
 <context>
     <name>MainWindow</name>
     <message>
@@ -6,134 +6,134 @@
         <location filename="mainwindow.cpp" line="45"/>
         <location filename="mainwindow.cpp" line="299"/>
         <source>MX Conky</source>
-        <translation>MX Conky</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Denna app möjliggör detaljerade ändringar av den aktiva conky. Den kompletterar Conky Hanteraren, som bör användas för grundläggande inställningar.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="49"/>
         <source>Launch</source>
-        <translation>Starta</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="61"/>
         <source>Run</source>
-        <translation>Kör</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="118"/>
         <source>Undo</source>
-        <translation>Ångra</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="149"/>
         <source>Edit</source>
-        <translation>Redigera</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="164"/>
         <source>Conky Name</source>
-        <translation>Conky Namn</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="191"/>
         <source>Conky Manager</source>
-        <translation>Conky Hanterare</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="216"/>
         <source>Drag</source>
-        <translation>Drag</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="235"/>
         <source>To Resize</source>
-        <translation>För att ändra storlek</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="255"/>
         <source>+ Left Click</source>
-        <translation>+ Vänsterklick</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="262"/>
         <source>To Move</source>
-        <translation>För att flytta</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="269"/>
         <source>+ Right Click</source>
-        <translation>+ Högerklick</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="276"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation>ANMÄRKNING: ändringarna varar bara nuvarande session</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="343"/>
         <source>Desktop</source>
-        <translation>Skrivbord</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="362"/>
         <source>Desktop 1</source>
-        <translation>Skrivbord 1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="385"/>
         <source>All Desktops</source>
-        <translation>Alla Skrivbord</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="411"/>
         <source>Format</source>
-        <translation>Format</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="463"/>
         <source>Day</source>
-        <translation>Dag</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="492"/>
         <location filename="mainwindow.ui" line="622"/>
         <source>Long</source>
-        <translation>Lång</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="521"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation>Avkortat namn, t.ex. Ti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="524"/>
         <location filename="mainwindow.ui" line="654"/>
         <source>Short</source>
-        <translation>Kort</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="593"/>
         <source>Month</source>
-        <translation>Månad</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="651"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation>Avkortat namn, t.ex. Okt</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="707"/>
         <source>Colors</source>
-        <translation>Färger</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="753"/>
         <source>Default</source>
-        <translation>Standard</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="805"/>
@@ -143,42 +143,42 @@
         <location filename="mainwindow.ui" line="1259"/>
         <location filename="mainwindow.ui" line="1374"/>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="868"/>
         <source>Color0 </source>
-        <translation>Färg0</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="980"/>
         <source>Color1 </source>
-        <translation>Färg1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1092"/>
         <source>Color2 </source>
-        <translation>Färg2</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1207"/>
         <source>Color3 </source>
-        <translation>Färg3</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1322"/>
         <source>Color4 </source>
-        <translation>Färg4</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1439"/>
         <source>About this application</source>
-        <translation>Om detta program</translation>
+        <translation>Tentang aplikasi ini</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1442"/>
         <source>About...</source>
-        <translation>Om...</translation>
+        <translation>Tentang</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1450"/>
@@ -188,27 +188,27 @@
     <message>
         <location filename="mainwindow.ui" line="1466"/>
         <source>Display help </source>
-        <translation>Visa hjälp</translation>
+        <translation>Tampilkan bantuan</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1469"/>
         <source>Help</source>
-        <translation>Hjälp</translation>
+        <translation>Bantuan</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1477"/>
         <source>Alt+H</source>
-        <translation>Alt+H</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1525"/>
         <source>Quit application</source>
-        <translation>Avsluta programmet</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1528"/>
         <source>Close</source>
-        <translation>Stäng</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1536"/>
@@ -218,47 +218,47 @@
     <message>
         <location filename="mainwindow.cpp" line="298"/>
         <source>About MX Conky</source>
-        <translation>Om MX Conky</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="299"/>
         <source>Version: </source>
-        <translation>Version:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="300"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation>Grafiskt användargränssnitt för att konfigurera Conky i MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="302"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="303"/>
         <source>License</source>
-        <translation>Licens</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="304"/>
         <source>Changelog</source>
-        <translation>Ändringslogg</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="305"/>
         <source>Cancel</source>
-        <translation>Avbryt</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="325"/>
         <source>&amp;Close</source>
-        <translation>&amp;Close</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="344"/>
         <source>MX Conky Help</source>
-        <translation>MX Conky Hjälp</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -267,38 +267,38 @@
         <location filename="main.cpp" line="56"/>
         <location filename="mainwindow.cpp" line="422"/>
         <source>Select Conky Manager config file</source>
-        <translation>Välj konfigurationsfil för Conky Hanterare</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="main.cpp" line="73"/>
         <source>Conky Data Update</source>
-        <translation>Conky Data Uppdatering</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="main.cpp" line="74"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation>MX Conky data har uppdaterats. &lt;p&gt;&lt;p&gt; Kopiera vad du vill från mappen där den finns &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt; till den dolda mappen i Home &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;. Var försiktig så du inte skriver över några conkies du har ändrat.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="main.cpp" line="100"/>
         <location filename="main.cpp" line="119"/>
         <source>Error</source>
-        <translation>Fel</translation>
+        <translation>Galat</translation>
     </message>
     <message>
         <location filename="main.cpp" line="101"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation>Kunde inte hitta conky-hanterare, var vänlig installera den innan du kör mx-conky</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="main.cpp" line="120"/>
         <source>No file was selected, quiting program</source>
-        <translation>Ingen fil valdes, avslutar programmet</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="main.cpp" line="131"/>
         <source>You must run this program as normal user</source>
-        <translation>Du måste köra det här programmet som normal användare</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
