@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 23 Jan 2019 09:47:41 -0500
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 19.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (19.1) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 772f83e84cc7913ddcae04c957ae5d1e635f8e0f 1158 mx-conky_19.1.dsc
+ e7347a71aef383ba86e8360cc5e921d380a957b4 50556 mx-conky_19.1.tar.xz
+ ae5c753b5095cd2f553a6ea4eddb43a1686e88be 498416 mx-conky-dbgsym_19.1_amd64.deb
+ 8d55ecc988135bac02e17033eb344fbc49cf3ac4 11571 mx-conky_19.1_amd64.buildinfo
+ d77db4b2021ae6b449c892719519dc3fce2883f5 74134 mx-conky_19.1_amd64.deb
+Checksums-Sha256:
+ 21355cd1956690c4d2606122035f3dc197be6f49c5bb48f5072653803f593d14 1158 mx-conky_19.1.dsc
+ 0d2313564024bddeac2532ed12545f4a22071d8c2b8ed51005ea30e3e5196e47 50556 mx-conky_19.1.tar.xz
+ 35fc87fdcf145a09292687b8d4d5af34583a28c4e4b87d89762042c95172aa7f 498416 mx-conky-dbgsym_19.1_amd64.deb
+ 040b31c03bf3e99dbe6d74af23de10b2df7f86ac16d52dafdd735e48ecc455a8 11571 mx-conky_19.1_amd64.buildinfo
+ 818eded6271397586e76f9b8ca229eae2c16378c3d544e9910b8a44caece52db 74134 mx-conky_19.1_amd64.deb
+Files:
+ da6e94bb74f4b42b14867713f56abde1 1158 admin optional mx-conky_19.1.dsc
+ a176d51de47c0a8cf54971cde4b2eb3c 50556 admin optional mx-conky_19.1.tar.xz
+ acb78605cf6f5c8bc0cc58e304844a9d 498416 debug optional mx-conky-dbgsym_19.1_amd64.deb
+ a9296b0cb5a8ae9b3d8a4961f8b666cf 11571 admin optional mx-conky_19.1_amd64.buildinfo
+ 90f2aaef1d3e8720ca397e48daa7c08c 74134 admin optional mx-conky_19.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlxIfxETHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOtMCACtr3YnNiurtTBdKAZ5L5HE2rdf8Q1F
+4z1At13+ovgi6kZDnI2pj92lSIu5iEhbq9QmiERBLWMwCJXcx51LjcL1WvVwajss
+ZmAHPTFpsMGz3QZ0PjdaqVtcWNay63WEeVWLpDtgnebjcCtwELbYp2Oa0JYXQuV5
+73yi4hJJ9blWErqqVZFYElRLNZK2ytMIRWKhR2dGBQYYFALfspGxLn5iSikcRhXD
+KvYfiAeVpzfuOG5RIosUteMRzTdzgOLGoqBe/QcGPPkvhwYaWHRH0fHm8s6WNs+y
+4RNdp/PBLctNVb1B/bR4yk3AixtYt5YqSg9oFBMBiE2hvhogMxxi48Sk
+=RyCN
+-----END PGP SIGNATURE-----
