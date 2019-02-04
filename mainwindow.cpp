@@ -408,8 +408,18 @@ void MainWindow::on_buttonRestore_clicked()
 void MainWindow::on_buttonEdit_clicked()
 {
     this->hide();
-    QString editor = cmd->getOutput("grep Exec -m1 $(locate $(xdg-mime query default text/plain))|cut -d= -f2|cut -d\" \" -f1");
-    if ( system(editor.toUtf8() + " '" + file_name.toUtf8() + "'") != 0) {
+    QString editor = cmd->getOutput("set -o pipefail; grep Exec -m1 $(locate $(xdg-mime query default text/plain))|cut -d= -f2|cut -d\" \" -f1");
+    if (cmd->getExitCode(true) != 0 || (system("command -v " + editor.toUtf8()) != 0)) {
+        qDebug() << "no default text editor defined" << editor;
+        // try featherpad explicitly
+        if (system("command -v featherpad") == 0) {
+            system("featherpad '" + file_name.toUtf8() + "'");
+        }
+        refresh();
+        this->show();
+        return;
+    }
+    if (system(editor.toUtf8() + " '" + file_name.toUtf8() + "'") != 0) {
        qDebug() << "no default text editor defined";
     }
     refresh();

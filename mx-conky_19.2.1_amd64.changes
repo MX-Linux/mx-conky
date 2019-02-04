@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Mon, 04 Feb 2019 16:56:04 -0500
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 19.2.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (19.2.1) mx; urgency=medium
+ .
+   * make finding file editor more robust
+Checksums-Sha1:
+ fa97fe397dafeae62f64d4923e895033fa37022e 1166 mx-conky_19.2.1.dsc
+ 8401bd42fdd69ae9c5d50f108482331df996ad0e 50696 mx-conky_19.2.1.tar.xz
+ 61d301b9f175bee5e1a4b60c6a8846f5b6d12e8b 499798 mx-conky-dbgsym_19.2.1_amd64.deb
+ 418b0dedfd9dc94afa7561a937b2f703dba3be91 11593 mx-conky_19.2.1_amd64.buildinfo
+ 9fe2fa3052317223a769869fdc007f06023f6910 74302 mx-conky_19.2.1_amd64.deb
+Checksums-Sha256:
+ 0131ceb14881ce84e5686248402130caabf8f3cc6ece506704c8c3235f7ab296 1166 mx-conky_19.2.1.dsc
+ b120f15458a4c59b2c0662034b0b21aa34b3e9dd2551c1fa110076eb2f15af7d 50696 mx-conky_19.2.1.tar.xz
+ e0bd458733a0966deba3fe4bd6b953e2eb570cbb6e538816a979f64425188e32 499798 mx-conky-dbgsym_19.2.1_amd64.deb
+ 1deb9bd40e23dc6e46b54a107c446df916edf937a230d7609ab6a06e2814c819 11593 mx-conky_19.2.1_amd64.buildinfo
+ 026d10d0632e2d1b833d7bffd38e720b8115bc0470f82011b408de81be8bba4a 74302 mx-conky_19.2.1_amd64.deb
+Files:
+ f56c3173adb9b461914de2cf428ef392 1166 admin optional mx-conky_19.2.1.dsc
+ 2dcda027f6446e71d1d984c18f900997 50696 admin optional mx-conky_19.2.1.tar.xz
+ 8776f40b6ab48d7135ce7160b17fa22c 499798 debug optional mx-conky-dbgsym_19.2.1_amd64.deb
+ 204c5eaebd80d278077d326789c39982 11593 admin optional mx-conky_19.2.1_amd64.buildinfo
+ 81d2ee1a534dba5844bc71e3b5d2e71a 74302 admin optional mx-conky_19.2.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlxYtYMTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumFxCCADPcKuty7MYDn3ni8xIlGr/c94dbmfI
+XhpCAsltwk3b2M/gkYYVuu/wpDoIZBuIY5q0AaoVaW4mgiNmCrh4xr5E9L5HcRw0
+CxDix97LxltMd3tR3n+O/WHHo4w8K+207B7lDWM1VLXHwTsKWyyMmnCDTaGChOl6
+WAX7W4R01+RiuJW7tm6jSnsXchV9ULHReEcM2/efFC/8TjQPPG7i7fh7n2xKuL7w
+DX4jDlc0L6QoZOpsfaKCpIwgrjvLhaO6JJLvuG79+CFAgD0gtmPhZBXaXq0xdBDG
+jiLGcnVAcXrg0y1PYdeGhJNuLzTG02WK3criRDkro9sBGEiSCCdDTKkM
+=FiH+
+-----END PGP SIGNATURE-----

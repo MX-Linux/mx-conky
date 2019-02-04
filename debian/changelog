@@ -1,3 +1,9 @@
+mx-conky (19.2.1) mx; urgency=medium
+
+  * make finding file editor more robust
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 04 Feb 2019 16:56:04 -0500
+
 mx-conky (19.2) mx; urgency=medium
 
   * fix: open file
