@@ -58,11 +58,11 @@ MainWindow::~MainWindow()
 void MainWindow::parseContent()
 {
     QStringList list = file_content.split("\n");
-    foreach(QString row, list) {
+    for (const QString &row : list) {
         if (!row.startsWith("#")) {
 
             // Deal with colors
-            if(row.startsWith("default_color")) {
+            if (row.startsWith("default_color")) {
                 setColor(ui->widgetDefaultColor, strToColor(row.section(" ", 1)));
             } else if (row.startsWith("color0")) {
                 setColor(ui->widgetColor0, strToColor(row.section(" ", 1)));
@@ -146,13 +146,13 @@ void MainWindow::refresh()
     // hide all color frames by default, display only the ones in the config file
     QList<QWidget *> frames;
     frames << ui->frameDefault << ui->frame0 << ui->frame1 << ui->frame2 << ui->frame3 << ui->frame4;
-    foreach (QWidget *w, frames) {
+    for (QWidget *w : frames) {
         w->hide();
     }
     // draw borders around color widgets
     QList<QWidget *> widgets;
     widgets << ui->widgetDefaultColor << ui->widgetColor0 << ui->widgetColor1 << ui->widgetColor2 << ui->widgetColor3 << ui->widgetColor4;
-    foreach (QWidget *w, widgets) {
+    for (QWidget *w : widgets) {
         w->setStyleSheet("border: 1px solid black");
     }
 
@@ -205,11 +205,12 @@ void MainWindow::writeColor(QWidget *widget, QColor color)
 
     QStringList list = file_content.split("\n");
     QStringList new_list;
-    foreach(QString row, list) {
+    for (const QString &row : list) {
         if (row.startsWith(item_name)) {
-            row = item_name + " " + color.name().remove('#');
+            new_list << item_name + " " + color.name().remove('#');
+        } else {
+            new_list << row;
         }
-        new_list << row;
     }
     file_content = new_list.join("\n");
 
@@ -444,7 +445,7 @@ void MainWindow::on_radioDesktop1_clicked()
     bool found = false;
     QStringList list = file_content.split("\n");
     QStringList new_list;
-    foreach(QString row, list) {
+    for (QString row : list) {
         if (row.startsWith("own_window_hints ")) {
             row.remove(",sticky");
             row.remove("sticky"); // if first item
@@ -466,7 +467,7 @@ void MainWindow::on_radioAllDesktops_clicked()
     bool found = false;
     QStringList list = file_content.split("\n");
     QStringList new_list;
-    foreach(QString row, list) {
+    for (QString row : list) {
         if (row.startsWith("own_window_hints ")) {;
             row.append(",sticky");
             found = true;
