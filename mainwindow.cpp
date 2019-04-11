@@ -57,7 +57,7 @@ MainWindow::~MainWindow()
 // find defined colors in the config file
 void MainWindow::parseContent()
 {
-    QStringList list = file_content.split("\n");
+    const QStringList list = file_content.split("\n");
     for (const QString &row : list) {
         if (!row.startsWith("#")) {
 
@@ -144,14 +144,12 @@ void MainWindow::refresh()
     modified = false;
 
     // hide all color frames by default, display only the ones in the config file
-    QList<QWidget *> frames;
-    frames << ui->frameDefault << ui->frame0 << ui->frame1 << ui->frame2 << ui->frame3 << ui->frame4;
+    const QList<QWidget *> frames({ui->frameDefault, ui->frame0, ui->frame1, ui->frame2, ui->frame3, ui->frame4});
     for (QWidget *w : frames) {
         w->hide();
     }
     // draw borders around color widgets
-    QList<QWidget *> widgets;
-    widgets << ui->widgetDefaultColor << ui->widgetColor0 << ui->widgetColor1 << ui->widgetColor2 << ui->widgetColor3 << ui->widgetColor4;
+    const QList<QWidget *> widgets({ui->widgetDefaultColor, ui->widgetColor0, ui->widgetColor1, ui->widgetColor2, ui->widgetColor3, ui->widgetColor4});
     for (QWidget *w : widgets) {
         w->setStyleSheet("border: 1px solid black");
     }
@@ -203,7 +201,7 @@ void MainWindow::writeColor(QWidget *widget, QColor color)
         item_name = "color4";
     }
 
-    QStringList list = file_content.split("\n");
+    const QStringList list = file_content.split("\n");
     QStringList new_list;
     for (const QString &row : list) {
         if (row.startsWith(item_name)) {
@@ -443,7 +441,7 @@ void MainWindow::on_buttonChange_clicked()
 void MainWindow::on_radioDesktop1_clicked()
 {
     bool found = false;
-    QStringList list = file_content.split("\n");
+    const QStringList list = file_content.split("\n");
     QStringList new_list;
     for (QString row : list) {
         if (row.startsWith("own_window_hints ")) {
@@ -465,7 +463,7 @@ void MainWindow::on_radioDesktop1_clicked()
 void MainWindow::on_radioAllDesktops_clicked()
 {
     bool found = false;
-    QStringList list = file_content.split("\n");
+    const QStringList list = file_content.split("\n");
     QStringList new_list;
     for (QString row : list) {
         if (row.startsWith("own_window_hints ")) {;
