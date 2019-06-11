@@ -25,6 +25,7 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "version.h"
 
 #include <QColorDialog>
 #include <QFileDialog>
@@ -36,6 +37,7 @@ MainWindow::MainWindow(QWidget *parent, QString file) :
     QDialog(parent),
     ui(new Ui::MainWindow)
 {
+    qDebug() << "Program Version:" << VERSION;
     ui->setupUi(this);
     cmd = new Cmd(this);
 
@@ -240,15 +242,6 @@ void MainWindow::cleanup()
     }
 }
 
-
-// Get version of the program
-QString MainWindow::getVersion(QString name)
-{
-    Cmd cmd;
-    return cmd.getOutput("dpkg-query -f '${Version}' -W " + name);
-}
-
-
 void MainWindow::pickColor(QWidget *widget)
 {
     QColorDialog *dialog = new QColorDialog();
@@ -298,7 +291,7 @@ void MainWindow::on_buttonAbout_clicked()
     QString url = "file:///usr/share/doc/mx-conky/license.html";
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Conky"), "<p align=\"center\"><b><h2>" +
-                       tr("MX Conky") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + getVersion("mx-conky") + "</p><p align=\"center\"><h3>" +
+                       tr("MX Conky") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + VERSION + "</p><p align=\"center\"><h3>" +
                        tr("GUI program for configuring Conky in MX Linux") +
                        "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>");

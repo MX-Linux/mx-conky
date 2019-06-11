@@ -61,7 +61,6 @@ public:
     bool readFile(QString file_name);
 
     QColor strToColor(QString colorstr);
-    QString getVersion(QString name);
 
 public slots:
 
