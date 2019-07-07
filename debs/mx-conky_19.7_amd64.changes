@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 07 Jul 2019 13:37:47 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 19.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (19.7) mx; urgency=medium
+ .
+   * fix windows buttons for Buster
+Checksums-Sha1:
+ d5bd68708cc823a9d342b4899e95cc254ad4c0da 1158 mx-conky_19.7.dsc
+ 5da08a3778b620d4a47a17aab68d6ae7c0f305c8 51780 mx-conky_19.7.tar.xz
+ c056bc6a0aa718cac0b6817a10f5a92d212c70c3 72222 mx-conky_19.7_amd64.deb
+Checksums-Sha256:
+ b6aafcf49b2fe95b79a7f31687e93319ed9a38d7044cfd603a8eede5e9ed56e8 1158 mx-conky_19.7.dsc
+ 9ca49601cde55c2fe7076e607ddfa4913d4526dbb723bfb13aa255eb008a6f6b 51780 mx-conky_19.7.tar.xz
+ cc4311599fb7ec5d19c9635c54f1f7b7699406f1b26d4a963241db3c35425733 72222 mx-conky_19.7_amd64.deb
+Files:
+ eb6940e191467c6c4cc897d96c82272c 1158 admin optional mx-conky_19.7.dsc
+ 54ee775a9796f1b0b71d16438aa2a66a 51780 admin optional mx-conky_19.7.tar.xz
+ 4f4721556ada907d9bb1d811c1ad925b 72222 admin optional mx-conky_19.7_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl0iLmsTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOYHCACh7aUT7Prs6qDpSu9IfwkodvKhuvdA
+rnfz6zbKp5fFf9OXVpDCEsNlrFYAqbTqLiJ5dvlyqFNhjwOhkSpZhp2khsLRmImP
+bSF0r9Sm44DyfZZXQg+lgK8UMZrKswc8TTCQg2UA6BNrTWc0/sKxN3sKUEbZBixh
+mVb01ay+tfryCqCywaKxZPfha3j80FTid+b6TDQqpRfWPT4ihswMe1cz+3MPnSv6
+rRP+Id4oaD2O8CWNBvGH4Y8okXNbNMJ50luRvZcotYDqFoIUjX1Bx75rxOk4E7s8
+xqgSVuSWjGDr8P4KQYrRK+BEHb5xGOMY0jzGWbcDPz0r5T7Lkm0S/pJj
+=/edO
+-----END PGP SIGNATURE-----

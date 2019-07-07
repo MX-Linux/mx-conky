@@ -5,8 +5,8 @@
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
-        <location filename="../mainwindow.cpp" line="45"/>
-        <location filename="../mainwindow.cpp" line="303"/>
+        <location filename="../mainwindow.cpp" line="48"/>
+        <location filename="../mainwindow.cpp" line="295"/>
         <source>MX Conky</source>
         <translation>MX Conky</translation>
     </message>
@@ -218,47 +218,47 @@
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="302"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>About MX Conky</source>
         <translation>MX Conky Hakkında</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="303"/>
+        <location filename="../mainwindow.cpp" line="295"/>
         <source>Version: </source>
         <translation>Sürüm</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="296"/>
         <source>GUI program for configuring Conky in MX Linux</source>
         <translation>MX Linux&apos;da Conky yapılandırması için Grafik arayüzü programı</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="298"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="307"/>
+        <location filename="../mainwindow.cpp" line="299"/>
         <source>License</source>
         <translation>Ruhsat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="308"/>
+        <location filename="../mainwindow.cpp" line="300"/>
         <source>Changelog</source>
         <translation>Değişim günlüğü</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="301"/>
         <source>Cancel</source>
         <translation>İptal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>&amp;Close</source>
         <translation>&amp;Kapat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="348"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>MX Conky Help</source>
         <translation>MX Conky Yardım</translation>
     </message>
@@ -267,7 +267,7 @@
     <name>QObject</name>
     <message>
         <location filename="../main.cpp" line="56"/>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>Select Conky Manager config file</source>
         <translation type="unfinished"></translation>
     </message>

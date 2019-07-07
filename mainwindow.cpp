@@ -39,6 +39,7 @@ MainWindow::MainWindow(QWidget *parent, QString file) :
 {
     qDebug() << "Program Version:" << VERSION;
     ui->setupUi(this);
+    setWindowFlags(Qt::Window); // for the close, min and max buttons
     cmd = new Cmd(this);
 
     connect(qApp, &QApplication::aboutToQuit, this, &MainWindow::cleanup);
