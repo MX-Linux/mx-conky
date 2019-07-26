@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 26 Jul 2019 14:37:14 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 19.7.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (19.7.1) mx; urgency=medium
+ .
+   * new icon
+Checksums-Sha1:
+ cc2d07755eade962e8b1b4fc3e79e1c7d444b995 1166 mx-conky_19.7.1.dsc
+ c29513d9c2febfba8171873f301d695b0ead612c 54940 mx-conky_19.7.1.tar.xz
+ 96e67091a9be08c1ecd6a7378732efb8f1d76178 593200 mx-conky-dbgsym_19.7.1_amd64.deb
+ a284cd71b9a06377f087f8c1e0f1686f524b4970 11540 mx-conky_19.7.1_amd64.buildinfo
+ b171571690409a054bb55d164dc2c4012e042462 72560 mx-conky_19.7.1_amd64.deb
+Checksums-Sha256:
+ ad36926483b83cac3f1b7cfc992adb2533232c6eda409b079990d6b655b89552 1166 mx-conky_19.7.1.dsc
+ 55ca6a26a5171db9ce159c89c018d733dfc7b39e0f2e713d8d911855d15efc48 54940 mx-conky_19.7.1.tar.xz
+ ebdfbef41fdf1910d4cc914b4bcc4d576f4c5caea3f52f34b7ca6d51eb197a8d 593200 mx-conky-dbgsym_19.7.1_amd64.deb
+ 61d956323675d01f689533551ff82f8ccbdd249b9d5c122ffead932071014f3e 11540 mx-conky_19.7.1_amd64.buildinfo
+ 6fc29e5204359456b5f55011e3bd183ce45d769e60b46dd5a0718fd09f879169 72560 mx-conky_19.7.1_amd64.deb
+Files:
+ 6e7692fc4612e1ded1dc0a599b0830d5 1166 admin optional mx-conky_19.7.1.dsc
+ 8fa62f6297da54f4450e36c41b236e69 54940 admin optional mx-conky_19.7.1.tar.xz
+ 8fb10f05dd7ec7f2792b21c3cd7befd9 593200 debug optional mx-conky-dbgsym_19.7.1_amd64.deb
+ 9fbeaf59da46c92f2632cc912c81da4a 11540 admin optional mx-conky_19.7.1_amd64.buildinfo
+ 58371c2f451b9d3c11db6b3344948e0a 72560 admin optional mx-conky_19.7.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl07SZkTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumL6oCADNvguET/kjXZWVhz/Babspl807TRR6
+4juHfoij+86wKY2NI8oRm8IRBnLxE1G/aLfv7qY7PMFca5tAX9ByikjbzJK5IvNH
+4OF1HsRbpnKNKNljndb0/9sLb7jeq0T8sUVFxEQkuVFf99OP7eBxEUnx4HMWmQs9
++x9Bro7+uqHoIqXAawo6TilsF2hRdQrNaDHmoCC9lbUL2t2bWudyjQornAk9SUhE
+MLc4f4kNwH1lxZkN5i0cLx5mQYbDAIGr21pfxjhcHLOZ/XS4ncKtqnD2kBcI+SfZ
+frOFOIIJJV9n4buEk8uygQeINSSXrXTd39vSL/td6XfOSc2SQx59QAAP
+=1TEZ
+-----END PGP SIGNATURE-----
