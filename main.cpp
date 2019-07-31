@@ -65,7 +65,7 @@ void messageUpdate()
     Cmd cmd;
     VersionNumber current_version = cmd.getOutput("dpkg -l mx-conky-data | awk 'NR==6 {print $3}'");
 
-    QSettings settings("MX-Linux", "mx-conky");
+    QSettings settings("mx-conky");
 
     QString ver = settings.value("data-version").toByteArray();
     VersionNumber recorded_version = ver;

@@ -512,6 +512,6 @@ void MainWindow::on_buttonCM_clicked()
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QSettings settings("MX-Linux", "mx-conky");
+    QSettings settings("mx-conky");
     settings.setValue("geometery", saveGeometry());
 }
