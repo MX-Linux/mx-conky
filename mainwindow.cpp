@@ -48,7 +48,7 @@ MainWindow::MainWindow(QWidget *parent, QString file) :
     this->setWindowTitle(tr("MX Conky"));
 
     refresh();
-    QSettings settings("MX-Linux", "mx-conky");
+    QSettings settings("mx-conky");
     restoreGeometry(settings.value("geometery").toByteArray());
 }
 
