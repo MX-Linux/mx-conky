@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Mon, 12 Aug 2019 09:37:43 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 19.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (19.8) mx; urgency=medium
+ .
+   * fix icon
+Checksums-Sha1:
+ 71f19c4470034bedd018ef0e4172b2f59d619d17 1158 mx-conky_19.8.dsc
+ 691dda7d57384190025ebc391eba82f665e87e75 52640 mx-conky_19.8.tar.xz
+ 0014657f1e8a5f17c1af5a7740aef688ad86d45d 73300 mx-conky_19.8_amd64.deb
+Checksums-Sha256:
+ 8ebf2a49829e835678a3eac63a02c6c3c4d682baf7fbb6b3c9a70b2d61038114 1158 mx-conky_19.8.dsc
+ 3c3035ddf00825a7cd99a96abbb450feb44f815f22869d2e7c88b880bb065de2 52640 mx-conky_19.8.tar.xz
+ 6ebafe1ea3eb3989e9521f4e982ae2a6822cadca1e4321956346219a54a3fd61 73300 mx-conky_19.8_amd64.deb
+Files:
+ ff7796697b49bfb2e0457f18807630f7 1158 admin optional mx-conky_19.8.dsc
+ d37f81c4d00d825a9822c1917bbde568 52640 admin optional mx-conky_19.8.tar.xz
+ a29fd8dd18d8b337807a55c8554f5a2a 73300 admin optional mx-conky_19.8_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl1RbBQTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumPUYCADLgjcXV4uFC4jdrYDMunPF6oO7ySj0
+/wUgKx/JKrhQoI4Cbuv6VJ/lhZH0JqzbYySEXILdBSLHZ5k+CDF7iJAsjFXx91yK
+tId19GCNFEEFaYH+OVXBLyfhNKmjP2K0GR1w73AGImh9NfeUSDgyjo0zwXfjw+5n
+yslX9avxq2OGmIRMrk/mvVNbGXm6rxdRhRLzX1KLTAL/iOoe3DjEgoSqXyMMutFH
+Pmf5A9L7QYhL64rcyL34B3Fd+R2DWz5Cw31yHGyE6LdeKCqpowxu05fzPXmOeVQ1
+OGPZsTqt2M0V9TAlmuTYBh1wy+7l760Kq9leDDvfkUjsi22ztscuQWEK
+=bvL0
+-----END PGP SIGNATURE-----

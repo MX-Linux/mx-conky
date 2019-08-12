@@ -1,5 +1,5 @@
 license.html            usr/share/doc/mx-conky
 mx-conky		usr/bin
 mx-conky.desktop	usr/share/applications
-icons/mx-conky.png	usr/share/icons/hicolor/512x512/apps
+icons/mx-conky.png	usr/share/icons/hicolor/256x256/apps
 translations/*.qm	usr/share/mx-conky/locale
