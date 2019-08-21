@@ -1,3 +1,4 @@
+help/*			usr/share/doc/mx-conky/help
 license.html            usr/share/doc/mx-conky
 mx-conky		usr/bin
 mx-conky.desktop	usr/share/applications
