@@ -1,306 +1,304 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sl" version="2.1">
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="14"/>
-        <location filename="../mainwindow.cpp" line="48"/>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="mainwindow.ui" line="14"/>
+        <location filename="mainwindow.cpp" line="45"/>
+        <location filename="mainwindow.cpp" line="299"/>
         <source>MX Conky</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Conky</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="20"/>
+        <location filename="mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Ta aplikacija omgoča podrobno spreminjanje aktivnega conkyja. Nadomesti Conky urejevalnik, ki se uporablja za osnovne nastavitve.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="73"/>
+        <location filename="mainwindow.ui" line="49"/>
         <source>Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Izvedi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="85"/>
+        <location filename="mainwindow.ui" line="61"/>
         <source>Run</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaženi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="141"/>
+        <location filename="mainwindow.ui" line="118"/>
         <source>Undo</source>
         <translation>Prekliči</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="171"/>
+        <location filename="mainwindow.ui" line="149"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Uredi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="185"/>
+        <location filename="mainwindow.ui" line="164"/>
         <source>Conky Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Conky ime</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="211"/>
+        <location filename="mainwindow.ui" line="191"/>
         <source>Conky Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Conky urejevalnik</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="235"/>
+        <location filename="mainwindow.ui" line="216"/>
         <source>Drag</source>
-        <translation type="unfinished"></translation>
+        <translation>Povleci</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="254"/>
+        <location filename="mainwindow.ui" line="235"/>
         <source>To Resize</source>
-        <translation type="unfinished"></translation>
+        <translation>za spreminjanje velikosti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="274"/>
+        <location filename="mainwindow.ui" line="255"/>
         <source>+ Left Click</source>
-        <translation type="unfinished"></translation>
+        <translation>+ levi klik</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="281"/>
+        <location filename="mainwindow.ui" line="262"/>
         <source>To Move</source>
-        <translation type="unfinished"></translation>
+        <translation>za premikanje</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="288"/>
+        <location filename="mainwindow.ui" line="269"/>
         <source>+ Right Click</source>
-        <translation type="unfinished"></translation>
+        <translation>+ desni klik</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="295"/>
+        <location filename="mainwindow.ui" line="276"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation type="unfinished"></translation>
+        <translation>OPOMBA: spremembe veljajo le za trenutno sejo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="365"/>
+        <location filename="mainwindow.ui" line="343"/>
         <source>Desktop</source>
         <translation>Namizje</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="387"/>
+        <location filename="mainwindow.ui" line="362"/>
         <source>Desktop 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Namizje 1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="410"/>
+        <location filename="mainwindow.ui" line="385"/>
         <source>All Desktops</source>
-        <translation type="unfinished"></translation>
+        <translation>Vsa namizja</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="436"/>
+        <location filename="mainwindow.ui" line="411"/>
         <source>Format</source>
-        <translation type="unfinished"></translation>
+        <translation>Format</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="488"/>
+        <location filename="mainwindow.ui" line="463"/>
         <source>Day</source>
-        <translation type="unfinished"></translation>
+        <translation>Dan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="517"/>
-        <location filename="../mainwindow.ui" line="647"/>
+        <location filename="mainwindow.ui" line="492"/>
+        <location filename="mainwindow.ui" line="622"/>
         <source>Long</source>
-        <translation type="unfinished"></translation>
+        <translation>Dolgi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="546"/>
+        <location filename="mainwindow.ui" line="521"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrajšano ime, npr. To</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="549"/>
-        <location filename="../mainwindow.ui" line="679"/>
+        <location filename="mainwindow.ui" line="524"/>
+        <location filename="mainwindow.ui" line="654"/>
         <source>Short</source>
-        <translation type="unfinished"></translation>
+        <translation>Kratek</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="618"/>
+        <location filename="mainwindow.ui" line="593"/>
         <source>Month</source>
-        <translation type="unfinished"></translation>
+        <translation>Mesec</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="676"/>
+        <location filename="mainwindow.ui" line="651"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrajšano ime, npr. Okt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="732"/>
+        <location filename="mainwindow.ui" line="707"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Barve</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="778"/>
+        <location filename="mainwindow.ui" line="753"/>
         <source>Default</source>
         <translation>Privzeto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="830"/>
-        <location filename="../mainwindow.ui" line="942"/>
-        <location filename="../mainwindow.ui" line="1054"/>
-        <location filename="../mainwindow.ui" line="1169"/>
-        <location filename="../mainwindow.ui" line="1284"/>
-        <location filename="../mainwindow.ui" line="1399"/>
+        <location filename="mainwindow.ui" line="805"/>
+        <location filename="mainwindow.ui" line="917"/>
+        <location filename="mainwindow.ui" line="1029"/>
+        <location filename="mainwindow.ui" line="1144"/>
+        <location filename="mainwindow.ui" line="1259"/>
+        <location filename="mainwindow.ui" line="1374"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="893"/>
+        <location filename="mainwindow.ui" line="868"/>
         <source>Color0 </source>
-        <translation type="unfinished"></translation>
+        <translation>Barva0</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1005"/>
+        <location filename="mainwindow.ui" line="980"/>
         <source>Color1 </source>
-        <translation type="unfinished"></translation>
+        <translation>Barva1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1117"/>
+        <location filename="mainwindow.ui" line="1092"/>
         <source>Color2 </source>
-        <translation type="unfinished"></translation>
+        <translation>Barva2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1232"/>
+        <location filename="mainwindow.ui" line="1207"/>
         <source>Color3 </source>
-        <translation type="unfinished"></translation>
+        <translation>Barva3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1347"/>
+        <location filename="mainwindow.ui" line="1322"/>
         <source>Color4 </source>
-        <translation type="unfinished"></translation>
+        <translation>Barva4</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1455"/>
+        <location filename="mainwindow.ui" line="1439"/>
         <source>About this application</source>
-        <translation type="unfinished"></translation>
+        <translation>O tem programu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1458"/>
+        <location filename="mainwindow.ui" line="1442"/>
         <source>About...</source>
-        <translation type="unfinished"></translation>
+        <translation>O programu...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1465"/>
+        <location filename="mainwindow.ui" line="1450"/>
         <source>Alt+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1481"/>
+        <location filename="mainwindow.ui" line="1466"/>
         <source>Display help </source>
-        <translation type="unfinished"></translation>
+        <translation>Prikaži pomoč</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1484"/>
+        <location filename="mainwindow.ui" line="1469"/>
         <source>Help</source>
         <translation>Pomoč</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1491"/>
+        <location filename="mainwindow.ui" line="1477"/>
         <source>Alt+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1539"/>
+        <location filename="mainwindow.ui" line="1525"/>
         <source>Quit application</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapri aplikacijo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1542"/>
+        <location filename="mainwindow.ui" line="1528"/>
         <source>Close</source>
         <translation>Zapri</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1549"/>
+        <location filename="mainwindow.ui" line="1536"/>
         <source>Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="mainwindow.cpp" line="298"/>
         <source>About MX Conky</source>
-        <translation type="unfinished"></translation>
+        <translation>O MX Conky</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="mainwindow.cpp" line="299"/>
         <source>Version: </source>
-        <translation type="unfinished"></translation>
+        <translation>Različica:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="296"/>
+        <location filename="mainwindow.cpp" line="300"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Grafični vmesnik za konfiguriranje Conkyja v MX Linuxu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="298"/>
+        <location filename="mainwindow.cpp" line="302"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="299"/>
+        <location filename="mainwindow.cpp" line="303"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licenca</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="300"/>
+        <location filename="mainwindow.cpp" line="304"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>Dnevnik sprememb</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="301"/>
+        <location filename="mainwindow.cpp" line="305"/>
         <source>Cancel</source>
         <translation>Prekini</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="321"/>
+        <location filename="mainwindow.cpp" line="325"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zapri</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="mainwindow.cpp" line="344"/>
         <source>MX Conky Help</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Conky pomoč</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="56"/>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="main.cpp" line="56"/>
+        <location filename="mainwindow.cpp" line="422"/>
         <source>Select Conky Manager config file</source>
-        <translation type="unfinished"></translation>
+        <translation>Izberi konfiguracijsko datoteko za Conky upravljalnik</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="73"/>
+        <location filename="main.cpp" line="73"/>
         <source>Conky Data Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Posodobi Conky podatke</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="74"/>
+        <location filename="main.cpp" line="74"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nabor podatkov za MX Conky je bil posodobljen. &lt;p&gt;&lt;p&gt;Kar želite, prekopirajte iz mape, kjer se nahaja &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;   v vašo skrito mapo v Home &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                    Pazite, da ne boste prepisali katerega od conkijev, ki ste jih spremenili.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="100"/>
-        <location filename="../main.cpp" line="124"/>
+        <location filename="main.cpp" line="100"/>
+        <location filename="main.cpp" line="119"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Napaka</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="101"/>
+        <location filename="main.cpp" line="101"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation type="unfinished"></translation>
+        <translation>Nisem našel conky-manager. Prosimo, da ga namestite, preden zaženete mx-conky</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="125"/>
+        <location filename="main.cpp" line="120"/>
         <source>No file was selected, quiting program</source>
-        <translation type="unfinished"></translation>
+        <translation>Nobena datoteka ni bila izbrana, zapiram program</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="136"/>
+        <location filename="main.cpp" line="131"/>
         <source>You must run this program as normal user</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta program morate zagnati kot navaden uporabnik</translation>
     </message>
 </context>
 </TS>
