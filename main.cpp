@@ -40,7 +40,8 @@
 // return the config file used for the newest conky process
 QString getRunningConky()
 {
-    return getCmdOut("pgrep -xan conky | cut -d' ' -f4", true);
+    Cmd cmd;
+    return cmd.getCmdOut("pgrep -xan conky | cut -d' ' -f4", true);
 }
 
 QString openFile(QDir dir)
@@ -61,7 +62,8 @@ QString openFile(QDir dir)
 
 void messageUpdate()
 {
-    VersionNumber current_version = getCmdOut("dpkg -l mx-conky-data | awk 'NR==6 {print $3}'", true);
+    Cmd cmd;
+    VersionNumber current_version = cmd.getCmdOut("dpkg -l mx-conky-data | awk 'NR==6 {print $3}'", true);
 
     QSettings settings("mx-conky");
 

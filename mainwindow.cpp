@@ -175,7 +175,7 @@ void MainWindow::saveBackup()
     if (modified) {
         int ans = QMessageBox::question(this, "Backup config file" , "Do you want to preserve the original file?");
         if (ans == QMessageBox::Yes) {
-            QString time_stamp = getCmdOut("date +%y%m%d_%H%m%S");
+            QString time_stamp = cmd.getCmdOut("date +%y%m%d_%H%m%S");
             QFileInfo fi(file_name);
             QString new_name = fi.canonicalPath() + "/" + fi.baseName() + "_" + time_stamp + fi.completeSuffix();
             QFile::copy(file_name + ".bak", new_name);
@@ -315,7 +315,8 @@ void MainWindow::on_buttonAbout_clicked()
 
         QTextEdit *text = new QTextEdit;
         text->setReadOnly(true);
-        text->setText(getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
+        Cmd cmd;
+        text->setText(cmd.getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
 
         QPushButton *btnClose = new QPushButton(tr("&Close"));
         btnClose->setIcon(QIcon::fromTheme("window-close"));
@@ -401,7 +402,8 @@ void MainWindow::on_buttonEdit_clicked()
 {
     this->hide();
     QByteArray editor;
-    bool error = run("set -o pipefail; grep Exec -m1 $(locate $(xdg-mime query default text/plain))|cut -d= -f2|cut -d\" \" -f1", editor);
+    Cmd cmd;
+    bool error = cmd.run("set -o pipefail; grep Exec -m1 $(locate $(xdg-mime query default text/plain))|cut -d= -f2|cut -d\" \" -f1", editor);
     if (error || (system("command -v " + editor) != 0)) {
         qDebug() << "no default text editor defined" << editor;
         // try featherpad explicitly

@@ -254,12 +254,12 @@
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="320"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>&amp;Close</source>
         <translation>關閉（&amp;C）</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="339"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>MX Conky Help</source>
         <translation>MX Conky 說明</translation>
     </message>
@@ -267,39 +267,39 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="55"/>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../main.cpp" line="56"/>
+        <location filename="../mainwindow.cpp" line="430"/>
         <source>Select Conky Manager config file</source>
         <translation>選擇 Conky Manager 設定檔</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="71"/>
+        <location filename="../main.cpp" line="73"/>
         <source>Conky Data Update</source>
         <translation>更新 Conky 資料</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="72"/>
+        <location filename="../main.cpp" line="74"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
         <translation>MX Conky 的資料已經更新完畢。&lt;p&gt;&lt;p&gt;                                  它所在的位置是&lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;，                                   請從這個地方把你想要的檔案複製到家目錄下隠藏的 &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt; 目錄。                                   小心不要把你自己改的 conky 設定檔蓋過去了。</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="98"/>
-        <location filename="../main.cpp" line="122"/>
+        <location filename="../main.cpp" line="100"/>
+        <location filename="../main.cpp" line="124"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="99"/>
+        <location filename="../main.cpp" line="101"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
         <translation>找不到 conky-manager，請先把它安裝好，再來執行 mx-conky</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="123"/>
+        <location filename="../main.cpp" line="125"/>
         <source>No file was selected, quiting program</source>
         <translation>未選擇任何檔案，程式即將結束</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="134"/>
+        <location filename="../main.cpp" line="136"/>
         <source>You must run this program as normal user</source>
         <translation>本程式必須以一般使用者的身份來執行</translation>
     </message>

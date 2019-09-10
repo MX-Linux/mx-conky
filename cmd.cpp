@@ -2,26 +2,49 @@
 
 #include <QDebug>
 #include <QEventLoop>
-#include <QProcess>
 
+Cmd::Cmd(QObject *parent)
+    : QProcess(parent)
+{
+}
+
+void Cmd::halt()
+{
+    if (state() != QProcess::NotRunning) {
+        terminate();
+        waitForFinished(5000);
+        kill();
+        waitForFinished(1000);
+    }
+}
+
+bool Cmd::run(const QString &cmd, bool quiet)
+{
+    QByteArray output;
+    return run(cmd, output, quiet);
+}
 
 // util function for getting bash command output
-QString getCmdOut(const QString &cmd, bool quiet)
+QString Cmd::getCmdOut(const QString &cmd, bool quiet)
 {
     QByteArray output;
     run(cmd, output, quiet);
     return output;
 }
 
-
-bool run(const QString &cmd, QByteArray &output, bool quiet)
+bool Cmd::run(const QString &cmd, QByteArray &output, bool quiet)
 {
+    if (this->state() != QProcess::NotRunning) {
+        qDebug() << "Process already running:" << this->program() << this->arguments();
+        return false;
+    }
     if (!quiet) qDebug().noquote() << cmd;
-    QProcess proc;
     QEventLoop loop;
-    proc.start("/bin/bash", QStringList() << "-c" << cmd);
-    proc.waitForFinished();
-    output = proc.readAll().trimmed();
-    return (proc.exitStatus() == QProcess::NormalExit && proc.exitCode() == 0);
+    connect(this, static_cast<void (QProcess::*)(int)>(&QProcess::finished), &loop, &QEventLoop::quit);
+    start("/bin/bash", QStringList() << "-c" << cmd);
+    loop.exec();
+    disconnect(this, static_cast<void (QProcess::*)(int)>(&QProcess::finished), 0, 0);
+    output = readAll().trimmed();
+    return (exitStatus() == QProcess::NormalExit && exitCode() == 0);
 }
 

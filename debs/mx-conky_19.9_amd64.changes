@@ -18,32 +18,32 @@ Changes:
  .
    * remove libcmd dependency
 Checksums-Sha1:
- 2d75a00031641e9b32cf93a51c9d390dabd8da71 1142 mx-conky_19.9.dsc
- 33afb662a0866fc4e900b16545dd9611b76351fb 109764 mx-conky_19.9.tar.xz
- 26960164335a184c1cf62ffb8c695ae411d16356 645458 mx-conky-dbgsym_19.9_amd64.deb
- 783c8869504357e06895f2741f749bc0ff6298b5 11124 mx-conky_19.9_amd64.buildinfo
- 10e2bd6ec1bfdad9dde2b0cac4e4cc80162dc42d 127420 mx-conky_19.9_amd64.deb
+ e5b77915d994147ab0cdd6bd5207152e9801117d 1142 mx-conky_19.9.dsc
+ 0a67b533e617f5cdf15975904d680fec7f6bbb89 109980 mx-conky_19.9.tar.xz
+ a4950624df668a5f781e9d0d3a6d2733f9991040 709148 mx-conky-dbgsym_19.9_amd64.deb
+ 91ea5058897a79f5992f0765a26da301d708f9ec 11183 mx-conky_19.9_amd64.buildinfo
+ 0954b99db7e1137527267c87a6e36d2e82689eb9 129160 mx-conky_19.9_amd64.deb
 Checksums-Sha256:
- 0401286cce96a71dc8c88a95b65301ce43d584e40638c0decd540fd7ff64c4ab 1142 mx-conky_19.9.dsc
- e0378bd8d4a65212c886487e175f6890f2ef3dba6fd1c9494b3c54e9ebf853b1 109764 mx-conky_19.9.tar.xz
- c8be9fc5cf88e17a411889fbc5ddd287c445f7c8117cfdd218f2b057daa43c8f 645458 mx-conky-dbgsym_19.9_amd64.deb
- 8d317c9c54ada7a495e447a48dd0e0ca74fa7a62cb71813ab46697c3f6dbbc23 11124 mx-conky_19.9_amd64.buildinfo
- bc30fd501388b078ff2c65c23610262e047ecf33667156eeca28c80a45682c5a 127420 mx-conky_19.9_amd64.deb
+ be57436b4ed8125a8ba838a4c8fed4e6537b750a8c96567933fad0f6a5e28b92 1142 mx-conky_19.9.dsc
+ 27d544a95874fcfa10729cee47a4d58337f4424c5787049de316f02ea0ef6538 109980 mx-conky_19.9.tar.xz
+ b9ab4a0017131a8d71776045a503dcf355832c1a2daf5e51c957c80852a6bb89 709148 mx-conky-dbgsym_19.9_amd64.deb
+ 70453afa6d3ec470abc40c983b2ac80dac54b0bf93a81667bae1cb48f9be27b6 11183 mx-conky_19.9_amd64.buildinfo
+ cddcdaf9ea1fa3cfa102036c24d26022d2140d150c555d885cef0e0214c98d58 129160 mx-conky_19.9_amd64.deb
 Files:
- e0efc18f009c5eef82a11991ec0de314 1142 admin optional mx-conky_19.9.dsc
- 61465a110348339cb1a02642b6c9f81e 109764 admin optional mx-conky_19.9.tar.xz
- 951796d90e9e35ddd2f0414e3bfc09e9 645458 debug optional mx-conky-dbgsym_19.9_amd64.deb
- bd0a889adc9822f3f418972367c36f00 11124 admin optional mx-conky_19.9_amd64.buildinfo
- 005a93f6bdfd8012835b3757b82eacee 127420 admin optional mx-conky_19.9_amd64.deb
+ f377ae2f607d23e51f5e88257df849d9 1142 admin optional mx-conky_19.9.dsc
+ 104aa2130f2cc4efe69545e7ec5b33d6 109980 admin optional mx-conky_19.9.tar.xz
+ 33333dd00bd7d2d1daa7c39f818cdb6d 709148 debug optional mx-conky-dbgsym_19.9_amd64.deb
+ c6675debc51b06c9e157cdb360da3ee7 11183 admin optional mx-conky_19.9_amd64.buildinfo
+ d0f9373a89f9a7a8f111047fbb9c1f74 129160 admin optional mx-conky_19.9_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl13EXATHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJhWB/41Vbvfoeq8Ph6EydrMNh/753eZHrlP
-hjviHpKa8CMOutPlvghu4LPvK6kqmHRlPsM6ICxhN2poUidFSqWHoJPH24CIxM7N
-eOyfTJaCYAjwShFEWfJKN2Iq8kUi32Xn1QfUYeF3V1SKYKS0n6yE/JxTnnUTMhKG
-df1IXqMccLV9SyrUx4yIonVRGJID8q48wxh6DU1oeumNWCl6mY3qy4SNtD31i6SI
-T5rMTTpvyb3Nb/zvy9jV02gkl0VlwgU9Vbv2F73sm47UPRJWxXXUwtaULZsaq0Mq
-Oaw4ANyP+k8YDFqSDCDkM7IF/W4J/M5+qClJ3q7tmQIrG/klx9T5R5+F
-=dDNS
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl138KcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOxeB/9+TN6kH4ZF1h7LJYXK+R46kYfzraug
+KOcz4fIGFWlVWo8xEP4NtgGSEElYvjsNd4EbgafiUyNlH9Lz8WlHUUN/PEj7mGM9
+XVwLiQF9r6rUAUaFKRGDTOEvi8ZKmrYwufwcd4k/gHxnux5lHQkAEqzo1j7A5itQ
+8Rr2JjytikoJXM6I3N0fWH1nfT/WCl84YkSfi6YICIDNhzV/VsDinYOvKofsu4wu
+0J7XY0cXXvmg9BQKqxf5H8fyZoo5++FSQXH1t3B+hrdnwGjpaD6W6bPjGMY76bkI
+1BIKtxD+qXQPQ44aFnqVKGEMUB1vMhJFjHvLLm6xOA66AaByrbfjODRz
+=b6mW
 -----END PGP SIGNATURE-----
