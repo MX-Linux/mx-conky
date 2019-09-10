@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Mon, 09 Sep 2019 22:54:11 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 19.9
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (19.9) mx; urgency=medium
+ .
+   * remove libcmd dependency
+Checksums-Sha1:
+ 2d75a00031641e9b32cf93a51c9d390dabd8da71 1142 mx-conky_19.9.dsc
+ 33afb662a0866fc4e900b16545dd9611b76351fb 109764 mx-conky_19.9.tar.xz
+ 26960164335a184c1cf62ffb8c695ae411d16356 645458 mx-conky-dbgsym_19.9_amd64.deb
+ 783c8869504357e06895f2741f749bc0ff6298b5 11124 mx-conky_19.9_amd64.buildinfo
+ 10e2bd6ec1bfdad9dde2b0cac4e4cc80162dc42d 127420 mx-conky_19.9_amd64.deb
+Checksums-Sha256:
+ 0401286cce96a71dc8c88a95b65301ce43d584e40638c0decd540fd7ff64c4ab 1142 mx-conky_19.9.dsc
+ e0378bd8d4a65212c886487e175f6890f2ef3dba6fd1c9494b3c54e9ebf853b1 109764 mx-conky_19.9.tar.xz
+ c8be9fc5cf88e17a411889fbc5ddd287c445f7c8117cfdd218f2b057daa43c8f 645458 mx-conky-dbgsym_19.9_amd64.deb
+ 8d317c9c54ada7a495e447a48dd0e0ca74fa7a62cb71813ab46697c3f6dbbc23 11124 mx-conky_19.9_amd64.buildinfo
+ bc30fd501388b078ff2c65c23610262e047ecf33667156eeca28c80a45682c5a 127420 mx-conky_19.9_amd64.deb
+Files:
+ e0efc18f009c5eef82a11991ec0de314 1142 admin optional mx-conky_19.9.dsc
+ 61465a110348339cb1a02642b6c9f81e 109764 admin optional mx-conky_19.9.tar.xz
+ 951796d90e9e35ddd2f0414e3bfc09e9 645458 debug optional mx-conky-dbgsym_19.9_amd64.deb
+ bd0a889adc9822f3f418972367c36f00 11124 admin optional mx-conky_19.9_amd64.buildinfo
+ 005a93f6bdfd8012835b3757b82eacee 127420 admin optional mx-conky_19.9_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl13EXATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJhWB/41Vbvfoeq8Ph6EydrMNh/753eZHrlP
+hjviHpKa8CMOutPlvghu4LPvK6kqmHRlPsM6ICxhN2poUidFSqWHoJPH24CIxM7N
+eOyfTJaCYAjwShFEWfJKN2Iq8kUi32Xn1QfUYeF3V1SKYKS0n6yE/JxTnnUTMhKG
+df1IXqMccLV9SyrUx4yIonVRGJID8q48wxh6DU1oeumNWCl6mY3qy4SNtD31i6SI
+T5rMTTpvyb3Nb/zvy9jV02gkl0VlwgU9Vbv2F73sm47UPRJWxXXUwtaULZsaq0Mq
+Oaw4ANyP+k8YDFqSDCDkM7IF/W4J/M5+qClJ3q7tmQIrG/klx9T5R5+F
+=dDNS
+-----END PGP SIGNATURE-----

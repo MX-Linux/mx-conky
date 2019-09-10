@@ -37,10 +37,9 @@ MainWindow::MainWindow(QWidget *parent, QString file) :
     QDialog(parent),
     ui(new Ui::MainWindow)
 {
-    qDebug() << "Program Version:" << VERSION;
+    qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
     setWindowFlags(Qt::Window); // for the close, min and max buttons
-    cmd = new Cmd(this);
 
     connect(qApp, &QApplication::aboutToQuit, this, &MainWindow::cleanup);
 
@@ -176,7 +175,7 @@ void MainWindow::saveBackup()
     if (modified) {
         int ans = QMessageBox::question(this, "Backup config file" , "Do you want to preserve the original file?");
         if (ans == QMessageBox::Yes) {
-            QString time_stamp = cmd->getOutput("date +%y%m%d_%H%m%S");
+            QString time_stamp = getCmdOut("date +%y%m%d_%H%m%S");
             QFileInfo fi(file_name);
             QString new_name = fi.canonicalPath() + "/" + fi.baseName() + "_" + time_stamp + fi.completeSuffix();
             QFile::copy(file_name + ".bak", new_name);
@@ -238,9 +237,9 @@ void MainWindow::cleanup()
 {
     saveBackup();
 
-    if(!cmd->terminate()) {
-        cmd->kill();
-    }
+//    if(!cmd->terminate()) {
+//        cmd->kill();
+//    }
 }
 
 void MainWindow::pickColor(QWidget *widget)
@@ -275,14 +274,14 @@ void MainWindow::cmdDone()
 {
  //   ui->progressBar->setValue(ui->progressBar->maximum());
     setCursor(QCursor(Qt::ArrowCursor));
-    cmd->disconnect();
+    //cmd->disconnect();
 }
 
 // set proc and timer connections
 void MainWindow::setConnections()
 {
-    connect(cmd, &Cmd::started, this, &MainWindow::cmdStart);
-    connect(cmd, &Cmd::finished, this, &MainWindow::cmdDone);
+//    connect(cmd, &Cmd::started, this, &MainWindow::cmdStart);
+//    connect(cmd, &Cmd::finished, this, &MainWindow::cmdDone);
 }
 
 // About button clicked
@@ -305,18 +304,18 @@ void MainWindow::on_buttonAbout_clicked()
 
     if (msgBox.clickedButton() == btnLicense) {
         if (system("command -v mx-viewer") == 0) {
-            system("mx-viewer " + url.toUtf8());
+            system("mx-viewer " + url.toUtf8() + "&");
         } else {
             system("xdg-open " + url.toUtf8());
         }
     } else if (msgBox.clickedButton() == btnChangelog) {
         QDialog *changelog = new QDialog(this);
+        changelog->setWindowTitle(tr("Changelog"));
         changelog->resize(600, 500);
 
         QTextEdit *text = new QTextEdit;
         text->setReadOnly(true);
-        Cmd cmd;
-        text->setText(cmd.getOutput("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
+        text->setText(getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
 
         QPushButton *btnClose = new QPushButton(tr("&Close"));
         btnClose->setIcon(QIcon::fromTheme("window-close"));
@@ -337,7 +336,7 @@ void MainWindow::on_buttonHelp_clicked()
     QString url = "/usr/share/doc/mx-conky/help/mx-conky.html";
     QString cmd;
     if (system("command -v mx-viewer") == 0) {
-        cmd = QString("mx-viewer " + url + " " + tr("MX Conky Help"));
+        cmd = QString("mx-viewer " + url + " " + tr("MX Conky Help") + "&");
     } else {
         cmd = QString("xdg-open " + url);
     }
@@ -401,8 +400,9 @@ void MainWindow::on_buttonRestore_clicked()
 void MainWindow::on_buttonEdit_clicked()
 {
     this->hide();
-    QString editor = cmd->getOutput("set -o pipefail; grep Exec -m1 $(locate $(xdg-mime query default text/plain))|cut -d= -f2|cut -d\" \" -f1");
-    if (cmd->getExitCode(true) != 0 || (system("command -v " + editor.toUtf8()) != 0)) {
+    QByteArray editor;
+    bool error = run("set -o pipefail; grep Exec -m1 $(locate $(xdg-mime query default text/plain))|cut -d= -f2|cut -d\" \" -f1", editor);
+    if (error || (system("command -v " + editor) != 0)) {
         qDebug() << "no default text editor defined" << editor;
         // try featherpad explicitly
         if (system("command -v featherpad") == 0) {
@@ -412,7 +412,7 @@ void MainWindow::on_buttonEdit_clicked()
         this->show();
         return;
     }
-    if (system(editor.toUtf8() + " '" + file_name.toUtf8() + "'") != 0) {
+    if (system(editor + " '" + file_name.toUtf8() + "'") != 0) {
        qDebug() << "no default text editor defined";
     }
     refresh();

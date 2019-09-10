@@ -1,3 +1,9 @@
+mx-conky (19.9) mx; urgency=medium
+
+  * remove libcmd dependency
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 09 Sep 2019 22:54:11 -0400
+
 mx-conky (19.8.1) mx; urgency=medium
 
   * added offline help file

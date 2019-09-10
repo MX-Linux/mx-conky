@@ -93,7 +93,6 @@ private slots:
     void closeEvent(QCloseEvent *);
 private:
     Ui::MainWindow *ui;
-    Cmd *cmd;
     QTimer *timer;
     QString file_content;
 };
