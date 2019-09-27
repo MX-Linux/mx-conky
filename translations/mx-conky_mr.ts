@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="et" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="mr" version="2.1">
 <context>
     <name>MainWindow</name>
     <message>
@@ -21,7 +21,7 @@
     <message>
         <location filename="mainwindow.ui" line="61"/>
         <source>Run</source>
-        <translation>Kulgema</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="118"/>
@@ -76,7 +76,7 @@
     <message>
         <location filename="mainwindow.ui" line="343"/>
         <source>Desktop</source>
-        <translation>Töölaud</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="362"/>
@@ -173,32 +173,32 @@
     <message>
         <location filename="mainwindow.ui" line="1439"/>
         <source>About this application</source>
-        <translation type="unfinished"/>
+        <translation>या अनुप्रयोगाबद्दल</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1442"/>
         <source>About...</source>
-        <translation type="unfinished"/>
+        <translation>विषयी</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1450"/>
         <source>Alt+B</source>
-        <translation type="unfinished"/>
+        <translation>Alt+B</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1466"/>
         <source>Display help </source>
-        <translation type="unfinished"/>
+        <translation>मदत दाखवा</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1469"/>
         <source>Help</source>
-        <translation>Abi</translation>
+        <translation>मदत</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1477"/>
         <source>Alt+H</source>
-        <translation type="unfinished"/>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1525"/>
@@ -208,12 +208,12 @@
     <message>
         <location filename="mainwindow.ui" line="1528"/>
         <source>Close</source>
-        <translation>Sulge</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="1536"/>
         <source>Alt+N</source>
-        <translation type="unfinished"/>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="298"/>
@@ -223,7 +223,7 @@
     <message>
         <location filename="mainwindow.cpp" line="299"/>
         <source>Version: </source>
-        <translation type="unfinished"/>
+        <translation>आवृत्ती</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="300"/>
@@ -233,27 +233,27 @@
     <message>
         <location filename="mainwindow.cpp" line="302"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>कॉपीराइट (c) एमएक्स लिनक्स</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="303"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>परवाना</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="304"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>बदल सूची</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="305"/>
         <source>Cancel</source>
-        <translation>Loobu</translation>
+        <translation>रद्द करा</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="325"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>बंद</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="344"/>
@@ -283,7 +283,7 @@
         <location filename="main.cpp" line="100"/>
         <location filename="main.cpp" line="119"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>त्रुटी</translation>
     </message>
     <message>
         <location filename="main.cpp" line="101"/>

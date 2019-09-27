@@ -70,6 +70,7 @@ TRANSLATIONS += translations/mx-conky_am.ts \
                 translations/mx-conky_ko.ts \
                 translations/mx-conky_lt.ts \
                 translations/mx-conky_mk.ts \
+                translations/mx-conky_mr.ts \
                 translations/mx-conky_nb.ts \
                 translations/mx-conky_nl.ts \
                 translations/mx-conky_pl.ts \
