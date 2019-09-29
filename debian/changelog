@@ -1,3 +1,9 @@
+mx-conky (19.9.01) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 29 Sep 2019 14:00:03 -0400
+
 mx-conky (19.9) mx; urgency=medium
 
   * remove libcmd dependency
