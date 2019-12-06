@@ -284,7 +284,6 @@
     </message>
     <message>
         <location filename="../main.cpp" line="100"/>
-        <location filename="../main.cpp" line="124"/>
         <source>Error</source>
         <translation>Villa</translation>
     </message>
@@ -294,12 +293,11 @@
         <translation>Gat ekki fundið conky-manager, settu það upp áður en þú keyrir mx-conky</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="125"/>
         <source>No file was selected, quiting program</source>
-        <translation>Engin skrá var valin, hætti í forritinu</translation>
+        <translation type="vanished">Engin skrá var valin, hætti í forritinu</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="136"/>
+        <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
         <translation>Þú verður að keyra þetta forrit sem venjulegur notandi</translation>
     </message>

@@ -97,7 +97,7 @@ int main(int argc, char *argv[])
 
     if (system("dpkg -s conky-manager | grep -q 'Status: install ok installed'") != 0 &&
                system("dpkg -s conky-manager2 | grep -q 'Status: install ok installed'" ) != 0) {
-        QMessageBox::critical(0, QObject::tr("Error"),
+        QMessageBox::critical(nullptr, QObject::tr("Error"),
                               QObject::tr("Could not find conky-manager, please install it before running mx-conky"));
         return 1;
     }
@@ -121,18 +121,16 @@ int main(int argc, char *argv[])
             file = openFile(dir);
         }
         if (file.isEmpty()) {
-            QMessageBox::critical(0, QObject::tr("Error"),
-                                  QObject::tr("No file was selected, quiting program"));
             return 1;
         }
 
-        MainWindow w(0, file);
+        MainWindow w(nullptr, file);
         w.show();
         return a.exec();
 
     } else {
         QApplication::beep();
-        QMessageBox::critical(0, QString::null,
+        QMessageBox::critical(nullptr, QString::null,
                               QObject::tr("You must run this program as normal user"));
         return 1;
     }

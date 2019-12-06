@@ -284,7 +284,6 @@
     </message>
     <message>
         <location filename="../main.cpp" line="100"/>
-        <location filename="../main.cpp" line="124"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
@@ -294,12 +293,11 @@
         <translation>Δεν ήταν δυνατή η εύρεση του conky-manager. Εγκαταστήστε το πριν εκτελέσετε mx-conky</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="125"/>
         <source>No file was selected, quiting program</source>
-        <translation>Δεν επελέγη αρχείο. Το πρόγραμμα έκλεισε</translation>
+        <translation type="vanished">Δεν επελέγη αρχείο. Το πρόγραμμα έκλεισε</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="136"/>
+        <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
         <translation>Πρέπει να τρέξετε αυτή την εφαρμογή ως κανονικός χρήστης</translation>
     </message>

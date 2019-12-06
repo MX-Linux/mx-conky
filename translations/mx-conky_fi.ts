@@ -284,7 +284,6 @@
     </message>
     <message>
         <location filename="../main.cpp" line="100"/>
-        <location filename="../main.cpp" line="124"/>
         <source>Error</source>
         <translation>Virhe</translation>
     </message>
@@ -294,12 +293,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="125"/>
         <source>No file was selected, quiting program</source>
-        <translation>Tiedostoa ei valittu, lopetetaan ohjelma</translation>
+        <translation type="vanished">Tiedostoa ei valittu, lopetetaan ohjelma</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="136"/>
+        <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
         <translation>Sinun täytyy suorittaa tämä ohjelma tavallisena käyttäjänä</translation>
     </message>

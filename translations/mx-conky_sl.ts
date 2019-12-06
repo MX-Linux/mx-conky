@@ -284,7 +284,6 @@
     </message>
     <message>
         <location filename="../main.cpp" line="100"/>
-        <location filename="../main.cpp" line="124"/>
         <source>Error</source>
         <translation>Napaka</translation>
     </message>
@@ -294,12 +293,11 @@
         <translation>Nisem našel conky-manager. Prosimo, da ga namestite, preden zaženete mx-conky</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="125"/>
         <source>No file was selected, quiting program</source>
-        <translation>Nobena datoteka ni bila izbrana, zapiram program</translation>
+        <translation type="vanished">Nobena datoteka ni bila izbrana, zapiram program</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="136"/>
+        <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
         <translation>Ta program morate zagnati kot navaden uporabnik</translation>
     </message>

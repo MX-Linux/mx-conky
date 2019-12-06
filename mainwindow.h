@@ -43,7 +43,7 @@ class MainWindow : public QDialog
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0, QString file = "");
+    explicit MainWindow(QWidget *parent = nullptr, QString file = "");
     ~MainWindow();
 
     QString file_name;

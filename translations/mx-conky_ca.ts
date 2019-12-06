@@ -284,7 +284,6 @@
     </message>
     <message>
         <location filename="../main.cpp" line="100"/>
-        <location filename="../main.cpp" line="124"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -294,12 +293,11 @@
         <translation>No trobo Conky Manager, si us plau instal·leu-lo abans d&apos;executar mx-conky </translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="125"/>
         <source>No file was selected, quiting program</source>
-        <translation>No heu triat cap fitxer, sortint del programa</translation>
+        <translation type="vanished">No heu triat cap fitxer, sortint del programa</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="136"/>
+        <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
         <translation>Cal executar aquest programa com a usuari normal</translation>
     </message>

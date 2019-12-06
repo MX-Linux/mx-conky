@@ -1,3 +1,9 @@
+mx-conky (19.12) mx; urgency=medium
+
+  * remove "no file was selected" message
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 06 Dec 2019 15:49:29 -0500
+
 mx-conky (19.9.01) mx; urgency=medium
 
   * new translations
