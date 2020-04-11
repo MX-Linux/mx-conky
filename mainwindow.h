@@ -49,7 +49,36 @@ public:
     QString file_name;
     bool modified;
 
+    bool is_lua_format;
+    bool conky_format_detected = false;
+    // debug
+    bool debug = false;
+    // regexp pattern
+    QString lua_config;
+    QString lua_format;
+    QString old_format;
+    QString lua_comment_line;
+    QString old_comment_line;
+    QString lua_comment_start;
+    QString lua_comment_end;
+
+    QString capture_lua_owh = "^(?<before>(?:.*\\]\\])?\\s*(?<item>own_window_hints)(?:\\s*=\\s*[\\\"\\']))(?<value>[[:alnum:],_]*)(?<after>(?:[\\\"\\']\\s*,).*)";
+
+
+    QString capture_old_owh = "^(?<before>(?:.*\\]\\])?\\s*(?<item>own_window_hints)(?:\\s+))(?<value>[[:alnum:],_]*)(?<after>.*)";
+
+
+
+    QString block_comment_start = "--[[";
+    QString block_comment_end = "]]";
+
+    QString capture_lua_color;
+    QString capture_old_color;
+    QRegularExpression regexp_lua_color(QString);
+
+
     void parseContent();
+    void detectConkyFormat();
     void pickColor(QWidget *widget);
     void refresh();
     void saveBackup();
@@ -77,6 +106,11 @@ private slots:
     void on_buttonColor2_clicked();
     void on_buttonColor3_clicked();
     void on_buttonColor4_clicked();
+    void on_buttonColor5_clicked();
+    void on_buttonColor6_clicked();
+    void on_buttonColor7_clicked();
+    void on_buttonColor8_clicked();
+    void on_buttonColor9_clicked();
     void on_buttonToggleOn_clicked();
     void on_buttonRestore_clicked();
     void on_buttonEdit_clicked();

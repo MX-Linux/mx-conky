@@ -1,3 +1,15 @@
+mx-conky (20.03.2) mx; urgency=medium
+
+  * removed ja_JP translations
+
+ -- fehlix <fehlix@mxlinux.org>  Thu, 11 Apr 2020 10:53:31 +0200
+
+mx-conky (20.03.1) mx; urgency=medium
+
+  * add lua-format compatibility, minor fixes
+
+ -- fehlix <fehlix@mxlinux.org>  Thu, 02 Apr 2020 00:53:31 +0200
+
 mx-conky (19.12) mx; urgency=medium
 
   * remove "no file was selected" message

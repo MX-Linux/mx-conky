@@ -41,7 +41,7 @@
 QString getRunningConky()
 {
     Cmd cmd;
-    return cmd.getCmdOut("pgrep -xan conky | cut -d' ' -f4", true);
+    return cmd.getCmdOut("pgrep -xan conky | cut -d' ' -f4-", true);
 }
 
 QString openFile(QDir dir)
@@ -53,7 +53,7 @@ QString openFile(QDir dir)
         return file_name;
     }
 
-    QString selected = dialog.getOpenFileName(0, QObject::tr("Select Conky Manager config file"), dir.path());
+    QString selected = dialog.getOpenFileName(nullptr, QObject::tr("Select Conky Manager config file"), dir.path());
     if (!selected.isEmpty()) {
         return selected;
     }
@@ -78,7 +78,7 @@ void messageUpdate()
 
     if (recorded_version.toString() == "" || current_version > recorded_version) {
         settings.setValue("data-version", current_version.toString());
-        QMessageBox::information(0, title, message);
+        QMessageBox::information(nullptr, title, message);
     }
 }
 
