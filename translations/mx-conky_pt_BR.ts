@@ -5,8 +5,8 @@
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
-        <location filename="../mainwindow.cpp" line="47"/>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="54"/>
+        <location filename="../mainwindow.cpp" line="542"/>
         <source>MX Conky</source>
         <translation>Conky do MX</translation>
     </message>
@@ -138,128 +138,158 @@
         <translation>Predefinição</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="830"/>
-        <location filename="../mainwindow.ui" line="942"/>
-        <location filename="../mainwindow.ui" line="1054"/>
-        <location filename="../mainwindow.ui" line="1169"/>
-        <location filename="../mainwindow.ui" line="1284"/>
-        <location filename="../mainwindow.ui" line="1399"/>
+        <location filename="../mainwindow.ui" line="833"/>
+        <location filename="../mainwindow.ui" line="948"/>
+        <location filename="../mainwindow.ui" line="1063"/>
+        <location filename="../mainwindow.ui" line="1181"/>
+        <location filename="../mainwindow.ui" line="1299"/>
+        <location filename="../mainwindow.ui" line="1417"/>
+        <location filename="../mainwindow.ui" line="1532"/>
+        <location filename="../mainwindow.ui" line="1647"/>
+        <location filename="../mainwindow.ui" line="1762"/>
+        <location filename="../mainwindow.ui" line="1877"/>
+        <location filename="../mainwindow.ui" line="1992"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="893"/>
+        <location filename="../mainwindow.ui" line="896"/>
         <source>Color0 </source>
         <translation>Cor0</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1005"/>
+        <location filename="../mainwindow.ui" line="1011"/>
         <source>Color1 </source>
         <translation>Cor1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1117"/>
+        <location filename="../mainwindow.ui" line="1126"/>
         <source>Color2 </source>
         <translation>Cor2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1232"/>
+        <location filename="../mainwindow.ui" line="1244"/>
         <source>Color3 </source>
         <translation>Cor3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1347"/>
+        <location filename="../mainwindow.ui" line="1362"/>
         <source>Color4 </source>
         <translation>Cor4</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1455"/>
+        <location filename="../mainwindow.ui" line="1480"/>
+        <source>Color5</source>
+        <translation type="unfinished">Cor4 {5?}</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1595"/>
+        <source>Color6</source>
+        <translation type="unfinished">Cor4 {6?}</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1710"/>
+        <source>Color7</source>
+        <translation type="unfinished">Cor4 {7?}</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1825"/>
+        <source>Color8</source>
+        <translation type="unfinished">Cor4 {8?}</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="1940"/>
+        <source>Color9</source>
+        <translation type="unfinished">Cor4 {9?}</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="2048"/>
         <source>About this application</source>
         <translation>Sobre esta aplicação</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1458"/>
+        <location filename="../mainwindow.ui" line="2051"/>
         <source>About...</source>
         <translation>Sobre...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1465"/>
+        <location filename="../mainwindow.ui" line="2058"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1481"/>
+        <location filename="../mainwindow.ui" line="2074"/>
         <source>Display help </source>
         <translation>Exibir a ajuda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1484"/>
+        <location filename="../mainwindow.ui" line="2077"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1491"/>
+        <location filename="../mainwindow.ui" line="2084"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1539"/>
+        <location filename="../mainwindow.ui" line="2132"/>
         <source>Quit application</source>
         <translation>Sair da aplicação</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1542"/>
+        <location filename="../mainwindow.ui" line="2135"/>
         <source>Close</source>
         <translation>Fechar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="1549"/>
+        <location filename="../mainwindow.ui" line="2142"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>About MX Conky</source>
         <translation>Sobre o Conky do MX</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="542"/>
         <source>Version: </source>
         <translation>Versão: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="543"/>
         <source>GUI program for configuring Conky in MX Linux</source>
         <translation>Interface de Utilizador para configurar o Conky no MX</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="297"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Direitos de Autor (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="298"/>
+        <location filename="../mainwindow.cpp" line="546"/>
         <source>License</source>
         <translation>Licença</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="299"/>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="547"/>
+        <location filename="../mainwindow.cpp" line="561"/>
         <source>Changelog</source>
         <translation>Relatório de alterações</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="300"/>
+        <location filename="../mainwindow.cpp" line="548"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="321"/>
+        <location filename="../mainwindow.cpp" line="569"/>
         <source>&amp;Close</source>
         <translation>&amp;Fechar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="588"/>
         <source>MX Conky Help</source>
         <translation>Ajuda do Conky do MX</translation>
     </message>
@@ -268,7 +298,7 @@
     <name>QObject</name>
     <message>
         <location filename="../main.cpp" line="56"/>
-        <location filename="../mainwindow.cpp" line="430"/>
+        <location filename="../mainwindow.cpp" line="712"/>
         <source>Select Conky Manager config file</source>
         <translation>Seleccionar o ficheiro .config do Gestor de Conky</translation>
     </message>

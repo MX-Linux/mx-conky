@@ -1,10 +1,11 @@
 Source: mx-conky
 Section: admin
 Priority: optional
-Maintainer: Adrian <adrian@mxlinux.org>
+Maintainer: fehlix <fehlix@mxlinux.org>
+XSBC-Original-Maintainer: Adrian <adrian@mxlinux.org>
 Build-Depends: debhelper (>=9), qtbase5-dev, qttools5-dev-tools
 Standards-Version: 3.9.8
-Vcs-Git: git://github.com/AdrianTM/mx-conky
+Vcs-Git: git://github.com/MX-Linux/mx-conky
 
 Package: mx-conky
 Architecture: any
