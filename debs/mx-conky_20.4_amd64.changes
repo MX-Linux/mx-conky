@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 11 Apr 2020 15:30:41 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 20.4
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (20.4) mx; urgency=medium
+ .
+   * new build for Buster/Stretch
+Checksums-Sha1:
+ 1444bda34fe22733514caf0b756d184e37ebc2fe 1191 mx-conky_20.4.dsc
+ 62640765addc37eefa46e88f472369e9123d6c70 113028 mx-conky_20.4.tar.xz
+ bd5d4fada53ca27662ea4380fc7ce18da678eacd 743842 mx-conky-dbgsym_20.4_amd64.deb
+ b12d98facd33257b46f58a8a4c00d8b569cf5502 10649 mx-conky_20.4_amd64.buildinfo
+ e05d9ccaeef2e5ca680837e27181ca1e8dd7b7ca 139672 mx-conky_20.4_amd64.deb
+Checksums-Sha256:
+ 32b16906081642310a8100d0a400d8bcc133ab8301b6f685da28f16ca87961bb 1191 mx-conky_20.4.dsc
+ a3191485aa6aeb028d1ad952ed37a484eda018adfe26148e92495288cfaab2bb 113028 mx-conky_20.4.tar.xz
+ 146f290eeb624ad181620669f6b8d71ef9378afb5370c2fb9b5b38f04f7ffe3a 743842 mx-conky-dbgsym_20.4_amd64.deb
+ 6fb57f5bda5f555919123fd932bb500d73cd0789af9be44176e7ee0e9e587d71 10649 mx-conky_20.4_amd64.buildinfo
+ 5a66e6e35ff7a03c53024338a8eae253497407177b5afeb87087f80d5c919f72 139672 mx-conky_20.4_amd64.deb
+Files:
+ f5131b9ebe6fb4f63a0e847e16cbdaae 1191 admin optional mx-conky_20.4.dsc
+ f1778676b4c0f601bfad158f86dc4496 113028 admin optional mx-conky_20.4.tar.xz
+ 6773487586eb0800f06b284bbce4ef24 743842 debug extra mx-conky-dbgsym_20.4_amd64.deb
+ 05540685a7e5c217f21194ac3f2f8a3d 10649 admin optional mx-conky_20.4_amd64.buildinfo
+ 000fd4f8848bdde06317a101ef5dff42 139672 admin optional mx-conky_20.4_amd64.deb
+Original-Maintainer: Adrian <adrian@mxlinux.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl6SG6wTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumPyLB/9ZW7F1xiUJQFQXFFd+1+KwJwQxlzSu
+4pk1jlxFZCa8ClYtYbrz4JCSmKwZf/baof2m+EKqyi5VhzDYK6+avObcAUNV44Cp
+ZdOVBbDUFNa2o7H78U8heRLWxW31LemP/LEvQbCAx+Df5pleF/4VPSKah0cJEvF1
+HXTGPaAfJLdKbRixGHr6FVRgZgFBIyBQASVuZomL5eo2+PN2/ElydKqDqC61r7k/
+NZg/ikqu4NhUdbcenk7qDwcWedE6OH5VjuGEXfWBcN59exnGZ4mEMhZAdobdAO/t
+4zGzVxA4yMuaEYg2hNBfnnjfSJkFakC02kMvahZUn5HQCYTFsQgoN0Pf
+=xo09
+-----END PGP SIGNATURE-----
