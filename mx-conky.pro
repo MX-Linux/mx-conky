@@ -65,7 +65,6 @@ TRANSLATIONS += translations/mx-conky_am.ts \
                 translations/mx-conky_is.ts \
                 translations/mx-conky_it.ts \
                 translations/mx-conky_ja.ts \
-                translations/mx-conky_ja_JP.ts \
                 translations/mx-conky_kk.ts \
                 translations/mx-conky_ko.ts \
                 translations/mx-conky_lt.ts \
