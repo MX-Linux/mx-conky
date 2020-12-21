@@ -582,7 +582,7 @@ void MainWindow::on_buttonAbout_clicked()
 // Help button clicked
 void MainWindow::on_buttonHelp_clicked()
 {
-    QString url = "/usr/share/doc/mx-conky/help/mx-conky.html";
+    QString url = "/usr/share/doc/mx-conky/mx-conky.html";
     QString cmd;
     if (system("command -v mx-viewer") == 0) {
         cmd = QString("mx-viewer " + url + " " + tr("MX Conky Help") + "&");
