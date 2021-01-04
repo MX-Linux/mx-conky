@@ -22,10 +22,10 @@
  * along with mx-conky.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "mainwindow.h"
-#include <unistd.h>
+
 #include <QApplication>
 #include <QTranslator>
+#include <QLibraryInfo>
 #include <QLocale>
 #include <QIcon>
 #include <QDir>
@@ -33,8 +33,10 @@
 #include <QDebug>
 #include <QSettings>
 
-#include <cmd.h>
-#include <versionnumber.h>
+#include <unistd.h>
+#include "mainwindow.h"
+#include "cmd.h"
+#include "versionnumber.h"
 
 
 // return the config file used for the newest conky process
@@ -76,7 +78,7 @@ void messageUpdate()
                                   whatever you wish to your Home hidden conky folder <a href=\"%1/.conky\">~/.conky</a>. \
                                   Be careful not to overwrite any conkies you have changed.").arg(QDir::homePath());
 
-    if (recorded_version.toString() == "" || current_version > recorded_version) {
+    if (recorded_version.toString().isEmpty() || current_version > recorded_version) {
         settings.setValue("data-version", current_version.toString());
         QMessageBox::information(nullptr, title, message);
     }
@@ -84,22 +86,26 @@ void messageUpdate()
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    a.setWindowIcon(QIcon::fromTheme("mx-conky"));
+    QApplication app(argc, argv);
+    app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
 
     QTranslator qtTran;
-    qtTran.load(QString("qt_") + QLocale::system().name());
-    a.installTranslator(&qtTran);
+    if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
+        app.installTranslator(&qtTran);
+
+    QTranslator qtBaseTran;
+    if (qtBaseTran.load("qtbase_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
+        app.installTranslator(&qtBaseTran);
 
     QTranslator appTran;
-    appTran.load(QString("mx-conky_") + QLocale::system().name(), "/usr/share/mx-conky/locale");
-    a.installTranslator(&appTran);
+    if (appTran.load(app.applicationName() + "_" + QLocale::system().name(), "/usr/share/" + app.applicationName() + "/locale"))
+        app.installTranslator(&appTran);
 
     if (system("dpkg -s conky-manager | grep -q 'Status: install ok installed'") != 0 &&
                system("dpkg -s conky-manager2 | grep -q 'Status: install ok installed'" ) != 0) {
         QMessageBox::critical(nullptr, QObject::tr("Error"),
                               QObject::tr("Could not find conky-manager, please install it before running mx-conky"));
-        return 1;
+        return EXIT_FAILURE;
     }
 
     if (getuid() != 0) {
@@ -121,17 +127,17 @@ int main(int argc, char *argv[])
             file = openFile(dir);
         }
         if (file.isEmpty()) {
-            return 1;
+            return EXIT_FAILURE;
         }
 
         MainWindow w(nullptr, file);
         w.show();
-        return a.exec();
+        return app.exec();
 
     } else {
         QApplication::beep();
-        QMessageBox::critical(nullptr, QString::null,
+        QMessageBox::critical(nullptr, QObject::tr("Error"),
                               QObject::tr("You must run this program as normal user"));
-        return 1;
+        return EXIT_FAILURE;
     }
 }

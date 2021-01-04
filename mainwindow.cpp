@@ -22,17 +22,16 @@
  * along with mx-conky.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
+#include <QColorDialog>
+#include <QDebug>
+#include <QFileDialog>
+#include <QRegularExpression>
+#include <QSettings>
+#include <QTextEdit>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "version.h"
-
-#include <QColorDialog>
-#include <QFileDialog>
-#include <QTextEdit>
-#include <QSettings>
-#include <QRegularExpression>
-#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent, QString file) :
     QDialog(parent),

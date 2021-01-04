@@ -1,4 +1,4 @@
-help			usr/share/doc/mx-conky
+help/*			usr/share/doc/mx-conky
 icons/mx-conky.png	usr/share/icons/hicolor/256x256/apps
 mx-conky		usr/bin
 mx-conky.desktop	usr/share/applications

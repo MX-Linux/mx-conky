@@ -22,14 +22,13 @@
  * along with mx-conky.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QDir>
 #include <QMessageBox>
 #include <QProcess>
 #include <QTimer>
-#include <QDir>
 
 #include "cmd.h"
 
