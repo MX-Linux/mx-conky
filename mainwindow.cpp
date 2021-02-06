@@ -39,9 +39,8 @@ MainWindow::MainWindow(QWidget *parent, QString file) :
 {
     if (QProcessEnvironment::systemEnvironment().value("DEBUG").length() > 0)
         debug = true;
-    else {
+    else
         debug = false;
-    }
 
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
@@ -228,29 +227,25 @@ void MainWindow::parseContent()
         if (trow.startsWith("own_window_hints")) {
             own_window_hints_found = true;
             if (debug) qDebug() << "own_window_hints line found: " << trow ;
-            if (trow.contains("sticky")) {
+            if (trow.contains("sticky"))
                 ui->radioAllDesktops->setChecked(true);
-            } else {
+            else
                 ui->radioDesktop1->setChecked(true);
-            }
             continue;
         }
 
         // Day/Month format
-        if (trow.contains("%A")) {
+        if (trow.contains("%A"))
             ui->radioButtonDayLong->setChecked(true);
-        } else if (row.contains("%a")) {
+        else if (row.contains("%a"))
             ui->radioButtonDayShort->setChecked(true);
-        }
-        if (row.contains("%B")) {
+        if (row.contains("%B"))
             ui->radioButtonMonthLong->setChecked(true);
-        } else if (row.contains("%b")) {
+        else if (row.contains("%b"))
             ui->radioButtonMonthShort->setChecked(true);
-        }
     }
-    if(not own_window_hints_found) {
+    if (not own_window_hints_found)
         ui->radioDesktop1->setChecked(true);
-    }
 }
 
 bool MainWindow::checkConkyRunning()
@@ -286,9 +281,8 @@ bool MainWindow::readFile(QString file_name)
 QColor MainWindow::strToColor(QString colorstr)
 {
     QColor color(colorstr);
-    if (!color.isValid()) { // if color is invalid assume RGB values and add a # in front of the string
+    if (!color.isValid())  // if color is invalid assume RGB values and add a # in front of the string
         color.setNamedColor("#" + colorstr);
-    }
     return color;
 }
 
@@ -301,16 +295,14 @@ void MainWindow::refresh()
     const QList<QWidget *> frames({ui->frameDefault, ui->frame0, ui->frame1, ui->frame2,
                                    ui->frame3, ui->frame4, ui->frame5, ui->frame6,
                                    ui->frame7, ui->frame8, ui->frame9});
-    for (QWidget *w : frames) {
+    for (QWidget *w : frames)
         w->hide();
-    }
     // draw borders around color widgets
     const QList<QWidget *> widgets({ui->widgetDefaultColor, ui->widgetColor0, ui->widgetColor1, ui->widgetColor2,
                                     ui->widgetColor3, ui->widgetColor4, ui->widgetColor5, ui->widgetColor6,
                                     ui->widgetColor7, ui->widgetColor8, ui->widgetColor9});
-    for (QWidget *w : widgets) {
+    for (QWidget *w : widgets)
         w->setStyleSheet("border: 1px solid black");
-    }
 
     QString conky_name = QFileInfo(file_name).fileName();
     ui->buttonChange->setText(conky_name);
@@ -375,29 +367,28 @@ void MainWindow::writeColor(QWidget *widget, QColor color)
     QString color_name;
 
     QString item_name;
-    if (widget->objectName() == "widgetDefaultColor") {
+    if (widget->objectName() == "widgetDefaultColor")
         item_name = "default_color";
-    } else if (widget->objectName() == "widgetColor0") {
+    else if (widget->objectName() == "widgetColor0")
         item_name = "color0";
-    } else if (widget->objectName() == "widgetColor1") {
+    else if (widget->objectName() == "widgetColor1")
         item_name = "color1";
-    } else if (widget->objectName() == "widgetColor2") {
+    else if (widget->objectName() == "widgetColor2")
         item_name = "color2";
-    } else if (widget->objectName() == "widgetColor3") {
+    else if (widget->objectName() == "widgetColor3")
         item_name = "color3";
-    } else if (widget->objectName() == "widgetColor4") {
+    else if (widget->objectName() == "widgetColor4")
         item_name = "color4";
-    } else if (widget->objectName() == "widgetColor5") {
+    else if (widget->objectName() == "widgetColor5")
         item_name = "color5";
-    } else if (widget->objectName() == "widgetColor6") {
+    else if (widget->objectName() == "widgetColor6")
         item_name = "color6";
-    } else if (widget->objectName() == "widgetColor7") {
+    else if (widget->objectName() == "widgetColor7")
         item_name = "color7";
-    } else if (widget->objectName() == "widgetColor8") {
+    else if (widget->objectName() == "widgetColor8")
         item_name = "color8";
-    } else if (widget->objectName() == "widgetColor9") {
+    else if (widget->objectName() == "widgetColor9")
         item_name = "color9";
-    }
 
     const QStringList list = file_content.split("\n");
     QStringList new_list;
@@ -550,11 +541,10 @@ void MainWindow::on_buttonAbout_clicked()
     msgBox.exec();
 
     if (msgBox.clickedButton() == btnLicense) {
-        if (system("command -v mx-viewer") == 0) {
+        if (system("command -v mx-viewer") == 0)
             system("mx-viewer " + url.toUtf8() + "&");
-        } else {
+        else
             system("xdg-open " + url.toUtf8());
-        }
     } else if (msgBox.clickedButton() == btnChangelog) {
         QDialog *changelog = new QDialog(this);
         changelog->setWindowTitle(tr("Changelog"));
@@ -583,11 +573,10 @@ void MainWindow::on_buttonHelp_clicked()
 {
     QString url = "/usr/share/doc/mx-conky/mx-conky.html";
     QString cmd;
-    if (system("command -v mx-viewer") == 0) {
+    if (system("command -v mx-viewer") == 0)
         cmd = QString("mx-viewer " + url + " " + tr("MX Conky Help") + "&");
-    } else {
+    else
         cmd = QString("xdg-open " + url);
-    }
     system(cmd.toUtf8());
 }
 
@@ -647,23 +636,20 @@ void MainWindow::on_buttonColor9_clicked()
 // start-stop conky
 void MainWindow::on_buttonToggleOn_clicked()
 {
-    if (checkConkyRunning()) {
+    if (checkConkyRunning())
         system("pkill -u $USER -x conky");
-    } else {
+    else
         system("cd $(dirname '" + file_name.toUtf8() + "'); conky -c '" + file_name.toUtf8() + "' & ");
-    }
     checkConkyRunning();
 }
 
 
 void MainWindow::on_buttonRestore_clicked()
 {
-    if (QFile(file_name + ".bak").exists()) {
+    if (QFile(file_name + ".bak").exists())
         QFile(file_name).remove();
-    }
-    if (QFile::copy(file_name + ".bak", file_name)) {
+    if (QFile::copy(file_name + ".bak", file_name))
         refresh();
-    }
 }
 
 void MainWindow::on_buttonEdit_clicked()
@@ -709,9 +695,8 @@ void MainWindow::on_buttonChange_clicked()
     saveBackup();
 
     QString selected = dialog.getOpenFileName(nullptr, QObject::tr("Select Conky Manager config file"), QFileInfo(file_name).path());
-    if (selected != "") {
+    if (!selected.isEmpty())
         file_name = selected;
-    }
     refresh();
 }
 
