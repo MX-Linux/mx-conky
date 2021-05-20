@@ -268,7 +268,7 @@ bool MainWindow::checkConkyRunning()
 bool MainWindow::readFile(QString file_name)
 {
     QFile file(file_name);
-    if(!file.open(QIODevice::ReadOnly)) {
+    if (!file.open(QIODevice::ReadOnly)) {
         qDebug() << "Could not open file: " << file.fileName();
         return false;
     }
@@ -475,7 +475,7 @@ void MainWindow::cleanup()
 {
     saveBackup();
 
-//    if(!cmd->terminate()) {
+//    if (!cmd->terminate()) {
 //        cmd->kill();
 //    }
 }
