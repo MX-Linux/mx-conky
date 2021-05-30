@@ -656,7 +656,7 @@ void MainWindow::on_pushEdit_clicked()
     run += "XDHD=${XDG_DATA_HOME:-$HOME/.local/share}:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}; ";
     run += "eval grep -sh -m1 ^Exec {${XDHD//://applications/,}/applications/}";
     run += "$(xdg-mime query default text/plain)  2>/dev/null ";
-    run += "| head -1 | sed 's/^Exec=//' | tr -d '\"' | tr -s ' ' | sed 's/@@//g; s/%f//I' ";
+    run += "| head -1 | sed 's/^Exec=//' | tr -d '\"' | tr -s ' ' | sed 's/@@//g; s/%f//I; s/%u//I' ";
     bool quiet = true;
     if (debug) qDebug() << "run-cmd: " << run;
     if (debug) quiet = false;
