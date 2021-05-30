@@ -18,30 +18,30 @@ Changes:
  .
    * remove %u/%U from editor string
 Checksums-Sha1:
- 505d5ceaa2335a71e5c919bc568b2a11ea6c8af9 1192 mx-conky_20.5.dsc
- edb61413250f566e367e41db392a44c0fdb23dd6 112300 mx-conky_20.5.tar.xz
- e27152b716dba5e514a5e3937ad394eff5c88e8e 10393 mx-conky_20.5_amd64.buildinfo
- ee08d066cb1c82f4c15f1ca0735a8e2fa9e27fbf 138906 mx-conky_20.5_amd64.deb
+ 2fa661946fdb81286d4b21d39bef95cee73e18d8 1192 mx-conky_20.5.dsc
+ a3aacef26c9e551d286bb7e1fdc747fe3582a482 112328 mx-conky_20.5.tar.xz
+ 2994a19ef8727ecb5342fbedc85fc89dd5f463ed 10393 mx-conky_20.5_amd64.buildinfo
+ c5d2126e7acc053dab5bf4294f5c180c20158524 138762 mx-conky_20.5_amd64.deb
 Checksums-Sha256:
- af9eed4def25931d4eaed25aabcb41c8e846ebbd53f472352daa5e55206d707e 1192 mx-conky_20.5.dsc
- fa917cd70c229bbe0ef5f89e6dca9b771098aa8a2ee6faa7405d6070fba46efd 112300 mx-conky_20.5.tar.xz
- 98c3a0bd1d29480e6d4bfa3f8730514e94ecf51d951ec83a9ee2b38036109d74 10393 mx-conky_20.5_amd64.buildinfo
- 00c2ac4987a75b7ba38f067f25043d4397c750249da2866006531356c6f909ef 138906 mx-conky_20.5_amd64.deb
+ 33bf733cb18697fcda342b8bee91edab2ec0900a573cf519c997b878370da3af 1192 mx-conky_20.5.dsc
+ ce769880b14c6e13b6ba8dc9e6b7c2290db78fad3e3a00b5468bf87c3fc92b3f 112328 mx-conky_20.5.tar.xz
+ ec69743c510cdf64af818e05da854997878e4c76806ec41f579a38f5e7f96ba2 10393 mx-conky_20.5_amd64.buildinfo
+ caaba877d1bb39f685f0af071b7385cbb6f22cca57f0e4a0af3d4aecb18758e0 138762 mx-conky_20.5_amd64.deb
 Files:
- a79265d8c5f6cb1f11ec309e422202af 1192 admin optional mx-conky_20.5.dsc
- 788a89278b11ac00f47c8c381c405c05 112300 admin optional mx-conky_20.5.tar.xz
- 185ac4b40684faed339d9069b8cb6c80 10393 admin optional mx-conky_20.5_amd64.buildinfo
- 733a3729c107e573158fc85cfdf13d67 138906 admin optional mx-conky_20.5_amd64.deb
+ a9423df186733d26a825ef85e3b6cf4f 1192 admin optional mx-conky_20.5.dsc
+ 46eb5774af175d8a7c8f88d96933b78f 112328 admin optional mx-conky_20.5.tar.xz
+ d4d513475b794b2ef47c5f217c7f3cac 10393 admin optional mx-conky_20.5_amd64.buildinfo
+ dffa7046b514deb922b8f51a8ec5325f 138762 admin optional mx-conky_20.5_amd64.deb
 Original-Maintainer: Adrian <adrian@mxlinux.org>
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmCzpMYTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumB5/B/43k6EVLO2VrD97W4oD54EZt2QTitgw
-9EfIIvelxrCmrACaDzoVu0asLREXEcKXShJVV1ElJp9ML8/Fa1zojYChIR4FNKco
-CQUSrv6BfuVdz1x3f8FSDQi+k+BYy22UxEkH98z69XKU2gZj/OLmUE9qYImw1PnE
-lddC+bbrIs0xFXNKqmCNvKNgcghuxmjERSpSHgEMIpJSZJJRr9dk99dqbS6GwGL9
-ZTunsF8xBVJUREM5zSJKoPP/kg1BjHK4me7qD14HkTxNsqMtNlyghou3rkGyA1SF
-mTF3ddbZ44tadLf1D9noU6knrDFQGl3QmW0Z+y+EXgE+YYV5RTW83AZa
-=BKMI
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmCz2L8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumLYKB/4uf+vJQ0O7Xqa7birRF/gd9JVC8b2i
+ksQ61RNLyPFPLAC/B8gaf8JaRvIKal/OE+OFM/2WX3grCKEIXZP5o53WqNJC6Ndf
+o4YZ2CK7xc1AsV4uzmb+EyoE6/GEVjZIML25O68EQCPsFe3Y0K28cOh/QCO7UYdO
+f618dFNr2Cg2/ZYo2Xct2heO3VgCPdH5FOyOKydmbjUc32HJCTfzaGw6v514vUBx
+vPTcdTyj8RE6vXgdTU7W/LmK0K1LjPuZDYs7Af3w7aoEKnp2b1uRA2GICoS1YDNV
+gIaDQuO8OfXKbDzqcW/iISC+AL7UT43nJDtrklSfp9h6/IKBJQblgdHG
+=x5vY
 -----END PGP SIGNATURE-----

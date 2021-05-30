@@ -18,24 +18,24 @@ Changes:
  .
    * remove %u/%U from editor string
 Checksums-Sha1:
- 7138a82ba3d9ce06dc88f11dfe5bc5d5f250e12f 10108 mx-conky_20.5_i386.buildinfo
- 1753149bc5319e384c02a293b3fe091848e381e9 142838 mx-conky_20.5_i386.deb
+ 86cd7fe77c591e209d495fc64f37fd0971c62f09 10108 mx-conky_20.5_i386.buildinfo
+ 7c21bfd49628a8002c8886e98ae7bd55dace91a3 142914 mx-conky_20.5_i386.deb
 Checksums-Sha256:
- c8427ca1d61d05e34eb6b0934684d23cb5ea39b5c481fe24fb0d1ce00ad54ed0 10108 mx-conky_20.5_i386.buildinfo
- 3b91cae8d5790aed15b63104acd154f05eabeb7269d6cf931989c9c2dcf28c52 142838 mx-conky_20.5_i386.deb
+ 5785b687e59f60b791d39efd534e937e8019f0bf40b876619aeccc10521992e0 10108 mx-conky_20.5_i386.buildinfo
+ 19e9e033519d2b5ccbfffc7ba3771eb5f2234f46923f50dddb399ba2e0990dc4 142914 mx-conky_20.5_i386.deb
 Files:
- a96e24cbcee95228b1a7bec2ec908f0e 10108 admin optional mx-conky_20.5_i386.buildinfo
- d08d069f2bf62de1bd996fc80a778830 142838 admin optional mx-conky_20.5_i386.deb
+ dba5496fa01fa36bdd2193ebb2032bdc 10108 admin optional mx-conky_20.5_i386.buildinfo
+ e5a895dbce4e77969165755d8665660f 142914 admin optional mx-conky_20.5_i386.deb
 Original-Maintainer: Adrian <adrian@mxlinux.org>
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmCzpMYTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumK/SCADUxEZUA8uDCfbyiVP5gttwNZb24vF0
-YtrYO21XKpF/YJ29sCC2Urnve3rPV4qjFs5svHGexTdwzjsg4N0A6s2LetnssNHA
-k2px54J/CIaQN594Uzi/SKsSjQvyCYLXcJD2Q5mVth5/u0aZmmiqvDuO3Dl/HNzv
-aigYJm7pAGYpJTCiFjOjDhKnxL3xp4BABwXGFOAJ+SIPCW9Sl/OTuQS6ltEbwjoD
-APo84gGiHaNlJBwg4vUQz24tsaEvmCjVReNTonMXyHbBP8fCQUZZ3BU57KiSylNw
-DkhCuPqGa/xOhgkCU0y/jAdy+XXKyMmcwrVU9sSrw3eI0WK5q4ShVoT8
-=6VcC
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmCz2L8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumLI8CAC5S6gDc75oQo7C3cvLt9s1E3Qn13Hb
+loU8f0oaW2one+t2Ab/OkjT6o0h8Hsc/bxMFuFaOuCqCqKYx4IyqnrpL1ZY7Zwex
+Ed0m1a6wgrp83VhqJC4OqwhPYyYricCiw0vGv0f/Vaacy+ww0Q/KXt178njatPef
+75mOBQKhp++aknaDkEFD4nbOHCLrZS2QjpPTjf9Cc6qPgqTRpd1Njo/q+CS44AkZ
+d+y8MCCzPLHmfl2/ST+TqVPdLg/MXXwoBwEdiABj6/8ZexmDlscPvG7wVZJXVq9N
+/75/5b7lQsFiPRdFrr8BJodMWla+4vQGbWoHr0SBJTA4B/rYkEU6+vQa
+=YvK9
 -----END PGP SIGNATURE-----
