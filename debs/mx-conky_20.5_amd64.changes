@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 30 May 2021 10:42:42 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 20.5
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (20.5) mx; urgency=medium
+ .
+   * remove %u/%U from editor string
+Checksums-Sha1:
+ 505d5ceaa2335a71e5c919bc568b2a11ea6c8af9 1192 mx-conky_20.5.dsc
+ edb61413250f566e367e41db392a44c0fdb23dd6 112300 mx-conky_20.5.tar.xz
+ e27152b716dba5e514a5e3937ad394eff5c88e8e 10393 mx-conky_20.5_amd64.buildinfo
+ ee08d066cb1c82f4c15f1ca0735a8e2fa9e27fbf 138906 mx-conky_20.5_amd64.deb
+Checksums-Sha256:
+ af9eed4def25931d4eaed25aabcb41c8e846ebbd53f472352daa5e55206d707e 1192 mx-conky_20.5.dsc
+ fa917cd70c229bbe0ef5f89e6dca9b771098aa8a2ee6faa7405d6070fba46efd 112300 mx-conky_20.5.tar.xz
+ 98c3a0bd1d29480e6d4bfa3f8730514e94ecf51d951ec83a9ee2b38036109d74 10393 mx-conky_20.5_amd64.buildinfo
+ 00c2ac4987a75b7ba38f067f25043d4397c750249da2866006531356c6f909ef 138906 mx-conky_20.5_amd64.deb
+Files:
+ a79265d8c5f6cb1f11ec309e422202af 1192 admin optional mx-conky_20.5.dsc
+ 788a89278b11ac00f47c8c381c405c05 112300 admin optional mx-conky_20.5.tar.xz
+ 185ac4b40684faed339d9069b8cb6c80 10393 admin optional mx-conky_20.5_amd64.buildinfo
+ 733a3729c107e573158fc85cfdf13d67 138906 admin optional mx-conky_20.5_amd64.deb
+Original-Maintainer: Adrian <adrian@mxlinux.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmCzpMYTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumB5/B/43k6EVLO2VrD97W4oD54EZt2QTitgw
+9EfIIvelxrCmrACaDzoVu0asLREXEcKXShJVV1ElJp9ML8/Fa1zojYChIR4FNKco
+CQUSrv6BfuVdz1x3f8FSDQi+k+BYy22UxEkH98z69XKU2gZj/OLmUE9qYImw1PnE
+lddC+bbrIs0xFXNKqmCNvKNgcghuxmjERSpSHgEMIpJSZJJRr9dk99dqbS6GwGL9
+ZTunsF8xBVJUREM5zSJKoPP/kg1BjHK4me7qD14HkTxNsqMtNlyghou3rkGyA1SF
+mTF3ddbZ44tadLf1D9noU6knrDFQGl3QmW0Z+y+EXgE+YYV5RTW83AZa
+=BKMI
+-----END PGP SIGNATURE-----

@@ -1,3 +1,9 @@
+mx-conky (20.5) mx; urgency=medium
+
+  * remove %u/%U from editor string
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 30 May 2021 10:42:42 -0400
+
 mx-conky (20.4) mx; urgency=medium
 
   * new build for Buster/Stretch

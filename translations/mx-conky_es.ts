@@ -5,8 +5,8 @@
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
-        <location filename="../mainwindow.cpp" line="53"/>
-        <location filename="../mainwindow.cpp" line="541"/>
+        <location filename="../mainwindow.cpp" line="49"/>
+        <location filename="../mainwindow.cpp" line="526"/>
         <source>MX Conky</source>
         <translation>MX Conky</translation>
     </message>
@@ -248,48 +248,48 @@
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="540"/>
+        <location filename="../mainwindow.cpp" line="525"/>
         <source>About MX Conky</source>
         <translation>Acerca de MX Conky</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="541"/>
+        <location filename="../mainwindow.cpp" line="526"/>
         <source>Version: </source>
         <translation>Versión:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="542"/>
+        <location filename="../mainwindow.cpp" line="527"/>
         <source>GUI program for configuring Conky in MX Linux</source>
         <translation>Programa gráfico para configurar Conky en MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="544"/>
+        <location filename="../mainwindow.cpp" line="529"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Derechos de Autor (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="545"/>
+        <location filename="../mainwindow.cpp" line="530"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="546"/>
-        <location filename="../mainwindow.cpp" line="560"/>
+        <location filename="../mainwindow.cpp" line="531"/>
+        <location filename="../mainwindow.cpp" line="544"/>
         <source>Changelog</source>
         <translation>Registro de cambios</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="547"/>
+        <location filename="../mainwindow.cpp" line="532"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="568"/>
+        <location filename="../mainwindow.cpp" line="552"/>
         <source>&amp;Close</source>
         <translation>&amp;Close</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="587"/>
+        <location filename="../mainwindow.cpp" line="571"/>
         <source>MX Conky Help</source>
         <translation>Ayuda para MX Conky</translation>
     </message>
@@ -297,29 +297,29 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="58"/>
-        <location filename="../mainwindow.cpp" line="711"/>
+        <location filename="../main.cpp" line="57"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>Select Conky Manager config file</source>
         <translation>Seleccionar archivo de configuración del Gestor de Conky</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="75"/>
+        <location filename="../main.cpp" line="73"/>
         <source>Conky Data Update</source>
         <translation>Actualizar Datos de Conky</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="76"/>
+        <location filename="../main.cpp" line="74"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
         <translation>El conjunto de datos de MX Conky ha sido actualizado. &lt;p&gt;&lt;p&gt;                                  Copiar de la carpeta &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   cualquiera que desea a la carpeta escondida en la carpeta Home del usuario &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Tenga cuidado de no sobreescribir algunas Conkys que haya modificado.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="106"/>
-        <location filename="../main.cpp" line="139"/>
+        <location filename="../main.cpp" line="104"/>
+        <location filename="../main.cpp" line="135"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="107"/>
+        <location filename="../main.cpp" line="105"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
         <translation>No se pudo encontrar conky-manager, favor instalarlo antes de ejecutar mx-conky</translation>
     </message>
@@ -328,7 +328,7 @@
         <translation type="vanished">Ningún archivo fue seleccionado, terminando el programa</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="140"/>
+        <location filename="../main.cpp" line="136"/>
         <source>You must run this program as normal user</source>
         <translation>Tiene que ejecutar este programa como usuario normal</translation>
     </message>
