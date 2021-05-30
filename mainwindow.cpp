@@ -37,10 +37,7 @@ MainWindow::MainWindow(QWidget *parent, QString file) :
     QDialog(parent),
     ui(new Ui::MainWindow)
 {
-    if (QProcessEnvironment::systemEnvironment().value("DEBUG").length() > 0)
-        debug = true;
-    else
-        debug = false;
+    debug = (QProcessEnvironment::systemEnvironment().value("DEBUG").length() > 0);
 
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
@@ -157,14 +154,14 @@ void MainWindow::parseContent()
                     ltrow.removeFirst();
                     trow = ltrow.join(block_comment_end);
                     trow = trow.trimmed();
-                    if (debug)  qDebug() << "Lua block comment end CONTAINS line found: after ]]: " << trow ;
+                    if (debug) qDebug() << "Lua block comment end CONTAINS line found: after ]]: " << trow ;
                 } else {
                     continue;
                 }
             }
             if (not lua_block_comment) {
                 if (trow.startsWith(block_comment_start)) {
-                   if (debug)  qDebug() << "Lua block comment 'STARTS WITH LINE' found" ;
+                   if (debug) qDebug() << "Lua block comment 'STARTS WITH LINE' found" ;
                     lua_block_comment = true;
                     continue;
                 }
@@ -179,12 +176,11 @@ void MainWindow::parseContent()
 
         }
         // comment line
-        if (trow.startsWith(comment_sep)) {
+        if (trow.startsWith(comment_sep))
             continue;
-        }
-        if (trow.contains(comment_sep)) {
+
+        if (trow.contains(comment_sep))
             trow = trow.split(comment_sep)[0];
-        }
 
         // color line
         match_color = regexp_color.match(trow);
@@ -268,7 +264,7 @@ bool MainWindow::checkConkyRunning()
 bool MainWindow::readFile(QString file_name)
 {
     QFile file(file_name);
-    if (!file.open(QIODevice::ReadOnly)) {
+    if (not file.open(QIODevice::ReadOnly)) {
         qDebug() << "Could not open file: " << file.fileName();
         return false;
     }
@@ -281,7 +277,7 @@ bool MainWindow::readFile(QString file_name)
 QColor MainWindow::strToColor(QString colorstr)
 {
     QColor color(colorstr);
-    if (!color.isValid())  // if color is invalid assume RGB values and add a # in front of the string
+    if (not color.isValid())  // if color is invalid assume RGB values and add a # in front of the string
         color.setNamedColor("#" + colorstr);
     return color;
 }
@@ -442,9 +438,8 @@ void MainWindow::writeColor(QWidget *widget, QColor color)
         match_color = regexp_color.match(row);
         if ( match_color.hasMatch() and match_color.captured("color_item") == item_name ) {
             color_name = color.name();
-            if (!is_lua_format) {
+            if (not is_lua_format)
                 color_name = color.name().remove('#');
-            }
             new_list << match_color.captured("before") + color_name + match_color.captured("after");
         } else {
             new_list << row;
@@ -475,9 +470,9 @@ void MainWindow::cleanup()
 {
     saveBackup();
 
-//    if (!cmd->terminate()) {
+//    if (not cmd->terminate())
 //        cmd->kill();
-//    }
+
 }
 
 void MainWindow::pickColor(QWidget *widget)
@@ -695,7 +690,7 @@ void MainWindow::on_buttonChange_clicked()
     saveBackup();
 
     QString selected = dialog.getOpenFileName(nullptr, QObject::tr("Select Conky Manager config file"), QFileInfo(file_name).path());
-    if (!selected.isEmpty())
+    if (not selected.isEmpty())
         file_name = selected;
     refresh();
 }
@@ -776,7 +771,7 @@ void MainWindow::on_radioDesktop1_clicked()
             if (debug) qDebug() << "on_radioDesktops1_clicked: own_window_hints found row : " << row ;
             if (debug) qDebug() << "on_radioDesktops1_clicked: own_window_hints found trow: " << trow ;
             match_owh = regexp_owh.match(row);
-            if ( match_owh.hasMatch() and match_owh.captured("item") == "own_window_hints" ) {
+            if (match_owh.hasMatch() and match_owh.captured("item") == "own_window_hints" ) {
                 QString owh_value = match_owh.captured("value");
                 owh_value.replace(",sticky","");
                 owh_value.replace("sticky","");
@@ -876,9 +871,8 @@ void MainWindow::on_radioAllDesktops_clicked()
             new_list << row;
             continue;
         }
-        if (is_lua_format and trow.startsWith("conky.config")) {
+        if (is_lua_format and trow.startsWith("conky.config"))
             conky_config = true;
-        }
 
         if (not found and conky_config and trow.startsWith(conky_config_end)) {
             conky_config = false;
@@ -895,17 +889,15 @@ void MainWindow::on_radioAllDesktops_clicked()
             new_list << row;
             continue;
         } else {
-
             if (debug) qDebug() << "on_radioAllDesktops_clicked: own_window_hints found row : " << row ;
             if (debug) qDebug() << "on_radioAllDesktops_clicked: own_window_hints found trow: " << trow ;
             match_owh = regexp_owh.match(row);
-            if ( match_owh.hasMatch() and match_owh.captured("item") == "own_window_hints" ) {
+            if (match_owh.hasMatch() and match_owh.captured("item") == "own_window_hints" ) {
                 QString owh_value = match_owh.captured("value");
-                if (owh_value.length() == 0) {
+                if (owh_value.length() == 0)
                     owh_value = "sticky";
-                } else {
+                else
                     owh_value.append(",sticky");
-                }
                 QString new_row = match_owh.captured("before") + owh_value + match_owh.captured("after");
                 if (debug) qDebug() << "Append sticky: " << new_row ;
 

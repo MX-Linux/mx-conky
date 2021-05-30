@@ -51,14 +51,12 @@ QString openFile(QDir dir)
     QFileDialog dialog;
     QString file_name = getRunningConky();
 
-    if (!file_name.isEmpty()) {
+    if (not file_name.isEmpty())
         return file_name;
-    }
 
     QString selected = dialog.getOpenFileName(nullptr, QObject::tr("Select Conky Manager config file"), dir.path());
-    if (!selected.isEmpty()) {
+    if (not selected.isEmpty())
         return selected;
-    }
     return QString();
 }
 
@@ -111,9 +109,8 @@ int main(int argc, char *argv[])
     if (getuid() != 0) {
 
         QString dir = QDir::homePath() + "/.conky";
-        if (!QDir(dir).exists()) {
+        if (not QFile::exists(dir))
             QDir().mkdir(dir);
-        }
 
         messageUpdate();
 
@@ -121,14 +118,13 @@ int main(int argc, char *argv[])
         system("cp -rn /usr/share/mx-conky-data/themes/* " + dir.toUtf8());
 
         QString file;
-        if (qApp->arguments().length() >= 2 && QFile::exists(qApp->arguments().at(1))) {
+        if (qApp->arguments().length() >= 2 && QFile::exists(qApp->arguments().at(1)))
             file = qApp->arguments().at(1);
-        } else {
+        else
             file = openFile(dir);
-        }
-        if (file.isEmpty()) {
+
+        if (file.isEmpty())
             return EXIT_FAILURE;
-        }
 
         MainWindow w(nullptr, file);
         w.show();
