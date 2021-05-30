@@ -50,8 +50,8 @@ public:
 
     bool is_lua_format;
     bool conky_format_detected = false;
-    // debug
     bool debug = false;
+
     // regexp pattern
     QString lua_config;
     QString lua_format;
@@ -62,11 +62,7 @@ public:
     QString lua_comment_end;
 
     QString capture_lua_owh = "^(?<before>(?:.*\\]\\])?\\s*(?<item>own_window_hints)(?:\\s*=\\s*[\\\"\\']))(?<value>[[:alnum:],_]*)(?<after>(?:[\\\"\\']\\s*,).*)";
-
-
     QString capture_old_owh = "^(?<before>(?:.*\\]\\])?\\s*(?<item>own_window_hints)(?:\\s+))(?<value>[[:alnum:],_]*)(?<after>.*)";
-
-
 
     QString block_comment_start = "--[[";
     QString block_comment_end = "]]";
@@ -94,34 +90,33 @@ public slots:
 
 private slots:
     void cleanup();
-    void cmdStart();
     void cmdDone();
-    void setConnections();
-    void on_buttonAbout_clicked();
-    void on_buttonHelp_clicked();
-    void on_buttonDefaultColor_clicked();
-    void on_buttonColor0_clicked();
-    void on_buttonColor1_clicked();
-    void on_buttonColor2_clicked();
-    void on_buttonColor3_clicked();
-    void on_buttonColor4_clicked();
-    void on_buttonColor5_clicked();
-    void on_buttonColor6_clicked();
-    void on_buttonColor7_clicked();
-    void on_buttonColor8_clicked();
-    void on_buttonColor9_clicked();
-    void on_buttonToggleOn_clicked();
-    void on_buttonRestore_clicked();
-    void on_buttonEdit_clicked();
-    void on_buttonChange_clicked();
-    void on_radioDesktop1_clicked();
+    void cmdStart();
+    void on_pushAbout_clicked();
+    void on_pushCM_clicked();
+    void on_pushChange_clicked();
+    void on_pushColor0_clicked();
+    void on_pushColor1_clicked();
+    void on_pushColor2_clicked();
+    void on_pushColor3_clicked();
+    void on_pushColor4_clicked();
+    void on_pushColor5_clicked();
+    void on_pushColor6_clicked();
+    void on_pushColor7_clicked();
+    void on_pushColor8_clicked();
+    void on_pushColor9_clicked();
+    void on_pushDefaultColor_clicked();
+    void on_pushEdit_clicked();
+    void on_pushHelp_clicked();
+    void on_pushRestore_clicked();
+    void on_pushToggleOn_clicked();
     void on_radioAllDesktops_clicked();
-    void on_radioButtonDayLong_clicked();
-    void on_radioButtonDayShort_clicked();
-    void on_radioButtonMonthLong_clicked();
-    void on_radioButtonMonthShort_clicked();
-
-    void on_buttonCM_clicked();
+    void on_radioDayLong_clicked();
+    void on_radioDayShort_clicked();
+    void on_radioDesktop1_clicked();
+    void on_radioMonthLong_clicked();
+    void on_radioMonthShort_clicked();
+    void setConnections();
 
     void closeEvent(QCloseEvent *);
 private:

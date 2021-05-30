@@ -59,9 +59,8 @@ MainWindow::MainWindow(QWidget *parent, QString file) :
     capture_lua_color = "^(?<before>(.*\\]\\])?\\s*(?<color_item>default_color|color\\d)(?:\\s*=\\s*[\\\"\\']))(?:#?)(?<color_value>[[:alnum:]]+)(?<after>(?:[\\\"\\']).*)";
     capture_old_color = "^(?<before>\\s*(?<color_item>default_color|color\\d)(?:\\s+))(?:#?)(?<color_value>[[:alnum:]]+)(?<after>.*)";
 
-
     refresh();
-    QSettings settings("mx-conky");
+    QSettings settings("MX-Linux", "mx-conky");
     restoreGeometry(settings.value("geometery").toByteArray());
 }
 
@@ -232,13 +231,13 @@ void MainWindow::parseContent()
 
         // Day/Month format
         if (trow.contains("%A"))
-            ui->radioButtonDayLong->setChecked(true);
+            ui->radioDayLong->setChecked(true);
         else if (row.contains("%a"))
-            ui->radioButtonDayShort->setChecked(true);
+            ui->radioDayShort->setChecked(true);
         if (row.contains("%B"))
-            ui->radioButtonMonthLong->setChecked(true);
+            ui->radioMonthLong->setChecked(true);
         else if (row.contains("%b"))
-            ui->radioButtonMonthShort->setChecked(true);
+            ui->radioMonthShort->setChecked(true);
     }
     if (not own_window_hints_found)
         ui->radioDesktop1->setChecked(true);
@@ -250,12 +249,12 @@ bool MainWindow::checkConkyRunning()
     if (debug) qDebug() << system("echo pgrep -u $USER -x conky : ") << ret;
     //if (system("pgrep -u $USER -x conky >/dev/null 2>&1 ") == 0) {
     if (ret == 0) {
-        ui->buttonToggleOn->setText("Stop");
-        ui->buttonToggleOn->setIcon(QIcon::fromTheme("stop"));
+        ui->pushToggleOn->setText("Stop");
+        ui->pushToggleOn->setIcon(QIcon::fromTheme("stop"));
         return true;
     } else {
-        ui->buttonToggleOn->setText("Run");
-        ui->buttonToggleOn->setIcon(QIcon::fromTheme("start"));
+        ui->pushToggleOn->setText("Run");
+        ui->pushToggleOn->setIcon(QIcon::fromTheme("start"));
         return false;
     }
 }
@@ -301,7 +300,7 @@ void MainWindow::refresh()
         w->setStyleSheet("border: 1px solid black");
 
     QString conky_name = QFileInfo(file_name).fileName();
-    ui->buttonChange->setText(conky_name);
+    ui->pushChange->setText(conky_name);
 
     checkConkyRunning();
 
@@ -518,7 +517,7 @@ void MainWindow::setConnections()
 }
 
 // About button clicked
-void MainWindow::on_buttonAbout_clicked()
+void MainWindow::on_pushAbout_clicked()
 {
     this->hide();
     QString url = "file:///usr/share/doc/mx-conky/license.html";
@@ -564,7 +563,7 @@ void MainWindow::on_buttonAbout_clicked()
 }
 
 // Help button clicked
-void MainWindow::on_buttonHelp_clicked()
+void MainWindow::on_pushHelp_clicked()
 {
     QString url = "/usr/share/doc/mx-conky/mx-conky.html";
     QString cmd;
@@ -576,60 +575,60 @@ void MainWindow::on_buttonHelp_clicked()
 }
 
 
-void MainWindow::on_buttonDefaultColor_clicked()
+void MainWindow::on_pushDefaultColor_clicked()
 {
     pickColor(ui->widgetDefaultColor);
 }
 
-void MainWindow::on_buttonColor0_clicked()
+void MainWindow::on_pushColor0_clicked()
 {
     pickColor(ui->widgetColor0);
 }
 
-void MainWindow::on_buttonColor1_clicked()
+void MainWindow::on_pushColor1_clicked()
 {
     pickColor(ui->widgetColor1);
 }
 
-void MainWindow::on_buttonColor2_clicked()
+void MainWindow::on_pushColor2_clicked()
 {
     pickColor(ui->widgetColor2);
 }
 
-void MainWindow::on_buttonColor3_clicked()
+void MainWindow::on_pushColor3_clicked()
 {
     pickColor(ui->widgetColor3);
 }
 
-void MainWindow::on_buttonColor4_clicked()
+void MainWindow::on_pushColor4_clicked()
 {
     pickColor(ui->widgetColor4);
 }
 
-void MainWindow::on_buttonColor5_clicked()
+void MainWindow::on_pushColor5_clicked()
 {
     pickColor(ui->widgetColor5);
 }
-void MainWindow::on_buttonColor6_clicked()
+void MainWindow::on_pushColor6_clicked()
 {
     pickColor(ui->widgetColor6);
 }
-void MainWindow::on_buttonColor7_clicked()
+void MainWindow::on_pushColor7_clicked()
 {
     pickColor(ui->widgetColor7);
 }
-void MainWindow::on_buttonColor8_clicked()
+void MainWindow::on_pushColor8_clicked()
 {
     pickColor(ui->widgetColor8);
 }
-void MainWindow::on_buttonColor9_clicked()
+void MainWindow::on_pushColor9_clicked()
 {
     pickColor(ui->widgetColor9);
 }
 
 
 // start-stop conky
-void MainWindow::on_buttonToggleOn_clicked()
+void MainWindow::on_pushToggleOn_clicked()
 {
     if (checkConkyRunning())
         system("pkill -u $USER -x conky");
@@ -639,7 +638,7 @@ void MainWindow::on_buttonToggleOn_clicked()
 }
 
 
-void MainWindow::on_buttonRestore_clicked()
+void MainWindow::on_pushRestore_clicked()
 {
     if (QFile(file_name + ".bak").exists())
         QFile(file_name).remove();
@@ -647,7 +646,7 @@ void MainWindow::on_buttonRestore_clicked()
         refresh();
 }
 
-void MainWindow::on_buttonEdit_clicked()
+void MainWindow::on_pushEdit_clicked()
 {
     this->hide();
     QByteArray editor;
@@ -675,15 +674,12 @@ void MainWindow::on_buttonEdit_clicked()
             this->show();
             return;
         }
-
-//    if (system(editor + " '" + file_name.toUtf8() + "'") != 0) {
-//       qDebug() << "no default text editor defined";
     }
     refresh();
     this->show();
 }
 
-void MainWindow::on_buttonChange_clicked()
+void MainWindow::on_pushChange_clicked()
 {
     QFileDialog dialog;
 
@@ -920,31 +916,31 @@ void MainWindow::on_radioAllDesktops_clicked()
     writeFile(file_name, file_content);
 }
 
-void MainWindow::on_radioButtonDayLong_clicked()
+void MainWindow::on_radioDayLong_clicked()
 {
     file_content.replace("%a", "%A");
     writeFile(file_name, file_content);
 }
 
-void MainWindow::on_radioButtonDayShort_clicked()
+void MainWindow::on_radioDayShort_clicked()
 {
     file_content.replace("%A", "%a");
     writeFile(file_name, file_content);
 }
 
-void MainWindow::on_radioButtonMonthLong_clicked()
+void MainWindow::on_radioMonthLong_clicked()
 {
     file_content.replace("%b", "%B");
     writeFile(file_name, file_content);
 }
 
-void MainWindow::on_radioButtonMonthShort_clicked()
+void MainWindow::on_radioMonthShort_clicked()
 {
     file_content.replace("%B", "%b");
     writeFile(file_name, file_content);
 }
 
-void MainWindow::on_buttonCM_clicked()
+void MainWindow::on_pushCM_clicked()
 {
     this->hide();
     system("command -v conky-manager && conky-manager || command -v conky-manager2  && conky-manager2");
@@ -954,6 +950,6 @@ void MainWindow::on_buttonCM_clicked()
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QSettings settings("mx-conky");
+    QSettings settings("MX-Linux", "mx-conky");
     settings.setValue("geometery", saveGeometry());
 }
