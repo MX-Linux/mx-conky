@@ -662,7 +662,7 @@ void MainWindow::on_pushEdit_clicked()
     if (debug) quiet = false;
     bool error = cmd.run(run, editor, quiet);
     if (debug) qDebug() << "run:'" + editor + " '" + file_name.toUtf8() + "'";
-    if (editor == "kate -s resume")
+    if (editor.startsWith("kate -s") or editor.startsWith("kate --start"))
         editor = "kate";
     if (system(editor + " '" + file_name.toUtf8() + "'") != 0) {
         if (error || (system("which " + editor + " 1>/dev/null") != 0)) {
