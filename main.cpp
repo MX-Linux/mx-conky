@@ -65,7 +65,7 @@ void messageUpdate()
     Cmd cmd;
     VersionNumber current_version = cmd.getCmdOut("dpkg -l mx-conky-data | awk 'NR==6 {print $3}'", true);
 
-    QSettings settings("mx-conky");
+    QSettings settings(qApp->organizationName(), qApp->applicationName());
 
     QString ver = settings.value("data-version").toByteArray();
     VersionNumber recorded_version = ver;
@@ -86,6 +86,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
+    app.setOrganizationName("MX-Linux");
 
     QTranslator qtTran;
     if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))

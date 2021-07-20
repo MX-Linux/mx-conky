@@ -60,7 +60,7 @@ MainWindow::MainWindow(QWidget *parent, QString file) :
     capture_old_color = "^(?<before>\\s*(?<color_item>default_color|color\\d)(?:\\s+))(?:#?)(?<color_value>[[:alnum:]]+)(?<after>.*)";
 
     refresh();
-    QSettings settings("MX-Linux", "mx-conky");
+    QSettings settings(qApp->organizationName(), qApp->applicationName());
     restoreGeometry(settings.value("geometery").toByteArray());
 }
 
@@ -952,6 +952,6 @@ void MainWindow::on_pushCM_clicked()
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QSettings settings("MX-Linux", "mx-conky");
+    QSettings settings(qApp->organizationName(), qApp->applicationName());
     settings.setValue("geometery", saveGeometry());
 }

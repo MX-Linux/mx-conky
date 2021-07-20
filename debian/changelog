@@ -1,3 +1,9 @@
+mx-conky (21.7) mx; urgency=medium
+
+  * Fix mx-conky.conf location
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 20 Jul 2021 16:19:28 -0400
+
 mx-conky (20.5) mx; urgency=medium
 
   * remove %u/%U from editor string
