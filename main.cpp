@@ -65,7 +65,7 @@ void messageUpdate()
     Cmd cmd;
     VersionNumber current_version = cmd.getCmdOut("dpkg -l mx-conky-data | awk 'NR==6 {print $3}'", true);
 
-    QSettings settings(qApp->organizationName(), qApp->applicationName());
+    QSettings settings;
 
     QString ver = settings.value("data-version").toByteArray();
     VersionNumber recorded_version = ver;
@@ -133,8 +133,7 @@ int main(int argc, char *argv[])
 
     } else {
         QApplication::beep();
-        QMessageBox::critical(nullptr, QObject::tr("Error"),
-                              QObject::tr("You must run this program as normal user"));
+        QMessageBox::critical(nullptr, QObject::tr("Error"), QObject::tr("You must run this program as normal user"));
         return EXIT_FAILURE;
     }
 }

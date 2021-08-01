@@ -28,6 +28,7 @@
 #include <QDir>
 #include <QMessageBox>
 #include <QProcess>
+#include <QSettings>
 #include <QTimer>
 
 #include "cmd.h"
@@ -123,6 +124,7 @@ private:
     Ui::MainWindow *ui;
     Cmd cmd;
     QTimer *timer;
+    QSettings settings;
     QString file_content;
 };
 
