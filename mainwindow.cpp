@@ -103,12 +103,8 @@ void MainWindow::parseContent()
 
     QRegularExpression regexp_old_comment_line(old_comment_line);
     QRegularExpression regexp_lua_comment_line(lua_comment_line);
-    QRegularExpression regexp_lua_comment_start(lua_comment_start);
-    QRegularExpression regexp_lua_comment_end(lua_comment_end);
-
     QRegularExpression regexp_lua_color(capture_lua_color);
     QRegularExpression regexp_old_color(capture_old_color);
-
     QRegularExpressionMatch match_color;
     QRegularExpression regexp_color;
     QRegularExpression regexp_comment_line;
@@ -333,9 +329,6 @@ void MainWindow::writeColor(QWidget *widget, QColor color)
 {
     QRegularExpression regexp_old_comment_line(old_comment_line);
     QRegularExpression regexp_lua_comment_line(lua_comment_line);
-    QRegularExpression regexp_lua_comment_start(lua_comment_start);
-    QRegularExpression regexp_lua_comment_end(lua_comment_end);
-
     QRegularExpression regexp_lua_color(capture_lua_color);
     QRegularExpression regexp_old_color(capture_old_color);
 
@@ -480,6 +473,7 @@ void MainWindow::pickColor(QWidget *widget)
         setColor(widget, color);
         writeColor(widget, color);
     }
+    delete dialog;
 }
 
 void MainWindow::setColor(QWidget *widget, QColor color)
@@ -487,7 +481,7 @@ void MainWindow::setColor(QWidget *widget, QColor color)
     widget->parentWidget()->show();
     if (color.isValid()) {
         QPalette pal = palette();
-        pal.setColor(QPalette::Background, color);
+        pal.setColor(QPalette::Window, color);
         widget->setAutoFillBackground(true);
         widget->setPalette(pal);
     }
@@ -518,16 +512,16 @@ void MainWindow::setConnections()
 void MainWindow::on_pushAbout_clicked()
 {
     this->hide();
-    QString url = "file:///usr/share/doc/mx-conky/license.html";
+    const QString url = "file:///usr/share/doc/mx-conky/license.html";
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Conky"), "<p align=\"center\"><b><h2>" +
                        tr("MX Conky") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + VERSION + "</p><p align=\"center\"><h3>" +
                        tr("GUI program for configuring Conky in MX Linux") +
                        "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>");
-    QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
-    QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
-    QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
+    auto btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
+    auto btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
+    auto btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
     btnCancel->setIcon(QIcon::fromTheme("window-close"));
 
     msgBox.exec();
@@ -538,20 +532,20 @@ void MainWindow::on_pushAbout_clicked()
         else
             system("xdg-open " + url.toUtf8());
     } else if (msgBox.clickedButton() == btnChangelog) {
-        QDialog *changelog = new QDialog(this);
+        auto changelog = new QDialog(this);
         changelog->setWindowTitle(tr("Changelog"));
         changelog->resize(600, 500);
 
-        QTextEdit *text = new QTextEdit;
+        auto text = new QTextEdit;
         text->setReadOnly(true);
         Cmd cmd;
         text->setText(cmd.getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
 
-        QPushButton *btnClose = new QPushButton(tr("&Close"));
+        auto btnClose = new QPushButton(tr("&Close"));
         btnClose->setIcon(QIcon::fromTheme("window-close"));
         connect(btnClose, &QPushButton::clicked, changelog, &QDialog::close);
 
-        QVBoxLayout *layout = new QVBoxLayout;
+        auto layout = new QVBoxLayout;
         layout->addWidget(text);
         layout->addWidget(btnClose);
         changelog->setLayout(layout);
@@ -563,7 +557,7 @@ void MainWindow::on_pushAbout_clicked()
 // Help button clicked
 void MainWindow::on_pushHelp_clicked()
 {
-    QString url = "/usr/share/doc/mx-conky/mx-conky.html";
+    const QString url = "/usr/share/doc/mx-conky/mx-conky.html";
     QString cmd;
     if (system("command -v mx-viewer") == 0)
         cmd = QString("mx-viewer " + url + " " + tr("MX Conky Help") + "&");
@@ -698,8 +692,6 @@ void MainWindow::on_radioDesktop1_clicked()
     QRegularExpression regexp_old_owh(capture_old_owh);
     QRegularExpression regexp_owh;
     QRegularExpressionMatch match_owh;
-    QString detect_lua_config_end = "";
-    QString detect_old_config_end = "^TEXT$";
 
     bool lua_block_comment = false;
 
@@ -798,7 +790,6 @@ void MainWindow::on_radioAllDesktops_clicked()
     QRegularExpression regexp_old_owh(capture_old_owh);
     QRegularExpression regexp_owh;
     QRegularExpressionMatch match_owh;
-    QString conky_config_start ="conky.confg";
     QString conky_config_lua_end = "}";
     QString conky_config_old_end = "TEXT";
     QString conky_config_end;
@@ -824,7 +815,7 @@ void MainWindow::on_radioAllDesktops_clicked()
     const QStringList list = file_content.split("\n");
     QStringList new_list;
     QString trow;
-    for (QString row : list) {
+    for (const QString &row : list) {
         trow = row.trimmed();
         if (is_lua_format) {
             if (lua_block_comment) {
@@ -944,7 +935,6 @@ void MainWindow::on_pushCM_clicked()
 {
     this->hide();
     system("command -v conky-manager && conky-manager || command -v conky-manager2  && conky-manager2");
-
     this->show();
 }
 
