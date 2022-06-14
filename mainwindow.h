@@ -43,7 +43,7 @@ class MainWindow : public QDialog
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr, QString file = "");
+    explicit MainWindow(QWidget *parent = nullptr, const QString &file = QLatin1String(""));
     ~MainWindow();
 
     QString file_name;
@@ -62,11 +62,11 @@ public:
     QString lua_comment_start;
     QString lua_comment_end;
 
-    QString capture_lua_owh = "^(?<before>(?:.*\\]\\])?\\s*(?<item>own_window_hints)(?:\\s*=\\s*[\\\"\\']))(?<value>[[:alnum:],_]*)(?<after>(?:[\\\"\\']\\s*,).*)";
-    QString capture_old_owh = "^(?<before>(?:.*\\]\\])?\\s*(?<item>own_window_hints)(?:\\s+))(?<value>[[:alnum:],_]*)(?<after>.*)";
+    QString capture_lua_owh = QStringLiteral("^(?<before>(?:.*\\]\\])?\\s*(?<item>own_window_hints)(?:\\s*=\\s*[\\\"\\']))(?<value>[[:alnum:],_]*)(?<after>(?:[\\\"\\']\\s*,).*)");
+    QString capture_old_owh = QStringLiteral("^(?<before>(?:.*\\]\\])?\\s*(?<item>own_window_hints)(?:\\s+))(?<value>[[:alnum:],_]*)(?<after>.*)");
 
-    QString block_comment_start = "--[[";
-    QString block_comment_end = "]]";
+    QString block_comment_start = QStringLiteral("--[[");
+    QString block_comment_end = QStringLiteral("]]");
 
     QString capture_lua_color;
     QString capture_old_color;
@@ -80,12 +80,12 @@ public:
     void saveBackup();
     void setColor(QWidget *widget, QColor color);
     void writeColor(QWidget *widget, QColor color);
-    void writeFile(QString file_name, QString content);
+    void writeFile(const QString &file_name, const QString &content);
 
     bool checkConkyRunning();
-    bool readFile(QString file_name);
+    bool readFile(const QString &file_name);
 
-    QColor strToColor(QString colorstr);
+    static QColor strToColor(const QString &colorstr);
 
 public slots:
 
@@ -108,7 +108,7 @@ private slots:
     void on_pushColor9_clicked();
     void on_pushDefaultColor_clicked();
     void on_pushEdit_clicked();
-    void on_pushHelp_clicked();
+    static void on_pushHelp_clicked();
     void on_pushRestore_clicked();
     void on_pushToggleOn_clicked();
     void on_radioAllDesktops_clicked();

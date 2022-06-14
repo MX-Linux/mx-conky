@@ -38,23 +38,21 @@
 #include "cmd.h"
 #include "versionnumber.h"
 
-
 // return the config file used for the newest conky process
 QString getRunningConky()
 {
     Cmd cmd;
-    return cmd.getCmdOut("pgrep -xan conky | cut -d' ' -f4-", true);
+    return cmd.getCmdOut(QStringLiteral("pgrep -xan conky | cut -d' ' -f4-"), true);
 }
 
-QString openFile(QDir dir)
+QString openFile(const QDir &dir)
 {
-    QFileDialog dialog;
     QString file_name = getRunningConky();
 
     if (not file_name.isEmpty())
         return file_name;
 
-    QString selected = dialog.getOpenFileName(nullptr, QObject::tr("Select Conky Manager config file"), dir.path());
+    QString selected = QFileDialog::getOpenFileName(nullptr, QObject::tr("Select Conky Manager config file"), dir.path());
     if (not selected.isEmpty())
         return selected;
     return QString();
@@ -63,11 +61,11 @@ QString openFile(QDir dir)
 void messageUpdate()
 {
     Cmd cmd;
-    VersionNumber current_version = cmd.getCmdOut("dpkg -l mx-conky-data | awk 'NR==6 {print $3}'", true);
+    VersionNumber current_version = cmd.getCmdOut(QStringLiteral("dpkg -l mx-conky-data | awk 'NR==6 {print $3}'"), true);
 
     QSettings settings;
 
-    QString ver = settings.value("data-version").toByteArray();
+    QString ver = settings.value(QStringLiteral("data-version")).toByteArray();
     VersionNumber recorded_version = ver;
 
     QString title = QObject::tr("Conky Data Update");
@@ -77,7 +75,7 @@ void messageUpdate()
                                   Be careful not to overwrite any conkies you have changed.").arg(QDir::homePath());
 
     if (recorded_version.toString().isEmpty() || current_version > recorded_version) {
-        settings.setValue("data-version", current_version.toString());
+        settings.setValue(QStringLiteral("data-version"), current_version.toString());
         QMessageBox::information(nullptr, title, message);
     }
 }
@@ -86,10 +84,10 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
-    app.setOrganizationName("MX-Linux");
+    app.setOrganizationName(QStringLiteral("MX-Linux"));
 
     QTranslator qtTran;
-    if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
+    if (qtTran.load(QLocale::system(), QStringLiteral("qt"), QStringLiteral("_"), QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         app.installTranslator(&qtTran);
 
     QTranslator qtBaseTran;

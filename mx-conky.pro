@@ -21,7 +21,7 @@
 # **********************************************************************/
 
 QT       += core gui widgets
-CONFIG   += c++17
+CONFIG   += c++1z
 
 TARGET = mx-conky
 TEMPLATE = app
@@ -34,14 +34,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
     mainwindow.cpp \
-    versionnumber.cpp \
-    cmd.cpp
+    cmd.cpp \
+    versionnumber.cpp
 
 HEADERS  += \
     mainwindow.h \
-    versionnumber.h \
     version.h \
-    cmd.h
+    cmd.h \
+    versionnumber.h
 
 FORMS    += \
     mainwindow.ui
