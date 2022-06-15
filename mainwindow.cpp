@@ -266,7 +266,6 @@ bool MainWindow::readFile(const QString &file_name)
     return true;
 }
 
-// convert string to QColor
 QColor MainWindow::strToColor(const QString &colorstr)
 {
     QColor color(colorstr);
@@ -275,7 +274,6 @@ QColor MainWindow::strToColor(const QString &colorstr)
     return color;
 }
 
-// refresh windows content
 void MainWindow::refresh()
 {
     modified = false;
@@ -441,7 +439,6 @@ void MainWindow::writeColor(QWidget *widget, QColor color)
     writeFile(file_name, file_content);
 }
 
-// write new content to file
 void MainWindow::writeFile(const QString &file_name, const QString &content)
 {
     QFile file(file_name);
@@ -455,8 +452,6 @@ void MainWindow::writeFile(const QString &file_name, const QString &content)
     }
 }
 
-
-// cleanup environment when window is closed
 void MainWindow::cleanup()
 {
     saveBackup();
@@ -500,14 +495,12 @@ void MainWindow::cmdDone()
     //cmd->disconnect();
 }
 
-// set proc and timer connections
 void MainWindow::setConnections()
 {
 //    connect(cmd, &Cmd::started, this, &MainWindow::cmdStart);
 //    connect(cmd, &Cmd::finished, this, &MainWindow::cmdDone);
 }
 
-// About button clicked
 void MainWindow::on_pushAbout_clicked()
 {
     this->hide();
@@ -553,7 +546,6 @@ void MainWindow::on_pushAbout_clicked()
     this->show();
 }
 
-// Help button clicked
 void MainWindow::on_pushHelp_clicked()
 {
     const QString url = QStringLiteral("/usr/share/doc/mx-conky/mx-conky.html");
@@ -617,8 +609,6 @@ void MainWindow::on_pushColor9_clicked()
     pickColor(ui->widgetColor9);
 }
 
-
-// start-stop conky
 void MainWindow::on_pushToggleOn_clicked()
 {
     if (checkConkyRunning())
