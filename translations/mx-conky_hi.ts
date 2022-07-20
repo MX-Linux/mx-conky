@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="hi">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="hi">
 <context>
     <name>MainWindow</name>
     <message>
@@ -8,72 +6,72 @@
         <location filename="../mainwindow.cpp" line="48"/>
         <location filename="../mainwindow.cpp" line="510"/>
         <source>MX Conky</source>
-        <translation type="unfinished"></translation>
+        <translation>एमएक्स कोंकी</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;इस अनुप्रयोग द्वारा कार्यरत कोंकी में विस्तृत परिवर्तन संभव हैं। यह कोंकी प्रबंधक का पूरक साधन है जो केवल सामान्य सेटिंग्स हेतु ही उपयुक्त है।&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="73"/>
         <source>Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>आरंभ करें</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="85"/>
         <source>Run</source>
-        <translation type="unfinished"></translation>
+        <translation>निष्पादन</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="141"/>
         <source>Undo</source>
-        <translation type="unfinished"></translation>
+        <translation>पूर्ववत करें</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="171"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>संपादन</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
         <source>Conky Name</source>
-        <translation type="unfinished"></translation>
+        <translation>कोंकी नाम</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Conky Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>कोंकी प्रबंधक</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="235"/>
         <source>Drag</source>
-        <translation type="unfinished"></translation>
+        <translation>माउस द्वारा ड्रैग</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="254"/>
         <source>To Resize</source>
-        <translation type="unfinished"></translation>
+        <translation>आकार परिवर्तन हेतु</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="274"/>
         <source>+ Left Click</source>
-        <translation type="unfinished"></translation>
+        <translation>+ बायां क्लिक</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="281"/>
         <source>To Move</source>
-        <translation type="unfinished"></translation>
+        <translation>स्थान परिवर्तन हेतु</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="288"/>
         <source>+ Right Click</source>
-        <translation type="unfinished"></translation>
+        <translation>+ दायां क्लिक</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="295"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation type="unfinished"></translation>
+        <translation>ध्यान दें : परिवर्तनों के वैधता केवल वर्तमान सत्र तक है</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="365"/>
@@ -83,59 +81,59 @@
     <message>
         <location filename="../mainwindow.ui" line="387"/>
         <source>Desktop 1</source>
-        <translation type="unfinished"></translation>
+        <translation>डेस्कटॉप 1</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="410"/>
         <source>All Desktops</source>
-        <translation type="unfinished"></translation>
+        <translation>सभी डेस्कटॉप</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="436"/>
         <source>Format</source>
-        <translation type="unfinished"></translation>
+        <translation>प्रारूप</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="488"/>
         <source>Day</source>
-        <translation type="unfinished"></translation>
+        <translation>दिन</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="517"/>
         <location filename="../mainwindow.ui" line="647"/>
         <source>Long</source>
-        <translation type="unfinished"></translation>
+        <translation>दीर्घ</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="546"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation type="unfinished"></translation>
+        <translation>संक्षिप्त नाम, जैसे मंगल</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="549"/>
         <location filename="../mainwindow.ui" line="679"/>
         <source>Short</source>
-        <translation type="unfinished"></translation>
+        <translation>लघु</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="618"/>
         <source>Month</source>
-        <translation type="unfinished"></translation>
+        <translation>मास</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="676"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation type="unfinished"></translation>
+        <translation>संक्षिप्त नाम, जैसे मार्च</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>रंग</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="778"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>डिफ़ॉल्ट</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="833"/>
@@ -150,57 +148,57 @@
         <location filename="../mainwindow.ui" line="1877"/>
         <location filename="../mainwindow.ui" line="1992"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="896"/>
         <source>Color0 </source>
-        <translation type="unfinished"></translation>
+        <translation>रंग 0</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1011"/>
         <source>Color1 </source>
-        <translation type="unfinished"></translation>
+        <translation>रंग 1</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1126"/>
         <source>Color2 </source>
-        <translation type="unfinished"></translation>
+        <translation>रंग 2</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1244"/>
         <source>Color3 </source>
-        <translation type="unfinished"></translation>
+        <translation>रंग 3</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1362"/>
         <source>Color4 </source>
-        <translation type="unfinished"></translation>
+        <translation>रंग 4</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
@@ -220,7 +218,7 @@
     <message>
         <location filename="../mainwindow.ui" line="2074"/>
         <source>Display help </source>
-        <translation>मदद देखें</translation>
+        <translation>सहायता देखें</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2077"/>
@@ -250,7 +248,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="509"/>
         <source>About MX Conky</source>
-        <translation type="unfinished"></translation>
+        <translation>एमएक्स कोंकी के बारे में</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
@@ -260,12 +258,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>एमएक्स लिनक्स में कोंकी विन्यास हेतु ग्राफ़िकल अंतरफलक प्रोग्राम</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>प्रतिलिप्याधिकार (c) MX Linux</translation>
+        <translation>कॉपीराइट (c) एमएक्स लिनक्स</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="514"/>
@@ -286,12 +284,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Close</source>
-        <translation>&amp;बंद करें</translation>
+        <translation>बंद करें (&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
         <source>MX Conky Help</source>
-        <translation type="unfinished"></translation>
+        <translation>एमएक्स कोंकी सहायता</translation>
     </message>
 </context>
 <context>
@@ -300,17 +298,17 @@
         <location filename="../main.cpp" line="55"/>
         <location filename="../mainwindow.cpp" line="668"/>
         <source>Select Conky Manager config file</source>
-        <translation type="unfinished"></translation>
+        <translation>कोंकी प्रबंधक विन्यास फाइल चयन</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Conky Data Update</source>
-        <translation type="unfinished"></translation>
+        <translation>कोंकी डेटा अपडेट</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation type="unfinished"></translation>
+        <translation>एमएक्स कोंकी डेटा अपडेट किया गया। &lt;p&gt;&lt;p&gt;                                  संबंधित फोल्डर से उसे कॉपी कर लें&lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   होम डायरेक्टरी के अपने इच्छित इस अदृश्य कोंकी फोल्डर में &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;।                                   ध्यान रहें कि कोई परिवर्तित कोंकी अधिलेखित न हो जाए।</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="103"/>
@@ -321,12 +319,12 @@
     <message>
         <location filename="../main.cpp" line="104"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation type="unfinished"></translation>
+        <translation>कोंकी प्रबंधक खोज विफल, एमएक्स कोंकी के निष्पादन पूर्व इसे इंस्टॉल कर लें</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
-        <translation type="unfinished"></translation>
+        <translation>यह प्रोग्राम सामान्य उपयोक्ता के रूप में निष्पादित करें।</translation>
     </message>
 </context>
 </TS>

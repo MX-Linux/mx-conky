@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fi">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fi">
 <context>
     <name>MainWindow</name>
     <message>
@@ -13,7 +11,7 @@
     <message>
         <location filename="../mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Tämä sovellus mahdollistaa yksityiskohtaiset muutokset käytössä olevaan conkyyn. Se täydentää Conky Manager:ia, jota tulisi käyttää perusasetuksiin.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="73"/>
@@ -43,7 +41,7 @@
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Conky Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Conky-hallinta</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="235"/>
@@ -53,7 +51,7 @@
     <message>
         <location filename="../mainwindow.ui" line="254"/>
         <source>To Resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Koon uudelleenmäärittämiseen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="274"/>
@@ -63,7 +61,7 @@
     <message>
         <location filename="../mainwindow.ui" line="281"/>
         <source>To Move</source>
-        <translation type="unfinished"></translation>
+        <translation>Siirtämiseen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="288"/>
@@ -73,7 +71,7 @@
     <message>
         <location filename="../mainwindow.ui" line="295"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Huomautus: muutokset pysyvät yllä vain tämänhetkisen istunnon ajan</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="365"/>
@@ -109,13 +107,13 @@
     <message>
         <location filename="../mainwindow.ui" line="546"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation type="unfinished"></translation>
+        <translation>Lyhennetty nimi, esim. Tu</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="549"/>
         <location filename="../mainwindow.ui" line="679"/>
         <source>Short</source>
-        <translation type="unfinished"></translation>
+        <translation>Lyhyt</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="618"/>
@@ -125,7 +123,7 @@
     <message>
         <location filename="../mainwindow.ui" line="676"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation type="unfinished"></translation>
+        <translation>Lyhennetty nimi, esim. Lok</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
@@ -180,27 +178,27 @@
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished">Väri4  {5?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished">Väri4  {6?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished">Väri4  {7?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished">Väri4  {8?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished">Väri4  {9?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
@@ -250,7 +248,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="509"/>
         <source>About MX Conky</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisätietoja MX Conky:sta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
@@ -260,7 +258,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Graafisen käyttöliittymän ohjelma Conky:n säätämiseen MX Linux:issa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
@@ -291,7 +289,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
         <source>MX Conky Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Apua MX Conky:n käyttöön</translation>
     </message>
 </context>
 <context>
@@ -300,17 +298,20 @@
         <location filename="../main.cpp" line="55"/>
         <location filename="../mainwindow.cpp" line="668"/>
         <source>Select Conky Manager config file</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitse Conky Manager:in asetustiedosto</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Conky Data Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Conky:n data-päivitys</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Conky:n data-rypäs on päivitetty. &lt;p&gt;&lt;p&gt;
+kansio jossa se sijaitsee &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;
+mitä tahansa toivot Kotikansiosi piilotettuun conky kansioon&lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.
+Ole huolellinen ettet kirjoita yli conkyja jotka olet muuttanut.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="103"/>
@@ -321,11 +322,7 @@
     <message>
         <location filename="../main.cpp" line="104"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No file was selected, quiting program</source>
-        <translation type="vanished">Tiedostoa ei valittu, lopetetaan ohjelma</translation>
+        <translation>conky-manager:ia ei löytynyt, asenna se ennen mx-conkyn ajamista</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="134"/>

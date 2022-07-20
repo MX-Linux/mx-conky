@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ru">
 <context>
     <name>MainWindow</name>
     <message>
@@ -180,27 +178,27 @@
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished">Цвет4 {5?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished">Цвет4 {6?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished">Цвет4 {7?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished">Цвет4 {8?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished">Цвет4 {9?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
@@ -210,7 +208,7 @@
     <message>
         <location filename="../mainwindow.ui" line="2051"/>
         <source>About...</source>
-        <translation>O...</translation>
+        <translation>О программе...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2058"/>
@@ -255,7 +253,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
         <source>Version: </source>
-        <translation>Версия:</translation>
+        <translation>Версия: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
@@ -310,7 +308,7 @@
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation>Параметры MX Conky обновлены. &lt;p&gt;&lt;p&gt;Скопируйте из директории, в которой он располагается&lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;все что пожелаете в скрытую директорию домашнего каталога &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;. Будьте осторожны, чтобы не перезаписать conky которые вы изменяли.</translation>
+        <translation>Параметры MX Conky обновлены. &lt;p&gt;&lt;p&gt;Скопируйте из директории, в которой он располагается &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;, всё, что пожелаете в скрытую директорию домашнего каталога &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;. Будьте осторожны, чтобы не перезаписать conky, которые вы изменяли.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="103"/>
@@ -322,10 +320,6 @@
         <location filename="../main.cpp" line="104"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
         <translation>Не удалось найти conky-manager, пожалуйста установите его до запуска mx-conky</translation>
-    </message>
-    <message>
-        <source>No file was selected, quiting program</source>
-        <translation type="vanished">Не выбрано файла, программа закрывается</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="134"/>

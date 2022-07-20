@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="he_IL">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="nb_NO">
 <context>
     <name>MainWindow</name>
     <message>
@@ -16,22 +16,22 @@
     <message>
         <location filename="../mainwindow.ui" line="73"/>
         <source>Launch</source>
-        <translation>שיגור</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="85"/>
         <source>Run</source>
-        <translation>הפעלה</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="141"/>
         <source>Undo</source>
-        <translation>ביטול פעולה</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="171"/>
         <source>Edit</source>
-        <translation>עריכה</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
@@ -46,27 +46,27 @@
     <message>
         <location filename="../mainwindow.ui" line="235"/>
         <source>Drag</source>
-        <translation>גרירה</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="254"/>
         <source>To Resize</source>
-        <translation>לשינוי גודל</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="274"/>
         <source>+ Left Click</source>
-        <translation>+ כפתור שמאלי</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="281"/>
         <source>To Move</source>
-        <translation>להזזה</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="288"/>
         <source>+ Right Click</source>
-        <translation>+ כפתור ימני</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="295"/>
@@ -76,64 +76,64 @@
     <message>
         <location filename="../mainwindow.ui" line="365"/>
         <source>Desktop</source>
-        <translation>שולחן עבודה</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="387"/>
         <source>Desktop 1</source>
-        <translation>שולחן עבודה 1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="410"/>
         <source>All Desktops</source>
-        <translation>כל שולחנות העבודה</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="436"/>
         <source>Format</source>
-        <translation>פרמוט</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="488"/>
         <source>Day</source>
-        <translation>יום</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="517"/>
         <location filename="../mainwindow.ui" line="647"/>
         <source>Long</source>
-        <translation>ארוך</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="546"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation>שם מקוצר, למשל: ג׳</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="549"/>
         <location filename="../mainwindow.ui" line="679"/>
         <source>Short</source>
-        <translation>קצר</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="618"/>
         <source>Month</source>
-        <translation>חודש</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="676"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation>שם מקוצר, למשל: אוק׳</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
         <source>Colors</source>
-        <translation>צבעים</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="778"/>
         <source>Default</source>
-        <translation>שגרתי</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="833"/>
@@ -148,32 +148,32 @@
         <location filename="../mainwindow.ui" line="1877"/>
         <location filename="../mainwindow.ui" line="1992"/>
         <source>...</source>
-        <translation>…</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="896"/>
         <source>Color0 </source>
-        <translation>צבע0</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1011"/>
         <source>Color1 </source>
-        <translation>צבע1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1126"/>
         <source>Color2 </source>
-        <translation>צבע2</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1244"/>
         <source>Color3 </source>
-        <translation>צבע3</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1362"/>
         <source>Color4 </source>
-        <translation>צבע4</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
@@ -203,12 +203,12 @@
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
         <source>About this application</source>
-        <translation>על אודות יישום זה</translation>
+        <translation>Om denne applikasjonen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2051"/>
         <source>About...</source>
-        <translation>על אודות...</translation>
+        <translation>Om...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2058"/>
@@ -218,12 +218,12 @@
     <message>
         <location filename="../mainwindow.ui" line="2074"/>
         <source>Display help </source>
-        <translation>הצגת עזרה</translation>
+        <translation>Vis hjelp</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2077"/>
         <source>Help</source>
-        <translation>עזרה</translation>
+        <translation>Hjelp</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2084"/>
@@ -233,12 +233,12 @@
     <message>
         <location filename="../mainwindow.ui" line="2132"/>
         <source>Quit application</source>
-        <translation>יציאה מהתוכנה</translation>
+        <translation>Lukk programmet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2135"/>
         <source>Close</source>
-        <translation>סגירה</translation>
+        <translation>Lukk</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2142"/>
@@ -248,12 +248,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="509"/>
         <source>About MX Conky</source>
-        <translation>על MX Conky</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
         <source>Version: </source>
-        <translation>גירסה:</translation>
+        <translation>Versjon:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
@@ -263,28 +263,28 @@
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>זכויות היוצרים (c) שמורות ל־MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="514"/>
         <source>License</source>
-        <translation>רשיון</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="515"/>
         <location filename="../mainwindow.cpp" line="528"/>
         <source>Changelog</source>
-        <translation>יומן שינויים</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Cancel</source>
-        <translation>ביטול</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Close</source>
-        <translation>&amp;סגירה</translation>
+        <translation>&amp;Lukk</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -314,7 +314,7 @@
         <location filename="../main.cpp" line="103"/>
         <location filename="../main.cpp" line="134"/>
         <source>Error</source>
-        <translation>שגיאה</translation>
+        <translation>Feil</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="104"/>
@@ -324,7 +324,7 @@
     <message>
         <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
-        <translation>עליך להריץ את התכנית הזאת כמשתמש רגיל</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

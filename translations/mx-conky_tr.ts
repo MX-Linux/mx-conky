@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="tr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="tr">
 <context>
     <name>MainWindow</name>
     <message>
@@ -43,7 +41,7 @@
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Conky Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Conky Yöneticisi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="235"/>
@@ -53,7 +51,7 @@
     <message>
         <location filename="../mainwindow.ui" line="254"/>
         <source>To Resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeniden Boyutlandırmak</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="274"/>
@@ -68,12 +66,12 @@
     <message>
         <location filename="../mainwindow.ui" line="288"/>
         <source>+ Right Click</source>
-        <translation type="unfinished"></translation>
+        <translation>+ Sağ Tık</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="295"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation type="unfinished"></translation>
+        <translation>NOTE: değişiklikler sadece geçerli oturum için sürer</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="365"/>
@@ -93,7 +91,7 @@
     <message>
         <location filename="../mainwindow.ui" line="436"/>
         <source>Format</source>
-        <translation>Biçimlendirme</translation>
+        <translation>Biçim</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="488"/>
@@ -180,27 +178,27 @@
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished">Renk4 {5?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished">Renk4 {6?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished">Renk4 {7?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished">Renk4 {8?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished">Renk4 {9?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
@@ -300,17 +298,17 @@
         <location filename="../main.cpp" line="55"/>
         <location filename="../mainwindow.cpp" line="668"/>
         <source>Select Conky Manager config file</source>
-        <translation type="unfinished"></translation>
+        <translation>Conky Yöneticisi yapılandırma dosyasını seçin</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Conky Data Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Conky Veri Güncelleme</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Conky veri seti güncellendi. &lt;p&gt;&lt;p&gt;Bulunduğu klasörden kopyala &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                 Home gizli klasörünüze dilediğiniz herşeyi &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.   Değiştirdiğiniz conkylerin üzerine yazmamaya dikka edin.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="103"/>
@@ -321,11 +319,7 @@
     <message>
         <location filename="../main.cpp" line="104"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No file was selected, quiting program</source>
-        <translation type="vanished">Dosya seçilmedi, program kapatılıyor</translation>
+        <translation>Coky-manager bulunamadı, Lütfen mx-conk&apos;yi çalıştırmadan önce onu kurun</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="134"/>

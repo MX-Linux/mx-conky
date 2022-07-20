@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt_BR">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="pt_BR">
 <context>
     <name>MainWindow</name>
     <message>
@@ -13,7 +11,7 @@
     <message>
         <location filename="../mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Esta aplicação permite activar alterações de pormenor no conky activo. Complementa o Gestor de Conky, o qual deve ser usado para definições básicas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Este aplicativo permite ativar alterações detalhadas no conky ativo. Ele complementa o Gerenciador do Conky, o qual deve ser usado para configurações básicas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="73"/>
@@ -28,7 +26,7 @@
     <message>
         <location filename="../mainwindow.ui" line="141"/>
         <source>Undo</source>
-        <translation>Reverter</translation>
+        <translation>Desfazer</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="171"/>
@@ -43,7 +41,7 @@
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Conky Manager</source>
-        <translation>Gestor de Conky</translation>
+        <translation>Gerenciador do Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="235"/>
@@ -73,12 +71,12 @@
     <message>
         <location filename="../mainwindow.ui" line="295"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation>NOTA: as alterações aplicam-se apenas à sessão em curso</translation>
+        <translation>NOTA: as alterações aplicam-se apenas à sessão  atual</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="365"/>
         <source>Desktop</source>
-        <translation>Ambiente de Trabalho</translation>
+        <translation>Área de Trabalho</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="387"/>
@@ -135,7 +133,7 @@
     <message>
         <location filename="../mainwindow.ui" line="778"/>
         <source>Default</source>
-        <translation>Predefinição</translation>
+        <translation>Padrão</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="833"/>
@@ -180,32 +178,32 @@
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished">Cor4 {5?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished">Cor4 {6?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished">Cor4 {7?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished">Cor4 {8?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished">Cor4 {9?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
         <source>About this application</source>
-        <translation>Sobre esta aplicação</translation>
+        <translation>Sobre este aplicativo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2051"/>
@@ -220,7 +218,7 @@
     <message>
         <location filename="../mainwindow.ui" line="2074"/>
         <source>Display help </source>
-        <translation>Exibir a ajuda</translation>
+        <translation>Exibir ajuda</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2077"/>
@@ -235,7 +233,7 @@
     <message>
         <location filename="../mainwindow.ui" line="2132"/>
         <source>Quit application</source>
-        <translation>Sair da aplicação</translation>
+        <translation>Sair do aplicativo</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2135"/>
@@ -260,7 +258,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation>Interface de Utilizador para configurar o Conky no MX</translation>
+        <translation>Interface de Usuário GUI para configurar o Conky no MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
@@ -300,7 +298,7 @@
         <location filename="../main.cpp" line="55"/>
         <location filename="../mainwindow.cpp" line="668"/>
         <source>Select Conky Manager config file</source>
-        <translation>Seleccionar o ficheiro .config do Gestor de Conky</translation>
+        <translation>Selecionar o arquivo de configuração do Gerenciador do Conky</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
@@ -310,7 +308,8 @@
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation>Os dados do Conky foram actualizados. &lt;p&gt;&lt;p&gt;                                  Copiar o que quiser da pasta onde os dados estão localizados &lt;a href=&quot;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   para pasta oculta do conky na Pasta Pessoal &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Cuidado para não substituir sem intenção qualquer conky existente na pasta de destino.</translation>
+        <translation>Os dados do Conky foram atualizados. &lt;p&gt;
+&lt;p&gt;                                  Copie tudo o que desejar da pasta onde os dados estão localizados&lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt; /usr/share/mx-conky-data/themes&lt;/a&gt;    para a pasta oculta do conky localizada na pasta pessoal (home) &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                          Cuidado para não substituir sem intenção qualquer conky existente na pasta de destino.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="103"/>
@@ -321,16 +320,12 @@
     <message>
         <location filename="../main.cpp" line="104"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation>Não foi encontrado o conky-manager; instalar o pacote antes de executar o Conky</translation>
-    </message>
-    <message>
-        <source>No file was selected, quiting program</source>
-        <translation type="vanished">Nenhum ficheiro seleccionado; a encerrar o programa</translation>
+        <translation>Não foi possível encontrar o gerenciador do conky (conky-manager), instalar o pacote antes de executar o Conky MX</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
-        <translation>Tem que executar este programa como utilizador normal </translation>
+        <translation>Você deve executar este programa como usuário normal</translation>
     </message>
 </context>
 </TS>

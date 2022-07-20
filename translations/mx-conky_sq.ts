@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sq">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="sq">
 <context>
     <name>MainWindow</name>
     <message>
@@ -8,72 +6,72 @@
         <location filename="../mainwindow.cpp" line="48"/>
         <location filename="../mainwindow.cpp" line="510"/>
         <source>MX Conky</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Ky aplikacion lejon ndryshime të hollësishme te Conky aktiv. Shërben si shtesë e Conky Manager, i cili duhet përdorur për gjërat elementare.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="73"/>
         <source>Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Nise</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="85"/>
         <source>Run</source>
-        <translation type="unfinished"></translation>
+        <translation>Xhiroje</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="141"/>
         <source>Undo</source>
-        <translation type="unfinished"></translation>
+        <translation>Zhbëje</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="171"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Përpunoni</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
         <source>Conky Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Emër Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Conky Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Përgjegjës Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="235"/>
         <source>Drag</source>
-        <translation type="unfinished"></translation>
+        <translation>Tërhiqeni</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="254"/>
         <source>To Resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Për Ta Ripërmasuar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="274"/>
         <source>+ Left Click</source>
-        <translation type="unfinished"></translation>
+        <translation>+ Klikim Me të Majtin</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="281"/>
         <source>To Move</source>
-        <translation type="unfinished"></translation>
+        <translation>Për ta Lëvizur</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="288"/>
         <source>+ Right Click</source>
-        <translation type="unfinished"></translation>
+        <translation>+ Klikim Me të Djathtin</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="295"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation type="unfinished"></translation>
+        <translation>SHËNIM: ndryshimet zgjasin vetëm sa sesioni aktual</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="365"/>
@@ -83,59 +81,59 @@
     <message>
         <location filename="../mainwindow.ui" line="387"/>
         <source>Desktop 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Desktopi 1</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="410"/>
         <source>All Desktops</source>
-        <translation type="unfinished"></translation>
+        <translation>Krejt desktopët</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="436"/>
         <source>Format</source>
-        <translation type="unfinished"></translation>
+        <translation>Format</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="488"/>
         <source>Day</source>
-        <translation type="unfinished"></translation>
+        <translation>Ditë</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="517"/>
         <location filename="../mainwindow.ui" line="647"/>
         <source>Long</source>
-        <translation type="unfinished"></translation>
+        <translation>I gjatë</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="546"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation type="unfinished"></translation>
+        <translation>Emër i shkurtuar, p.sh., Ma</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="549"/>
         <location filename="../mainwindow.ui" line="679"/>
         <source>Short</source>
-        <translation type="unfinished"></translation>
+        <translation>I shkurtër</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="618"/>
         <source>Month</source>
-        <translation type="unfinished"></translation>
+        <translation>Muaj</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="676"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation type="unfinished"></translation>
+        <translation>Emër i shkurtuar, p.sh., Tet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Ngjyra</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="778"/>
         <source>Default</source>
-        <translation type="unfinished"></translation>
+        <translation>Parazgjedhje</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="833"/>
@@ -150,67 +148,67 @@
         <location filename="../mainwindow.ui" line="1877"/>
         <location filename="../mainwindow.ui" line="1992"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>…</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="896"/>
         <source>Color0 </source>
-        <translation type="unfinished"></translation>
+        <translation>Ngjyrë0 </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1011"/>
         <source>Color1 </source>
-        <translation type="unfinished"></translation>
+        <translation>Ngjyrë1 </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1126"/>
         <source>Color2 </source>
-        <translation type="unfinished"></translation>
+        <translation>Ngjyrë2 </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1244"/>
         <source>Color3 </source>
-        <translation type="unfinished"></translation>
+        <translation>Ngjyrë4 </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1362"/>
         <source>Color4 </source>
-        <translation type="unfinished"></translation>
+        <translation>Ngjyrë5 </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
         <source>About this application</source>
-        <translation>Rreth këtij aplikacioni</translation>
+        <translation>Mbi këtë aplikacion</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2051"/>
         <source>About...</source>
-        <translation>Rreth...</translation>
+        <translation>Mbi…</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2058"/>
@@ -220,7 +218,7 @@
     <message>
         <location filename="../mainwindow.ui" line="2074"/>
         <source>Display help </source>
-        <translation>Shfaq ndihmë</translation>
+        <translation>Shfaq ndihmë </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2077"/>
@@ -230,68 +228,68 @@
     <message>
         <location filename="../mainwindow.ui" line="2084"/>
         <source>Alt+H</source>
-        <translation>Alt+H</translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2132"/>
         <source>Quit application</source>
-        <translation>Dil nga aplikacioni</translation>
+        <translation>Mbylle aplikacionin</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2135"/>
         <source>Close</source>
-        <translation>Mbyll</translation>
+        <translation>Mbylle</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2142"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation>Alt+M</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="509"/>
         <source>About MX Conky</source>
-        <translation type="unfinished"></translation>
+        <translation>Mbi MX-Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
         <source>Version: </source>
-        <translation>Versioni:</translation>
+        <translation>Version: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Program GUI për formësimin e Conky-t në MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Të drejtat e rezervuara (c) MX Linux</translation>
+        <translation>Të drejta kopjimi (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="514"/>
         <source>License</source>
-        <translation>Liçensa</translation>
+        <translation>Licencë</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="515"/>
         <location filename="../mainwindow.cpp" line="528"/>
         <source>Changelog</source>
-        <translation>Ndryshimet</translation>
+        <translation>Regjistër ndryshimesh</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Cancel</source>
-        <translation>Anullo</translation>
+        <translation>Anuloje</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Close</source>
-        <translation>&amp;Mbyll</translation>
+        <translation>&amp;Mbylle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
         <source>MX Conky Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Ndihmë për MX Conky-n</translation>
     </message>
 </context>
 <context>
@@ -300,17 +298,17 @@
         <location filename="../main.cpp" line="55"/>
         <location filename="../mainwindow.cpp" line="668"/>
         <source>Select Conky Manager config file</source>
-        <translation type="unfinished"></translation>
+        <translation>Përzgjidhni kartelë formësimi për Conky Manager</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Conky Data Update</source>
-        <translation type="unfinished"></translation>
+        <translation>Përditësim të Dhënash Conky</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation type="unfinished"></translation>
+        <translation>U përditësua grupi të dhënave për MX Conky. &lt;p&gt;&lt;p&gt;                                  Kopjoni prej dosjes ku gjendet &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   çfarëdo që doni, te dosja e fshehur conky te Shtëpia juaj &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Bëni kujdes të mos mbishkruani çfarëdo kartele që keni ndryshuar.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="103"/>
@@ -321,12 +319,12 @@
     <message>
         <location filename="../main.cpp" line="104"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation type="unfinished"></translation>
+        <translation>S’u gjet dot conky-manager, ju lutemi, instalojeni përpara se të xhironi mx-conky</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
-        <translation type="unfinished"></translation>
+        <translation>Këtë program duhet ta xhironi si përdorues i thjeshtë</translation>
     </message>
 </context>
 </TS>

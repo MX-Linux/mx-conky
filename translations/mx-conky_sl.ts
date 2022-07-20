@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="sl">
 <context>
     <name>MainWindow</name>
     <message>
@@ -43,7 +41,7 @@
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Conky Manager</source>
-        <translation>Conky urejevalnik</translation>
+        <translation>Upravljalnik za Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="235"/>
@@ -109,7 +107,7 @@
     <message>
         <location filename="../mainwindow.ui" line="546"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation>Skrajšano ime, npr. To</translation>
+        <translation>Skrajšano ime, npr. TO</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="549"/>
@@ -125,7 +123,7 @@
     <message>
         <location filename="../mainwindow.ui" line="676"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation>Skrajšano ime, npr. Okt</translation>
+        <translation>Skrajšano ime, npr. okt</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
@@ -180,27 +178,27 @@
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished">Barva4 {5?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished">Barva4 {6?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished">Barva4 {7?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished">Barva4 {8?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished">Barva4 {9?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
@@ -322,10 +320,6 @@
         <location filename="../main.cpp" line="104"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
         <translation>Nisem našel conky-manager. Prosimo, da ga namestite, preden zaženete mx-conky</translation>
-    </message>
-    <message>
-        <source>No file was selected, quiting program</source>
-        <translation type="vanished">Nobena datoteka ni bila izbrana, zapiram program</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="134"/>
