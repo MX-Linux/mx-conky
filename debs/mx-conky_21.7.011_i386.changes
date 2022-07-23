@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sat, 23 Jul 2022 11:23:40 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: i386
+Version: 21.7.011
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (21.7.011) mx; urgency=medium
+ .
+   * translation refresh
+Checksums-Sha1:
+ ea6a6ca24abd350491cb3f766656f88e152e8ba1 10187 mx-conky_21.7.011_i386.buildinfo
+ 58965aa46980ae7b92d0f899842b28a8d14d46dc 148132 mx-conky_21.7.011_i386.deb
+Checksums-Sha256:
+ 0af714a6290c66553f480dc5a5faca05bc02aab6769f666909cdead2436bb4e0 10187 mx-conky_21.7.011_i386.buildinfo
+ b451c2afe596658f08b887c67421429a44a76cea25ce97869e1d7dcfb3caa123 148132 mx-conky_21.7.011_i386.deb
+Files:
+ 93744e34d865d64ef443cbd512f0ebc3 10187 admin optional mx-conky_21.7.011_i386.buildinfo
+ 0cb288bac023ae15bb81d157274c9892 148132 admin optional mx-conky_21.7.011_i386.deb
+Original-Maintainer: Adrian <adrian@mxlinux.org>
