@@ -107,7 +107,7 @@
     <message>
         <location filename="../mainwindow.ui" line="546"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation>Mot abrégé, p.ex Tu</translation>
+        <translation>Nom abrégé, p.ex ma pour mardi</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="549"/>
@@ -123,7 +123,7 @@
     <message>
         <location filename="../mainwindow.ui" line="676"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation>Mot abrégé, p.ex Oct</translation>
+        <translation>Nom abrégé, p.ex oct pour octobre</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
@@ -178,27 +178,27 @@
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished"/>
+        <translation>Couleur5</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished"/>
+        <translation>Couleur6</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished"/>
+        <translation>Couleur7</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished"/>
+        <translation>Couleur8</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished"/>
+        <translation>Couleur9</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
@@ -253,7 +253,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
         <source>Version: </source>
-        <translation>Version:</translation>
+        <translation>Version :</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
