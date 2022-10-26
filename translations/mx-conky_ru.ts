@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ru">
 <context>
     <name>MainWindow</name>
     <message>
@@ -33,7 +31,7 @@
     <message>
         <location filename="../mainwindow.ui" line="171"/>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>Править</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
@@ -58,7 +56,7 @@
     <message>
         <location filename="../mainwindow.ui" line="274"/>
         <source>+ Left Click</source>
-        <translation>+ Левый клик</translation>
+        <translation>+ Левый щелчок</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="281"/>
@@ -68,7 +66,7 @@
     <message>
         <location filename="../mainwindow.ui" line="288"/>
         <source>+ Right Click</source>
-        <translation>+ Правый клик</translation>
+        <translation>+ Правый щелчок</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="295"/>
@@ -180,27 +178,27 @@
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished">Цвет4 {5?}</translation>
+        <translation>Цвет5</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished">Цвет4 {6?}</translation>
+        <translation>Цвет6</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished">Цвет4 {7?}</translation>
+        <translation>Цвет7</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished">Цвет4 {8?}</translation>
+        <translation>Цвет8</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished">Цвет4 {9?}</translation>
+        <translation>Цвет9</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>

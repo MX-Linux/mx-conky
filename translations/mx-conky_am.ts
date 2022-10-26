@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="am">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="am">
 <context>
     <name>MainWindow</name>
     <message>
@@ -8,12 +6,12 @@
         <location filename="../mainwindow.cpp" line="48"/>
         <location filename="../mainwindow.cpp" line="510"/>
         <source>MX Conky</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="73"/>
@@ -73,7 +71,7 @@
     <message>
         <location filename="../mainwindow.ui" line="295"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="365"/>
@@ -109,7 +107,7 @@
     <message>
         <location filename="../mainwindow.ui" line="546"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="549"/>
@@ -125,7 +123,7 @@
     <message>
         <location filename="../mainwindow.ui" line="676"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
@@ -180,27 +178,27 @@
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished">ቀለም4  {5?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished">ቀለም4  {6?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished">ቀለም4  {7?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished">ቀለም4  {8?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished">ቀለም4  {9?}</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
@@ -250,7 +248,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="509"/>
         <source>About MX Conky</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
@@ -260,7 +258,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
@@ -276,7 +274,7 @@
         <location filename="../mainwindow.cpp" line="515"/>
         <location filename="../mainwindow.cpp" line="528"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
@@ -291,7 +289,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
         <source>MX Conky Help</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -300,17 +298,17 @@
         <location filename="../main.cpp" line="55"/>
         <location filename="../mainwindow.cpp" line="668"/>
         <source>Select Conky Manager config file</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Conky Data Update</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.cpp" line="103"/>
@@ -321,12 +319,12 @@
     <message>
         <location filename="../main.cpp" line="104"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.cpp" line="134"/>
         <source>You must run this program as normal user</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

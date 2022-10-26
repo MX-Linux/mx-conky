@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ja">
 <context>
     <name>MainWindow</name>
     <message>
@@ -180,27 +178,27 @@
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished">Color4  {5?}</translation>
+        <translation>色5</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished">Color4  {6?}</translation>
+        <translation>色6</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished">Color4  {7?}</translation>
+        <translation>色7</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished">Color4  {8?}</translation>
+        <translation>色8</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished">Color4  {9?}</translation>
+        <translation>色9</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>

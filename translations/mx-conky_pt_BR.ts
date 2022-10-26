@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt_BR">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="pt_BR">
 <context>
     <name>MainWindow</name>
     <message>
@@ -13,7 +11,7 @@
     <message>
         <location filename="../mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Este aplicativo permite ativar alterações detalhadas no conky ativo. Ele complementa o Gerenciador do Conky, o qual deve ser usado para configurações básicas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Este aplicativo permite ativar alterações detalhadas no Conky ativo. Ele complementa o Gerenciador do Conky, o qual deve ser utilizado para realizar as configurações básicas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="73"/>
@@ -155,52 +153,52 @@
     <message>
         <location filename="../mainwindow.ui" line="896"/>
         <source>Color0 </source>
-        <translation>Cor0</translation>
+        <translation>Cor 0</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1011"/>
         <source>Color1 </source>
-        <translation>Cor1</translation>
+        <translation>Cor 1</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1126"/>
         <source>Color2 </source>
-        <translation>Cor2</translation>
+        <translation>Cor 2</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1244"/>
         <source>Color3 </source>
-        <translation>Cor3</translation>
+        <translation>Cor 3</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1362"/>
         <source>Color4 </source>
-        <translation>Cor4</translation>
+        <translation>Cor 4</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished">Cor4 {5?}</translation>
+        <translation>Cor 5</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished">Cor4 {6?}</translation>
+        <translation>Cor 6</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished">Cor4 {7?}</translation>
+        <translation>Cor 7</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished">Cor4 {8?}</translation>
+        <translation>Cor 8</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished">Cor4 {9?}</translation>
+        <translation>Cor 9</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
@@ -260,7 +258,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation>Interface de Usuário GUI para configurar o Conky no MX Linux</translation>
+        <translation>Interface Gráfica do Usuário GUI para configurar o Conky no MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
@@ -305,24 +303,23 @@
     <message>
         <location filename="../main.cpp" line="71"/>
         <source>Conky Data Update</source>
-        <translation>Atualizar dados do Conky</translation>
+        <translation>Atualizar os Dados do Conky</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation>Os dados do Conky foram atualizados. &lt;p&gt;
-&lt;p&gt;                                  Copie tudo o que desejar da pasta onde os dados estão localizados&lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt; /usr/share/mx-conky-data/themes&lt;/a&gt;    para a pasta oculta do conky localizada na pasta pessoal (home) &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                          Cuidado para não substituir sem intenção qualquer conky existente na pasta de destino.</translation>
+        <translation>Os dados do Conky foram atualizados com sucesso.&lt;p&gt;&lt;p&gt;                                  Copie tudo o que você desejar da pasta onde os dados estão localizados no caminho &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   para a pasta oculta do Conky localizada na pasta pessoal (home) &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Tenha cuidado para não substituir sem intenção qualquer Conky existente na pasta de destino.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="103"/>
         <location filename="../main.cpp" line="134"/>
         <source>Error</source>
-        <translation>Erro</translation>
+        <translation>Ocorreu um erro</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="104"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation>Não foi possível encontrar o gerenciador do conky (conky-manager), instalar o pacote antes de executar o Conky MX</translation>
+        <translation>Não foi possível encontrar o Gerenciador do Conky (conky-manager), instale o pacote antes de executar o Conky do MX.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="134"/>
