@@ -2,19 +2,19 @@ Format: 1.0
 Source: mx-conky
 Binary: mx-conky
 Architecture: amd64 source
-Version: 21.7.011
+Version: 22.10.01
 Checksums-Md5:
- 3d264263f1000ff6d3168edeb9ddbcf2 646 mx-conky_21.7.011.dsc
- aa3d8ad2bee7e686a9d09e073051c1c3 145392 mx-conky_21.7.011_amd64.deb
+ 3a93bcc1c04bcb6c44f1c266f5d231f8 649 mx-conky_22.10.01.dsc
+ 876f75d804e7942f603e557065297c7d 145780 mx-conky_22.10.01_amd64.deb
 Checksums-Sha1:
- 49fee44315d417c799604c631887ad4fcb2fdc10 646 mx-conky_21.7.011.dsc
- 0e83baaca3a5d221a5d502cabb5ec79d7e1d118f 145392 mx-conky_21.7.011_amd64.deb
+ f89c878e97c514fbf3e17f6540c3f553182e44bd 649 mx-conky_22.10.01.dsc
+ 7829dceda029c45261e0b6fdf71290d0a49e61e4 145780 mx-conky_22.10.01_amd64.deb
 Checksums-Sha256:
- 2ddb5e0e79a3ae9c993098393c819b8aa8e42b4bf6731ff46d6db8b3bdb66031 646 mx-conky_21.7.011.dsc
- 4ab58420489773982251e9fb966c75dc62c1aa91fba89c5e9424bb95f7113ec5 145392 mx-conky_21.7.011_amd64.deb
+ 8f78d1ab30d027fad21e01a39b75d61c0fc2bf451053e998005632096ab96b5e 649 mx-conky_22.10.01.dsc
+ b36412d058c94f2f2eb960f2100282865f5a14ff37e7b12784ad8d626edf388f 145780 mx-conky_22.10.01_amd64.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Sat, 23 Jul 2022 12:56:16 -0400
+Build-Date: Wed, 26 Oct 2022 20:26:21 -0400
 Build-Tainted-By:
  merged-usr-via-symlinks
  usr-local-has-libraries
@@ -344,4 +344,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=4"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1658589820"
+ SOURCE_DATE_EPOCH="1666828708"

@@ -1,0 +1,240 @@
+ dpkg-buildpackage -us -uc -ui -B
+dpkg-buildpackage: info: source package mx-conky
+dpkg-buildpackage: info: source version 22.10.01
+dpkg-buildpackage: info: source distribution mx
+dpkg-buildpackage: info: source changed by Dolphin Oracle <dolphinoracle@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture i386
+ fakeroot debian/rules clean
+dh clean --no-automatic-dbgsym --parallel 
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+dh_auto_clean
+rm -f src/translations/*.qm
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+   dh_autoreconf_clean -O--no-automatic-dbgsym -O--parallel
+   dh_clean -O--no-automatic-dbgsym -O--parallel
+ debian/rules build-arch
+dh build-arch --no-automatic-dbgsym --parallel 
+   dh_update_autotools_config -a -O--no-automatic-dbgsym -O--parallel
+   dh_autoreconf -a -O--no-automatic-dbgsym -O--parallel
+   dh_auto_configure -a -O--no-automatic-dbgsym -O--parallel
+	qmake -makefile "QMAKE_CFLAGS_RELEASE=-g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2" "QMAKE_CFLAGS_DEBUG=-g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2" "QMAKE_CXXFLAGS_RELEASE=-g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2" "QMAKE_CXXFLAGS_DEBUG=-g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2" QMAKE_LFLAGS_RELEASE=-Wl,-z,relro QMAKE_LFLAGS_DEBUG=-Wl,-z,relro QMAKE_STRIP=: PREFIX=/usr
+Info: creating stash file /media/demo/dataext/development/working/mx-conky_22.10.01/32/.qmake.stash
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+lrelease *.pro
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_am.qm'...
+    Generated 42 translation(s) (42 finished and 0 unfinished)
+    Ignored 19 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_ar.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+    Ignored 40 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_bg.qm'...
+    Generated 19 translation(s) (19 finished and 0 unfinished)
+    Ignored 42 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_ca.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_cs.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_da.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_de.qm'...
+    Generated 57 translation(s) (57 finished and 0 unfinished)
+    Ignored 4 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_el.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_en.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_es.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_et.qm'...
+    Generated 5 translation(s) (5 finished and 0 unfinished)
+    Ignored 56 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_eu.qm'...
+    Generated 3 translation(s) (3 finished and 0 unfinished)
+    Ignored 58 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_fa.qm'...
+    Generated 17 translation(s) (17 finished and 0 unfinished)
+    Ignored 44 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_fi.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_fr.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_fr_BE.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_he_IL.qm'...
+    Generated 45 translation(s) (45 finished and 0 unfinished)
+    Ignored 16 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_hi.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_hr.qm'...
+    Generated 20 translation(s) (20 finished and 0 unfinished)
+    Ignored 41 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_hu.qm'...
+    Generated 19 translation(s) (19 finished and 0 unfinished)
+    Ignored 42 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_id.qm'...
+    Generated 15 translation(s) (15 finished and 0 unfinished)
+    Ignored 46 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_is.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_it.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_ja.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_kk.qm'...
+    Generated 16 translation(s) (16 finished and 0 unfinished)
+    Ignored 45 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_ko.qm'...
+    Generated 7 translation(s) (7 finished and 0 unfinished)
+    Ignored 54 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_lt.qm'...
+    Generated 33 translation(s) (33 finished and 0 unfinished)
+    Ignored 28 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_mk.qm'...
+    Generated 6 translation(s) (6 finished and 0 unfinished)
+    Ignored 55 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_mr.qm'...
+    Generated 15 translation(s) (15 finished and 0 unfinished)
+    Ignored 46 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_nb.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_nl.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_pl.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_pt.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_pt_BR.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_ro.qm'...
+    Generated 19 translation(s) (19 finished and 0 unfinished)
+    Ignored 42 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_ru.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_sk.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_sl.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_sq.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_sr.qm'...
+    Generated 6 translation(s) (6 finished and 0 unfinished)
+    Ignored 55 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_sv.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_tr.qm'...
+    Generated 61 translation(s) (61 finished and 0 unfinished)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_uk.qm'...
+    Generated 21 translation(s) (21 finished and 0 unfinished)
+    Ignored 40 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_zh_CN.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+Updating '/media/demo/dataext/development/working/mx-conky_22.10.01/32/translations/mx-conky_zh_TW.qm'...
+    Generated 56 translation(s) (56 finished and 0 unfinished)
+    Ignored 5 untranslated source text(s)
+head -n1 debian/changelog | sed -e "s/.*(\([^(]*\)).*/#define VERSION \"\1\"/" > version.h
+dh_auto_build -- QMAKE=qmake-qt5 LRELEASE=lrelease-qt5 QMAKE_OPTS="DEFINES+=NO_DEBUG_ON_CONSOLE"
+	make -j4 QMAKE=qmake-qt5 LRELEASE=lrelease-qt5 QMAKE_OPTS=DEFINES\+=NO_DEBUG_ON_CONSOLE
+make[2]: Entering directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+/usr/lib/qt5/bin/uic mainwindow.ui -o ui_mainwindow.h
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o main.o main.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o cmd.o cmd.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o versionnumber.o versionnumber.cpp
+/usr/lib/qt5/bin/rcc -name images images.qrc -o qrc_images.cpp
+g++ -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -dM -E -o moc_predefs.h /usr/lib/i386-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o mainwindow.o mainwindow.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o qrc_images.o qrc_images.cpp
+/usr/lib/qt5/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /media/demo/dataext/development/working/mx-conky_22.10.01/32/moc_predefs.h -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/media/demo/dataext/development/working/mx-conky_22.10.01/32 -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtWidgets -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/8 -I/usr/include/i386-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/i686-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/8/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
+/usr/lib/qt5/bin/moc -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --include /media/demo/dataext/development/working/mx-conky_22.10.01/32/moc_predefs.h -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -I/media/demo/dataext/development/working/mx-conky_22.10.01/32 -I/usr/include/i386-linux-gnu/qt5 -I/usr/include/i386-linux-gnu/qt5/QtWidgets -I/usr/include/i386-linux-gnu/qt5/QtGui -I/usr/include/i386-linux-gnu/qt5/QtCore -I/usr/include/c++/8 -I/usr/include/i386-linux-gnu/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/i686-linux-gnu/8/include -I/usr/local/include -I/usr/lib/gcc/i686-linux-gnu/8/include-fixed -I/usr/include/i386-linux-gnu -I/usr/include cmd.h -o moc_cmd.cpp
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o moc_mainwindow.o moc_mainwindow.cpp
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:117:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+         system("cp -rn /usr/share/mx-conky-data/themes/* " + dir.toUtf8());
+         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -c -pipe -g -O2 -fdebug-prefix-map=/media/demo/dataext/development/working/mx-conky_22.10.01/32=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -std=gnu++1z -Wall -W -D_REENTRANT -fPIC -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I. -isystem /usr/include/i386-linux-gnu/qt5 -isystem /usr/include/i386-linux-gnu/qt5/QtWidgets -isystem /usr/include/i386-linux-gnu/qt5/QtGui -isystem /usr/include/i386-linux-gnu/qt5/QtCore -I. -isystem /usr/include/libdrm -I. -I/usr/lib/i386-linux-gnu/qt5/mkspecs/linux-g++ -o moc_cmd.o moc_cmd.cpp
+mainwindow.cpp: In member function ‘void MainWindow::on_pushAbout_clicked()’:
+mainwindow.cpp:523:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+             system("mx-viewer " + url.toUtf8() + "&");
+             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mainwindow.cpp:525:19: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+             system("xdg-open " + url.toUtf8());
+             ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mainwindow.cpp: In static member function ‘static void MainWindow::on_pushHelp_clicked()’:
+mainwindow.cpp:557:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system(cmd.toUtf8());
+     ~~~~~~^~~~~~~~~~~~~~
+mainwindow.cpp: In member function ‘void MainWindow::on_pushToggleOn_clicked()’:
+mainwindow.cpp:615:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+         system("pkill -u $USER -x conky");
+         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+mainwindow.cpp:617:15: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+         system("cd $(dirname '" + file_name.toUtf8() + "'); conky -c '" + file_name.toUtf8() + "' & ");
+         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mainwindow.cpp: In member function ‘void MainWindow::on_pushEdit_clicked()’:
+mainwindow.cpp:654:23: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+                 system("featherpad '" + file_name.toUtf8() + "'");
+                 ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mainwindow.cpp: In member function ‘void MainWindow::on_pushCM_clicked()’:
+mainwindow.cpp:924:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+     system("command -v conky-manager && conky-manager || command -v conky-manager2  && conky-manager2");
+     ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -Wl,-z,relro -o mx-conky main.o mainwindow.o cmd.o versionnumber.o qrc_images.o moc_mainwindow.o moc_cmd.o   -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread 
+make[2]: Leaving directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+   dh_auto_test -a -O--no-automatic-dbgsym -O--parallel
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary-arch
+dh binary-arch --no-automatic-dbgsym --parallel 
+   dh_testroot -a -O--no-automatic-dbgsym -O--parallel
+   dh_prep -a -O--no-automatic-dbgsym -O--parallel
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+dh_auto_install -- QMAKE=qmake-qt5 LRELEASE=lrelease-qt5 QMAKE_OPTS="DEFINES+=NO_DEBUG_ON_CONSOLE"
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+   dh_install -a -O--no-automatic-dbgsym -O--parallel
+   dh_installdocs -a -O--no-automatic-dbgsym -O--parallel
+   dh_installchangelogs -a -O--no-automatic-dbgsym -O--parallel
+   dh_systemd_enable -a -O--no-automatic-dbgsym -O--parallel
+   dh_installinit -a -O--no-automatic-dbgsym -O--parallel
+   dh_systemd_start -a -O--no-automatic-dbgsym -O--parallel
+   dh_icons -a -O--no-automatic-dbgsym -O--parallel
+   dh_perl -a -O--no-automatic-dbgsym -O--parallel
+   dh_link -a -O--no-automatic-dbgsym -O--parallel
+   dh_strip_nondeterminism -a -O--no-automatic-dbgsym -O--parallel
+   dh_compress -a -O--no-automatic-dbgsym -O--parallel
+   dh_fixperms -a -O--no-automatic-dbgsym -O--parallel
+   dh_missing -a -O--no-automatic-dbgsym -O--parallel
+   dh_strip -a -O--no-automatic-dbgsym -O--parallel
+   dh_makeshlibs -a -O--no-automatic-dbgsym -O--parallel
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/mx-conky/usr/bin/mx-conky was not linked against libGL.so.1 (it uses none of the library's symbols)
+make[1]: Leaving directory '/media/demo/dataext/development/working/mx-conky_22.10.01/32'
+   dh_installdeb -a -O--no-automatic-dbgsym -O--parallel
+   dh_gencontrol -a -O--no-automatic-dbgsym -O--parallel
+   dh_md5sums -a -O--no-automatic-dbgsym -O--parallel
+   dh_builddeb -a -O--no-automatic-dbgsym -O--parallel
+dpkg-deb: building package 'mx-conky' in '../mx-conky_22.10.01_i386.deb'.
+ dpkg-genbuildinfo --build=any
+ dpkg-genchanges --build=any >../mx-conky_22.10.01_i386.changes
+dpkg-genchanges: info: binary-only arch-specific upload (source code and arch-indep packages not included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now signing dsc file...
+ signfile dsc mx-conky_22.10.01.dsc fehlix <fehlix@mxlinux.org>
+gpg: skipped "fehlix <fehlix@mxlinux.org>": No secret key
+gpg: /tmp/debsign.jefDiKXd/mx-conky_22.10.01.dsc: clear-sign failed: No secret key
+debsign: gpg error occurred!  Aborting....

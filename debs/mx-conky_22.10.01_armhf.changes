@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Wed, 26 Oct 2022 19:58:28 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: armhf
+Version: 22.10.01
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (22.10.01) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ ff0e045ff1fa9575c54ea7ebd8454da6341c523d 9858 mx-conky_22.10.01_armhf.buildinfo
+ aa09dfc0ba9db9c18e82455fea7396fab9954f88 139336 mx-conky_22.10.01_armhf.deb
+Checksums-Sha256:
+ 20418b9e78a026de84498dd5a66096b644c02d049a3adb9d61aa057e70bca27c 9858 mx-conky_22.10.01_armhf.buildinfo
+ dab5e10270cb77c79791001d992fc407d2101c0cc633eef827950ee0f1b5fe20 139336 mx-conky_22.10.01_armhf.deb
+Files:
+ 742f0ae3b70c3c3ac22eb65616f5dad4 9858 admin optional mx-conky_22.10.01_armhf.buildinfo
+ 0a8da7c0adbba6588340e2d6a150d94a 139336 admin optional mx-conky_22.10.01_armhf.deb
+Original-Maintainer: Adrian <adrian@mxlinux.org>
