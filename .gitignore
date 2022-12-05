@@ -3,7 +3,6 @@
 
 ### Qt ###
 # C++ objects and libs
-
 *.slo
 *.lo
 *.o
@@ -15,7 +14,6 @@
 *.dylib
 
 # Qt-es
-
 /.qmake.cache
 /.qmake.stash
 *.pro.user
@@ -28,11 +26,13 @@ Makefile*
 *-build-*
 
 # QtCreator
-
 *.autosave
 
 #QtCtreator Qml
 *.qmlproject.user
 *.qmlproject.user.*
+
+# Transifex ignore
+.tx/
 
 mx-conky
