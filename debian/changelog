@@ -1,3 +1,10 @@
+mx-conky (22.12.01) mx; urgency=medium
+
+  * Fix detection of running conky for current user only
+  * Get realpath of detected conkyrc
+
+ -- fehlix <fehlix@mxlinux.org>  Mon, 05 Dec 2022 19:20:33 -0500
+
 mx-conky (22.10.01) mx; urgency=medium
 
   * update translations 

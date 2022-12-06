@@ -239,9 +239,8 @@ void MainWindow::parseContent()
 
 bool MainWindow::checkConkyRunning()
 {
-    int ret = system("sleep 0.3; pgrep -u $USER -x conky >/dev/null 2>&1");
-    if (debug) qDebug() << system("echo pgrep -u $USER -x conky : ") << ret;
-    //if (system("pgrep -u $USER -x conky >/dev/null 2>&1 ") == 0) {
+    int ret = system("sleep 0.3; pgrep -u $(id -nu) -x conky >/dev/null 2>&1");
+    if (debug) qDebug() << system("echo pgrep -u $(id -nu) -x conky : ") << ret;
     if (ret == 0) {
         ui->pushToggleOn->setText(QStringLiteral("Stop"));
         ui->pushToggleOn->setIcon(QIcon::fromTheme(QStringLiteral("stop")));
@@ -612,7 +611,7 @@ void MainWindow::on_pushColor9_clicked()
 void MainWindow::on_pushToggleOn_clicked()
 {
     if (checkConkyRunning())
-        system("pkill -u $USER -x conky");
+        system("pkill -u $(id -nu) -x conky");
     else
         system("cd $(dirname '" + file_name.toUtf8() + "'); conky -c '" + file_name.toUtf8() + "' & ");
     checkConkyRunning();
