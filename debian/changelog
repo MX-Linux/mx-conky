@@ -1,3 +1,9 @@
+mx-conky (22.12.02) mx; urgency=medium
+
+  * Fix handling of spaces in conkyrc path
+
+ -- fehlix <fehlix@mxlinux.org>  Tue, 06 Dec 2022 10:15:30 -0500
+
 mx-conky (22.12.01) mx; urgency=medium
 
   * Fix detection of running conky for current user only
