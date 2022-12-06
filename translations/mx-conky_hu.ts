@@ -1,27 +1,29 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="hu">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="hu">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <location filename="../mainwindow.cpp" line="48"/>
-        <location filename="../mainwindow.cpp" line="510"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>MX Conky</source>
-        <translation type="unfinished"/>
+        <translation>MX Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Ez az alkalmazás lehetővé teszi az aktív Conky részleteinek beállítását. Kiegészíti a Conky Manager alkalmazást, amelyet ajánlott az alapvető beállításokhoz használni.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="73"/>
         <source>Launch</source>
-        <translation type="unfinished"/>
+        <translation>Indítás</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="85"/>
         <source>Run</source>
-        <translation type="unfinished"/>
+        <translation>Futtatás</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="141"/>
@@ -31,47 +33,47 @@
     <message>
         <location filename="../mainwindow.ui" line="171"/>
         <source>Edit</source>
-        <translation type="unfinished"/>
+        <translation>Szerkesztés</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
         <source>Conky Name</source>
-        <translation type="unfinished"/>
+        <translation>Conky neve</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Conky Manager</source>
-        <translation type="unfinished"/>
+        <translation>Conky kezelő</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="235"/>
         <source>Drag</source>
-        <translation type="unfinished"/>
+        <translation>Húzás</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="254"/>
         <source>To Resize</source>
-        <translation type="unfinished"/>
+        <translation>Az átméretezéshez</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="274"/>
         <source>+ Left Click</source>
-        <translation type="unfinished"/>
+        <translation>+ Bal egérgomb</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="281"/>
         <source>To Move</source>
-        <translation type="unfinished"/>
+        <translation>A mozgatáshoz</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="288"/>
         <source>+ Right Click</source>
-        <translation type="unfinished"/>
+        <translation>+ Jobb egérgomb</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="295"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation type="unfinished"/>
+        <translation>MEGJEGYZÉS: A változtatások csak ebben a munkafolyamatban lesznek érvényesek</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="365"/>
@@ -81,54 +83,54 @@
     <message>
         <location filename="../mainwindow.ui" line="387"/>
         <source>Desktop 1</source>
-        <translation type="unfinished"/>
+        <translation>1. asztal</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="410"/>
         <source>All Desktops</source>
-        <translation type="unfinished"/>
+        <translation>Minden asztal</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="436"/>
         <source>Format</source>
-        <translation type="unfinished"/>
+        <translation>Formátum</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="488"/>
         <source>Day</source>
-        <translation type="unfinished"/>
+        <translation>Nap</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="517"/>
         <location filename="../mainwindow.ui" line="647"/>
         <source>Long</source>
-        <translation type="unfinished"/>
+        <translation>Hosszú</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="546"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation type="unfinished"/>
+        <translation>Rövidített név, pl. Sze</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="549"/>
         <location filename="../mainwindow.ui" line="679"/>
         <source>Short</source>
-        <translation type="unfinished"/>
+        <translation>Rövid</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="618"/>
         <source>Month</source>
-        <translation type="unfinished"/>
+        <translation>Hónap</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="676"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation type="unfinished"/>
+        <translation>Rövidített név, pl. Okt</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
         <source>Colors</source>
-        <translation type="unfinished"/>
+        <translation>Színek</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="778"/>
@@ -148,57 +150,57 @@
         <location filename="../mainwindow.ui" line="1877"/>
         <location filename="../mainwindow.ui" line="1992"/>
         <source>...</source>
-        <translation type="unfinished"/>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="896"/>
         <source>Color0 </source>
-        <translation type="unfinished"/>
+        <translation>0. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1011"/>
         <source>Color1 </source>
-        <translation type="unfinished"/>
+        <translation>1. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1126"/>
         <source>Color2 </source>
-        <translation type="unfinished"/>
+        <translation>2. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1244"/>
         <source>Color3 </source>
-        <translation type="unfinished"/>
+        <translation>3. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1362"/>
         <source>Color4 </source>
-        <translation type="unfinished"/>
+        <translation>4. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation type="unfinished"/>
+        <translation>5. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation type="unfinished"/>
+        <translation>6. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation type="unfinished"/>
+        <translation>7. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation type="unfinished"/>
+        <translation>8. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation type="unfinished"/>
+        <translation>9. szín</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
@@ -208,7 +210,7 @@
     <message>
         <location filename="../mainwindow.ui" line="2051"/>
         <source>About...</source>
-        <translation>Névjegy</translation>
+        <translation>Névjegy...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2058"/>
@@ -238,7 +240,7 @@
     <message>
         <location filename="../mainwindow.ui" line="2135"/>
         <source>Close</source>
-        <translation>Bezár</translation>
+        <translation>Bezárás</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2142"/>
@@ -246,85 +248,85 @@
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="509"/>
+        <location filename="../mainwindow.cpp" line="508"/>
         <source>About MX Conky</source>
-        <translation type="unfinished"/>
+        <translation>Az MX Conkyról</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="510"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>Version: </source>
         <translation>Verzió:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="511"/>
+        <location filename="../mainwindow.cpp" line="510"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>Grafikus alkalmazás a Conky beállítására MX Linuxban</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="513"/>
+        <location filename="../mainwindow.cpp" line="512"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="514"/>
+        <location filename="../mainwindow.cpp" line="513"/>
         <source>License</source>
-        <translation>Liszensz</translation>
+        <translation>Licenc</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="514"/>
+        <location filename="../mainwindow.cpp" line="527"/>
+        <source>Changelog</source>
+        <translation>Változások listája</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="515"/>
-        <location filename="../mainwindow.cpp" line="528"/>
-        <source>Changelog</source>
-        <translation>Változásbejegyzés</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="516"/>
         <source>Cancel</source>
         <translation>Mégsem</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="536"/>
+        <location filename="../mainwindow.cpp" line="535"/>
         <source>&amp;Close</source>
-        <translation>&amp;Bezár</translation>
+        <translation>&amp;Bezárás</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="554"/>
+        <location filename="../mainwindow.cpp" line="553"/>
         <source>MX Conky Help</source>
-        <translation type="unfinished"/>
+        <translation>MX Conky súgó</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="55"/>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../main.cpp" line="64"/>
+        <location filename="../mainwindow.cpp" line="667"/>
         <source>Select Conky Manager config file</source>
-        <translation type="unfinished"/>
+        <translation>Válassza ki a Conky Kezelő beállítás fájlját</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="71"/>
+        <location filename="../main.cpp" line="80"/>
         <source>Conky Data Update</source>
-        <translation type="unfinished"/>
+        <translation>Conky adat frissítés</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="72"/>
+        <location filename="../main.cpp" line="81"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation type="unfinished"/>
+        <translation>Az MX Conky adatállományt frissítésre került. &lt;p&gt;&lt;p&gt;Másolja át a &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;  mappából, amit szeretne, a saját rejtett conky mappájába: &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;. Vigyázzon, hogy ne írja felül a már megváltoztatott conky-kat.</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="103"/>
-        <location filename="../main.cpp" line="134"/>
+        <location filename="../main.cpp" line="112"/>
+        <location filename="../main.cpp" line="143"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="104"/>
+        <location filename="../main.cpp" line="113"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation type="unfinished"/>
+        <translation>Nem található a conky-manager, kérjük, telepítse az mx-conky futtatása előtt</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="134"/>
+        <location filename="../main.cpp" line="143"/>
         <source>You must run this program as normal user</source>
-        <translation type="unfinished"/>
+        <translation>Egyszerű felhasználóként kell futtatnia ezt a programot</translation>
     </message>
 </context>
 </TS>

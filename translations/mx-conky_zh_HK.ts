@@ -203,32 +203,32 @@
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
         <source>About this application</source>
-        <translation type="unfinished"/>
+        <translation>關於本程式</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2051"/>
         <source>About...</source>
-        <translation type="unfinished"/>
+        <translation>關於……</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2058"/>
         <source>Alt+B</source>
-        <translation type="unfinished"/>
+        <translation>Alt+B</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2074"/>
         <source>Display help </source>
-        <translation type="unfinished"/>
+        <translation>顯示說明</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2077"/>
         <source>Help</source>
-        <translation type="unfinished"/>
+        <translation>說明</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2084"/>
         <source>Alt+H</source>
-        <translation type="unfinished"/>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2132"/>
@@ -243,7 +243,7 @@
     <message>
         <location filename="../mainwindow.ui" line="2142"/>
         <source>Alt+N</source>
-        <translation type="unfinished"/>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="509"/>
@@ -253,7 +253,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
         <source>Version: </source>
-        <translation type="unfinished"/>
+        <translation>版本：</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
@@ -263,28 +263,28 @@
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>MX Linux 版權所有 (c)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="514"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>授權條款</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="515"/>
         <location filename="../mainwindow.cpp" line="528"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>變更紀錄</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="516"/>
         <source>Cancel</source>
-        <translation type="unfinished"/>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>關閉（&amp;C）</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -314,7 +314,7 @@
         <location filename="../main.cpp" line="103"/>
         <location filename="../main.cpp" line="134"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="104"/>

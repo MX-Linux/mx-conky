@@ -1,141 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en">
+<TS version="2.1" language="en_US">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <location filename="../mainwindow.cpp" line="48"/>
-        <location filename="../mainwindow.cpp" line="510"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>MX Conky</source>
-        <translation>MX Conky</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="20"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;This app enables detailed changes to the active conky. It supplements Conky Manager, which should be used for basic settings.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="73"/>
         <source>Launch</source>
-        <translation>Launch</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="85"/>
         <source>Run</source>
-        <translation>Run</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="141"/>
         <source>Undo</source>
-        <translation>Undo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="171"/>
         <source>Edit</source>
-        <translation>Edit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
         <source>Conky Name</source>
-        <translation>Conky Name</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Conky Manager</source>
-        <translation>Conky Manager</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="235"/>
         <source>Drag</source>
-        <translation>Drag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="254"/>
         <source>To Resize</source>
-        <translation>To Resize</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="274"/>
         <source>+ Left Click</source>
-        <translation>+ Left Click</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="281"/>
         <source>To Move</source>
-        <translation>To Move</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="288"/>
         <source>+ Right Click</source>
-        <translation>+ Right Click</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="295"/>
         <source>NOTE: changes last only for the current session</source>
-        <translation>NOTE: changes last only for the current session</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="365"/>
         <source>Desktop</source>
-        <translation>Desktop</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="387"/>
         <source>Desktop 1</source>
-        <translation>Desktop 1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="410"/>
         <source>All Desktops</source>
-        <translation>All Desktops</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="436"/>
         <source>Format</source>
-        <translation>Format</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="488"/>
         <source>Day</source>
-        <translation>Day</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="517"/>
         <location filename="../mainwindow.ui" line="647"/>
         <source>Long</source>
-        <translation>Long</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="546"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation>Abbreviated name, e.g. Tu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="549"/>
         <location filename="../mainwindow.ui" line="679"/>
         <source>Short</source>
-        <translation>Short</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="618"/>
         <source>Month</source>
-        <translation>Month</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="676"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation>Abbreviated name, e.g. Oct</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="732"/>
         <source>Colors</source>
-        <translation>Colors</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="778"/>
         <source>Default</source>
-        <translation>Default</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="833"/>
@@ -150,183 +150,183 @@
         <location filename="../mainwindow.ui" line="1877"/>
         <location filename="../mainwindow.ui" line="1992"/>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="896"/>
         <source>Color0 </source>
-        <translation>Color0 </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1011"/>
         <source>Color1 </source>
-        <translation>Color1 </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1126"/>
         <source>Color2 </source>
-        <translation>Color2 </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1244"/>
         <source>Color3 </source>
-        <translation>Color3 </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1362"/>
         <source>Color4 </source>
-        <translation>Color4 </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1480"/>
         <source>Color5</source>
-        <translation>Color5</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1595"/>
         <source>Color6</source>
-        <translation>Color6</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1710"/>
         <source>Color7</source>
-        <translation>Color7</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1825"/>
         <source>Color8</source>
-        <translation>Color8</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="1940"/>
         <source>Color9</source>
-        <translation>Color9</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2048"/>
         <source>About this application</source>
-        <translation>About this application</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2051"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2058"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2074"/>
         <source>Display help </source>
-        <translation>Display help </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2077"/>
         <source>Help</source>
-        <translation>Help</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2084"/>
         <source>Alt+H</source>
-        <translation>Alt+H</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2132"/>
         <source>Quit application</source>
-        <translation>Quit application</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2135"/>
         <source>Close</source>
-        <translation>Close</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="2142"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="508"/>
+        <source>About MX Conky</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="509"/>
-        <source>About MX Conky</source>
-        <translation>About MX Conky</translation>
+        <source>Version: </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="510"/>
-        <source>Version: </source>
-        <translation>Version: </translation>
+        <source>GUI program for configuring Conky in MX Linux</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="511"/>
-        <source>GUI program for configuring Conky in MX Linux</source>
-        <translation>GUI program for configuring Conky in MX Linux</translation>
+        <location filename="../mainwindow.cpp" line="512"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
-        <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <source>License</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="514"/>
-        <source>License</source>
-        <translation>License</translation>
+        <location filename="../mainwindow.cpp" line="527"/>
+        <source>Changelog</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="515"/>
-        <location filename="../mainwindow.cpp" line="528"/>
-        <source>Changelog</source>
-        <translation>Changelog</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="516"/>
         <source>Cancel</source>
-        <translation>Cancel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="536"/>
+        <location filename="../mainwindow.cpp" line="535"/>
         <source>&amp;Close</source>
-        <translation>&amp;Close</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="554"/>
+        <location filename="../mainwindow.cpp" line="553"/>
         <source>MX Conky Help</source>
-        <translation>MX Conky Help</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="55"/>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../main.cpp" line="64"/>
+        <location filename="../mainwindow.cpp" line="667"/>
         <source>Select Conky Manager config file</source>
-        <translation>Select Conky Manager config file</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="71"/>
+        <location filename="../main.cpp" line="80"/>
         <source>Conky Data Update</source>
-        <translation>Conky Data Update</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="72"/>
+        <location filename="../main.cpp" line="81"/>
         <source>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</source>
-        <translation>The MX Conky data set has been updated. &lt;p&gt;&lt;p&gt;                                  Copy from the folder where it is located &lt;a href=&quot;/usr/share/mx-conky-data/themes&quot;&gt;/usr/share/mx-conky-data/themes&lt;/a&gt;                                   whatever you wish to your Home hidden conky folder &lt;a href=&quot;%1/.conky&quot;&gt;~/.conky&lt;/a&gt;.                                   Be careful not to overwrite any conkies you have changed.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="103"/>
-        <location filename="../main.cpp" line="134"/>
+        <location filename="../main.cpp" line="112"/>
+        <location filename="../main.cpp" line="143"/>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="104"/>
+        <location filename="../main.cpp" line="113"/>
         <source>Could not find conky-manager, please install it before running mx-conky</source>
-        <translation>Could not find conky-manager, please install it before running mx-conky</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="134"/>
+        <location filename="../main.cpp" line="143"/>
         <source>You must run this program as normal user</source>
-        <translation>You must run this program as normal user</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

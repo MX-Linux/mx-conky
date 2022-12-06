@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Mon, 05 Dec 2022 19:20:33 -0500
+Source: mx-conky
+Binary: mx-conky
+Architecture: i386
+Version: 22.12.01
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (22.12.01) mx; urgency=medium
+ .
+   * Fix detection of running conky for current user only
+   * Get realpath of detected conkyrc
+Checksums-Sha1:
+ 7a800d5777258b1cdd4b59abcdb621b9daed2453 10035 mx-conky_22.12.01_i386.buildinfo
+ 9e1d3d0bee722652c71660a9a4b0ec33f4d908ca 149488 mx-conky_22.12.01_i386.deb
+Checksums-Sha256:
+ ce406165cb9a3f248e23380337e592beee39a3b492d0ff0dead17f023af07acf 10035 mx-conky_22.12.01_i386.buildinfo
+ 0cfc48909c84142c0f473d33f6966393453879d39e1d4d3d4a2e62e63e3a32a6 149488 mx-conky_22.12.01_i386.deb
+Files:
+ 79241008c30d842ee0b84a326f0d6438 10035 admin optional mx-conky_22.12.01_i386.buildinfo
+ 4bdd868c0b6a172b082081eb2777618a 149488 admin optional mx-conky_22.12.01_i386.deb
+Original-Maintainer: Adrian <adrian@mxlinux.org>

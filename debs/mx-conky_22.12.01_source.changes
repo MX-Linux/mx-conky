@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 05 Dec 2022 19:20:33 -0500
+Source: mx-conky
+Architecture: source
+Version: 22.12.01
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: fehlix <fehlix@mxlinux.org>
+Changes:
+ mx-conky (22.12.01) mx; urgency=medium
+ .
+   * Fix detection of running conky for current user only
+   * Get realpath of detected conkyrc
+Checksums-Sha1:
+ 8fca9eae960442176296acfd4b27fe608f754a91 1208 mx-conky_22.12.01.dsc
+ b7ada7de8a0815db3c8e8a5ec6d1c000d3c9b429 126284 mx-conky_22.12.01.tar.xz
+ 76a1b42a2cc4d193f2ad8a3622920f93677ad0ce 10736 mx-conky_22.12.01_amd64.buildinfo
+Checksums-Sha256:
+ 4b1b3013e7551a0061a9475a70353fe0603ab1c7ddb6db0c2c01a5f602723611 1208 mx-conky_22.12.01.dsc
+ c26239bcf0d6d2a1d3f8e5d5b0d3f643249687e06019727f32f95e47a7672028 126284 mx-conky_22.12.01.tar.xz
+ 2efd2607b49beab6e5308aaadc4c00095efc420560b58034d228d921649a84c6 10736 mx-conky_22.12.01_amd64.buildinfo
+Files:
+ b790e15044dece2bff45e2865308f039 1208 admin optional mx-conky_22.12.01.dsc
+ 06424bf2bb20f018313c29c8c35b3c4b 126284 admin optional mx-conky_22.12.01.tar.xz
+ 4e3f5bf4018d7457f523cada4f1cce35 10736 admin optional mx-conky_22.12.01_amd64.buildinfo
+Original-Maintainer: Adrian <adrian@mxlinux.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmOOnXETHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumGlQB/9Mu91vRTU+hUN9EHA0JcpgKIitSUKZ
+Pw4tFkkRhFqThsJY/bnC+dCuuWtcZ2SepdbBtmFDoxanyohuF2mc+OAt+rWOjgmt
+zG3mIthmY++EkRcMEYv9eDLIsN2Fmpz2uspl6SYSbXMcFryX58tnBDsxdBXNn2aM
+xalqJrvILAesJ+yuyNV4wgs3UUS0itWT/UllDRcp0z5iGGcsSq9KuxOMAgkHKOvE
+oBsADfszv2HIi3Y9rNHdtiCIs9TBSiisoKWNdNsYPAAPZ15yfzg22KR87RA+I8/M
+VN+8bZ70j4HNBgrNng4IyTzrQkteVwk3Lv2ayfdcMcfRUFY+YhjgHlD7
+=hV7n
+-----END PGP SIGNATURE-----
