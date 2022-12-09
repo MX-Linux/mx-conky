@@ -608,12 +608,15 @@ void MainWindow::on_pushColor9_clicked()
     pickColor(ui->widgetColor9);
 }
 
+
 void MainWindow::on_pushToggleOn_clicked()
 {
+    QString cmd;
     if (checkConkyRunning())
-        system("pkill -u $(id -nu) -x conky");
+        cmd = QString("pkill -u $(id -nu) -x conky");
     else
-        system("cd $(dirname '" + file_name.toUtf8() + "'); conky -c '" + file_name.toUtf8() + "' & ");
+        cmd = QString("cd \"$(dirname '%1')\"; conky -c '%1' &").arg(file_name);
+    system(cmd.toUtf8());
     checkConkyRunning();
 }
 

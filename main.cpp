@@ -47,10 +47,10 @@ QString getRunningConky()
     QString pid = cmd.getCmdOut(QStringLiteral("pgrep -u $(id -nu) -nx conky"), true);
     if (pid.isEmpty())
         return QString();
-    QString conkyrc = cmd.getCmdOut(QString("sed -nrz '/^--config=/s///p; /^(-c|--config)/{n;p;}' /proc/%1/cmdline").arg(pid), true);
+    QString conkyrc = cmd.getCmdOutUntrimmed(QString("sed -nrz '/^--config=/s///p; /^(-c|--config)/{n;p;}' /proc/%1/cmdline").arg(pid), true);
     if (conkyrc.startsWith("/"))
         return conkyrc;
-    QString conkywd = cmd.getCmdOut(QString("sed -nrz '/^PWD=/s///p' /proc/%1/environ").arg(pid), true);
+    QString conkywd = cmd.getCmdOutUntrimmed(QString("sed -nrz '/^PWD=/s///p' /proc/%1/environ").arg(pid), true);
     return conkywd + "/" + conkyrc;
 }
 
