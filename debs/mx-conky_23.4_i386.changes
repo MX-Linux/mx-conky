@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Thu, 13 Apr 2023 22:50:51 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: i386
+Version: 23.4
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (23.4) mx; urgency=medium
+ .
+   * Update icon
+   * Uptate translations
+Checksums-Sha1:
+ b86cc3bc435626af261a124dd3cbff2e3f426761 10047 mx-conky_23.4_i386.buildinfo
+ 258cdf9455bd97b71f4a3d45c22e8431fd3c8f09 151904 mx-conky_23.4_i386.deb
+Checksums-Sha256:
+ de5745047d2470145440dcfe808fc1c7c30ead1b866397b8dd1feeeb1d027f1e 10047 mx-conky_23.4_i386.buildinfo
+ 3d26e55acc020be27e99a2c1dedb1310377adb63d65d79f78b6e12957280a2e1 151904 mx-conky_23.4_i386.deb
+Files:
+ 8f5003d3c9415b9880978bfd9fef6d90 10047 admin optional mx-conky_23.4_i386.buildinfo
+ ed6b246bd15b7c4a327246610a5c9cd0 151904 admin optional mx-conky_23.4_i386.deb
+Original-Maintainer: Adrian <adrian@mxlinux.org>

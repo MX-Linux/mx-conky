@@ -1,0 +1,48 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 13 Apr 2023 22:50:51 -0400
+Source: mx-conky
+Binary: mx-conky
+Architecture: source amd64
+Version: 23.4
+Distribution: mx
+Urgency: medium
+Maintainer: fehlix <fehlix@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-conky   - MX Conky
+Changes:
+ mx-conky (23.4) mx; urgency=medium
+ .
+   * Update icon
+   * Uptate translations
+Checksums-Sha1:
+ 647c9f52dd606c7412c1fa735e6b36ddf619f7f6 1192 mx-conky_23.4.dsc
+ 72b685163488777a19c02024f5386543ea3376a0 131388 mx-conky_23.4.tar.xz
+ 1d834fc9dec37450856ac44714858ce22cbb83a7 10704 mx-conky_23.4_amd64.buildinfo
+ ab5d8858f29f0fbb44846342dab64353775fbf1a 149284 mx-conky_23.4_amd64.deb
+Checksums-Sha256:
+ e0b2384e0fdcad4c44838be54fd30d840a4ef990416835728d02abbbc9ba5e83 1192 mx-conky_23.4.dsc
+ 944c67e90f76f4b48047bf0169a2c9dd47bfe4ef83f01785938c70e9b877614d 131388 mx-conky_23.4.tar.xz
+ 3c1bb39d0a70756172f24d5e9e4a3fb0b3bc393a89e671714099efc8c3ee0414 10704 mx-conky_23.4_amd64.buildinfo
+ f405d11ef17924fa1e5b092b0b6468db8ee94951d6a9afe20909ddd0c221d85f 149284 mx-conky_23.4_amd64.deb
+Files:
+ 2d6a3e5ba093343e1a3f00f421e8edc3 1192 admin optional mx-conky_23.4.dsc
+ 3adfe341503c805487f560ddefc8569e 131388 admin optional mx-conky_23.4.tar.xz
+ d6e6b54862842681c96059d895a591a7 10704 admin optional mx-conky_23.4_amd64.buildinfo
+ 3613aa1d785f4322920e391aa2555e31 149284 admin optional mx-conky_23.4_amd64.deb
+Original-Maintainer: Adrian <adrian@mxlinux.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmQ4xXETHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHteCAC6DnmforjyB0D7T7uBBOnKzUVpJaGq
+I95Y7HB2QgI36AV0zhzGPoZ64Mrfgev80H6CzQO5MvmWFmwnGd4ofW+h3YnYo9x/
+QB6TUbc2HS3da+11f3LlL9uuEf7DG+1geg2LmjWXGZkOCllPT0JAV0POvU/LG4de
+Fiw4qZtWtMo8+XzsSoj3ZI3Zf80KPHerljIurzYpfEX4ATZMaoomT3GBj1tmRCn5
+POSz0SXhmnN+x62s7cEOi6Ek50f5j0t/xW1OJBASA+SCsDENZc27HUkr+Gq+30Ma
+ctW+PQjRYy87q+kRpq4h3hXysUh3dBaL4QiPFvGEDxTEtr375LIVIiNp
+=+n64
+-----END PGP SIGNATURE-----
