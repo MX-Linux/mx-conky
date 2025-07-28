@@ -27,6 +27,7 @@
 #include <QFileInfo>
 #include <QPointer>
 #include <QProcess>
+#include <QRegularExpression>
 #include <QSet>
 #include <QStandardPaths>
 #include <QTextStream>
@@ -45,7 +46,7 @@ ConkyManager::ConkyManager(QObject *parent)
       m_autostartTimer(new QTimer(this)),
       m_statusTimer(new QTimer(this)),
       m_statusCheckRunning(false),
-      m_startupDelay(20)
+      m_startupDelay(5)
 {
     m_statusTimer->setInterval(2s);
     connect(m_statusTimer, &QTimer::timeout, this, &ConkyManager::updateRunningStatus);
@@ -89,36 +90,6 @@ QStringList ConkyManager::searchPaths() const
     return m_searchPaths;
 }
 
-void ConkyManager::addFileExtension(const QString &extension)
-{
-    QString ext = extension.startsWith('.') ? extension : '.' + extension;
-    if (!m_fileExtensions.contains(ext)) {
-        m_fileExtensions.append(ext);
-        scanForConkies();
-        emit conkyItemsChanged();
-    }
-}
-
-void ConkyManager::removeFileExtension(const QString &extension)
-{
-    QString ext = extension.startsWith('.') ? extension : '.' + extension;
-    if (m_fileExtensions.removeOne(ext)) {
-        scanForConkies();
-        emit conkyItemsChanged();
-    }
-}
-
-QStringList ConkyManager::fileExtensions() const
-{
-    return m_fileExtensions;
-}
-
-void ConkyManager::setFileExtensions(const QStringList &extensions)
-{
-    m_fileExtensions = extensions;
-    scanForConkies();
-    emit conkyItemsChanged();
-}
 
 void ConkyManager::scanForConkies()
 {
@@ -314,7 +285,6 @@ void ConkyManager::saveSettings()
 {
     m_settings.beginGroup("ConkyManager");
     m_settings.setValue("searchPaths", m_searchPaths);
-    m_settings.setValue("fileExtensions", m_fileExtensions);
     m_settings.setValue("startupDelay", m_startupDelay);
 
     m_settings.beginWriteArray("conkyItems");
@@ -344,11 +314,7 @@ void ConkyManager::loadSettings()
                                                             << "/usr/share/mx-conky-data/themes")
                         .toStringList();
 
-    m_fileExtensions = m_settings
-                           .value("fileExtensions", QStringList() << ".conf" << ".conky" << ".conkyrc" << ".cmtheme")
-                           .toStringList();
-
-    m_startupDelay = m_settings.value("startupDelay", 20).toInt();
+    m_startupDelay = m_settings.value("startupDelay", 5).toInt();
 
     int size = m_settings.beginReadArray("conkyItems");
     QHash<QString, ConkyItem *> settingsMap;
@@ -581,24 +547,14 @@ void ConkyManager::scanConkyDirectory(const QString &path)
             continue;
         }
 
-        // Check if file is a potential conky config
-        bool isConkyFile = false;
-
-        // Files without extension (common for conky configs)
-        if (!fileName.contains('.')) {
-            isConkyFile = true;
-        }
-        // Files with configured extensions
-        else {
-            for (const QString &ext : m_fileExtensions) {
-                if (fileName.endsWith(ext, Qt::CaseInsensitive)) {
-                    isConkyFile = true;
-                    break;
-                }
-            }
+        // Check if file is binary first
+        if (isBinaryFile(filePath)) {
+            continue;
         }
 
-        if (!isConkyFile) {
+        // Use the same logic as conky-file-parser.sh to verify it's actually a conky file
+        // This replaces extension filtering - we now rely purely on content detection
+        if (!isValidConkyFile(filePath)) {
             continue;
         }
 
@@ -937,4 +893,81 @@ bool ConkyManager::copyDirectoryRecursively(const QString &sourceDir, const QStr
     }
 
     return true;
+}
+
+bool ConkyManager::isBinaryFile(const QString &filePath) const
+{
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly)) {
+        return true;
+    }
+
+    // Read first 8KB to check for binary content
+    const int bufferSize = 8192;
+    QByteArray buffer = file.read(bufferSize);
+    file.close();
+
+    if (buffer.isEmpty()) {
+        return true;
+    }
+
+    // Check for null bytes which indicate binary content
+    if (buffer.contains('\0')) {
+        return true;
+    }
+
+    // Check for high percentage of non-printable characters
+    int nonPrintableCount = 0;
+    for (char c : buffer) {
+        unsigned char uc = static_cast<unsigned char>(c);
+        // Allow common whitespace characters
+        if (uc < 32 && uc != '\t' && uc != '\n' && uc != '\r') {
+            nonPrintableCount++;
+        }
+        // High ASCII values might indicate binary
+        else if (uc > 126) {
+            nonPrintableCount++;
+        }
+    }
+
+    // If more than 30% non-printable, consider it binary
+    return (nonPrintableCount * 100 / buffer.size()) > 30;
+}
+
+
+bool ConkyManager::isValidConkyFile(const QString &filePath) const
+{
+    QFile file(filePath);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        return false;
+    }
+
+    QString content = file.readAll();
+    file.close();
+
+    if (content.isEmpty()) {
+        return false;
+    }
+
+    // Check for new-style conky format (conky.config and conky.text)
+    QRegularExpression configPattern(R"(^\s*conky\.config\s*=\s*\{)", QRegularExpression::MultilineOption);
+    bool hasConfig = configPattern.match(content).hasMatch();
+
+    QRegularExpression textPattern(R"(^\s*conky\.text\s*=\s*\[\[)", QRegularExpression::MultilineOption);
+    bool hasText = textPattern.match(content).hasMatch();
+
+    // New-style conky: both patterns must be present
+    if (hasConfig && hasText) {
+        return true;
+    }
+
+    // Check for old-style conky format (TEXT section without conky.config)
+    QRegularExpression oldTextPattern(R"(^\s*TEXT\s*$)", QRegularExpression::MultilineOption);
+    bool hasOldText = oldTextPattern.match(content).hasMatch();
+
+    QRegularExpression newConfigPattern(R"(^\s*conky\.config\s*=)", QRegularExpression::MultilineOption);
+    bool hasNewConfig = newConfigPattern.match(content).hasMatch();
+
+    // Old-style conky: has TEXT section but no conky.config
+    return hasOldText && !hasNewConfig;
 }

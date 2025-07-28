@@ -31,10 +31,8 @@ SettingsDialog::SettingsDialog(ConkyManager *manager, QWidget *parent)
 {
     setupUI();
     loadPaths();
-    loadExtensions();
     loadSettings();
     onPathSelectionChanged();
-    onExtensionSelectionChanged();
 }
 
 void SettingsDialog::onAddPath()
@@ -77,7 +75,6 @@ void SettingsDialog::onPathSelectionChanged()
 void SettingsDialog::onAccepted()
 {
     savePaths();
-    saveExtensions();
     saveSettings();
 }
 
@@ -92,7 +89,6 @@ void SettingsDialog::setupUI()
     // Create tab widget
     m_tabWidget = new QTabWidget;
     m_tabWidget->addTab(createPathsTab(), tr("Search Paths"));
-    m_tabWidget->addTab(createExtensionsTab(), tr("File Extensions"));
     m_tabWidget->addTab(createAutostartTab(), tr("Autostart"));
 
     auto *dialogButtonLayout = new QHBoxLayout;
@@ -202,50 +198,6 @@ QWidget *SettingsDialog::createPathsTab()
     return widget;
 }
 
-QWidget *SettingsDialog::createExtensionsTab()
-{
-    auto *widget = new QWidget;
-    auto *layout = new QVBoxLayout(widget);
-
-    auto *extensionGroupBox = new QGroupBox(tr("Recognized File Extensions"));
-    auto *extensionLayout = new QVBoxLayout(extensionGroupBox);
-
-    auto *helpLabel = new QLabel(tr("Configure which file extensions are recognized as conky configuration files. Files without extensions are always recognized."));
-    helpLabel->setWordWrap(true);
-    helpLabel->setStyleSheet("color: #666; font-style: italic;");
-
-    m_extensionListWidget = new QListWidget;
-
-    auto *buttonLayout = new QHBoxLayout;
-    m_addExtensionButton = new QPushButton(tr("Add Extension"));
-    m_addExtensionButton->setIcon(QIcon::fromTheme("list-add"));
-
-    m_removeExtensionButton = new QPushButton(tr("Remove Extension"));
-    m_removeExtensionButton->setIcon(QIcon::fromTheme("list-remove"));
-
-    m_editExtensionButton = new QPushButton(tr("Edit Extension"));
-    m_editExtensionButton->setIcon(QIcon::fromTheme("edit"));
-
-    buttonLayout->addWidget(m_addExtensionButton);
-    buttonLayout->addWidget(m_removeExtensionButton);
-    buttonLayout->addWidget(m_editExtensionButton);
-    buttonLayout->addStretch();
-
-    extensionLayout->addWidget(helpLabel);
-    extensionLayout->addWidget(m_extensionListWidget);
-    extensionLayout->addLayout(buttonLayout);
-
-    layout->addWidget(extensionGroupBox);
-    layout->addStretch();
-
-    connect(m_addExtensionButton, &QPushButton::clicked, this, &SettingsDialog::onAddExtension);
-    connect(m_removeExtensionButton, &QPushButton::clicked, this, &SettingsDialog::onRemoveExtension);
-    connect(m_editExtensionButton, &QPushButton::clicked, this, &SettingsDialog::onEditExtension);
-    connect(m_extensionListWidget, &QListWidget::itemSelectionChanged, this, &SettingsDialog::onExtensionSelectionChanged);
-
-    return widget;
-}
-
 QWidget *SettingsDialog::createAutostartTab()
 {
     auto *widget = new QWidget;
@@ -273,80 +225,4 @@ QWidget *SettingsDialog::createAutostartTab()
     layout->addStretch();
 
     return widget;
-}
-
-void SettingsDialog::onAddExtension()
-{
-    bool ok;
-    QString extension = QInputDialog::getText(this, tr("Add Extension"),
-                                            tr("Enter file extension (with or without dot):"),
-                                            QLineEdit::Normal, "", &ok);
-    if (ok && !extension.isEmpty()) {
-        if (!extension.startsWith('.')) {
-            extension = '.' + extension;
-        }
-        if (!extension.isEmpty() && extension != ".") {
-            m_extensionListWidget->addItem(extension);
-        }
-    }
-}
-
-void SettingsDialog::onRemoveExtension()
-{
-    int currentRow = m_extensionListWidget->currentRow();
-    if (currentRow >= 0) {
-        delete m_extensionListWidget->takeItem(currentRow);
-    }
-}
-
-void SettingsDialog::onEditExtension()
-{
-    QListWidgetItem *currentItem = m_extensionListWidget->currentItem();
-    if (!currentItem) {
-        return;
-    }
-
-    bool ok;
-    QString extension = QInputDialog::getText(this, tr("Edit Extension"),
-                                            tr("Enter file extension (with or without dot):"),
-                                            QLineEdit::Normal, currentItem->text(), &ok);
-    if (ok && !extension.isEmpty()) {
-        if (!extension.startsWith('.')) {
-            extension = '.' + extension;
-        }
-        if (!extension.isEmpty() && extension != ".") {
-            currentItem->setText(extension);
-        }
-    }
-}
-
-void SettingsDialog::onExtensionSelectionChanged()
-{
-    bool hasSelection = m_extensionListWidget->currentItem() != nullptr;
-    m_removeExtensionButton->setEnabled(hasSelection);
-    m_editExtensionButton->setEnabled(hasSelection);
-}
-
-void SettingsDialog::loadExtensions()
-{
-    m_extensionListWidget->clear();
-    QStringList extensions = m_manager->fileExtensions();
-    for (const QString &extension : extensions) {
-        m_extensionListWidget->addItem(extension);
-    }
-}
-
-void SettingsDialog::saveExtensions()
-{
-    QStringList newExtensions;
-    newExtensions.reserve(m_extensionListWidget->count());
-    for (int i = 0; i < m_extensionListWidget->count(); ++i) {
-        QString extension = m_extensionListWidget->item(i)->text();
-        if (!newExtensions.contains(extension)) {
-            newExtensions.append(extension);
-        }
-    }
-
-    m_manager->setFileExtensions(newExtensions);
-    m_manager->saveSettings();
 }

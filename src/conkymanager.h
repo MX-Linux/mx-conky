@@ -43,11 +43,6 @@ public:
     void removeSearchPath(const QString &path);
     QStringList searchPaths() const;
 
-    void addFileExtension(const QString &extension);
-    void removeFileExtension(const QString &extension);
-    QStringList fileExtensions() const;
-    void setFileExtensions(const QStringList &extensions);
-
     void scanForConkies();
     void addConkyItemsFromDirectory(const QString &directoryPath);
     QList<ConkyItem *> conkyItems() const;
@@ -95,7 +90,6 @@ private:
     QProcess *m_statusProcess;
     QSettings m_settings;
     QStringList m_searchPaths;
-    QStringList m_fileExtensions;
     QTimer *m_autostartTimer;
     QTimer *m_statusTimer;
     bool m_statusCheckRunning;
@@ -108,4 +102,6 @@ private:
     void scanConkyDirectory(const QString &path);
     void scanDirectory(const QString &path);
     bool copyDirectoryRecursively(const QString &sourceDir, const QString &destDir);
+    bool isBinaryFile(const QString &filePath) const;
+    bool isValidConkyFile(const QString &filePath) const;
 };

@@ -30,10 +30,8 @@
 #include <QFileDialog>
 #include <QGroupBox>
 #include <QHBoxLayout>
-#include <QInputDialog>
 #include <QLabel>
 #include <QListWidget>
-#include <QMessageBox>
 #include <QPushButton>
 #include <QSpinBox>
 #include <QTabWidget>
@@ -52,10 +50,6 @@ private slots:
     void onEditPath();
     void onPathSelectionChanged();
     void onRemovePath();
-    void onAddExtension();
-    void onEditExtension();
-    void onExtensionSelectionChanged();
-    void onRemoveExtension();
 
 private:
     ConkyManager *m_manager;
@@ -64,21 +58,14 @@ private:
     QPushButton *m_addButton;
     QPushButton *m_editButton;
     QPushButton *m_removeButton;
-    QListWidget *m_extensionListWidget;
-    QPushButton *m_addExtensionButton;
-    QPushButton *m_editExtensionButton;
-    QPushButton *m_removeExtensionButton;
     QSpinBox *m_startupDelaySpinBox;
     QCheckBox *m_systemStartupCheckBox;
 
     void loadPaths();
     void loadSettings();
-    void loadExtensions();
     void savePaths();
     void saveSettings();
-    void saveExtensions();
     void setupUI();
     QWidget *createPathsTab();
-    QWidget *createExtensionsTab();
     QWidget *createAutostartTab();
 };
