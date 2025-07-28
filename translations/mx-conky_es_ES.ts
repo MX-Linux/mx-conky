@@ -36,27 +36,27 @@
     <message>
         <location filename="../conkycustomizedialog.cpp" line="121"/>
         <source>Color0</source>
-        <translation type="unfinished"/>
+        <translation>Color0 </translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="121"/>
         <source>Color1</source>
-        <translation type="unfinished"/>
+        <translation>Color1 </translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="121"/>
         <source>Color2</source>
-        <translation type="unfinished"/>
+        <translation>Color2 </translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="121"/>
         <source>Color3</source>
-        <translation type="unfinished"/>
+        <translation>Color3 </translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="121"/>
         <source>Color4</source>
-        <translation type="unfinished"/>
+        <translation>Color4 </translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="122"/>
@@ -97,38 +97,39 @@
     <message>
         <location filename="../conkycustomizedialog.cpp" line="684"/>
         <source>Select Color</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar color</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="790"/>
         <source>Permission Denied</source>
-        <translation type="unfinished"/>
+        <translation>Permiso denegado</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="791"/>
         <source>Cannot write to file: %1
 Insufficient permissions.</source>
-        <translation type="unfinished"/>
+        <translation>No se puede escribir el archivo: %1
+Permisos insuficientes.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="801"/>
         <source>Write Error</source>
-        <translation type="unfinished"/>
+        <translation>Error de escritura</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="801"/>
         <source>Cannot write to file: %1</source>
-        <translation type="unfinished"/>
+        <translation>No se puede escribir el archivo: %1</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="874"/>
         <source>Backup Config File</source>
-        <translation type="unfinished"/>
+        <translation>Hacer copia de respaldo del archivo de configuración</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="874"/>
         <source>Do you want to preserve the original file?</source>
-        <translation type="unfinished"/>
+        <translation>¿Preservar el archivo original?</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="897"/>
@@ -138,33 +139,33 @@ Insufficient permissions.</source>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="898"/>
         <source>The original configuration was backed up to %1</source>
-        <translation type="unfinished"/>
+        <translation>La configuración original se guardó en %1</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="900"/>
         <source>Backup Failed</source>
-        <translation type="unfinished"/>
+        <translation>Falló la copia de respaldo</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="900"/>
         <source>Failed to create a backup file.</source>
-        <translation type="unfinished"/>
+        <translation>Error al crear la copia de respaldo.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="973"/>
         <location filename="../conkycustomizedialog.cpp" line="976"/>
         <source>Restore Failed</source>
-        <translation type="unfinished"/>
+        <translation>Falló la restauración</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="973"/>
         <source>Failed to restore from backup file.</source>
-        <translation type="unfinished"/>
+        <translation>Error al restaurar la copia de respaldo.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="976"/>
         <source>Backup file does not exist.</source>
-        <translation type="unfinished"/>
+        <translation>No existe el archivo de respaldo.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1328"/>
@@ -174,72 +175,72 @@ Insufficient permissions.</source>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1335"/>
         <source>Alignment</source>
-        <translation type="unfinished"/>
+        <translation>Alineación</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1340"/>
         <source>Top Left</source>
-        <translation type="unfinished"/>
+        <translation>Arriba a la izquierda</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1341"/>
         <source>Top Right</source>
-        <translation type="unfinished"/>
+        <translation>Arriba a la derecha</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1342"/>
         <source>Top Middle</source>
-        <translation type="unfinished"/>
+        <translation>Arriba en el centro</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1343"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"/>
+        <translation>Abajo a la izquierda</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1344"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"/>
+        <translation>Abajo a la derecha</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1345"/>
         <source>Bottom Middle</source>
-        <translation type="unfinished"/>
+        <translation>Abajo en el centro</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1346"/>
         <source>Middle Left</source>
-        <translation type="unfinished"/>
+        <translation>Centrado a la izquierda</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1347"/>
         <source>Middle Right</source>
-        <translation type="unfinished"/>
+        <translation>Centrado a la derecha</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1348"/>
         <source>Middle Middle</source>
-        <translation type="unfinished"/>
+        <translation>En el centro</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1353"/>
         <source>Horizontal Gap</source>
-        <translation type="unfinished"/>
+        <translation>Separación horizontal</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1354"/>
         <source>[GAP_X] Horizontal distance from window border (in pixels)</source>
-        <translation type="unfinished"/>
+        <translation>[GAP_X] Distancia horizontal desde el borde de la ventana (en pixels)</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1366"/>
         <source>Vertical Gap</source>
-        <translation type="unfinished"/>
+        <translation>Separación vertical</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1367"/>
         <source>[GAP_Y] Vertical distance from window border (in pixels)</source>
-        <translation type="unfinished"/>
+        <translation>[GAP_Y] Distancia vertical desde el borde de la ventana (en pixels)</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1379"/>
