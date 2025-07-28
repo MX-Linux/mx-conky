@@ -124,8 +124,8 @@ As permissões não são suficientes.</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="874"/>
         <source>Backup Config File</source>
-        <translation>Arquivo de Configurações a Ser
-Criado para a Cópia de Segurança</translation>
+        <translation>Fazer uma Cópia de Segurança
+do Arquivo de Configurações</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="874"/>
@@ -135,8 +135,8 @@ Criado para a Cópia de Segurança</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="897"/>
         <source>Backed Up Config File</source>
-        <translation>Arquivo de Configurações Existente
-da Cópia de Segurança</translation>
+        <translation>Foi Feito uma Cópia de Segurança
+do Arquivo de Configurações</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="898"/>
@@ -236,7 +236,7 @@ segurança não existe.</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1354"/>
         <source>[GAP_X] Horizontal distance from window border (in pixels)</source>
-        <translation>O [GAP_X] é distância horizontal da borda da janela (em pixels)</translation>
+        <translation>O [GAP_X] é distância horizontal da borda da janela em pixels</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1366"/>
@@ -246,7 +246,7 @@ segurança não existe.</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1367"/>
         <source>[GAP_Y] Vertical distance from window border (in pixels)</source>
-        <translation>O [GAP_Y] é distância vertical da borda da janela (em pixels)</translation>
+        <translation>O [GAP_Y] é distância vertical da borda da janela em pixels</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1379"/>
@@ -362,12 +362,12 @@ nenhum efeito</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1524"/>
         <source>Setting Type to &quot;Transparent&quot; will make the whole window transparent (including any images). Use &quot;Pseudo-Transparent&quot; if you want the images to be opaque.</source>
-        <translation>Com o tipo da configuração definida como ‘Transparente’ tornará toda a janela transparente (incluindo quaisquer imagens). Utilize a opção ‘Pseudo-Transparente’ se você quiser que as imagens sejam opacas.</translation>
+        <translation>Quando o tipo da configuração foi definida como ‘Transparente’ tornará toda a janela transparente (incluindo quaisquer imagens). Utilize a opção ‘Pseudo-Transparente’ se você quiser que as imagens sejam opacas.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1534"/>
         <source>Setting Type to &quot;Pseudo-Transparent&quot; will make the window transparent but the window will have a shadow. The shadow can be disabled by configuring your window manager.</source>
-        <translation>Com o tipo da configuração definida como ‘Pseudo-Transparente’ tornará a janela transparente, mas ela terá uma sombra. A sombra pode ser desativada configurando o seu gerenciador de janelas.</translation>
+        <translation>Quando o tipo da configuração foi definida como ‘Pseudo-Transparente’ tornará a janela transparente, mas ela terá uma sombra. A sombra pode ser desativada configurando o seu gerenciador de janelas.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1545"/>
@@ -522,17 +522,17 @@ nenhum efeito</translation>
     <message>
         <location filename="../conkylistwidget.cpp" line="313"/>
         <source>Total: 0 conkies</source>
-        <translation>Total: 0 Conkies</translation>
+        <translation>Total de 0 Conkies</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="542"/>
         <source>Total: %1 conkies</source>
-        <translation>Total: %1 Conkies</translation>
+        <translation>Total de %1 Conkies</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="545"/>
         <source>Showing: %1 of %2 conkies</source>
-        <translation>Exibindo: %1 de %2 Conkies</translation>
+        <translation>Exibindo %1 de %2 Conkies</translation>
     </message>
 </context>
 <context>
@@ -545,7 +545,7 @@ nenhum efeito</translation>
     <message>
         <location filename="../conkylistwidget.cpp" line="496"/>
         <source>Select a conky from the list to see its preview</source>
-        <translation>Selecione um Conky na lista para visualizar a sua prévia</translation>
+        <translation>Selecione um Conky na lista para pré-visualizar o seu modelo</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="515"/>
@@ -717,7 +717,7 @@ nenhum efeito</translation>
     <message>
         <location filename="../mainwindow.cpp" line="170"/>
         <source>Generate preview images for conkies</source>
-        <translation>Gerar as imagens de pré-visualização dos Conkies</translation>
+        <translation>Gerar as imagens para a pré-visualização dos Conkies</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
@@ -894,7 +894,7 @@ Você quer personalizá-lo com as permissões de administrador?</translation>
     <message>
         <location filename="../previewdialog.cpp" line="80"/>
         <source>All Widgets (Overwrite Existing Images)</source>
-        <translation>Todos as Ferramentas (Substituir as Imagens Existentes)</translation>
+        <translation>Todas as Ferramentas (Substituir as Imagens Existentes)</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="85"/>
@@ -935,7 +935,8 @@ ao invés do formato JPEG</translation>
     <message>
         <location filename="../previewdialog.cpp" line="145"/>
         <source>No conky widgets need preview generation.</source>
-        <translation>Não tem uma ferramenta para a geração da pré-visualização do Conky.</translation>
+        <translation>Não tem uma ferramenta para a geração da
+pré-visualização do Conky.</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="155"/>
@@ -1033,12 +1034,12 @@ Foi gerado a imagem %1 para a pré-visualização.</translation>
     <message>
         <location filename="../settingsdialog.cpp" line="117"/>
         <source>Start conky at system startup</source>
-        <translation type="unfinished"/>
+        <translation>Adicionar o Conky na inicialização do sistema operacional</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="121"/>
         <source>Startup delay (seconds):</source>
-        <translation type="unfinished"/>
+        <translation>Inicializar com um tempo de atraso em segundos de:</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="134"/>

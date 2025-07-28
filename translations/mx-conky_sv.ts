@@ -511,17 +511,17 @@ annars har denna inställning inte någon effekt</translation>
     <message>
         <location filename="../conkylistwidget.cpp" line="313"/>
         <source>Total: 0 conkies</source>
-        <translation type="unfinished"/>
+        <translation>Total: 0 conkies</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="542"/>
         <source>Total: %1 conkies</source>
-        <translation type="unfinished"/>
+        <translation>Total: %1 conkies</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="545"/>
         <source>Showing: %1 of %2 conkies</source>
-        <translation type="unfinished"/>
+        <translation>Visar: %1 av %2 conkies</translation>
     </message>
 </context>
 <context>

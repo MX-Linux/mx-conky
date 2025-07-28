@@ -9,7 +9,7 @@
     <message>
         <location filename="../conkycustomizedialog.cpp" line="77"/>
         <source>Launch</source>
-        <translation>Engega </translation>
+        <translation>Inicia </translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="81"/>
@@ -108,7 +108,7 @@
         <location filename="../conkycustomizedialog.cpp" line="791"/>
         <source>Cannot write to file: %1
 Insufficient permissions.</source>
-        <translation>No puc escriure al fitxer: %1
+        <translation>No es pot escriure al fitxer %1
 No teniu prou permisos.</translation>
     </message>
     <message>
@@ -119,7 +119,7 @@ No teniu prou permisos.</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="801"/>
         <source>Cannot write to file: %1</source>
-        <translation>No puc escriure al fitxer: %1</translation>
+        <translation>No es pot escriure al fitxer %1.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="874"/>
@@ -134,33 +134,33 @@ No teniu prou permisos.</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="897"/>
         <source>Backed Up Config File</source>
-        <translation>Fitxer de configuració en còpia de seguretat</translation>
+        <translation>Fitxer de configuració a la còpia de seguretat</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="898"/>
         <source>The original configuration was backed up to %1</source>
-        <translation>S&apos;ha fet còpia de seguretat de la configuració original a %1</translation>
+        <translation>S&apos;ha fet una còpia de seguretat de la configuració original a %1</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="900"/>
         <source>Backup Failed</source>
-        <translation>Ha fallat la còpia de seguretat</translation>
+        <translation>Ha fallat la còpia de seguretat.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="900"/>
         <source>Failed to create a backup file.</source>
-        <translation>Ha fallat en crear la còpia de seguretat.</translation>
+        <translation>Ha fallat crear la còpia de seguretat.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="973"/>
         <location filename="../conkycustomizedialog.cpp" line="976"/>
         <source>Restore Failed</source>
-        <translation>Ha fallat la restauració </translation>
+        <translation>Ha fallat la restauració.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="973"/>
         <source>Failed to restore from backup file.</source>
-        <translation>Ha fallat en restaurar de la còpia de seguretat.</translation>
+        <translation>Ha fallat restaurar de la còpia de seguretat.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="976"/>
@@ -195,22 +195,22 @@ No teniu prou permisos.</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1343"/>
         <source>Bottom Left</source>
-        <translation>Baix a l&apos;esquerra</translation>
+        <translation>A baix a l&apos;esquerra</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1344"/>
         <source>Bottom Right</source>
-        <translation>Baix a la dreta</translation>
+        <translation>A baix a la dreta</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1345"/>
         <source>Bottom Middle</source>
-        <translation>Baix al mig</translation>
+        <translation>A baix al mig</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1346"/>
         <source>Middle Left</source>
-        <translation>Al mig esquerra</translation>
+        <translation>Al mig a l&apos;esquerra</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1347"/>
@@ -255,7 +255,7 @@ No teniu prou permisos.</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1383"/>
         <source>All Desktops</source>
-        <translation>Tots els Escriptoris</translation>
+        <translation>Tots els escriptoris</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1395"/>
@@ -266,8 +266,8 @@ No teniu prou permisos.</translation>
         <location filename="../conkycustomizedialog.cpp" line="1407"/>
         <source>Width should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
-        <translation>L&apos;amplada ha de ser més gran que la mida del contingut,
-altrament aquest paràmetre no tindrà cap efecte</translation>
+        <translation>L&apos;amplada ha de ser més grossa que la mida del contingut,
+altrament aquest paràmetre no tindrà cap efecte.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1411"/>
@@ -278,23 +278,23 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
         <location filename="../conkycustomizedialog.cpp" line="1426"/>
         <source>Height should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
-        <translation>L&apos;altura ha de ser més gran que la mida del contingut,
-altrament aquest paràmetre no tindrà cap efecte</translation>
+        <translation>L&apos;alçada ha de ser més grossa que la mida del contingut,
+altrament aquest paràmetre no tindrà cap efecte.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1428"/>
         <source>Minimum Height</source>
-        <translation>Altura mínima</translation>
+        <translation>Alçada mínima</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1442"/>
         <source>Increases the window height by adding empty lines at the end of the Conky config file</source>
-        <translation>Incrementa l&apos;altura de la finestra afegint línies buides al final del fitxer de configuració de Conky</translation>
+        <translation>Incrementa l&apos;alçada de la finestra afegint línies buides al final del fitxer de configuració del Conky</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1443"/>
         <source>Height Padding</source>
-        <translation>Farciment d&apos;altura</translation>
+        <translation>Farciment de l&apos;alçada</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1458"/>
@@ -309,7 +309,7 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1476"/>
         <source>Opaque</source>
-        <translation>Opac</translation>
+        <translation>Opaca</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1477"/>
@@ -319,12 +319,12 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1478"/>
         <source>Pseudo-Transparent</source>
-        <translation>Pseudo-Transparent</translation>
+        <translation>Pseudotransparent</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1479"/>
         <source>Semi-Transparent</source>
-        <translation>Semi-Transparent</translation>
+        <translation>Semitransparent</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1484"/>
@@ -338,7 +338,7 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
 0 = Fully Transparent, 100 = Fully Opaque</source>
         <translation>Opacitat de la finestra
 
-0 = Transparent del tot, 100 = Opaca del tot</translation>
+0 = transparent del tot, 100 = opaca del tot</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1499"/>
@@ -353,12 +353,12 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1524"/>
         <source>Setting Type to &quot;Transparent&quot; will make the whole window transparent (including any images). Use &quot;Pseudo-Transparent&quot; if you want the images to be opaque.</source>
-        <translation>Triant &quot;Transparent&quot; farà transparent tota la finestra (incloent-hi imatges). Useu &quot;Pseudo-Transparent&quot; si voleu que les imatges siguin opaques.</translation>
+        <translation>Si definiu el tipus com a transparent, tota la finestra serà transparent (incloses les imatges). Feu servir pseudotransparent, si voleu que les imatges siguin opaques.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1534"/>
         <source>Setting Type to &quot;Pseudo-Transparent&quot; will make the window transparent but the window will have a shadow. The shadow can be disabled by configuring your window manager.</source>
-        <translation>Definint el tipus com a &quot;Pseudo-Transparent&quot; farà transparent la finestra, però aquesta encara tindrà una ombra. L&apos;ombra es pot desactivar configurant el vostre gestor de finestres.</translation>
+        <translation>Si definiu el tipus com a pseudotransparent, la finestra serà transparent, però tindrà una ombra. L&apos;ombra es pot desactivar configurant el gestor de finestres.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1545"/>
@@ -368,7 +368,7 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1556"/>
         <source>Date Format</source>
-        <translation>Format de data</translation>
+        <translation>Format de la data</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1559"/>
@@ -390,7 +390,7 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1563"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation>Nom abreujat, p. ex. Dc </translation>
+        <translation>Nom abreujat, p. ex.: dc </translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1570"/>
@@ -400,12 +400,12 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1574"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation>Nom abreujat, p. ex. Oct </translation>
+        <translation>Nom abreujat, p. ex.: oct </translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1593"/>
         <source>Time Format</source>
-        <translation>Format d&apos;hora</translation>
+        <translation>Format de l&apos;hora</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1600"/>
@@ -415,17 +415,17 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1605"/>
         <source>12 Hour</source>
-        <translation>12 Hores</translation>
+        <translation>12 hores</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1606"/>
         <source>24 Hour</source>
-        <translation>24 Hores</translation>
+        <translation>24 hores</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1621"/>
         <source>Date &amp;&amp; Time</source>
-        <translation>Data i Hora</translation>
+        <translation>Data i hora</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1634"/>
@@ -468,7 +468,7 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkylistwidget.cpp" line="63"/>
         <source>Running</source>
-        <translation>Executant-se</translation>
+        <translation>S&apos;executa</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="63"/>
@@ -478,7 +478,7 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkylistwidget.cpp" line="115"/>
         <source>Autostart</source>
-        <translation>Engegada automàtica</translation>
+        <translation>Inici automàtic</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="117"/>
@@ -511,17 +511,17 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkylistwidget.cpp" line="313"/>
         <source>Total: 0 conkies</source>
-        <translation type="unfinished"/>
+        <translation>Total: 0 monitors</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="542"/>
         <source>Total: %1 conkies</source>
-        <translation type="unfinished"/>
+        <translation>Total: %1 monitors</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="545"/>
         <source>Showing: %1 of %2 conkies</source>
-        <translation type="unfinished"/>
+        <translation>Mostra: %1 de %2 monitors</translation>
     </message>
 </context>
 <context>
@@ -529,22 +529,22 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../conkylistwidget.cpp" line="494"/>
         <source>No Conky Selected</source>
-        <translation>No s&apos;ha triat cap Conky</translation>
+        <translation>No s&apos;ha triat cap Conky.</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="496"/>
         <source>Select a conky from the list to see its preview</source>
-        <translation>Trieu un Conky de la llista per fer la previsualització</translation>
+        <translation>Trieu un monitor de la llista per veure&apos;n la previsualització.</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="515"/>
         <source>Preview image could not be loaded</source>
-        <translation>No puc carregar la imatge de previsualització</translation>
+        <translation>No s&apos;ha pogut carregar la imatge de previsualització.</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="518"/>
         <source>No preview image available</source>
-        <translation>No hi ha imatge de previsualització</translation>
+        <translation>No hi ha imatge de previsualització disponible.</translation>
     </message>
 </context>
 <context>
@@ -583,7 +583,7 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../mainwindow.cpp" line="149"/>
         <source>Loading Conky configurations...</source>
-        <translation>Carregant les configuracions de Conky...</translation>
+        <translation>Es carreguen les configuracions del Conky...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
@@ -593,7 +593,7 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
         <source>Configure conky search paths</source>
-        <translation>Configura els camins de cerca de Conky</translation>
+        <translation>Configura els camins de cerca del Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="176"/>
@@ -603,32 +603,32 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../mainwindow.cpp" line="178"/>
         <source>Refresh conky list</source>
-        <translation>Refresca la llista de conky</translation>
+        <translation>Refresca la llista de monitors</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="180"/>
         <source>Start All</source>
-        <translation>Engega tots</translation>
+        <translation>Inicia&apos;ls tots</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="182"/>
         <source>Start all enabled conkies</source>
-        <translation>Engega tots els Conkys activats</translation>
+        <translation>Incia tots els monitors activats</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="184"/>
         <source>Stop All</source>
-        <translation>Atura tots</translation>
+        <translation>Atura&apos;ls tots</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="186"/>
         <source>Stop all running conkies</source>
-        <translation>Atura tots els conkys en execució</translation>
+        <translation>Atura tots els monitors en execució</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="940"/>
         <source>Running</source>
-        <translation>Executant-se</translation>
+        <translation>S&apos;executa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="941"/>
@@ -638,65 +638,65 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../mainwindow.cpp" line="194"/>
         <source>Search conky by name...</source>
-        <translation>Cerca un conky pel nom...</translation>
+        <translation>Cerca un monitor pel nom...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="196"/>
         <source>Search conkies by name (Ctrl+F)</source>
-        <translation>Cerca conkys pel nom (Ctrl+F)</translation>
+        <translation>Cerca moitors pel nom (Ctrl+F)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="241"/>
         <source>Display help</source>
-        <translation>Mostra l&apos;ajuda </translation>
+        <translation>Mostra&apos;n l&apos;ajuda </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="417"/>
         <location filename="../mainwindow.cpp" line="593"/>
         <source>Copy Conky</source>
-        <translation>Copia Conky</translation>
+        <translation>Copia el monitor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="463"/>
         <location filename="../mainwindow.cpp" line="641"/>
         <source>Conky Copied</source>
-        <translation>Conky copiat</translation>
+        <translation>Monitor copiat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="464"/>
         <source>Conky has been copied to your personal folder for editing:
 %1</source>
-        <translation>S&apos;ha copiat el Conky a la vostra carpeta personal per editar-lo:
+        <translation>S&apos;ha copiat el monitor a la carpeta personal per a editar-lo:
 %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
         <location filename="../mainwindow.cpp" line="644"/>
         <source>Copy Failed</source>
-        <translation>Ha fallat la còpia</translation>
+        <translation>Ha fallat la còpia.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
         <location filename="../mainwindow.cpp" line="644"/>
         <source>Failed to copy conky to your personal folder.</source>
-        <translation>Ha fallat en copiar el conky a la vostra carpeta personal.</translation>
+        <translation>Ha fallat copiar el monitor a la carpeta personal.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="528"/>
         <source>Delete Conky</source>
-        <translation>Esborra el Conky</translation>
+        <translation>Esborra el monitor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="642"/>
         <source>Conky has been copied to your personal folder for customization:
 %1</source>
-        <translation>S&apos;ha copiat el Conky a la vostra carpeta personal per personalitzar-lo:
+        <translation>S&apos;ha copiat el monitor a la carpeta personal per personalitzar-lo:
 %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="561"/>
         <source>Delete Successful</source>
-        <translation>Esborrat amb èxit</translation>
+        <translation>Eliminació correcta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="168"/>
@@ -706,7 +706,7 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../mainwindow.cpp" line="170"/>
         <source>Generate preview images for conkies</source>
-        <translation>Genera imatges de previsualització per a conkys</translation>
+        <translation>Genera imatges de previsualització per a monitors</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
@@ -719,46 +719,46 @@ altrament aquest paràmetre no tindrà cap efecte</translation>
     <message>
         <location filename="../mainwindow.cpp" line="191"/>
         <source>Filter conkies by running status or location</source>
-        <translation>Filtra els conkys per estat d&apos;execució o ubicació</translation>
+        <translation>Filtra els monitors per estat d&apos;execució o ubicació</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
         <location filename="../mainwindow.cpp" line="589"/>
         <source>Enter a name for the copy:</source>
-        <translation>Entreu un nom per la còpia:</translation>
+        <translation>Introduïu un nom per a la còpia:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="414"/>
         <location filename="../mainwindow.cpp" line="590"/>
         <source>In order for you to edit and save a conky, it must first be copied to ~/.conky where you have permission.
 Enter a name for the copy.</source>
-        <translation>Per tal d&apos;editar i desar un conky, primer cal copiar-lo a ~/.conky on hi tingueu permisos.
-Entreu un nom per la còpia.</translation>
+        <translation>Per tal d&apos;editar i desar un monitor, primer cal copiar-lo a ~/.conky on tingueu permís.
+Introduïu un nom per a la còpia.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="431"/>
         <location filename="../mainwindow.cpp" line="609"/>
         <source>Directory Exists</source>
-        <translation>El directori existeix</translation>
+        <translation>El directori existeix.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="432"/>
         <location filename="../mainwindow.cpp" line="610"/>
         <source>A conky with the name '%1' already exists in your personal folder.
 Do you want to overwrite it?</source>
-        <translation>Ja hi ha un conky amb el nom&apos;%1&apos; a la vostra carpeta personal.
+        <translation>Ja hi ha un monitor amb el nom %1 a la carpeta personal.
 El voleu sobreescriure?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="499"/>
         <source>Edit Conky</source>
-        <translation>Edita el Conky</translation>
+        <translation>Edita el monitor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="500"/>
         <source>This conky file is read-only and requires administrator privileges to edit.
 Do you want to edit it with elevated privileges?</source>
-        <translation>Aquest fitxer conky és de només lectura i necessita privilegis d&apos;administrador per editar-lo.
+        <translation>Aquest fitxer de Conky és de només lectura i calen privilegis d&apos;administrador per editar-lo.
 Voleu editar-lo amb privilegis superiors?</translation>
     </message>
     <message>
@@ -767,26 +767,26 @@ Voleu editar-lo amb privilegis superiors?</translation>
 %1
 
 This action cannot be undone.</source>
-        <translation>Esteu segurs de voler esborrar el fitxer conky:
+        <translation>Segur que voleu esborrar el fitxer de Conky següent?
 %1
 
-Aquesta acció no es pot desfer..</translation>
+Aquesta acció no es pot desfer.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="561"/>
         <source>Conky file deleted successfully.</source>
-        <translation>Fitxer conky esborrat amb èxit.</translation>
+        <translation>Fitxer de Conky suprimit correctament</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="563"/>
         <source>Delete Failed</source>
-        <translation>Ha fallat en esborrar</translation>
+        <translation>Ha fallat esborrar.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="563"/>
         <source>Failed to delete conky file:
 %1</source>
-        <translation>Ha fallat en esborrar el fitxer conky:
+        <translation>Ha fallat esborrar el fitxer de Conky següent:
 %1</translation>
     </message>
     <message>
@@ -798,23 +798,23 @@ Aquesta acció no es pot desfer..</translation>
         <location filename="../mainwindow.cpp" line="652"/>
         <source>This conky file is read-only and requires administrator privileges to customize.
 Do you want to customize it with elevated privileges?</source>
-        <translation>Aquest fitxer conky és de només lectura i necessita privilegis d&apos;administrador per personalitzar-lo.
+        <translation>Aquest fitxer de Conky és de només lectura i calen privilegis d&apos;administrador per personalitzar-lo.
 Voleu personalitzar-lo amb privilegis superiors?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="803"/>
         <source>Editor Error</source>
-        <translation>Error d&apos;editor</translation>
+        <translation>Error de l&apos;editor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="803"/>
         <source>Cannot start editor for file: %1</source>
-        <translation>No puc engegar l&apos;editor per al fitxer: %1</translation>
+        <translation>No es pot iniciar l&apos;editor per al fitxer %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="813"/>
         <source>About MX Conky</source>
-        <translation>Quant a MX Conky </translation>
+        <translation>Quant a l&apos;MX Conky </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="815"/>
@@ -824,7 +824,7 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../mainwindow.cpp" line="816"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation>Programa gràfic per configurar Conky a MX Linux</translation>
+        <translation>Programa gràfic per configurar Conky a l&apos;MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="819"/>
@@ -855,7 +855,7 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../mainwindow.cpp" line="875"/>
         <source>MX Conky Help</source>
-        <translation>Ajuda de MX Conky </translation>
+        <translation>Ajuda per a l&apos;MX Conky </translation>
     </message>
 </context>
 <context>
@@ -868,7 +868,7 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../previewdialog.cpp" line="75"/>
         <source>Generate preview images for</source>
-        <translation>Genera imatges de previsualització per</translation>
+        <translation>Genera imatges de previsualització per a</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="78"/>
@@ -883,12 +883,12 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../previewdialog.cpp" line="80"/>
         <source>All Widgets (Overwrite Existing Images)</source>
-        <translation>Tots els ginys (Sobreescriu les imatges existents)</translation>
+        <translation>Tots els ginys (sobreescriu les imatges existents)</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="85"/>
         <source>No conky is currently selected</source>
-        <translation>Ara no hi ha cap conky seleccionat</translation>
+        <translation>Ara no hi ha cap monitor seleccionat.</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="93"/>
@@ -903,7 +903,7 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../previewdialog.cpp" line="97"/>
         <source>Generate preview images in PNG format instead of JPEG</source>
-        <translation>Genera imatges de previsualització en format PNG en comptes de JPEG</translation>
+        <translation>Genera imatges de previsualització en format PNG en comptes de JPEG.</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="114"/>
@@ -918,17 +918,17 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../previewdialog.cpp" line="145"/>
         <source>No Items</source>
-        <translation>Sense ítems</translation>
+        <translation>Sense elements</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="145"/>
         <source>No conky widgets need preview generation.</source>
-        <translation>No hi ha ginys conky que necessitin generació de previsualització.</translation>
+        <translation>No hi ha cap giny de Conky que necessiti generar una previsualització.</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="155"/>
         <source>Starting preview generation...</source>
-        <translation>Començant la generació de previsualitzacions...</translation>
+        <translation>S&apos;inicia la generació de previsualitzacions...</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="159"/>
@@ -938,12 +938,12 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../previewdialog.cpp" line="198"/>
         <source>Generating preview for: %1</source>
-        <translation>Generant previsualització per: %1</translation>
+        <translation>Es genera la previsualització per a %1</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="419"/>
         <source>Preview generation complete! Generated %1 previews.</source>
-        <translation>Generació de previsualitzacions completada! Generades %1 previsualitzacions.</translation>
+        <translation>Generació de previsualitzacions completada! %1 previsualitzacions generades.</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="423"/>
@@ -953,7 +953,7 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../previewdialog.cpp" line="426"/>
         <source>Preview Generation Complete</source>
-        <translation>Generació de previsualitzacions acomplerta</translation>
+        <translation>Generació de previsualitzacions completa</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="427"/>
@@ -966,7 +966,7 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../main.cpp" line="65"/>
         <source>Select Conky Manager config file</source>
-        <translation>Trieu el fitxer de configuració de Conky Manager.</translation>
+        <translation>Trieu el fitxer de configuració del gestor Conky.</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="109"/>
@@ -976,7 +976,7 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../main.cpp" line="109"/>
         <source>You must run this program as normal user</source>
-        <translation>Cal executar aquest programa com a usuari normal</translation>
+        <translation>Cal executar aquest programa com a usuari normal.</translation>
     </message>
 </context>
 <context>
@@ -985,12 +985,12 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
         <location filename="../settingsdialog.cpp" line="40"/>
         <location filename="../settingsdialog.cpp" line="62"/>
         <source>Select Conky Directory</source>
-        <translation>Trieu el directori del Conky</translation>
+        <translation>Trieu el directori per al Conky</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="83"/>
         <source>MX Conky Settings</source>
-        <translation>Paràmetres de MX Conky</translation>
+        <translation>Paràmetres per a l&apos;MX Conky</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="89"/>
@@ -1000,17 +1000,17 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../settingsdialog.cpp" line="95"/>
         <source>Add Path</source>
-        <translation>Afegiu camí</translation>
+        <translation>Afegiu-hi un camí</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="98"/>
         <source>Remove Path</source>
-        <translation>Elimineu camí</translation>
+        <translation>Elimina el camí</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="101"/>
         <source>Edit Path</source>
-        <translation>Editeu camí</translation>
+        <translation>Edita el camí</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="113"/>
@@ -1020,12 +1020,12 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../settingsdialog.cpp" line="117"/>
         <source>Start conky at system startup</source>
-        <translation>Engega el Conky en arrencar el sistema</translation>
+        <translation>Inicia el Conky en arrencar el sistema</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="121"/>
         <source>Startup delay (seconds):</source>
-        <translation>Retard d&apos;engegada (segons): </translation>
+        <translation>Retard per a l&apos;inici (segons): </translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="134"/>

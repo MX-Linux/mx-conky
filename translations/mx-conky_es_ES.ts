@@ -385,7 +385,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1563"/>
         <source>Abbreviated name, e.g. Tu</source>
-        <translation>Nombre abreviado, por ejemplo, Mar</translation>
+        <translation>Nombre abreviado, p. ej. Mar</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1570"/>
@@ -395,7 +395,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1574"/>
         <source>Abbreviated name, e.g. Oct</source>
-        <translation>Nombre abreviado, por ejemplo, Oct</translation>
+        <translation>Nombre abreviado, p. ej. Oct</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1593"/>
