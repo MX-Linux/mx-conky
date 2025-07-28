@@ -89,6 +89,37 @@ QStringList ConkyManager::searchPaths() const
     return m_searchPaths;
 }
 
+void ConkyManager::addFileExtension(const QString &extension)
+{
+    QString ext = extension.startsWith('.') ? extension : '.' + extension;
+    if (!m_fileExtensions.contains(ext)) {
+        m_fileExtensions.append(ext);
+        scanForConkies();
+        emit conkyItemsChanged();
+    }
+}
+
+void ConkyManager::removeFileExtension(const QString &extension)
+{
+    QString ext = extension.startsWith('.') ? extension : '.' + extension;
+    if (m_fileExtensions.removeOne(ext)) {
+        scanForConkies();
+        emit conkyItemsChanged();
+    }
+}
+
+QStringList ConkyManager::fileExtensions() const
+{
+    return m_fileExtensions;
+}
+
+void ConkyManager::setFileExtensions(const QStringList &extensions)
+{
+    m_fileExtensions = extensions;
+    scanForConkies();
+    emit conkyItemsChanged();
+}
+
 void ConkyManager::scanForConkies()
 {
     clearConkyItems();
@@ -283,6 +314,7 @@ void ConkyManager::saveSettings()
 {
     m_settings.beginGroup("ConkyManager");
     m_settings.setValue("searchPaths", m_searchPaths);
+    m_settings.setValue("fileExtensions", m_fileExtensions);
     m_settings.setValue("startupDelay", m_startupDelay);
 
     m_settings.beginWriteArray("conkyItems");
@@ -311,6 +343,10 @@ void ConkyManager::loadSettings()
                         .value("searchPaths", QStringList() << QDir::homePath() + "/.conky"
                                                             << "/usr/share/mx-conky-data/themes")
                         .toStringList();
+
+    m_fileExtensions = m_settings
+                           .value("fileExtensions", QStringList() << ".conf" << ".conky" << ".conkyrc" << ".cmtheme")
+                           .toStringList();
 
     m_startupDelay = m_settings.value("startupDelay", 20).toInt();
 
@@ -505,7 +541,6 @@ void ConkyManager::scanDirectory(const QString &path)
 
 void ConkyManager::scanConkyDirectory(const QString &path)
 {
-    static const QStringList allowedExtensions = {".conf", ".conky", ".conkyrc", ".cmtheme"};
     static const QStringList skipNames = {"Changelog", "Notes", "README", "README!!", "OPTIONS"};
 
     QDir dir(path);
@@ -548,14 +583,14 @@ void ConkyManager::scanConkyDirectory(const QString &path)
 
         // Check if file is a potential conky config
         bool isConkyFile = false;
-        
+
         // Files without extension (common for conky configs)
         if (!fileName.contains('.')) {
             isConkyFile = true;
         }
-        // Files with .conf extension
+        // Files with configured extensions
         else {
-            for (const QString &ext : allowedExtensions) {
+            for (const QString &ext : m_fileExtensions) {
                 if (fileName.endsWith(ext, Qt::CaseInsensitive)) {
                     isConkyFile = true;
                     break;
