@@ -134,7 +134,7 @@ otillräckliga rättigheter .</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="897"/>
         <source>Backed Up Config File</source>
-        <translation>Backade upp Konfigurationsfilen</translation>
+        <translation>Uppbackad Konfigurationsfil</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="898"/>

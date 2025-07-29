@@ -4,7 +4,7 @@
     <message>
         <location filename="../conkycustomizedialog.cpp" line="56"/>
         <source>Customize Conky - %1</source>
-        <translation type="unfinished"/>
+        <translation>Mukauta Conkya - %1</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="77"/>
@@ -175,72 +175,72 @@ Riittämättömät käyttöoikeudet.</translation>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1335"/>
         <source>Alignment</source>
-        <translation type="unfinished"/>
+        <translation>Tasattu</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1340"/>
         <source>Top Left</source>
-        <translation type="unfinished"/>
+        <translation>Vasen yläkulma</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1341"/>
         <source>Top Right</source>
-        <translation type="unfinished"/>
+        <translation>Oikea yläkulma</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1342"/>
         <source>Top Middle</source>
-        <translation type="unfinished"/>
+        <translation>Yläosa keskellä</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1343"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"/>
+        <translation>Vasen alakulma</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1344"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"/>
+        <translation>Oikea alakulma</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1345"/>
         <source>Bottom Middle</source>
-        <translation type="unfinished"/>
+        <translation>Alaosa keskellä</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1346"/>
         <source>Middle Left</source>
-        <translation type="unfinished"/>
+        <translation>Keskellä vasemmalla</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1347"/>
         <source>Middle Right</source>
-        <translation type="unfinished"/>
+        <translation>Keskellä oikealla</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1348"/>
         <source>Middle Middle</source>
-        <translation type="unfinished"/>
+        <translation>Keskipiste</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1353"/>
         <source>Horizontal Gap</source>
-        <translation type="unfinished"/>
+        <translation>Vaakaetäisyys</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1354"/>
         <source>[GAP_X] Horizontal distance from window border (in pixels)</source>
-        <translation type="unfinished"/>
+        <translation>[GAP_X] Vaakasuora etäisyys ikkunan reunasta (pikseleinä)</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1366"/>
         <source>Vertical Gap</source>
-        <translation type="unfinished"/>
+        <translation>Pystyetäisyys</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1367"/>
         <source>[GAP_Y] Vertical distance from window border (in pixels)</source>
-        <translation type="unfinished"/>
+        <translation>[GAP_Y] Pystysuora etäisyys ikkunan reunasta (pikseleinä)</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1379"/>
@@ -266,33 +266,35 @@ Riittämättömät käyttöoikeudet.</translation>
         <location filename="../conkycustomizedialog.cpp" line="1407"/>
         <source>Width should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
-        <translation type="unfinished"/>
+        <translation>Leveyden tulisi olla suurempi kuin ikkunan sisällön koko,
+muuten asetuksella ei ole vaikutusta.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1411"/>
         <source>Minimum Width</source>
-        <translation type="unfinished"/>
+        <translation>Minimileveys</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1426"/>
         <source>Height should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
-        <translation type="unfinished"/>
+        <translation>Korkeuden tulisi olla suurempi kuin ikkunan sisällön koko,
+muuten asetuksella ei ole vaikutusta.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1428"/>
         <source>Minimum Height</source>
-        <translation type="unfinished"/>
+        <translation>Minimikorkeus</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1442"/>
         <source>Increases the window height by adding empty lines at the end of the Conky config file</source>
-        <translation type="unfinished"/>
+        <translation>Suurentaa ikkunan korkeutta lisäämällä tyhjiä rivejä Conky-määritystiedoston loppuun</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1443"/>
         <source>Height Padding</source>
-        <translation type="unfinished"/>
+        <translation>Korkeuspehmuste</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1458"/>
@@ -302,39 +304,41 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1471"/>
         <source>Transparency Type</source>
-        <translation type="unfinished"/>
+        <translation>Läpinäkyvyys</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1476"/>
         <source>Opaque</source>
-        <translation type="unfinished"/>
+        <translation>Läpinäkymätön</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1477"/>
         <source>Transparent</source>
-        <translation type="unfinished"/>
+        <translation>Läpinäkyvä</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1478"/>
         <source>Pseudo-Transparent</source>
-        <translation type="unfinished"/>
+        <translation>Näennäisläpinäkyvä</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1479"/>
         <source>Semi-Transparent</source>
-        <translation type="unfinished"/>
+        <translation>Puoliläpinäkyvä</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1484"/>
         <source>Opacity (%)</source>
-        <translation type="unfinished"/>
+        <translation>Peittävyys (%)</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1485"/>
         <source>Window Opacity
 
 0 = Fully Transparent, 100 = Fully Opaque</source>
-        <translation type="unfinished"/>
+        <translation>Ikkunan läpinäkyvyys
+
+0 = Täysin läpinäkyvä, 100 = Täysin läpinäkymätön</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1499"/>
@@ -344,32 +348,32 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1504"/>
         <source>Choose Color</source>
-        <translation type="unfinished"/>
+        <translation>Valitse väri</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1524"/>
         <source>Setting Type to &quot;Transparent&quot; will make the whole window transparent (including any images). Use &quot;Pseudo-Transparent&quot; if you want the images to be opaque.</source>
-        <translation type="unfinished"/>
+        <translation>Asettaminen arvoon &quot;Läpinäkyvä&quot; se tekee koko ikkunasta läpinäkyvän (mukaan lukien kaikki kuvat). Käytä arvoa &quot;Näennäisläpinäkyvä&quot;, jos haluat kuvien olevan läpinäkymättömiä.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1534"/>
         <source>Setting Type to &quot;Pseudo-Transparent&quot; will make the window transparent but the window will have a shadow. The shadow can be disabled by configuring your window manager.</source>
-        <translation type="unfinished"/>
+        <translation>Asettaminen arvoon &quot;Näennäisläpinäkyvä&quot; tekee ikkunasta läpinäkyvän, mutta ikkunaan tulee varjo. Varjon voi poistaa käytöstä ikkunanhallinan asetuksista.</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1545"/>
         <source>Transparency</source>
-        <translation>Läpikuultava</translation>
+        <translation>Läpinäkyvä</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1556"/>
         <source>Date Format</source>
-        <translation>Päivämäärän muotoilu</translation>
+        <translation>Päiväyksen muoto</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1559"/>
         <source>Day</source>
-        <translation>Päivä</translation>
+        <translation>Päivämäärä</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1561"/>
@@ -411,17 +415,17 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1605"/>
         <source>12 Hour</source>
-        <translation type="unfinished"/>
+        <translation>12H</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1606"/>
         <source>24 Hour</source>
-        <translation type="unfinished"/>
+        <translation>24H</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1621"/>
         <source>Date &amp;&amp; Time</source>
-        <translation>Päivämäärä &amp;&amp; kellonaika</translation>
+        <translation>Päivämäärä &amp;&amp; aika</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1634"/>
@@ -431,22 +435,22 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1642"/>
         <source>WiFi</source>
-        <translation type="unfinished"/>
+        <translation>WiFi</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1645"/>
         <source>WiFi Network</source>
-        <translation type="unfinished"/>
+        <translation>WiFi verkko</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1648"/>
         <source>LAN</source>
-        <translation type="unfinished"/>
+        <translation>LAN</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1651"/>
         <source>Wired LAN Network</source>
-        <translation type="unfinished"/>
+        <translation>Langallinen lähiverkko</translation>
     </message>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1665"/>
@@ -456,7 +460,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkycustomizedialog.cpp" line="1928"/>
         <source>Select Background Color</source>
-        <translation type="unfinished"/>
+        <translation>Valitse taustaväri</translation>
     </message>
 </context>
 <context>
@@ -464,17 +468,17 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkylistwidget.cpp" line="63"/>
         <source>Running</source>
-        <translation type="unfinished"/>
+        <translation>Käynnissä</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="63"/>
         <source>Stopped</source>
-        <translation type="unfinished"/>
+        <translation>Pysäytetty</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="115"/>
         <source>Autostart</source>
-        <translation>Automaattikäynnistys</translation>
+        <translation>Autom. käynnistys</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="117"/>
@@ -484,7 +488,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkylistwidget.cpp" line="120"/>
         <source>Customize</source>
-        <translation type="unfinished"/>
+        <translation>Mukauta</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="125"/>
@@ -499,7 +503,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkylistwidget.cpp" line="157"/>
         <source>Start</source>
-        <translation>Aloita</translation>
+        <translation>Käynnistä</translation>
     </message>
 </context>
 <context>
@@ -507,17 +511,17 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkylistwidget.cpp" line="313"/>
         <source>Total: 0 conkies</source>
-        <translation type="unfinished"/>
+        <translation>Yhteensä: 0 conkia</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="542"/>
         <source>Total: %1 conkies</source>
-        <translation type="unfinished"/>
+        <translation>Yhteensä: %1 conkia</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="545"/>
         <source>Showing: %1 of %2 conkies</source>
-        <translation type="unfinished"/>
+        <translation>Näytetään: %1 - %2 conkia</translation>
     </message>
 </context>
 <context>
@@ -525,22 +529,22 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../conkylistwidget.cpp" line="494"/>
         <source>No Conky Selected</source>
-        <translation type="unfinished"/>
+        <translation>Ei valittua Conkya</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="496"/>
         <source>Select a conky from the list to see its preview</source>
-        <translation type="unfinished"/>
+        <translation>Valitse conky luettelosta ja katso sen esikatselu</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="515"/>
         <source>Preview image could not be loaded</source>
-        <translation type="unfinished"/>
+        <translation>Esikatselukuvan lataaminen epäonnistui</translation>
     </message>
     <message>
         <location filename="../conkylistwidget.cpp" line="518"/>
         <source>No preview image available</source>
-        <translation type="unfinished"/>
+        <translation>Esikatselukuvaa ei ole saatavilla</translation>
     </message>
 </context>
 <context>
@@ -554,7 +558,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../mainwindow.cpp" line="234"/>
         <source>About this application</source>
-        <translation>Tietoja tästä sovelluksesta</translation>
+        <translation>Tietoja sovelluksesta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
@@ -579,7 +583,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../mainwindow.cpp" line="149"/>
         <source>Loading Conky configurations...</source>
-        <translation type="unfinished"/>
+        <translation>Ladataan Conky-asetuksia...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
@@ -589,7 +593,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../mainwindow.cpp" line="174"/>
         <source>Configure conky search paths</source>
-        <translation type="unfinished"/>
+        <translation>Määritä conky-hakupolut</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="176"/>
@@ -599,47 +603,47 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../mainwindow.cpp" line="178"/>
         <source>Refresh conky list</source>
-        <translation type="unfinished"/>
+        <translation>Virkistä conky lista</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="180"/>
         <source>Start All</source>
-        <translation type="unfinished"/>
+        <translation>Käynnistä kaikki</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="182"/>
         <source>Start all enabled conkies</source>
-        <translation type="unfinished"/>
+        <translation>Käynnistää kaikki käytössä olevat conkit</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="184"/>
         <source>Stop All</source>
-        <translation type="unfinished"/>
+        <translation>Pysäytä kaikki</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="186"/>
         <source>Stop all running conkies</source>
-        <translation type="unfinished"/>
+        <translation>Pysäytä kaikki ajossa olevat conkit</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="940"/>
         <source>Running</source>
-        <translation type="unfinished"/>
+        <translation>Käynnissä</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="941"/>
         <source>Stopped</source>
-        <translation type="unfinished"/>
+        <translation>Pysäytetty</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="194"/>
         <source>Search conky by name...</source>
-        <translation type="unfinished"/>
+        <translation>Hae conky nimellä...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="196"/>
         <source>Search conkies by name (Ctrl+F)</source>
-        <translation type="unfinished"/>
+        <translation>Hae conky nimellä (Ctrl+F)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="241"/>
@@ -650,57 +654,59 @@ otherwise this setting will not have any effect</source>
         <location filename="../mainwindow.cpp" line="417"/>
         <location filename="../mainwindow.cpp" line="593"/>
         <source>Copy Conky</source>
-        <translation type="unfinished"/>
+        <translation>Kopioi Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="463"/>
         <location filename="../mainwindow.cpp" line="641"/>
         <source>Conky Copied</source>
-        <translation type="unfinished"/>
+        <translation>Conky kopioitu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="464"/>
         <source>Conky has been copied to your personal folder for editing:
 %1</source>
-        <translation type="unfinished"/>
+        <translation>Conky on kopioitu kansioosi muokkausta varten:
+%1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
         <location filename="../mainwindow.cpp" line="644"/>
         <source>Copy Failed</source>
-        <translation type="unfinished"/>
+        <translation>Kopiointi epäonnistui</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
         <location filename="../mainwindow.cpp" line="644"/>
         <source>Failed to copy conky to your personal folder.</source>
-        <translation type="unfinished"/>
+        <translation>Conky-tiedoston kopioiminen kansioosi epäonnistui.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="528"/>
         <source>Delete Conky</source>
-        <translation type="unfinished"/>
+        <translation>Poista Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="642"/>
         <source>Conky has been copied to your personal folder for customization:
 %1</source>
-        <translation type="unfinished"/>
+        <translation>Conky on kopioitu kansioosi muokkausta varten:
+%1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="561"/>
         <source>Delete Successful</source>
-        <translation type="unfinished"/>
+        <translation>Poistaminen onnistui</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="168"/>
         <source>Previews</source>
-        <translation type="unfinished"/>
+        <translation>Esikatselut</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="170"/>
         <source>Generate preview images for conkies</source>
-        <translation type="unfinished"/>
+        <translation>Luo esikatselukuvia conkieille</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
@@ -713,44 +719,46 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../mainwindow.cpp" line="191"/>
         <source>Filter conkies by running status or location</source>
-        <translation type="unfinished"/>
+        <translation>Suodata conkit ajotilan tai paikan mukaan</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
         <location filename="../mainwindow.cpp" line="589"/>
         <source>Enter a name for the copy:</source>
-        <translation type="unfinished"/>
+        <translation>Anna kopiolle nimi:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="414"/>
         <location filename="../mainwindow.cpp" line="590"/>
         <source>In order for you to edit and save a conky, it must first be copied to ~/.conky where you have permission.
 Enter a name for the copy.</source>
-        <translation type="unfinished"/>
+        <translation>Jotta voit muokata tai tallentaa conky-tiedoston, se on ensin kopioitava kansioon ~/.conky, johon sinulla on käyttöoikeudet.
+Anna kopiolle nimi.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="431"/>
         <location filename="../mainwindow.cpp" line="609"/>
         <source>Directory Exists</source>
-        <translation type="unfinished"/>
+        <translation>Kansio on olemassa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="432"/>
         <location filename="../mainwindow.cpp" line="610"/>
         <source>A conky with the name '%1' already exists in your personal folder.
 Do you want to overwrite it?</source>
-        <translation type="unfinished"/>
+        <translation>Kansiossasi on jo conky nimeltä &quot;%1&quot;. Haluatko korvata?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="499"/>
         <source>Edit Conky</source>
-        <translation type="unfinished"/>
+        <translation>Muokkaa Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="500"/>
         <source>This conky file is read-only and requires administrator privileges to edit.
 Do you want to edit it with elevated privileges?</source>
-        <translation type="unfinished"/>
+        <translation>Tämä conky on vain lukumuodossa ja muokkaamiseen vaaditaan järjestelmänvalvojan oikeudet.
+Haluatko muokata sitä laajennetuilla oikeuksilla?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="529"/>
@@ -758,44 +766,48 @@ Do you want to edit it with elevated privileges?</source>
 %1
 
 This action cannot be undone.</source>
-        <translation type="unfinished"/>
+        <translation>Haluatko poistaa conky-tiedoston:
+%1
+Toimintoa ei voi perua.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="561"/>
         <source>Conky file deleted successfully.</source>
-        <translation type="unfinished"/>
+        <translation>Conky-tiedoston poistaminen onnistui.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="563"/>
         <source>Delete Failed</source>
-        <translation type="unfinished"/>
+        <translation>Poisto epäonnistui</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="563"/>
         <source>Failed to delete conky file:
 %1</source>
-        <translation type="unfinished"/>
+        <translation>Conky-tiedoston poisto epäonnistui:
+%1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="651"/>
         <source>Customize Conky</source>
-        <translation type="unfinished"/>
+        <translation>Mukauta Conky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="652"/>
         <source>This conky file is read-only and requires administrator privileges to customize.
 Do you want to customize it with elevated privileges?</source>
-        <translation type="unfinished"/>
+        <translation>Tämä conky on vain lukumuodossa ja muokkaamiseen vaaditaan järjestelmänvalvojan oikeudet.
+Haluatko muokata sitä laajennetuilla oikeuksilla?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="803"/>
         <source>Editor Error</source>
-        <translation type="unfinished"/>
+        <translation>Editorin virhe</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="803"/>
         <source>Cannot start editor for file: %1</source>
-        <translation type="unfinished"/>
+        <translation>Tiedoston muokkausta ei voi käynnistää: %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="813"/>
@@ -849,32 +861,32 @@ Do you want to customize it with elevated privileges?</source>
     <message>
         <location filename="../previewdialog.cpp" line="50"/>
         <source>Generate Preview</source>
-        <translation type="unfinished"/>
+        <translation>Luo esikatselu</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="75"/>
         <source>Generate preview images for</source>
-        <translation type="unfinished"/>
+        <translation>Luo esikatselukuvat kohteelle</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="78"/>
         <source>Selected Widget</source>
-        <translation type="unfinished"/>
+        <translation>Valittu widgetti</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="79"/>
         <source>All Widgets with Missing Previews</source>
-        <translation type="unfinished"/>
+        <translation>Kaikki widgetit, joissa esikatselu puuttuu</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="80"/>
         <source>All Widgets (Overwrite Existing Images)</source>
-        <translation type="unfinished"/>
+        <translation>Kaikki widgetit (korvaa nykyiset kuvat)</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="85"/>
         <source>No conky is currently selected</source>
-        <translation type="unfinished"/>
+        <translation>Conkya ei ole valittuna tällä hetkellä</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="93"/>
@@ -884,12 +896,12 @@ Do you want to customize it with elevated privileges?</source>
     <message>
         <location filename="../previewdialog.cpp" line="96"/>
         <source>High quality images (PNG)</source>
-        <translation type="unfinished"/>
+        <translation>Korkealaatuiset kuvat (PNG)</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="97"/>
         <source>Generate preview images in PNG format instead of JPEG</source>
-        <translation type="unfinished"/>
+        <translation>Luo esikatselukuvat png-formaatissa, jpeg:n sijaan</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="114"/>
@@ -904,17 +916,17 @@ Do you want to customize it with elevated privileges?</source>
     <message>
         <location filename="../previewdialog.cpp" line="145"/>
         <source>No Items</source>
-        <translation type="unfinished"/>
+        <translation>Ei kohteita</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="145"/>
         <source>No conky widgets need preview generation.</source>
-        <translation type="unfinished"/>
+        <translation>Mikään conky-widgetti ei tarvitse esikatselun luomista.</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="155"/>
         <source>Starting preview generation...</source>
-        <translation type="unfinished"/>
+        <translation>Esikatselun luominen alkoi...</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="159"/>
@@ -924,12 +936,12 @@ Do you want to customize it with elevated privileges?</source>
     <message>
         <location filename="../previewdialog.cpp" line="198"/>
         <source>Generating preview for: %1</source>
-        <translation type="unfinished"/>
+        <translation>Luodaan esikatselua: %1</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="419"/>
         <source>Preview generation complete! Generated %1 previews.</source>
-        <translation type="unfinished"/>
+        <translation>Esikatselun luonti valmiina! %1 esikatselua luotu.</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="423"/>
@@ -939,12 +951,12 @@ Do you want to customize it with elevated privileges?</source>
     <message>
         <location filename="../previewdialog.cpp" line="426"/>
         <source>Preview Generation Complete</source>
-        <translation type="unfinished"/>
+        <translation>Esikatselun luonti valmiina</translation>
     </message>
     <message>
         <location filename="../previewdialog.cpp" line="427"/>
         <source>Successfully generated %1 preview images.</source>
-        <translation type="unfinished"/>
+        <translation>%1 esikatselukuvaa luotu.</translation>
     </message>
 </context>
 <context>
@@ -971,47 +983,47 @@ Do you want to customize it with elevated privileges?</source>
         <location filename="../settingsdialog.cpp" line="40"/>
         <location filename="../settingsdialog.cpp" line="62"/>
         <source>Select Conky Directory</source>
-        <translation type="unfinished"/>
+        <translation>Valitse Conky-kansio</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="83"/>
         <source>MX Conky Settings</source>
-        <translation type="unfinished"/>
+        <translation>MX Conky asetukset</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="89"/>
         <source>Conky Search Paths</source>
-        <translation type="unfinished"/>
+        <translation>Conky-hakupolut</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="95"/>
         <source>Add Path</source>
-        <translation type="unfinished"/>
+        <translation>Lisää polku</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="98"/>
         <source>Remove Path</source>
-        <translation type="unfinished"/>
+        <translation>Poista polku</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="101"/>
         <source>Edit Path</source>
-        <translation type="unfinished"/>
+        <translation>Muokkaa polkua</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="113"/>
         <source>Autostart Settings</source>
-        <translation>Automaattikäynnistyksen asetukset</translation>
+        <translation>Autom. käynnistyksen asetukset</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="117"/>
         <source>Start conky at system startup</source>
-        <translation type="unfinished"/>
+        <translation>Käynnistä conky tietokoneen käynnistyksen aikana</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="121"/>
         <source>Startup delay (seconds):</source>
-        <translation type="unfinished"/>
+        <translation>Käynnistysviive (sekuntia):</translation>
     </message>
     <message>
         <location filename="../settingsdialog.cpp" line="134"/>
