@@ -9,74 +9,66 @@
 <h1>HELP: MX Conky</h1>
 <h2 id="Background"><a id="Background" name="Background"></a>Background</h2>
 
-<p>MX Conky is a tool whose goal is to render the use and customization of <a href="https://en.wikipedia.org/wiki/Conky_(software)">conky</a> scripts available to a wider and non-technical audience. It consists of a gui program and an associated data file of conkies (legacy versions) that have been tested and edited for use in MX Linux. The default conkies can be viewed in <a href="https://mxlinux.org/conky-images">the Conky Images gallery</a>.</p>
+<p>MX Conky is a comprehensive tool for managing multiple desktop system monitors (conky scripts) simultaneously. It provides an easy-to-use interface for discovering, configuring, previewing, and running conky scripts from various sources. The application supports both legacy and modern conky formats and includes extensive customization options including autostart functionality, search/filtering, and real-time preview capabilities.</p>
 
 <p><a class="external text" href="https://github.com/brndnmtthws/conky/wiki/What-Is-Conky%3F" rel="nofollow">Conky</a> is an extremely versatile system monitoring utility that can display on your desktop a wide variety of information. Many creative conky scripts exist that have expanded its original scope to include music, email, weather, updates, etc. Its range has been further extended with the use of <a href="https://en.wikipedia.org/wiki/Lua_(programming_language)">Lua</a>, a lightweight and powerful programming language.</p>
 
-<p>Many users find conkies difficult to customize. They come from many different sources, they follow no consistent configuration layout (in legacy format), many of them no longer work for one reason or another, and the text itself is difficult to understand. The situation was made much easier by <a href="http://www.teejeetech.in/p/conky-manager.html">Conky Manager</a> (see below). MX Conky was created in an effort to supplement Conky Manager and provide an easy starting point for users lacking prior experience.</p>
-
-<h2 id="Installation"><a id="Installation" name="Installation"></a>Installation</h2>
-
-<p>MX Conky and its data pack are installed by default from MX-17 onward; users on earlier versions of MX Linux can install it from the repos. Its installation brings Conky Manager along as a dependency.</p>
+<p>Many users find conkies difficult to customize due to their diverse sources, inconsistent configuration layouts, and complex syntax. MX Conky addresses these challenges by providing a unified interface for managing multiple conky scripts, with built-in search paths, content validation, and user-friendly customization options. The application works independently and includes comprehensive theme management capabilities.</p>
 
 <h2 id="Use"><a id="Use" name="Use"></a>Use</h2>
 
-<p><strong>NB</strong>: <strong>do <u>not</u> follow traditional directions</strong> <strong>about putting conkies in your /home folder (as ~/.conkyrc) and enabling conky to autostart. </strong>MX Conky is designed to be used in conjunction with Conky Manager, which is a much better method to deal with them.</p>
+<p>MX Conky is a standalone application that provides comprehensive conky management without requiring external tools. It automatically scans configured search paths for conky files and presents them in an organized, searchable interface.</p>
 
-<h3><strong>Step 1</strong></h3>
+<h3><strong>Main Interface</strong></h3>
 
-<p>&nbsp;Conky Manager should be used to set a whole group of configurations.</p>
+<p>When you launch MX Conky, you'll see the main interface with the following components:</p>
+
+<img src="mx-conky-interface.png" alt="MX Conky Main Interface" />
 
 	<ul>
-		<li>Change the basic location (top right, bottom left, etc.)</li>
-		<li>Change the transparency setting</li>
-		<li>Browse through the available conkies while seeing thumbnails of them</li>
-		<li>Select autostart (runs a Conky Manager script)</li>
-		<li>Test new conkies (downloaded from the web, for example)</li>
-		<li>Etc.</li>
+		<li><strong>Toolbar</strong>: Settings, Refresh, Start All, Stop All, Autostart, and Preview buttons</li>
+		<li><strong>Search and Filter</strong>: Filter dropdown and search field to quickly find specific conkies</li>
+		<li><strong>Conky List</strong>: Left panel showing all discovered conky files with checkboxes and controls</li>
+		<li><strong>Preview Panel</strong>: Right panel displaying preview images and details for selected conkies</li>
 	</ul>
 
-<p>See <a href="https://mxlinux.org/wiki/help-files/help-conky-manager">HELP &#8212; Conky Manager</a> for more.</p>
+<h3><strong>Managing Multiple Conkies</strong></h3>
 
-<h3><strong>Step 2</strong></h3>
-
-<p><strong>NB: changes are instantly recorded in the script. At the end of the session, you will be given the opportunity to save the original that you started with and, if you say yes, a file will be placed in the same folder with a time stamp that you can rename as desired. </strong></p>
-
-<p>Once you have used Conky Manager to carry out basic functions, you are ready to tweak a conky using MX Conky. When you launch it, one of two things will happen:</p>
+<p>MX Conky supports running multiple conky scripts simultaneously:</p>
 
 	<ol>
-		<li>If a conky is already running, MX Conky will open ready to edit it.</li>
-		<li>If no conky is running, MX Conky will display the available conkies in the default location (~/.conky/); navigate to the one you want and launch it by clicking OK.</li>
+		<li><strong>Enable/Disable</strong>: Use checkboxes next to each conky to enable or disable them individually</li>
+		<li><strong>Autostart Configuration</strong>: Set conkies to start automatically on login with customizable delays</li>
+		<li><strong>Bulk Operations</strong>: Use toolbar buttons to start all, stop all, or configure autostart for multiple conkies</li>
+		<li><strong>Real-time Status</strong>: Monitor which conkies are currently running with status indicators</li>
 	</ol>
 
-<img src="MXConky.png" alt="MX Conky" />
+<h3><strong>Individual Conky Controls</strong></h3>
 
-<p>Fields from top to bottom:</p>
+<p>Each conky in the list provides several control options:</p>
 
 	<ul>
-		<li>Launch.
-			<ul>
-				<li>The bar across the top shows the name of the conky that is currently ready for editing. You can also click on it at any point to select another conky to work with.</li>
-				<li>The Run/Stop toggle allows you to stop a conky or, after selecting a new one, to run it to watch your changes.</li>
-				<li>Edit brings up the conky script itself.</li>
-				<li>Undo returns you to the last saved script version.</li>
-			</ul>
-		</li>
-		<li>Drag.
-			<ul>
-				<li>By far the easiest way of making fine adjustments to a basic position selected with Conky Manager is simply to drag it using the Alt key and the left mouse click.</li>
-				<li>You can also resize the conky&#8217;s own window by using the Alt key and the <u>right</u> mouse click. You can see that window if you use Comky Manager to change the transparency to &#8220;opaque.&#8221;</li>
-				<li>These changes are valid only for the session while the conky is running. When the conky is restarted, the script itself will be followed; permanent change requires that the script itself be changed.
-					<ul>
-						<li>For fine location of the entire conky window, use Conky Manager to alter the horizontal and vertical &#8220;gap&#8221; values; to change the location of individual parts of the conky, the &#8220;offset&#8221; and &#8220;voffset&#8221; fields of the TEXT section must be changed&#8211;you will usually need to experiment a bit to get it right.</li>
-						<li>Permanent window size can be adjusted using Conky Manager &gt; Size; again, some experimentation is usually required.</li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-		<li>Desktop. You can have your conky on all desktops or just on Desktop 1. If placed on any other desktop at first, it will revert to Desktop 1 at next login, wake from suspend or reboot.</li>
-		<li>Formats. Here you can easily change month and day names. Time format can be manipulated with Conky Manager.</li>
-		<li>Colors. The conkies in the MX Conky data file have been modified to provide a standard method for easy manipulation.</li>
+		<li><strong>Autostart Checkbox</strong>: Toggle the conky autostart on/off</li>
+		<li><strong>Edit Button</strong>: Open the conky script in your default text editor for customization</li>
+		<li><strong>Customize Button</strong>: Access built-in customization options for position, transparency, and appearance</li>
+		<li><strong>Start/Stop Buttons</strong>: Manually control individual conky execution</li>
+	</ul>
+
+<h3><strong>Preview and Search Features</strong></h3>
+
+	<ul>
+		<li><strong>Preview Panel</strong>: View thumbnail images and detailed information about selected conkies</li>
+		<li><strong>Search Function</strong>: Quickly locate conkies by name or description using the search field</li>
+		<li><strong>Filter Options</strong>: Filter conkies by running status (all, running, stopped)</li>
+		<li><strong>Preview Dialog</strong>: Generate previews. You can update priviews or generate previews for conkys that are missing them</li>
+	</ul>
+
+<h3><strong>Configuration and Settings</strong></h3>
+
+	<ul>
+		<li><strong>Search Paths</strong>: Configure directories where MX Conky looks for conky files</li>
+		<li><strong>Autostart Management</strong>: Set up conkies to start automatically with system login</li>
+		<li><strong>Copy Function</strong>: Copy system conkies to user directories for safe customization</li>
 	</ul>
 
 <h2 id="Example"><a id="Examples" name="Examples"></a>Example</h2>
@@ -139,48 +131,23 @@
 <p><a id="Technical details" name="Technical details"></a><strong>Technical details</strong></p>
 
 	<ul>
-		<li>The data package that is included with MX Conky (mx-conky-data) is installed into /usr/share/mx-conky-data/themes/. MX Conky loads its contents into ~/.conky/ on first launch if it&#8217;s not already there.</li>
-		<li>Selection of conkies to be included is based primarily on simplicity and aesthetics.</li>
-		<li>Every conky included by default with MX-Conky is accompanied by a source file indicating the original creator and a thumbnail image.</li>
-		<li>Conkies included use the old syntax. Those using conky versions later than 1.9.1 are presently not included. Conkies with old syntax can be converted to the new one in the following manner:
-			<ul>		
-				<li>Install lua5.2</li>
-				<li>Download convert.lua</li>
-				<li>Run command</li>
-			</ul>
-<li>Install lua5.2</li>
-<li>Download <a href="https://github.com/brndnmtthws/conky/blob/master/extras/convert.lua">convert.lua</a></li>
-<li>Run command</li>
-</ul>
-       
+		<li>MX Conky automatically scans multiple search paths including /usr/share/mx-conky-data/themes/, ~/.conky/, and user-configured directories for conky files.</li>
+		<li>The application supports both legacy conky format and modern conky.config/conky.text syntax with automatic content validation.</li>
+		<li>Each conky theme includes preview images (.png files) and source attribution when available.</li>
+		<li>Settings are stored in ~/.config/MX-Linux/mx-conky.conf using Qt's QSettings system.</li>
+		<li>MX Conky supports both legacy and modern conky formats automatically. Content validation uses pattern matching to identify valid conky files regardless of format or file extension.</li>
 
-<pre class="wp-block-preformatted rteindent2"><em>lua ./convert.lua </em>old_conkyrc new_conkyrc</pre>
-		</li>
-
-		<li>The included conkies are based on the work of various artistic creators. They have been updated for function (e.g., switching to new network interface names), restructured to work with MX Conky and edited for simplicity.</li>
-		<li>To add a new conky so it will work with MX Conky:
+		<li>The included conky themes are based on the work of various creators and have been tested for compatibility. The application includes real-time status monitoring and process management for reliable operation.</li>
+		<li>To add new conkies to MX Conky:
 			<ul>
-				<li>First use Conky Manager to see if it will show at all on MX Linux. (If not, try changing the transparency to pseudo-transparent.)</li>
-				<li>Open up the script, and collect all the different instances of <strong>color name/code </strong>inside braces (e.g., {color forestgreen} or {color 228B22})</li>
-				<li>Create a <em>color declaration</em> above the word TEXT somewhere by making a list like this (compare one of the MX conkies if unsure):
-					<ul>
-						<li>color0 forestgreen</li>
-						<li>color1 EAEAEA</li>
-						<li>etc.</li>
-					</ul>
-				</li>
-				<li>Use Edit &gt; Replace to substitute all the instances of a name or code with its list name (e.g., so all &#8220;forestgreen&#8221; will be replaced by &#8220;color0&#8221;</li>
-				<li>Save and exit</li>
-				<li>Now you will be able to change all occurences of a certain color following the MX Conky procedure outlined above.</li>
-				<li>If your new conky works with MX Conky and meets the selection criteria, please submit it on the Forum to be considered for inclusion.</li>
+				<li>Place conky files in any configured search path (e.g., ~/.conky/ for user conkies)</li>
+				<li>Include a .png preview image in the same directory for thumbnail display</li>
+				<li>MX Conky will automatically detect and validate conky files using content analysis</li>
+				<li>Use the Refresh button to rescan directories after adding new files</li>
+				<li>Both legacy and modern conky syntax are supported automatically</li>
 			</ul>
 		</li>
 	</ul>
-
-
-<h2 id="Resources"><a id="Resources" name="Resources"></a>Resources</h2>
-
-<ul><li><a class="postlink" href="http://conky.sourceforge.net/config_settings.html">http://conky.sourceforge.net/config_settings.html</a></li><li><a href="https://github.com/brndnmtthws/conky/wiki/">https://github.com/brndnmtthws/conky/wiki/</a></li><li><a class="postlink" href="http://conky.sourceforge.net/variables.html">http://conky.sourceforge.net/variables.html</a></li><li><a href="https://mxlinux.org/wiki/other/time-formats-scripts">Time Format in Scripts</a></li><li><a class="postlink" href="http://conky.sourceforge.net/docs.html">http://conky.sourceforge.net/docs.html</a></li><li><a href="https://plus.google.com/s/%23conky/posts">https://plus.google.com/s/%23conky/posts</a></li><li><a class="postlink" href="https://ubuntuforums.org/showthread.php?t=281865">https://ubuntuforums.org/showthread.php?t=281865</a></li><li><a href="https://bbs.archlinux.org/viewtopic.php?id=39906">https://bbs.archlinux.org/viewtopic.php?id=39906</a></li><li><a class="postlink" href="https://conky-artists-group.deviantart.com/gallery/24132854/Featured">https://conky-artists-group.deviantart. &#8230; 4/Featured</a></li><li><a class="postlink" href="https://plus.google.com/u/0/communities/104794997718869399105">https://plus.google.com/u/0/communities &#8230; 8869399105</a></li><li><a class="postlink" href="http://www.mediafire.com/file/ibvla9ikrdph48e/Deluxe+Pack_3.7z">http://www.mediafire.com/file/ibvla9ikr &#8230; +Pack_3.7z</a> &lt;&lt; extra conky pack for CM</li></ul>
 
 
 <p>License: <a href="https://mxlinux.org/wiki/licenses/license-mx-conky">here</a>.</p>
@@ -191,6 +158,18 @@
 
 
 
-<h6><strong>v. 20180225</strong></h6>
+<h6><strong>Version: 2025.8 </strong></h6>
+<p><strong>Major Changes:</strong></p>
+<ul>
+<li>Complete rewrite using Qt6 and C++20</li>
+<li>Standalone operation (no longer requires Conky Manager)</li>
+<li>Multiple conky management with simultaneous execution</li>
+<li>Advanced search and filtering capabilities</li>
+<li>Real-time status monitoring and process management</li>
+<li>Autostart configuration with customizable delays</li>
+<li>Preview system with full-screen preview dialog</li>
+<li>Automatic content validation for conky file detection</li>
+<li>Enhanced customization dialog with position and appearance controls</li>
+</ul>
 </body>
 </html>
