@@ -36,7 +36,7 @@ if(USE_CLANG)
 endif()
 
 # Find Qt6 components
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Network LinguistTools)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets LinguistTools)
 
 # Qt6 configuration
 set(CMAKE_AUTOMOC ON)
@@ -117,7 +117,7 @@ add_executable(mx-conky ${SOURCES} ${HEADERS} ${RESOURCES})
 target_include_directories(mx-conky PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 # Link Qt6 libraries
-target_link_libraries(mx-conky Qt6::Core Qt6::Widgets Qt6::Network)
+target_link_libraries(mx-conky Qt6::Core Qt6::Widgets)
 
 # Handle translations - generate .qm files in translations/ directory
 set(QM_FILES)

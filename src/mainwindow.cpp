@@ -46,7 +46,6 @@ using namespace std::chrono_literals;
 
 MainWindow::MainWindow(QWidget *parent)
     : QDialog(parent),
-      m_networkManager(new QNetworkAccessManager(this)),
       m_conkyManager(nullptr),
       m_loadingMovie(nullptr),
       m_copyDialogShownThisSession(false)
@@ -411,12 +410,12 @@ void MainWindow::onEditRequested(ConkyItem *item)
 
             bool ok;
             QString dialogMessage = m_copyDialogShownThisSession
-                                        ? tr("Enter a name for the copy:")
-                                        : tr("In order for you to edit and save a conky, it must first be copied to "
-                                             "~/.conky where you have permission.\nEnter a name for the copy.");
+                ? tr("Enter a name for the copy:")
+                : tr("In order for you to edit and save a conky, it must first be copied to "
+                     "~/.conky where you have permission.\nEnter a name for the copy.");
 
-            QString newName
-                = QInputDialog::getText(this, tr("Copy Conky"), dialogMessage, QLineEdit::Normal, defaultName, &ok);
+            QString newName = QInputDialog::getText(this, tr("Copy Conky"), dialogMessage,
+                                                    QLineEdit::Normal, defaultName, &ok);
 
             if (!ok || newName.isEmpty()) {
                 return; // User cancelled or entered empty name
@@ -587,12 +586,12 @@ void MainWindow::onCustomizeRequested(ConkyItem *item)
 
             bool ok;
             QString dialogMessage = m_copyDialogShownThisSession
-                                        ? tr("Enter a name for the copy:")
-                                        : tr("In order for you to edit and save a conky, it must first be copied to "
-                                             "~/.conky where you have permission.\nEnter a name for the copy.");
+                ? tr("Enter a name for the copy:")
+                : tr("In order for you to edit and save a conky, it must first be copied to "
+                     "~/.conky where you have permission.\nEnter a name for the copy.");
 
-            QString newName
-                = QInputDialog::getText(this, tr("Copy Conky"), dialogMessage, QLineEdit::Normal, defaultName, &ok);
+            QString newName = QInputDialog::getText(this, tr("Copy Conky"), dialogMessage,
+                                                    QLineEdit::Normal, defaultName, &ok);
 
             if (ok && !newName.isEmpty()) {
                 m_copyDialogShownThisSession = true;
@@ -857,81 +856,38 @@ void MainWindow::pushAbout_clicked()
 
 void MainWindow::pushHelp_clicked()
 {
-    qDebug() << "MainWindow::pushHelp_clicked: Checking online help availability";
-
-    // Try the online help first
-    QString onlineUrl = "https://mxlinux.org/wiki/help-files/help-mx-conky/";
-    QNetworkRequest request(onlineUrl);
-    request.setHeader(QNetworkRequest::UserAgentHeader, "Mozilla/5.0 (MX Conky Help)");
-    request.setRawHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-
-    QNetworkReply *reply = m_networkManager->head(request);
-
-    // Set a timeout for the network request
-    QTimer::singleShot(3s, reply, [reply]() {
-        if (reply->isRunning()) {
-            qDebug() << "MainWindow: Network request timed out, aborting";
-            reply->abort();
-        }
-    });
-
-    connect(reply, &QNetworkReply::finished, this, &MainWindow::onHelpUrlCheckFinished);
-}
-
-void MainWindow::onHelpUrlCheckFinished()
-{
-    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
-    if (!reply) {
-        qDebug() << "MainWindow: Invalid reply object";
-        return;
-    }
-
-    QString onlineUrl = "https://mxlinux.org/wiki/help-files/help-mx-conky/";
-    QString localUrl = "/usr/share/doc/mx-conky/mx-conky.html";
-    QString urlToOpen;
-
-    bool useOnline = false;
-    if (reply->error() == QNetworkReply::NoError) {
-        int statusCode = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
-        if (statusCode >= 200 && statusCode < 400) {
-            qDebug() << "MainWindow: Online help is available (HTTP" << statusCode << ")";
-            useOnline = true;
-            urlToOpen = onlineUrl;
-        }
-    }
-
-    if (!useOnline) {
-        qDebug() << "MainWindow: Online help not available, using local file";
-        urlToOpen = localUrl;
-    }
-
-    reply->deleteLater();
-
-    qDebug() << "MainWindow: Opening help URL:" << urlToOpen;
+    QString url = "/usr/share/doc/mx-conky/mx-conky.html";
+    qDebug() << "MainWindow: Opening help URL:" << url;
 
     // Check if mx-viewer exists using synchronous approach
     QProcess checkProcess;
+    qDebug() << "MainWindow::pushHelp_clicked: Creating which QProcess object";
     checkProcess.setProgram("which");
     checkProcess.setArguments(QStringList() << "mx-viewer");
     checkProcess.start();
 
     bool started = false;
     if (checkProcess.waitForFinished(3000)) {
+        qDebug() << "MainWindow: which command finished with exit code:" << checkProcess.exitCode();
+
         if (checkProcess.exitCode() == 0) {
             qDebug() << "MainWindow: Using mx-viewer for help";
-            started = QProcess::startDetached("mx-viewer", QStringList() << urlToOpen << tr("MX Conky Help"));
+            started = QProcess::startDetached("mx-viewer", QStringList() << url << tr("MX Conky Help"));
         } else {
             qDebug() << "MainWindow: Using xdg-open for help";
-            started = QProcess::startDetached("xdg-open", QStringList() << urlToOpen);
+            started = QProcess::startDetached("xdg-open", QStringList() << url);
         }
+
+        // Ensure process is fully finished and cleaned up
         checkProcess.kill();
         checkProcess.waitForFinished(1000);
     } else {
         qDebug() << "MainWindow: which command timed out, using xdg-open as fallback";
         checkProcess.kill();
         checkProcess.waitForFinished(1000);
-        started = QProcess::startDetached("xdg-open", QStringList() << urlToOpen);
+        started = QProcess::startDetached("xdg-open", QStringList() << url);
     }
+    qDebug() << "MainWindow::pushHelp_clicked: Destroying which QProcess object";
 
     if (started) {
         qDebug() << "MainWindow: Help viewer started successfully";
@@ -952,7 +908,7 @@ void MainWindow::onFilterChanged()
         return;
     }
     QString filter = m_filterComboBox->currentText();
-
+    
     // Convert translated text to internal key
     QString filterKey;
     if (filter == tr("All")) {
@@ -964,7 +920,7 @@ void MainWindow::onFilterChanged()
     } else {
         filterKey = filter; // For folder-based filters
     }
-
+    
     m_conkyListWidget->setStatusFilter(filterKey);
 }
 
