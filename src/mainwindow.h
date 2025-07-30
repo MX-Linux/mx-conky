@@ -33,10 +33,13 @@
 #include <QMenu>
 #include <QMenuBar>
 #include <QMovie>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 #include <QPushButton>
 #include <QSettings>
 #include <QSplitter>
 #include <QStackedWidget>
+#include <QTimer>
 #include <QVBoxLayout>
 
 #include "cmd.h"
@@ -56,6 +59,7 @@ public:
 
 private slots:
     void pushHelp_clicked();
+    void onHelpUrlCheckFinished();
     void closeEvent(QCloseEvent *event) override;
     void onConkyItemsLoaded();
     void onCustomizeRequested(ConkyItem *item);
@@ -78,6 +82,7 @@ private slots:
 
 private:
     QSettings settings;
+    QNetworkAccessManager *m_networkManager;
 
     ConkyListWidget *m_conkyListWidget;
     ConkyManager *m_conkyManager;
