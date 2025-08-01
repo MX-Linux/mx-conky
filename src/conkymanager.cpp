@@ -920,17 +920,14 @@ bool ConkyManager::isBinaryFile(const QString &filePath) const
     int nonPrintableCount = 0;
     for (char c : buffer) {
         unsigned char uc = static_cast<unsigned char>(c);
-        // Allow common whitespace characters
+        // Only count actual control characters as non-printable
+        // Allow common whitespace characters and all high-ASCII (UTF-8) characters
         if (uc < 32 && uc != '\t' && uc != '\n' && uc != '\r') {
-            nonPrintableCount++;
-        }
-        // High ASCII values might indicate binary
-        else if (uc > 126) {
             nonPrintableCount++;
         }
     }
 
-    // If more than 30% non-printable, consider it binary
+    // If more than 30% non-printable control characters, consider it binary
     return (nonPrintableCount * 100 / buffer.size()) > 30;
 }
 
