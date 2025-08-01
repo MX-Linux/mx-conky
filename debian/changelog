@@ -1,4 +1,4 @@
-mx-conky (25.07.40) UNRELEASED; urgency=medium
+mx-conky (25.08) mx; urgency=medium
 
   * Redesign application with new features:
     - List all conkys with filtering and search options
@@ -8,29 +8,18 @@ mx-conky (25.07.40) UNRELEASED; urgency=medium
     - Added options for size, location, and transparency
     - Added preview functionality
     - Implement elevation support for editing system conky files
-    - Fix running status detection to use full file paths
   * Search matches now on the directory name too 
-  * Fix running conky detection
   * Add delete conky option
   * Don't copy anymore all the conkys to ~/.conky, copy only the directory
-    that is being edited (if it has no write access). Directories in ~/.conky
-    are displayed instead of the ones in /usr/share/mx-conky-data/
+    that is being edited from /usr/share/mx-conky-data/
   * Add option to enable/disable conky auto-startup
   * Add create previews option
-  * Add user edited/original to the filter, also copy all the files that
-    are edited to .conky folder
   * Add option to rename the file. Change filter to 'All' after an edit
-  * Ui tweaks
   * Implement wifi/lan change; fix some Ui resizing, remove drag info
-  * Fix running conky detection for files that have special characters
-    in path
-  * Delete only the selected conky not the entire directory. Add dir
-    name before the name of the conky
-  * Rename filter option 'All' to 'Default', move to ~/.conky only
-    conkys from /usr/share/mx-conky-data, otherwise elevate
+  * Add directory name before the name of the conky
   * Add Enlightenment desktop environment autostart support
 
- -- Adrian <adrian@mxlinux.org>  Wed, 30 Jul 2025 16:14:50 -0400
+ -- Adrian <adrian@mxlinux.org>  Fri, 01 Aug 2025 00:40:03 -0400
 
 mx-conky (24.4) mx; urgency=medium
 
