@@ -71,9 +71,9 @@ QString openFile(const QDir &dir)
 
 int main(int argc, char *argv[])
 {
-    // Set Qt platform to XCB (X11) if not already set and we're in X11/WSL environment
+    // Set Qt platform to XCB (X11) if not already set and we're in X11 environment
     if (qEnvironmentVariableIsEmpty("QT_QPA_PLATFORM")) {
-        if (!qEnvironmentVariableIsEmpty("DISPLAY") || !qEnvironmentVariableIsEmpty("WSL_DISTRO_NAME")) {
+        if (!qEnvironmentVariableIsEmpty("DISPLAY")) {
             qputenv("QT_QPA_PLATFORM", "xcb");
         }
     }
