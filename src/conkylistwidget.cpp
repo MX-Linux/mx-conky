@@ -128,9 +128,9 @@ void ConkyItemWidget::setupUI()
     controlsLayout->addSpacing(20);
     controlsLayout->addWidget(m_enabledCheckBox);
     controlsLayout->addStretch();
+    controlsLayout->addWidget(m_customizeButton);
     controlsLayout->addWidget(m_deleteButton);
     controlsLayout->addWidget(m_editButton);
-    controlsLayout->addWidget(m_customizeButton);
     controlsLayout->addWidget(m_runToggleButton);
 
     layout->addLayout(topLayout);

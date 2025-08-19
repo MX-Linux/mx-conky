@@ -1,3 +1,9 @@
+mx-conky (25.08.2) mx; urgency=medium
+
+  * Move Customize button to the first position in the row of buttons
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 19 Aug 2025 18:41:48 -0400
+
 mx-conky (25.08.1) mx; urgency=medium
 
   * Improve conky detections for different encodings
@@ -14,7 +20,7 @@ mx-conky (25.08) mx; urgency=medium
     - Added options for size, location, and transparency
     - Added preview functionality
     - Implement elevation support for editing system conky files
-  * Search matches now on the directory name too 
+  * Search matches now on the directory name too
   * Add delete conky option
   * Don't copy anymore all the conkys to ~/.conky, copy only the directory
     that is being edited from /usr/share/mx-conky-data/
@@ -79,7 +85,7 @@ mx-conky (22.12.01) mx; urgency=medium
 
 mx-conky (22.10.01) mx; urgency=medium
 
-  * update translations 
+  * update translations
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 26 Oct 2022 19:58:28 -0400
 
