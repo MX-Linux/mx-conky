@@ -34,8 +34,11 @@
 
 #include "cmd.h"
 #include "mainwindow.h"
-#include "version.h"
 #include <unistd.h>
+
+#ifndef VERSION
+    #define VERSION "?.?.?.?"
+#endif
 
 // Return the config file used for the newest conky process
 QString getRunningConky()
