@@ -108,7 +108,10 @@ void ConkyItemWidget::setupUI()
     topLayout->addWidget(m_statusLabel);
 
     m_pathLabel = new QLabel;
-    m_pathLabel->setStyleSheet("color: gray; font-size: 10px;");
+    QPalette palette = m_pathLabel->palette();
+    QColor textColor = palette.color(QPalette::WindowText);
+    textColor.setAlphaF(0.8); // 80% opacity for better contrast
+    m_pathLabel->setStyleSheet(QString("color: rgba(%1, %2, %3, %4); font-size: 10px;").arg(textColor.red()).arg(textColor.green()).arg(textColor.blue()).arg(textColor.alphaF()));
 
     auto *controlsLayout = new QHBoxLayout;
 
@@ -309,7 +312,10 @@ void ConkyListWidget::setupUI()
 
     m_countLabel = new QLabel;
     m_countLabel->setAlignment(Qt::AlignLeft);
-    m_countLabel->setStyleSheet("font-size: 12px; color: #666; padding: 5px;");
+    QPalette countPalette = m_countLabel->palette();
+    QColor countTextColor = countPalette.color(QPalette::WindowText);
+    countTextColor.setAlphaF(0.8); // 80% opacity for better contrast
+    m_countLabel->setStyleSheet(QString("font-size: 12px; color: rgba(%1, %2, %3, %4); padding: 5px;").arg(countTextColor.red()).arg(countTextColor.green()).arg(countTextColor.blue()).arg(countTextColor.alphaF()));
     m_countLabel->setText(tr("Total: 0 conkies"));
 
     layout->addWidget(m_treeWidget);
@@ -469,7 +475,10 @@ void ConkyPreviewWidget::setupUI()
     m_nameLabel->setAlignment(Qt::AlignCenter);
 
     m_pathLabel = new QLabel;
-    m_pathLabel->setStyleSheet("color: gray; font-size: 10px;");
+    QPalette palette = m_pathLabel->palette();
+    QColor textColor = palette.color(QPalette::WindowText);
+    textColor.setAlphaF(0.8); // 80% opacity for better contrast
+    m_pathLabel->setStyleSheet(QString("color: rgba(%1, %2, %3, %4); font-size: 10px;").arg(textColor.red()).arg(textColor.green()).arg(textColor.blue()).arg(textColor.alphaF()));
     m_pathLabel->setAlignment(Qt::AlignCenter);
     m_pathLabel->setWordWrap(true);
 
