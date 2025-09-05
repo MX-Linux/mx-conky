@@ -478,32 +478,32 @@ anders heeft deze instelling geen effect.</translation>
         <translation>Gestopt</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="115"/>
+        <location filename="../src/conkylistwidget.cpp" line="118"/>
         <source>Autostart</source>
         <translation>Autostart</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="117"/>
+        <location filename="../src/conkylistwidget.cpp" line="120"/>
         <source>Edit</source>
         <translation>Bewerken</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="120"/>
+        <location filename="../src/conkylistwidget.cpp" line="123"/>
         <source>Customize</source>
         <translation>Aanpassen</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="125"/>
+        <location filename="../src/conkylistwidget.cpp" line="128"/>
         <source>Delete</source>
         <translation>Verwijder</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="154"/>
+        <location filename="../src/conkylistwidget.cpp" line="157"/>
         <source>Stop</source>
         <translation>Stoppen</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="157"/>
+        <location filename="../src/conkylistwidget.cpp" line="160"/>
         <source>Start</source>
         <translation>Starten</translation>
     </message>
@@ -511,17 +511,17 @@ anders heeft deze instelling geen effect.</translation>
 <context>
     <name>ConkyListWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="313"/>
+        <location filename="../src/conkylistwidget.cpp" line="319"/>
         <source>Total: 0 conkies</source>
         <translation>Totaal: 0 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="542"/>
+        <location filename="../src/conkylistwidget.cpp" line="551"/>
         <source>Total: %1 conkies</source>
         <translation>Totaal: %1 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="545"/>
+        <location filename="../src/conkylistwidget.cpp" line="554"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Tonen: %1 van %2 conkies</translation>
     </message>
@@ -529,22 +529,22 @@ anders heeft deze instelling geen effect.</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="494"/>
+        <location filename="../src/conkylistwidget.cpp" line="503"/>
         <source>No Conky Selected</source>
         <translation>Geen Conky Geselecteerd</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="496"/>
+        <location filename="../src/conkylistwidget.cpp" line="505"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Selecteer een conky uit de lijst om het voorbeeld te zien</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="515"/>
+        <location filename="../src/conkylistwidget.cpp" line="524"/>
         <source>Preview image could not be loaded</source>
         <translation>Voorbeeldafbeelding kan niet worden geladen</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="518"/>
+        <location filename="../src/conkylistwidget.cpp" line="527"/>
         <source>No preview image available</source>
         <translation>Geen voorbeeldafbeelding beschikbaar</translation>
     </message>
@@ -969,17 +969,17 @@ Wil je het aanpassen met verhoogde rechten?</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/main.cpp" line="65"/>
+        <location filename="../src/main.cpp" line="68"/>
         <source>Select Conky Manager config file</source>
         <translation>Selecteer Conky Beheer configuratiebestand</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="109"/>
+        <location filename="../src/main.cpp" line="112"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="109"/>
+        <location filename="../src/main.cpp" line="112"/>
         <source>You must run this program as normal user</source>
         <translation>U moet dit programma als normale gebruiker uitvoeren</translation>
     </message>
@@ -1005,7 +1005,7 @@ Wil je het aanpassen met verhoogde rechten?</translation>
     <message>
         <location filename="../src/settingsdialog.cpp" line="92"/>
         <source>Autostart</source>
-        <translation type="unfinished">Autostart</translation>
+        <translation>Autostart</translation>
     </message>
     <message>
         <location filename="../src/settingsdialog.cpp" line="167"/>

@@ -478,32 +478,32 @@ annars har denna inställning inte någon effekt</translation>
         <translation>Stoppad</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="115"/>
+        <location filename="../src/conkylistwidget.cpp" line="118"/>
         <source>Autostart</source>
         <translation>Autostart</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="117"/>
+        <location filename="../src/conkylistwidget.cpp" line="120"/>
         <source>Edit</source>
         <translation>Redigera</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="120"/>
+        <location filename="../src/conkylistwidget.cpp" line="123"/>
         <source>Customize</source>
         <translation>Anpassa</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="125"/>
+        <location filename="../src/conkylistwidget.cpp" line="128"/>
         <source>Delete</source>
         <translation>Ta bort</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="154"/>
+        <location filename="../src/conkylistwidget.cpp" line="157"/>
         <source>Stop</source>
         <translation>Stopp</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="157"/>
+        <location filename="../src/conkylistwidget.cpp" line="160"/>
         <source>Start</source>
         <translation>Starta</translation>
     </message>
@@ -511,17 +511,17 @@ annars har denna inställning inte någon effekt</translation>
 <context>
     <name>ConkyListWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="313"/>
+        <location filename="../src/conkylistwidget.cpp" line="319"/>
         <source>Total: 0 conkies</source>
         <translation>Total: 0 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="542"/>
+        <location filename="../src/conkylistwidget.cpp" line="551"/>
         <source>Total: %1 conkies</source>
         <translation>Total: %1 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="545"/>
+        <location filename="../src/conkylistwidget.cpp" line="554"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Visar: %1 av %2 conkies</translation>
     </message>
@@ -529,22 +529,22 @@ annars har denna inställning inte någon effekt</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="494"/>
+        <location filename="../src/conkylistwidget.cpp" line="503"/>
         <source>No Conky Selected</source>
         <translation>Ingen Conky vald</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="496"/>
+        <location filename="../src/conkylistwidget.cpp" line="505"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Välj en conky från listan för att se en förhandsbild</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="515"/>
+        <location filename="../src/conkylistwidget.cpp" line="524"/>
         <source>Preview image could not be loaded</source>
         <translation>Förhandsbilden kunde inte laddas</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="518"/>
+        <location filename="../src/conkylistwidget.cpp" line="527"/>
         <source>No preview image available</source>
         <translation>Ingen förhandsbild tillgänglig</translation>
     </message>
@@ -969,17 +969,17 @@ Vill du anpassa den med utökade privilegier?</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/main.cpp" line="65"/>
+        <location filename="../src/main.cpp" line="68"/>
         <source>Select Conky Manager config file</source>
         <translation>Välj konfigurationsfil för Conky Hanterare</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="109"/>
+        <location filename="../src/main.cpp" line="112"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="109"/>
+        <location filename="../src/main.cpp" line="112"/>
         <source>You must run this program as normal user</source>
         <translation>Du måste köra det här programmet som normal användare</translation>
     </message>
@@ -1000,12 +1000,12 @@ Vill du anpassa den med utökade privilegier?</translation>
     <message>
         <location filename="../src/settingsdialog.cpp" line="91"/>
         <source>Search Paths</source>
-        <translation type="unfinished"></translation>
+        <translation>Sökvägar</translation>
     </message>
     <message>
         <location filename="../src/settingsdialog.cpp" line="92"/>
         <source>Autostart</source>
-        <translation type="unfinished">Autostart</translation>
+        <translation>Autostart</translation>
     </message>
     <message>
         <location filename="../src/settingsdialog.cpp" line="167"/>

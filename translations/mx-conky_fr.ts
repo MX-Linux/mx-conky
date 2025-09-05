@@ -478,32 +478,32 @@ sinon ce paramètre n’aura aucun effet.</translation>
         <translation>Arrêté</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="115"/>
+        <location filename="../src/conkylistwidget.cpp" line="118"/>
         <source>Autostart</source>
         <translation>Démarrage automatique</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="117"/>
+        <location filename="../src/conkylistwidget.cpp" line="120"/>
         <source>Edit</source>
         <translation>Éditer</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="120"/>
+        <location filename="../src/conkylistwidget.cpp" line="123"/>
         <source>Customize</source>
         <translation>Personnaliser</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="125"/>
+        <location filename="../src/conkylistwidget.cpp" line="128"/>
         <source>Delete</source>
         <translation>Supprimer</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="154"/>
+        <location filename="../src/conkylistwidget.cpp" line="157"/>
         <source>Stop</source>
         <translation>Arrêter</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="157"/>
+        <location filename="../src/conkylistwidget.cpp" line="160"/>
         <source>Start</source>
         <translation>Démarrer</translation>
     </message>
@@ -511,17 +511,17 @@ sinon ce paramètre n’aura aucun effet.</translation>
 <context>
     <name>ConkyListWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="313"/>
+        <location filename="../src/conkylistwidget.cpp" line="319"/>
         <source>Total: 0 conkies</source>
         <translation>Total&#xa0;: 0 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="542"/>
+        <location filename="../src/conkylistwidget.cpp" line="551"/>
         <source>Total: %1 conkies</source>
         <translation>Total&#xa0;: %1 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="545"/>
+        <location filename="../src/conkylistwidget.cpp" line="554"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Affichage&#xa0;: %1 sur %2 conkies</translation>
     </message>
@@ -529,22 +529,22 @@ sinon ce paramètre n’aura aucun effet.</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="494"/>
+        <location filename="../src/conkylistwidget.cpp" line="503"/>
         <source>No Conky Selected</source>
         <translation>Aucun Conky sélectionné</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="496"/>
+        <location filename="../src/conkylistwidget.cpp" line="505"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Sélectionner un conky dans la liste pour voir son aperçu</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="515"/>
+        <location filename="../src/conkylistwidget.cpp" line="524"/>
         <source>Preview image could not be loaded</source>
         <translation>L’image de prévisualisation n’a pas pu être chargée</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="518"/>
+        <location filename="../src/conkylistwidget.cpp" line="527"/>
         <source>No preview image available</source>
         <translation>Aucune image de prévisualisation disponible</translation>
     </message>
@@ -969,17 +969,17 @@ Souhaitez-vous le personnaliser avec des privilèges élevés&#xa0;?</translatio
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/main.cpp" line="65"/>
+        <location filename="../src/main.cpp" line="68"/>
         <source>Select Conky Manager config file</source>
         <translation>Choix du fichier de configuration de conky-manager</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="109"/>
+        <location filename="../src/main.cpp" line="112"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="109"/>
+        <location filename="../src/main.cpp" line="112"/>
         <source>You must run this program as normal user</source>
         <translation>Vous devez exécuter ce programme en tant qu’utilisateur normal.</translation>
     </message>
@@ -1000,12 +1000,12 @@ Souhaitez-vous le personnaliser avec des privilèges élevés&#xa0;?</translatio
     <message>
         <location filename="../src/settingsdialog.cpp" line="91"/>
         <source>Search Paths</source>
-        <translation type="unfinished"></translation>
+        <translation>Chemins de recherche</translation>
     </message>
     <message>
         <location filename="../src/settingsdialog.cpp" line="92"/>
         <source>Autostart</source>
-        <translation type="unfinished">Démarrage automatique</translation>
+        <translation>Démarrage automatique</translation>
     </message>
     <message>
         <location filename="../src/settingsdialog.cpp" line="167"/>

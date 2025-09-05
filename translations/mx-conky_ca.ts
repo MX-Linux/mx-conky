@@ -136,7 +136,7 @@ No teniu prou permisos.</translation>
     <message>
         <location filename="../src/conkycustomizedialog.cpp" line="897"/>
         <source>Backed Up Config File</source>
-        <translation>Fitxer de configuració a la còpia de seguretat</translation>
+        <translation>S&apos;ha fet còpia de seguretat del fitxer de configuració</translation>
     </message>
     <message>
         <location filename="../src/conkycustomizedialog.cpp" line="898"/>
@@ -151,7 +151,7 @@ No teniu prou permisos.</translation>
     <message>
         <location filename="../src/conkycustomizedialog.cpp" line="900"/>
         <source>Failed to create a backup file.</source>
-        <translation>Ha fallat crear la còpia de seguretat.</translation>
+        <translation>Ha fallat en crear la còpia de seguretat.</translation>
     </message>
     <message>
         <location filename="../src/conkycustomizedialog.cpp" line="973"/>
@@ -162,7 +162,7 @@ No teniu prou permisos.</translation>
     <message>
         <location filename="../src/conkycustomizedialog.cpp" line="973"/>
         <source>Failed to restore from backup file.</source>
-        <translation>Ha fallat restaurar de la còpia de seguretat.</translation>
+        <translation>Ha fallat en restaurar la còpia de seguretat.</translation>
     </message>
     <message>
         <location filename="../src/conkycustomizedialog.cpp" line="976"/>
@@ -478,32 +478,32 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
         <translation>Aturat</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="115"/>
+        <location filename="../src/conkylistwidget.cpp" line="118"/>
         <source>Autostart</source>
         <translation>Inici automàtic</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="117"/>
+        <location filename="../src/conkylistwidget.cpp" line="120"/>
         <source>Edit</source>
         <translation>Edita</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="120"/>
+        <location filename="../src/conkylistwidget.cpp" line="123"/>
         <source>Customize</source>
         <translation>Personalitza</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="125"/>
+        <location filename="../src/conkylistwidget.cpp" line="128"/>
         <source>Delete</source>
         <translation>Esborra </translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="154"/>
+        <location filename="../src/conkylistwidget.cpp" line="157"/>
         <source>Stop</source>
         <translation>Atura</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="157"/>
+        <location filename="../src/conkylistwidget.cpp" line="160"/>
         <source>Start</source>
         <translation>Inici</translation>
     </message>
@@ -511,17 +511,17 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
 <context>
     <name>ConkyListWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="313"/>
+        <location filename="../src/conkylistwidget.cpp" line="319"/>
         <source>Total: 0 conkies</source>
         <translation>Total: 0 monitors</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="542"/>
+        <location filename="../src/conkylistwidget.cpp" line="551"/>
         <source>Total: %1 conkies</source>
         <translation>Total: %1 monitors</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="545"/>
+        <location filename="../src/conkylistwidget.cpp" line="554"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Mostra: %1 de %2 monitors</translation>
     </message>
@@ -529,22 +529,22 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="494"/>
+        <location filename="../src/conkylistwidget.cpp" line="503"/>
         <source>No Conky Selected</source>
         <translation>No s&apos;ha triat cap Conky.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="496"/>
+        <location filename="../src/conkylistwidget.cpp" line="505"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Trieu un monitor de la llista per veure&apos;n la previsualització.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="515"/>
+        <location filename="../src/conkylistwidget.cpp" line="524"/>
         <source>Preview image could not be loaded</source>
         <translation>No s&apos;ha pogut carregar la imatge de previsualització.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="518"/>
+        <location filename="../src/conkylistwidget.cpp" line="527"/>
         <source>No preview image available</source>
         <translation>No hi ha imatge de previsualització disponible.</translation>
     </message>
@@ -647,7 +647,7 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
     <message>
         <location filename="../src/mainwindow.cpp" line="196"/>
         <source>Search conkies by name (Ctrl+F)</source>
-        <translation>Cerca moitors pel nom (Ctrl+F)</translation>
+        <translation>Cerca monitors pel nom (Ctrl+F)</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="241"/>
@@ -744,7 +744,7 @@ Introduïu un nom per a la còpia.</translation>
         <location filename="../src/mainwindow.cpp" line="431"/>
         <location filename="../src/mainwindow.cpp" line="609"/>
         <source>Directory Exists</source>
-        <translation>El directori existeix.</translation>
+        <translation>El directori ja hi és.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="432"/>
@@ -785,7 +785,7 @@ Aquesta acció no es pot desfer.</translation>
     <message>
         <location filename="../src/mainwindow.cpp" line="563"/>
         <source>Delete Failed</source>
-        <translation>Ha fallat esborrar.</translation>
+        <translation>Ha fallat en esborrar.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="563"/>
@@ -948,7 +948,7 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../src/previewdialog.cpp" line="419"/>
         <source>Preview generation complete! Generated %1 previews.</source>
-        <translation>Generació de previsualitzacions completada! %1 previsualitzacions generades.</translation>
+        <translation>Generació de previsualitzacions acomplerta! %1 previsualitzacions generades.</translation>
     </message>
     <message>
         <location filename="../src/previewdialog.cpp" line="423"/>
@@ -958,7 +958,7 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../src/previewdialog.cpp" line="426"/>
         <source>Preview Generation Complete</source>
-        <translation>Generació de previsualitzacions completa</translation>
+        <translation>Generació de previsualitzacions acomplerta</translation>
     </message>
     <message>
         <location filename="../src/previewdialog.cpp" line="427"/>
@@ -969,17 +969,17 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../src/main.cpp" line="65"/>
+        <location filename="../src/main.cpp" line="68"/>
         <source>Select Conky Manager config file</source>
         <translation>Trieu el fitxer de configuració del gestor Conky.</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="109"/>
+        <location filename="../src/main.cpp" line="112"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="109"/>
+        <location filename="../src/main.cpp" line="112"/>
         <source>You must run this program as normal user</source>
         <translation>Cal executar aquest programa com a usuari normal.</translation>
     </message>
@@ -1000,12 +1000,12 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
     <message>
         <location filename="../src/settingsdialog.cpp" line="91"/>
         <source>Search Paths</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca de camins</translation>
     </message>
     <message>
         <location filename="../src/settingsdialog.cpp" line="92"/>
         <source>Autostart</source>
-        <translation type="unfinished">Inici automàtic</translation>
+        <translation>Inici automàtic</translation>
     </message>
     <message>
         <location filename="../src/settingsdialog.cpp" line="167"/>
