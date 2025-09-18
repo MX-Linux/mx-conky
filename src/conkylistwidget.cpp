@@ -335,13 +335,7 @@ void ConkyListWidget::setupUI()
     QPalette countPalette = m_countLabel->palette();
     QColor countTextColor = countPalette.color(QPalette::WindowText);
     countTextColor.setAlphaF(0.8); // 80% opacity for better contrast
-    QFont countFont = m_countLabel->font();
-    if (countFont.pointSizeF() > 0) {
-        countFont.setPointSizeF(std::max(6.0, countFont.pointSizeF() - 0.5));
-    } else {
-        countFont.setPointSize(10);
-    }
-    m_countLabel->setFont(countFont);
+    m_countLabel->setFont(font());
     m_countLabel->setStyleSheet(QString("color: rgba(%1, %2, %3, %4); padding: 5px;")
                                     .arg(countTextColor.red())
                                     .arg(countTextColor.green())
