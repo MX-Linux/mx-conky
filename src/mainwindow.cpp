@@ -143,12 +143,25 @@ void MainWindow::setupLoadingWidget()
     } else {
         // Fallback: create a simple animated text
         m_loadingLabel->setText("⏳");
-        m_loadingLabel->setStyleSheet("font-size: 48px;");
+        QFont loadingFont = m_loadingLabel->font();
+        if (loadingFont.pointSizeF() > 0) {
+            loadingFont.setPointSizeF(loadingFont.pointSizeF() * 3.5);
+        } else {
+            loadingFont.setPointSize(36);
+        }
+        m_loadingLabel->setFont(loadingFont);
     }
 
     auto *textLabel = new QLabel(tr("Loading Conky configurations..."));
     textLabel->setAlignment(Qt::AlignCenter);
-    textLabel->setStyleSheet("font-size: 16px; margin: 20px;");
+    QFont textFont = textLabel->font();
+    if (textFont.pointSizeF() > 0) {
+        textFont.setPointSizeF(textFont.pointSizeF() + 2.0);
+    } else {
+        textFont.setPointSize(14);
+    }
+    textLabel->setFont(textFont);
+    textLabel->setStyleSheet("margin: 20px;");
 
     loadingLayout->addStretch();
     loadingLayout->addWidget(m_loadingLabel);
