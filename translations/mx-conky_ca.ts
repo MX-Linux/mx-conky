@@ -511,17 +511,17 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
 <context>
     <name>ConkyListWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="350"/>
+        <location filename="../src/conkylistwidget.cpp" line="344"/>
         <source>Total: 0 conkies</source>
         <translation>Total: 0 monitors</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="601"/>
+        <location filename="../src/conkylistwidget.cpp" line="595"/>
         <source>Total: %1 conkies</source>
         <translation>Total: %1 monitors</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="604"/>
+        <location filename="../src/conkylistwidget.cpp" line="598"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Mostra: %1 de %2 monitors</translation>
     </message>
@@ -529,22 +529,22 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="553"/>
+        <location filename="../src/conkylistwidget.cpp" line="547"/>
         <source>No Conky Selected</source>
         <translation>No s&apos;ha triat cap Conky.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="555"/>
+        <location filename="../src/conkylistwidget.cpp" line="549"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Trieu un monitor de la llista per veure&apos;n la previsualització.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="574"/>
+        <location filename="../src/conkylistwidget.cpp" line="568"/>
         <source>Preview image could not be loaded</source>
         <translation>No s&apos;ha pogut carregar la imatge de previsualització.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="577"/>
+        <location filename="../src/conkylistwidget.cpp" line="571"/>
         <source>No preview image available</source>
         <translation>No hi ha imatge de previsualització disponible.</translation>
     </message>

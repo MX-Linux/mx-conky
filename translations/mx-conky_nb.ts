@@ -511,17 +511,17 @@ ellers vil ikke denne innstillingen ha noen effekt</translation>
 <context>
     <name>ConkyListWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="350"/>
+        <location filename="../src/conkylistwidget.cpp" line="344"/>
         <source>Total: 0 conkies</source>
         <translation>Total: 0 conkier</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="601"/>
+        <location filename="../src/conkylistwidget.cpp" line="595"/>
         <source>Total: %1 conkies</source>
         <translation>Total: %1 conkier</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="604"/>
+        <location filename="../src/conkylistwidget.cpp" line="598"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Viser: %1 av %2 conkier</translation>
     </message>
@@ -529,22 +529,22 @@ ellers vil ikke denne innstillingen ha noen effekt</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="553"/>
+        <location filename="../src/conkylistwidget.cpp" line="547"/>
         <source>No Conky Selected</source>
         <translation>Ingen conky valgt</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="555"/>
+        <location filename="../src/conkylistwidget.cpp" line="549"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Velg en conky fra listen for å se forhåndsvisningen</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="574"/>
+        <location filename="../src/conkylistwidget.cpp" line="568"/>
         <source>Preview image could not be loaded</source>
         <translation>Klarte ikke laste forhåndsvisningen</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="577"/>
+        <location filename="../src/conkylistwidget.cpp" line="571"/>
         <source>No preview image available</source>
         <translation>Ingen forhåndsvisning tilgjengelig</translation>
     </message>
