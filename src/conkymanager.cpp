@@ -25,12 +25,10 @@
 #include <QDebug>
 #include <QDir>
 #include <QFileInfo>
-#include <QPointer>
 #include <QProcess>
 #include <QProcessEnvironment>
 #include <QRegularExpression>
 #include <QSet>
-#include <QStandardPaths>
 #include <QTextStream>
 
 #include "cmd.h"
@@ -158,6 +156,8 @@ void ConkyManager::scanForConkies()
         return fileA < fileB;
     });
 
+    applyAutostartFromStartupScript();
+
     emit conkyItemsChanged();
 }
 
@@ -184,6 +184,8 @@ void ConkyManager::addConkyItemsFromDirectory(const QString &directoryPath)
         QString fileB = QFileInfo(b->filePath()).fileName().toLower();
         return fileA < fileB;
     });
+
+    applyAutostartFromStartupScript();
 
     emit conkyItemsChanged();
 }
@@ -285,19 +287,6 @@ void ConkyManager::saveSettings()
     m_settings.beginGroup("ConkyManager");
     m_settings.setValue("searchPaths", m_searchPaths);
     m_settings.setValue("startupDelay", m_startupDelay);
-
-    m_settings.beginWriteArray("conkyItems");
-    for (int i = 0; i < m_conkyItems.size(); ++i) {
-        m_settings.setArrayIndex(i);
-        QPointer<ConkyItem> item = m_conkyItems.at(i);
-        if (!item) {
-            continue;
-        }
-        m_settings.setValue("filePath", item->filePath());
-        m_settings.setValue("enabled", item->isEnabled());
-        m_settings.setValue("autostart", item->isAutostart());
-    }
-    m_settings.endArray();
     m_settings.endGroup();
 
     // Update startup script whenever settings are saved
@@ -314,33 +303,9 @@ void ConkyManager::loadSettings()
               .toStringList();
 
     m_startupDelay = m_settings.value("startupDelay", 5).toInt();
-
-    int size = m_settings.beginReadArray("conkyItems");
-    QHash<QString, ConkyItem *> settingsMap;
-
-    for (int i = 0; i < size; ++i) {
-        m_settings.setArrayIndex(i);
-        QString filePath = m_settings.value("filePath").toString();
-        if (!filePath.isEmpty() && QFile::exists(filePath)) {
-            auto *item = new ConkyItem(filePath, this);
-            item->setEnabled(m_settings.value("enabled", false).toBool());
-            item->setAutostart(m_settings.value("autostart", false).toBool());
-            settingsMap[filePath] = item;
-        }
-    }
-    m_settings.endArray();
     m_settings.endGroup();
 
     scanForConkies();
-
-    for (ConkyItem *item : m_conkyItems) {
-        if (settingsMap.contains(item->filePath())) {
-            ConkyItem *savedItem = settingsMap[item->filePath()];
-            item->setEnabled(savedItem->isEnabled());
-            item->setAutostart(savedItem->isAutostart());
-            delete savedItem;
-        }
-    }
 }
 
 void ConkyManager::updateRunningStatus()
@@ -562,6 +527,68 @@ void ConkyManager::scanConkyDirectory(const QString &path)
         }
 
         m_conkyItems.append(new ConkyItem(filePath, this));
+    }
+}
+
+void ConkyManager::applyAutostartFromStartupScript()
+{
+    QString home = QDir::homePath();
+    QString scriptPath = home + "/.conky/conky-startup.sh";
+    QFile scriptFile(scriptPath);
+
+    if (!scriptFile.exists()) {
+        scriptPath = "/usr/share/mx-conky-data/conky-startup.sh";
+        scriptFile.setFileName(scriptPath);
+    }
+
+    if (!scriptFile.exists() || !scriptFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        return;
+    }
+
+    QSet<QString> autostartPaths;
+    QTextStream in(&scriptFile);
+    QRegularExpression pattern(QStringLiteral("^\\s*conky\\s+-c\\s+(?:\"([^\"]+)\"|(\\S+))"),
+                               QRegularExpression::CaseInsensitiveOption);
+
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        QRegularExpressionMatch match = pattern.match(line);
+        if (!match.hasMatch()) {
+            continue;
+        }
+
+        QString path = match.captured(1);
+        if (path.isEmpty()) {
+            path = match.captured(2);
+        }
+
+        path = path.trimmed();
+        if (path.endsWith('&')) {
+            path.chop(1);
+            path = path.trimmed();
+        }
+
+        path.replace(QStringLiteral("${HOME}"), home);
+        path.replace(QStringLiteral("$HOME"), home);
+        if (path.startsWith("~/")) {
+            path.replace(0, 1, home);
+        }
+
+        QFileInfo info(path);
+        QString absolutePath = info.absoluteFilePath();
+
+        if (!absolutePath.isEmpty()) {
+            autostartPaths.insert(QDir::cleanPath(absolutePath));
+        }
+    }
+
+    scriptFile.close();
+
+    for (ConkyItem *item : m_conkyItems) {
+        QString itemPath = QDir::cleanPath(QFileInfo(item->filePath()).absoluteFilePath());
+        bool enabled = autostartPaths.contains(itemPath);
+        item->setEnabled(enabled);
+        item->setAutostart(enabled);
     }
 }
 
