@@ -1747,28 +1747,28 @@ void ConkyCustomizeDialog::applyTransparencyChanges()
 
     // Set own_window based on transparency type
     if (transparencyType == "opaque") {
-        writeConfigValue("own_window", "false");
+        //writeConfigValue("own_window", "false");
         writeConfigValue("own_window_transparent", "false");
         writeConfigValue("own_window_argb_visual", "false");
         // Remove argb_value for opaque
         // writeConfigValue("own_window_argb_value", ""); // Don't set for opaque
     } else if (transparencyType == "trans") {
-        writeConfigValue("own_window", "true");
+        //writeConfigValue("own_window", "true");
         writeConfigValue("own_window_transparent", "true");
-        writeConfigValue("own_window_argb_visual", "false");
+        writeConfigValue("own_window_argb_visual", "true");
         // For transparent, we still want to set opacity
         double opacityValue = opacity / 100.0;
         writeConfigValue("own_window_argb_value", QString::number(static_cast<int>(opacityValue * 255)));
     } else if (transparencyType == "pseudo") {
         // Pseudo-transparent: no own window, uses desktop background
-        writeConfigValue("own_window", "false");
-        writeConfigValue("own_window_transparent", "true");
-        writeConfigValue("own_window_argb_visual", "false");
+        //writeConfigValue("own_window", "true");
+        writeConfigValue("own_window_transparent", "false");
+        writeConfigValue("own_window_argb_visual", "true");
         // Set opacity for pseudo-transparency
         double opacityValue = opacity / 100.0;
         writeConfigValue("own_window_argb_value", QString::number(static_cast<int>(opacityValue * 255)));
     } else if (transparencyType == "semi") {
-        writeConfigValue("own_window", "true");
+        //writeConfigValue("own_window", "true");
         writeConfigValue("own_window_transparent", "false");
         writeConfigValue("own_window_argb_visual", "true");
         // Set opacity for semi-transparent
