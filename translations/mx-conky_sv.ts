@@ -514,12 +514,12 @@ annars har denna inställning inte någon effekt</translation>
         <translation>Total: 0 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="595"/>
+        <location filename="../src/conkylistwidget.cpp" line="598"/>
         <source>Total: %1 conkies</source>
         <translation>Total: %1 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="598"/>
+        <location filename="../src/conkylistwidget.cpp" line="601"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Visar: %1 av %2 conkies</translation>
     </message>
@@ -527,22 +527,22 @@ annars har denna inställning inte någon effekt</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="547"/>
+        <location filename="../src/conkylistwidget.cpp" line="550"/>
         <source>No Conky Selected</source>
         <translation>Ingen Conky vald</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="549"/>
+        <location filename="../src/conkylistwidget.cpp" line="552"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Välj en conky från listan för att se en förhandsbild</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="568"/>
+        <location filename="../src/conkylistwidget.cpp" line="571"/>
         <source>Preview image could not be loaded</source>
         <translation>Förhandsbilden kunde inte laddas</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="571"/>
+        <location filename="../src/conkylistwidget.cpp" line="574"/>
         <source>No preview image available</source>
         <translation>Ingen förhandsbild tillgänglig</translation>
     </message>
@@ -627,13 +627,13 @@ annars har denna inställning inte någon effekt</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="931"/>
-        <location filename="../src/mainwindow.cpp" line="968"/>
+        <location filename="../src/mainwindow.cpp" line="970"/>
         <source>Running</source>
         <translation>Kör</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="933"/>
-        <location filename="../src/mainwindow.cpp" line="969"/>
+        <location filename="../src/mainwindow.cpp" line="971"/>
         <source>Stopped</source>
         <translation>Stoppad</translation>
     </message>
@@ -715,7 +715,7 @@ annars har denna inställning inte någon effekt</translation>
         <location filename="../src/mainwindow.cpp" line="466"/>
         <location filename="../src/mainwindow.cpp" line="644"/>
         <location filename="../src/mainwindow.cpp" line="929"/>
-        <location filename="../src/mainwindow.cpp" line="967"/>
+        <location filename="../src/mainwindow.cpp" line="969"/>
         <source>All</source>
         <translation>Alla</translation>
     </message>
@@ -859,6 +859,12 @@ Vill du anpassa den med utökade privilegier?</translation>
         <location filename="../src/mainwindow.cpp" line="890"/>
         <source>MX Conky Help</source>
         <translation>MX Conky Hjälp</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="935"/>
+        <location filename="../src/mainwindow.cpp" line="972"/>
+        <source>Autostart</source>
+        <translation>Autostart</translation>
     </message>
 </context>
 <context>

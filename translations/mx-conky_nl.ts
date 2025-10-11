@@ -514,12 +514,12 @@ anders heeft deze instelling geen effect.</translation>
         <translation>Totaal: 0 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="595"/>
+        <location filename="../src/conkylistwidget.cpp" line="598"/>
         <source>Total: %1 conkies</source>
         <translation>Totaal: %1 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="598"/>
+        <location filename="../src/conkylistwidget.cpp" line="601"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Tonen: %1 van %2 conkies</translation>
     </message>
@@ -527,22 +527,22 @@ anders heeft deze instelling geen effect.</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="547"/>
+        <location filename="../src/conkylistwidget.cpp" line="550"/>
         <source>No Conky Selected</source>
         <translation>Geen Conky Geselecteerd</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="549"/>
+        <location filename="../src/conkylistwidget.cpp" line="552"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Selecteer een conky uit de lijst om het voorbeeld te zien</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="568"/>
+        <location filename="../src/conkylistwidget.cpp" line="571"/>
         <source>Preview image could not be loaded</source>
         <translation>Voorbeeldafbeelding kan niet worden geladen</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="571"/>
+        <location filename="../src/conkylistwidget.cpp" line="574"/>
         <source>No preview image available</source>
         <translation>Geen voorbeeldafbeelding beschikbaar</translation>
     </message>
@@ -627,13 +627,13 @@ anders heeft deze instelling geen effect.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="931"/>
-        <location filename="../src/mainwindow.cpp" line="968"/>
+        <location filename="../src/mainwindow.cpp" line="970"/>
         <source>Running</source>
         <translation>Actief</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="933"/>
-        <location filename="../src/mainwindow.cpp" line="969"/>
+        <location filename="../src/mainwindow.cpp" line="971"/>
         <source>Stopped</source>
         <translation>Gestopt</translation>
     </message>
@@ -715,7 +715,7 @@ anders heeft deze instelling geen effect.</translation>
         <location filename="../src/mainwindow.cpp" line="466"/>
         <location filename="../src/mainwindow.cpp" line="644"/>
         <location filename="../src/mainwindow.cpp" line="929"/>
-        <location filename="../src/mainwindow.cpp" line="967"/>
+        <location filename="../src/mainwindow.cpp" line="969"/>
         <source>All</source>
         <translation>Alle</translation>
     </message>
@@ -859,6 +859,12 @@ Wil je het aanpassen met verhoogde rechten?</translation>
         <location filename="../src/mainwindow.cpp" line="890"/>
         <source>MX Conky Help</source>
         <translation>MX Conky Hulp</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="935"/>
+        <location filename="../src/mainwindow.cpp" line="972"/>
+        <source>Autostart</source>
+        <translation>Autostart</translation>
     </message>
 </context>
 <context>

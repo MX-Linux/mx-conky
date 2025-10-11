@@ -510,12 +510,12 @@ otherwise this setting will not have any effect</source>
         <translation>Total: 0 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="595"/>
+        <location filename="../src/conkylistwidget.cpp" line="598"/>
         <source>Total: %1 conkies</source>
         <translation>Total: %1 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="598"/>
+        <location filename="../src/conkylistwidget.cpp" line="601"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Mostrando: %1 de %2 conkies</translation>
     </message>
@@ -523,22 +523,22 @@ otherwise this setting will not have any effect</source>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="547"/>
+        <location filename="../src/conkylistwidget.cpp" line="550"/>
         <source>No Conky Selected</source>
         <translation>No se ha seleccionado ningún Conky</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="549"/>
+        <location filename="../src/conkylistwidget.cpp" line="552"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Seleccione un conky de la lista para ver su vista previa</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="568"/>
+        <location filename="../src/conkylistwidget.cpp" line="571"/>
         <source>Preview image could not be loaded</source>
         <translation>No se pudo cargar la imagen de vista previa</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="571"/>
+        <location filename="../src/conkylistwidget.cpp" line="574"/>
         <source>No preview image available</source>
         <translation>No hay ninguna imagen de vista previa disponible</translation>
     </message>
@@ -623,13 +623,13 @@ otherwise this setting will not have any effect</source>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="931"/>
-        <location filename="../src/mainwindow.cpp" line="968"/>
+        <location filename="../src/mainwindow.cpp" line="970"/>
         <source>Running</source>
         <translation>Ejecutándose</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="933"/>
-        <location filename="../src/mainwindow.cpp" line="969"/>
+        <location filename="../src/mainwindow.cpp" line="971"/>
         <source>Stopped</source>
         <translation>Detenido</translation>
     </message>
@@ -709,7 +709,7 @@ otherwise this setting will not have any effect</source>
         <location filename="../src/mainwindow.cpp" line="466"/>
         <location filename="../src/mainwindow.cpp" line="644"/>
         <location filename="../src/mainwindow.cpp" line="929"/>
-        <location filename="../src/mainwindow.cpp" line="967"/>
+        <location filename="../src/mainwindow.cpp" line="969"/>
         <source>All</source>
         <translation>Todos</translation>
     </message>
@@ -845,6 +845,12 @@ Do you want to customize it with elevated privileges?</source>
         <location filename="../src/mainwindow.cpp" line="890"/>
         <source>MX Conky Help</source>
         <translation>Ayuda de MX Conky</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="935"/>
+        <location filename="../src/mainwindow.cpp" line="972"/>
+        <source>Autostart</source>
+        <translation>Autoinicio</translation>
     </message>
 </context>
 <context>

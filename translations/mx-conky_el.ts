@@ -514,12 +514,12 @@ otherwise this setting will not have any effect</source>
         <translation>Συνολικά: 0 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="595"/>
+        <location filename="../src/conkylistwidget.cpp" line="598"/>
         <source>Total: %1 conkies</source>
         <translation>Συνολικά: %1 conkies</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="598"/>
+        <location filename="../src/conkylistwidget.cpp" line="601"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Εμφάνιση: %1 από %2 conkies</translation>
     </message>
@@ -527,22 +527,22 @@ otherwise this setting will not have any effect</source>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="547"/>
+        <location filename="../src/conkylistwidget.cpp" line="550"/>
         <source>No Conky Selected</source>
         <translation>Δεν επιλέχτηκε conky</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="549"/>
+        <location filename="../src/conkylistwidget.cpp" line="552"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Επιλέξτε ένα conky από τη λίστα για να δείτε τη προεπισκόπηση του</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="568"/>
+        <location filename="../src/conkylistwidget.cpp" line="571"/>
         <source>Preview image could not be loaded</source>
         <translation>Δεν ήταν δυνατή η φόρτωση της εικόνας προεπισκόπησης</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="571"/>
+        <location filename="../src/conkylistwidget.cpp" line="574"/>
         <source>No preview image available</source>
         <translation>Δεν υπάρχει διαθέσιμη εικόνα προεπισκόπησης</translation>
     </message>
@@ -627,13 +627,13 @@ otherwise this setting will not have any effect</source>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="931"/>
-        <location filename="../src/mainwindow.cpp" line="968"/>
+        <location filename="../src/mainwindow.cpp" line="970"/>
         <source>Running</source>
         <translation>Σε εκκίνηση</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="933"/>
-        <location filename="../src/mainwindow.cpp" line="969"/>
+        <location filename="../src/mainwindow.cpp" line="971"/>
         <source>Stopped</source>
         <translation>Σε διακοπή</translation>
     </message>
@@ -715,7 +715,7 @@ otherwise this setting will not have any effect</source>
         <location filename="../src/mainwindow.cpp" line="466"/>
         <location filename="../src/mainwindow.cpp" line="644"/>
         <location filename="../src/mainwindow.cpp" line="929"/>
-        <location filename="../src/mainwindow.cpp" line="967"/>
+        <location filename="../src/mainwindow.cpp" line="969"/>
         <source>All</source>
         <translation>Όλα</translation>
     </message>
@@ -859,6 +859,12 @@ Do you want to customize it with elevated privileges?</source>
         <location filename="../src/mainwindow.cpp" line="890"/>
         <source>MX Conky Help</source>
         <translation>Βοήθεια του MX Conky</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="935"/>
+        <location filename="../src/mainwindow.cpp" line="972"/>
+        <source>Autostart</source>
+        <translation>Αυτόματη έναρξη</translation>
     </message>
 </context>
 <context>

@@ -1,3 +1,9 @@
+mx-conky (25.10.1) mx; urgency=medium
+
+  * Change transparenty detection scheme
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 10 Oct 2025 23:31:10 -0400
+
 mx-conky (25.10) mx; urgency=medium
 
   * Get autostart items from the startup script

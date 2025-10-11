@@ -514,12 +514,12 @@ sicer nastavitev nima učinka</translation>
         <translation>Skupaj conkijevj: 0</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="595"/>
+        <location filename="../src/conkylistwidget.cpp" line="598"/>
         <source>Total: %1 conkies</source>
         <translation>Skupaj conkijevj: %1</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="598"/>
+        <location filename="../src/conkylistwidget.cpp" line="601"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Prikazano conkijev: %1 od %2</translation>
     </message>
@@ -527,22 +527,22 @@ sicer nastavitev nima učinka</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="547"/>
+        <location filename="../src/conkylistwidget.cpp" line="550"/>
         <source>No Conky Selected</source>
         <translation>Noben conky ni izbran</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="549"/>
+        <location filename="../src/conkylistwidget.cpp" line="552"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>S seznama izberite conky za predogled</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="568"/>
+        <location filename="../src/conkylistwidget.cpp" line="571"/>
         <source>Preview image could not be loaded</source>
         <translation>Slike za predogled ni bilo mogoče naložiti</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="571"/>
+        <location filename="../src/conkylistwidget.cpp" line="574"/>
         <source>No preview image available</source>
         <translation>Ni slike za predogled</translation>
     </message>
@@ -627,13 +627,13 @@ sicer nastavitev nima učinka</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="931"/>
-        <location filename="../src/mainwindow.cpp" line="968"/>
+        <location filename="../src/mainwindow.cpp" line="970"/>
         <source>Running</source>
         <translation>Se izvaja</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="933"/>
-        <location filename="../src/mainwindow.cpp" line="969"/>
+        <location filename="../src/mainwindow.cpp" line="971"/>
         <source>Stopped</source>
         <translation>Zaustavljeno</translation>
     </message>
@@ -715,7 +715,7 @@ sicer nastavitev nima učinka</translation>
         <location filename="../src/mainwindow.cpp" line="466"/>
         <location filename="../src/mainwindow.cpp" line="644"/>
         <location filename="../src/mainwindow.cpp" line="929"/>
-        <location filename="../src/mainwindow.cpp" line="967"/>
+        <location filename="../src/mainwindow.cpp" line="969"/>
         <source>All</source>
         <translation>Vse</translation>
     </message>
@@ -860,6 +860,12 @@ Ali ga želite prilagajati s povečanimi pravicami?</translation>
         <location filename="../src/mainwindow.cpp" line="890"/>
         <source>MX Conky Help</source>
         <translation>Pomoč za MX Conky</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="935"/>
+        <location filename="../src/mainwindow.cpp" line="972"/>
+        <source>Autostart</source>
+        <translation>Samodejni zagon</translation>
     </message>
 </context>
 <context>

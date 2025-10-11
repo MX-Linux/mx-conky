@@ -514,12 +514,12 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
         <translation>Total: 0 monitors</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="595"/>
+        <location filename="../src/conkylistwidget.cpp" line="598"/>
         <source>Total: %1 conkies</source>
         <translation>Total: %1 monitors</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="598"/>
+        <location filename="../src/conkylistwidget.cpp" line="601"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Mostra: %1 de %2 monitors</translation>
     </message>
@@ -527,22 +527,22 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="547"/>
+        <location filename="../src/conkylistwidget.cpp" line="550"/>
         <source>No Conky Selected</source>
         <translation>No s&apos;ha triat cap Conky.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="549"/>
+        <location filename="../src/conkylistwidget.cpp" line="552"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Trieu un monitor de la llista per veure&apos;n la previsualització.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="568"/>
+        <location filename="../src/conkylistwidget.cpp" line="571"/>
         <source>Preview image could not be loaded</source>
         <translation>No s&apos;ha pogut carregar la imatge de previsualització.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="571"/>
+        <location filename="../src/conkylistwidget.cpp" line="574"/>
         <source>No preview image available</source>
         <translation>No hi ha imatge de previsualització disponible.</translation>
     </message>
@@ -627,13 +627,13 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="931"/>
-        <location filename="../src/mainwindow.cpp" line="968"/>
+        <location filename="../src/mainwindow.cpp" line="970"/>
         <source>Running</source>
         <translation>S&apos;executa</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="933"/>
-        <location filename="../src/mainwindow.cpp" line="969"/>
+        <location filename="../src/mainwindow.cpp" line="971"/>
         <source>Stopped</source>
         <translation>Aturat</translation>
     </message>
@@ -715,7 +715,7 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
         <location filename="../src/mainwindow.cpp" line="466"/>
         <location filename="../src/mainwindow.cpp" line="644"/>
         <location filename="../src/mainwindow.cpp" line="929"/>
-        <location filename="../src/mainwindow.cpp" line="967"/>
+        <location filename="../src/mainwindow.cpp" line="969"/>
         <source>All</source>
         <translation>Tots </translation>
     </message>
@@ -789,7 +789,7 @@ Aquesta acció no es pot desfer.</translation>
         <location filename="../src/mainwindow.cpp" line="578"/>
         <source>Failed to delete conky file:
 %1</source>
-        <translation>Ha fallat esborrar el fitxer de Conky següent:
+        <translation>Ha fallat en esborrar el fitxer de Conky següent:
 %1</translation>
     </message>
     <message>
@@ -859,6 +859,12 @@ Voleu personalitzar-lo amb privilegis superiors?</translation>
         <location filename="../src/mainwindow.cpp" line="890"/>
         <source>MX Conky Help</source>
         <translation>Ajuda per a l&apos;MX Conky </translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.cpp" line="935"/>
+        <location filename="../src/mainwindow.cpp" line="972"/>
+        <source>Autostart</source>
+        <translation>Inici automàtic</translation>
     </message>
 </context>
 <context>
