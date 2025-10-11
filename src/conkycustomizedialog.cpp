@@ -554,7 +554,13 @@ void ConkyCustomizeDialog::parseContent()
         radioDesktop1->setChecked(true);
     }
 
-    // Parse opacity value from own_window_argb_value using format-specific pattern
+    // Parse transparency settings and opacity
+    if (cmbTransparencyType && spinOpacity) {
+        // Block signals to prevent onTransparencyChanged from resetting opacity during parsing
+        QSignalBlocker blockerCombo(cmbTransparencyType);
+        QSignalBlocker blockerSpin(spinOpacity);
+
+        // Parse opacity value from own_window_argb_value using format-specific pattern
         QString argbValuePattern
             = is_lua_format ? "own_window_argb_value\\s*=\\s*(\\d+)\\s*,?" : "own_window_argb_value\\s+(\\d+)";
         QRegularExpression argbValueRegex(argbValuePattern, QRegularExpression::CaseInsensitiveOption);
@@ -566,12 +572,6 @@ void ConkyCustomizeDialog::parseContent()
         } else {
             spinOpacity->setValue(100); // Default to fully opaque
         }
-
-    // Parse transparency settings
-    if (cmbTransparencyType && spinOpacity) {
-        // Block signals to prevent onTransparencyChanged from resetting opacity during parsing
-        QSignalBlocker blockerCombo(cmbTransparencyType);
-        QSignalBlocker blockerSpin(spinOpacity);
         // Create helper function to check boolean values in main conky config (not fluxbox overrides)
         auto checkBooleanValue = [&](const QString &key) -> bool {
             // Split content into main config and fluxbox sections
