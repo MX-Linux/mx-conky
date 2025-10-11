@@ -566,8 +566,9 @@ void ConkyCustomizeDialog::parseContent()
         QRegularExpression argbValueRegex(argbValuePattern, QRegularExpression::CaseInsensitiveOption);
         QRegularExpressionMatch match = argbValueRegex.match(file_content);
         if (match.hasMatch()) {
-            int argbValue = match.captured(1).toInt();
-            int percentage = static_cast<int>((argbValue / 255.0) * 100);
+            double argbValue = match.captured(1).toInt();
+            int percentage = static_cast<int>(std::round((argbValue / 255.0) * 100));
+            qDebug() << "percentage" << percentage;
             spinOpacity->setValue(percentage);
         } else {
             spinOpacity->setValue(100); // Default to fully opaque
