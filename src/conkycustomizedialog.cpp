@@ -554,6 +554,19 @@ void ConkyCustomizeDialog::parseContent()
         radioDesktop1->setChecked(true);
     }
 
+    // Parse opacity value from own_window_argb_value using format-specific pattern
+        QString argbValuePattern
+            = is_lua_format ? "own_window_argb_value\\s*=\\s*(\\d+)\\s*,?" : "own_window_argb_value\\s+(\\d+)";
+        QRegularExpression argbValueRegex(argbValuePattern, QRegularExpression::CaseInsensitiveOption);
+        QRegularExpressionMatch match = argbValueRegex.match(file_content);
+        if (match.hasMatch()) {
+            int argbValue = match.captured(1).toInt();
+            int percentage = static_cast<int>((argbValue / 255.0) * 100);
+            spinOpacity->setValue(percentage);
+        } else {
+            spinOpacity->setValue(100); // Default to fully opaque
+        }
+        
     // Parse transparency settings
     if (cmbTransparencyType && spinOpacity) {
         // Create helper function to check boolean values in main conky config (not fluxbox overrides)
@@ -577,48 +590,39 @@ void ConkyCustomizeDialog::parseContent()
                      << "ownWindowTransparent=" << ownWindowTransparent << "ownWindowArgb=" << ownWindowArgb;
         }
 
-        // Check for opaque first: both own_window and own_window_transparent are false
-        if (!ownWindow && !ownWindowTransparent) {
-            cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("opaque"));
-            if (debug) {
-                qDebug() << "Detected: opaque";
-            }
-        } else if (ownWindow && ownWindowTransparent && !ownWindowArgb) {
-            cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("trans"));
-            if (debug) {
-                qDebug() << "Detected: trans";
-            }
-        } else if (ownWindow && !ownWindowTransparent && ownWindowArgb) {
-            cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("semi"));
-            if (debug) {
-                qDebug() << "Detected: semi";
-            }
-        } else if (!ownWindow && ownWindowTransparent && !ownWindowArgb) {
-            cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("pseudo"));
-            if (debug) {
-                qDebug() << "Detected: pseudo";
-            }
-        } else {
-            // Fallback case
-            cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("opaque"));
-            if (debug) {
-                qDebug() << "Detected: fallback to opaque";
-            }
-        }
-
-        // Parse opacity value from own_window_argb_value using format-specific pattern
-        QString argbValuePattern
-            = is_lua_format ? "own_window_argb_value\\s*=\\s*(\\d+)\\s*,?" : "own_window_argb_value\\s+(\\d+)";
-        QRegularExpression argbValueRegex(argbValuePattern, QRegularExpression::CaseInsensitiveOption);
-        QRegularExpressionMatch match = argbValueRegex.match(file_content);
-        if (match.hasMatch()) {
-            int argbValue = match.captured(1).toInt();
-            int percentage = static_cast<int>((argbValue / 255.0) * 100);
-            spinOpacity->setValue(percentage);
-        } else {
-            spinOpacity->setValue(100); // Default to fully opaque
-        }
-
+        // Check for trams first: both own_window_argb_visual and own_window_transparent are true
+        
+        if (ownWindowTransparent){
+			if(ownWindowArgb){
+				//own_window_argb_value wll be ignored even if present
+				cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("trans"));
+			} else if (!ownWindowArgb){
+				cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("pseudo"));
+			} else {
+				cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("pseudo"));
+			}
+		} else if (!ownWindowTransparent) {
+			//could still be trans if values are correct and ownWindowArgb is true
+			if (ownWindowArgb){
+			    if (spinOpacity->currentValue() == "0") {
+				    cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("trans"));
+			    } else if (spinOpacity->currentValue() == "255"){
+				    cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("opaque"));
+			    } else {
+				    cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("semi"));
+			    }
+		    } else if (!ownWindowArgb){
+				//opaque if these values aren't are false or otherwise set incorrectly
+			    cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("opaque"));
+		    } else {
+			    cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("opaque"));
+		    }
+		    //master fallback to opaque
+		} else {
+			cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("opaque"));
+		}
+	}
+        
         // Parse background color from own_window_colour using format-specific pattern
         if (widgetBackgroundColor) {
             QString colorPattern = is_lua_format ? "own_window_colour\\s*=\\s*['\"]?([a-fA-F0-9]{6})['\"]?\\s*,?"
