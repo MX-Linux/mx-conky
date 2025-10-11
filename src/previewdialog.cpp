@@ -350,7 +350,7 @@ QString PreviewDialog::generatePreviewImage(ConkyItem *item)
                    << "-crop" << QString("%1x%2+%3+%4").arg(width).arg(height).arg(x).arg(y) << outputPath;
     screenshotProcess.start("import", screenshotArgs);
     bool screenshotSuccess = screenshotProcess.waitForFinished(5000) && screenshotProcess.exitCode() == 0;
-    
+
     if (!screenshotSuccess) {
         qDebug() << "Screenshot process failed:" << screenshotProcess.readAllStandardError();
     }

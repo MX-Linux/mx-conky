@@ -566,7 +566,7 @@ void ConkyCustomizeDialog::parseContent()
         } else {
             spinOpacity->setValue(100); // Default to fully opaque
         }
-        
+
     // Parse transparency settings
     if (cmbTransparencyType && spinOpacity) {
         // Create helper function to check boolean values in main conky config (not fluxbox overrides)
@@ -591,7 +591,7 @@ void ConkyCustomizeDialog::parseContent()
         }
 
         // Check for trams first: both own_window_argb_visual and own_window_transparent are true
-        
+
         if (ownWindowTransparent){
 			if(ownWindowArgb){
 				//own_window_argb_value wll be ignored even if present
@@ -604,9 +604,9 @@ void ConkyCustomizeDialog::parseContent()
 		} else if (!ownWindowTransparent) {
 			//could still be trans if values are correct and ownWindowArgb is true
 			if (ownWindowArgb){
-			    if (spinOpacity->currentValue() == "0") {
+			    if (spinOpacity->value() == 0) {
 				    cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("trans"));
-			    } else if (spinOpacity->currentValue() == "255"){
+			    } else if (spinOpacity->value() == 255){
 				    cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("opaque"));
 			    } else {
 				    cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("semi"));
@@ -621,8 +621,7 @@ void ConkyCustomizeDialog::parseContent()
 		} else {
 			cmbTransparencyType->setCurrentIndex(cmbTransparencyType->findData("opaque"));
 		}
-	}
-        
+
         // Parse background color from own_window_colour using format-specific pattern
         if (widgetBackgroundColor) {
             QString colorPattern = is_lua_format ? "own_window_colour\\s*=\\s*['\"]?([a-fA-F0-9]{6})['\"]?\\s*,?"
