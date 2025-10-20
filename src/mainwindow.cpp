@@ -36,6 +36,7 @@
 #include <QProcess>
 #include <QRegularExpression>
 #include <QShortcut>
+#include <QSignalBlocker>
 #include <QStackedWidget>
 #include <QStandardPaths>
 #include <QTextEdit>
@@ -964,37 +965,55 @@ void MainWindow::populateFilterComboBox()
         return;
     }
 
-    // Clear existing items and add status-based filters
-    m_filterComboBox->clear();
-    m_filterComboBox->addItem(tr("All"));
-    m_filterComboBox->addItem(tr("Running"));
-    m_filterComboBox->addItem(tr("Stopped"));
-    m_filterComboBox->addItem(tr("Autostart"));
+    const QString previousFilter = m_filterComboBox->currentText();
 
-    // Add folder-based filters from search paths
-    QStringList searchPaths = m_conkyManager->searchPaths();
-    for (const QString &path : searchPaths) {
-        QFileInfo pathInfo(path);
-        QString folderName = pathInfo.fileName();
-        if (folderName.isEmpty()) {
-            folderName = pathInfo.absolutePath().split('/').last();
+    {
+        const QSignalBlocker blocker(m_filterComboBox);
+
+        // Clear existing items and add status-based filters
+        m_filterComboBox->clear();
+        m_filterComboBox->addItem(tr("All"));
+        m_filterComboBox->addItem(tr("Running"));
+        m_filterComboBox->addItem(tr("Stopped"));
+        m_filterComboBox->addItem(tr("Autostart"));
+
+        // Add folder-based filters from search paths
+        QStringList searchPaths = m_conkyManager->searchPaths();
+        for (const QString &path : searchPaths) {
+            QFileInfo pathInfo(path);
+            QString folderName = pathInfo.fileName();
+            if (folderName.isEmpty()) {
+                folderName = pathInfo.absolutePath().split('/').last();
+            }
+
+            // Include parent directory for better clarity (e.g., "mx-conky-data/themes", "~/.conky")
+            QFileInfo parentInfo(pathInfo.absolutePath());
+            QString parentFolderName = parentInfo.fileName();
+            QString displayName;
+
+            if (path.startsWith(QDir::homePath())) {
+                // Replace home path with ~ for readability
+                displayName = QString("~") + path.mid(QDir::homePath().length());
+            } else if (!parentFolderName.isEmpty() && parentFolderName != folderName) {
+                displayName = QString("%1/%2").arg(parentFolderName, folderName);
+            } else {
+                displayName = folderName;
+            }
+
+            m_filterComboBox->addItem(displayName);
         }
 
-        // Include parent directory for better clarity (e.g., "mx-conky-data/themes", "~/.conky")
-        QFileInfo parentInfo(pathInfo.absolutePath());
-        QString parentFolderName = parentInfo.fileName();
-        QString displayName;
-
-        if (path.startsWith(QDir::homePath())) {
-            // Replace home path with ~ for readability
-            displayName = QString("~") + path.mid(QDir::homePath().length());
-        } else if (!parentFolderName.isEmpty() && parentFolderName != folderName) {
-            displayName = QString("%1/%2").arg(parentFolderName, folderName);
-        } else {
-            displayName = folderName;
+        if (m_filterComboBox->count() > 0) {
+            int indexToSelect = m_filterComboBox->findText(previousFilter);
+            if (indexToSelect < 0) {
+                indexToSelect = 0;
+            }
+            m_filterComboBox->setCurrentIndex(indexToSelect);
         }
+    }
 
-        m_filterComboBox->addItem(displayName);
+    if (m_filterComboBox->count() > 0) {
+        onFilterChanged();
     }
 }
 
