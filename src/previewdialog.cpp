@@ -146,6 +146,14 @@ void PreviewDialog::onAccepted()
         return;
     }
 
+    if (!QFileInfo::exists(QStringLiteral("/usr/bin/import"))) {
+        QMessageBox::warning(
+            this, tr("Missing Dependency"),
+            tr("Preview generation requires the GraphicsMagick compatibility tools.\n"
+               "Please install the graphicsmagick-imagemagick-compat package to enable this feature."));
+        return;
+    }
+
     // Show progress UI
     m_progressBar->setVisible(true);
     m_progressBar->setMaximum(m_itemsToProcess.size());
