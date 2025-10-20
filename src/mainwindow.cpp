@@ -573,8 +573,6 @@ void MainWindow::onDeleteRequested(ConkyItem *item)
     if (success) {
         // Remove from manager - this will emit conkyItemsChanged signal
         m_conkyManager->removeConkyItem(item);
-
-        QMessageBox::information(this, tr("Delete Successful"), tr("Conky file deleted successfully."));
     } else {
         QMessageBox::critical(this, tr("Delete Failed"), tr("Failed to delete conky file:\n%1").arg(filePath));
     }
@@ -688,7 +686,28 @@ void MainWindow::onCustomizeRequested(ConkyItem *item)
         }
     }
 
+    QString originalFilePath = filePath;
+
     ConkyCustomizeDialog dialog(filePath, this);
+    connect(&dialog, &ConkyCustomizeDialog::backupCreated, this, [this, originalFilePath](const QString &backupPath) {
+        if (!m_conkyManager) {
+            return;
+        }
+
+        QFileInfo backupInfo(backupPath);
+        const QString directoryPath = backupInfo.absolutePath();
+
+        m_conkyManager->addConkyItemsFromDirectory(directoryPath);
+
+        if (m_conkyListWidget) {
+            QTimer::singleShot(0, this, [this, originalFilePath]() {
+                if (m_conkyListWidget) {
+                    m_conkyListWidget->selectConkyItem(originalFilePath);
+                }
+            });
+        }
+    });
+
     dialog.exec();
 }
 

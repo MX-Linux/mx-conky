@@ -499,6 +499,10 @@ void ConkyManager::scanConkyDirectory(const QString &path)
             continue;
         }
 
+        if (fileName.endsWith(".bak", Qt::CaseInsensitive)) {
+            continue;
+        }
+
         // Skip known non-conky files
         bool skipFile = false;
         for (const QString &skipName : skipNames) {

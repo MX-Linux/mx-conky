@@ -568,7 +568,6 @@ void ConkyCustomizeDialog::parseContent()
         if (match.hasMatch()) {
             double argbValue = match.captured(1).toInt();
             int percentage = static_cast<int>(std::round((argbValue / 255.0) * 100));
-            qDebug() << "percentage" << percentage;
             spinOpacity->setValue(percentage);
         } else {
             spinOpacity->setValue(100); // Default to fully opaque
@@ -872,6 +871,24 @@ bool ConkyCustomizeDialog::copyFileWithElevation(const QString &sourceFile, cons
     return success;
 }
 
+bool ConkyCustomizeDialog::removeFileWithElevation(const QString &fileName)
+{
+    QString elevationTool = QFile::exists("/usr/bin/pkexec") ? "pkexec" : (QFile::exists("/usr/bin/gksu") ? "gksu" : "sudo");
+    QString command = QString("%1 rm '%2'").arg(elevationTool, fileName);
+
+    QProcess process;
+    process.start("sh", QStringList() << "-c" << command);
+    process.waitForFinished();
+
+    bool success = (process.exitCode() == 0);
+
+    if (!success) {
+        qDebug() << "Failed to remove file with elevation:" << fileName;
+    }
+
+    return success;
+}
+
 void ConkyCustomizeDialog::saveBackup()
 {
     if (!modified) {
@@ -901,14 +918,23 @@ void ConkyCustomizeDialog::saveBackup()
         }
 
         if (copySuccess) {
+            emit backupCreated(new_name);
             QMessageBox::information(this, tr("Backed Up Config File"),
-                                     tr("The original configuration was backed up to %1").arg(new_name));
+                                         tr("The original configuration was backed up to %1").arg(new_name));
         } else {
             QMessageBox::warning(this, tr("Backup Failed"), tr("Failed to create a backup file."));
         }
     }
 
-    QFile::remove(file_name + ".bak");
+    QString temporaryBackupPath = file_name + ".bak";
+    if (!QFile::remove(temporaryBackupPath)) {
+        QFileInfo bakInfo(temporaryBackupPath);
+        QFileInfo dirInfo(bakInfo.absolutePath());
+
+        if (!dirInfo.isWritable()) {
+            removeFileWithElevation(temporaryBackupPath);
+        }
+    }
 }
 
 void ConkyCustomizeDialog::pushToggleOn_clicked()
