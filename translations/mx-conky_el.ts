@@ -95,244 +95,244 @@
         <translation>Διακοπή</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="684"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="691"/>
         <source>Select Color</source>
         <translation>Επιλογή χρώματος</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="790"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="797"/>
         <source>Permission Denied</source>
         <translation>Απόρριψη άδειας</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="791"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="798"/>
         <source>Cannot write to file: %1
 Insufficient permissions.</source>
         <translation>Δεν είναι δυνατή η εγγραφή στο αρχείο: %1
 Ανεπαρκή δικαιώματα.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="801"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="808"/>
         <source>Write Error</source>
         <translation>Σφάλμα εγγραφής</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="801"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="808"/>
         <source>Cannot write to file: %1</source>
         <translation>Δεν είναι δυνατή η εγγραφή στο αρχείο: %1</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="874"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="881"/>
         <source>Backup Config File</source>
         <translation>Αντίγραφο ασφαλείας του αρχείου ρυθμίσεων</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="874"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="881"/>
         <source>Do you want to preserve the original file?</source>
         <translation>Θέλετε να διατηρήσετε το αρχικό αρχείο;</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="897"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="904"/>
         <source>Backed Up Config File</source>
         <translation>Δημιουργία αντιγράφου ασφαλείας του αρχείου ρυθμίσεων</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="898"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="905"/>
         <source>The original configuration was backed up to %1</source>
         <translation>Η αρχική διαμόρφωση αποθηκεύτηκε στο %1</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="900"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="907"/>
         <source>Backup Failed</source>
         <translation>Το αντίγραφο ασφαλείας απέτυχε</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="900"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="907"/>
         <source>Failed to create a backup file.</source>
         <translation>Απέτυχε η δημιουργία αντιγράφου ασφαλείας.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="973"/>
-        <location filename="../src/conkycustomizedialog.cpp" line="976"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="980"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="983"/>
         <source>Restore Failed</source>
         <translation>Η επαναφορά απέτυχε</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="973"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="980"/>
         <source>Failed to restore from backup file.</source>
         <translation>Απέτυχε η επαναφορά του αντιγράφου ασφαλείας.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="976"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="983"/>
         <source>Backup file does not exist.</source>
         <translation>Το αντίγραφο ασφαλείας δεν υπάρχει.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1328"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1335"/>
         <source>Position</source>
         <translation>Θέση</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1335"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1342"/>
         <source>Alignment</source>
         <translation>Περιοχή</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1340"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1347"/>
         <source>Top Left</source>
         <translation>Επάνω αριστερά</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1341"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1348"/>
         <source>Top Right</source>
         <translation>Επάνω δεξιά</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1342"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1349"/>
         <source>Top Middle</source>
         <translation>Επάνω στη μέση</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1343"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1350"/>
         <source>Bottom Left</source>
         <translation>Κάτω αριστερά</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1344"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1351"/>
         <source>Bottom Right</source>
         <translation>Κάτω δεξιά</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1345"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1352"/>
         <source>Bottom Middle</source>
         <translation>Κάτω στη μέση</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1346"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1353"/>
         <source>Middle Left</source>
         <translation>Στο κέντρο αριστερά</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1347"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1354"/>
         <source>Middle Right</source>
         <translation>Στο κέντρο δεξιά</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1348"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1355"/>
         <source>Middle Middle</source>
         <translation>Στο κέντρο στη μέση</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1353"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1360"/>
         <source>Horizontal Gap</source>
         <translation>Οριζόντιο κενό</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1354"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1361"/>
         <source>[GAP_X] Horizontal distance from window border (in pixels)</source>
         <translation>[GAP_X] Οριζόντια απόσταση από το περίγραμμα του παραθύρου (σε pixels)</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1366"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1373"/>
         <source>Vertical Gap</source>
         <translation>Κάθετο κενό</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1367"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1374"/>
         <source>[GAP_Y] Vertical distance from window border (in pixels)</source>
         <translation>[GAP_Y] Κάθετη απόσταση από το περίγραμμα του παραθύρου (σε pixels)</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1379"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1386"/>
         <source>Desktop</source>
         <translation>Επιφάνεια εργασίας</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1382"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1389"/>
         <source>Desktop 1</source>
         <translation>Επιφάνεια εργασίας 1</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1383"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1390"/>
         <source>All Desktops</source>
         <translation>Όλες οι επιφάνειες εργασίας</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1395"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1402"/>
         <source>Location</source>
         <translation>Τοποθέτιση</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1407"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1414"/>
         <source>Width should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
         <translation>Το πλάτος πρέπει να είναι μεγαλύτερο από το μέγεθος περιεχομένων του παραθύρου,
 διαφορετικά η ρύθμιση αυτή δεν θα έχει κανένα αποτέλεσμα</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1411"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1418"/>
         <source>Minimum Width</source>
         <translation>Ελάχιστο πλάτος</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1426"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1433"/>
         <source>Height should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
         <translation>Το ύψος πρέπει να είναι μεγαλύτερο από το μέγεθος περιεχομένων του παραθύρου,
 διαφορετικά η ρύθμιση αυτή δεν θα έχει κανένα αποτέλεσμα</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1428"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1435"/>
         <source>Minimum Height</source>
         <translation>Ελάχιστο ύψος</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1442"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1449"/>
         <source>Increases the window height by adding empty lines at the end of the Conky config file</source>
         <translation>Αυξάνει το ύψος του παραθύρου, προσθέτοντας κενές γραμμές στο τέλος του αρχείου ρυθμίσεων του Conky</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1443"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1450"/>
         <source>Height Padding</source>
         <translation>Συμπλήρωμα ύψους</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1458"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1465"/>
         <source>Size</source>
         <translation>Μέγεθος</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1471"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1478"/>
         <source>Transparency Type</source>
         <translation>Τύπος διαφάνειας</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1476"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1483"/>
         <source>Opaque</source>
         <translation>Αδιαφανές</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1477"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1484"/>
         <source>Transparent</source>
         <translation>Διαφανές</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1478"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1485"/>
         <source>Pseudo-Transparent</source>
         <translation>Ψευδο-διαφανές</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1479"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1486"/>
         <source>Semi-Transparent</source>
         <translation>Ημι-διαφανές</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1484"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1491"/>
         <source>Opacity (%)</source>
         <translation>Αδιαφάνεια (%)</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1485"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1492"/>
         <source>Window Opacity
 
 0 = Fully Transparent, 100 = Fully Opaque</source>
@@ -341,124 +341,124 @@ otherwise this setting will not have any effect</source>
 0 = Πλήρως διαφανές, 100 = Πλήρως αδιαφανές</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1499"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1506"/>
         <source>Background Color</source>
         <translation>Χρώμα φόντου</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1504"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1511"/>
         <source>Choose Color</source>
         <translation>Επιλογή χρώματος</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1524"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1531"/>
         <source>Setting Type to &quot;Transparent&quot; will make the whole window transparent (including any images). Use &quot;Pseudo-Transparent&quot; if you want the images to be opaque.</source>
         <translation>Επιλέγοντας &quot;Διαφανές&quot; όλο το παράθυρο θα γίνει διαφανές (μαζί και τα εικονίδια). Χρησιμοποιήστε την επιλογή &quot;Ψευδο-διαφανές&quot; αν θέλετε τα εικονίδια να είναι αδιαφανή.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1534"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1541"/>
         <source>Setting Type to &quot;Pseudo-Transparent&quot; will make the window transparent but the window will have a shadow. The shadow can be disabled by configuring your window manager.</source>
         <translation>Επιλέγοντας &quot;Ψευδο-διαφανές&quot; το παράθυρο θα γίνει διαφανές, αλλά θα έχει σκιά. Η σκιά μπορεί να απενεργοποιηθεί ρυθμίζοντας τον διαχειριστή παραθύρων.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1545"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1552"/>
         <source>Transparency</source>
         <translation>Διαφάνεια</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1556"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1563"/>
         <source>Date Format</source>
         <translation>Μορφή ημερομηνίας</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1559"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1566"/>
         <source>Day</source>
         <translation>Ημέρα</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1561"/>
-        <location filename="../src/conkycustomizedialog.cpp" line="1572"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1568"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1579"/>
         <source>Long</source>
         <translation>Πλήρης</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1562"/>
-        <location filename="../src/conkycustomizedialog.cpp" line="1573"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1569"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1580"/>
         <source>Short</source>
         <translation>Σύντομο</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1563"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1570"/>
         <source>Abbreviated name, e.g. Tu</source>
         <translation>Σύντομο όνομα, π.χ. Tρ</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1570"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1577"/>
         <source>Month</source>
         <translation>Μήνας</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1574"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1581"/>
         <source>Abbreviated name, e.g. Oct</source>
         <translation>Σύντομο όνομα, π.χ. Οκτ</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1593"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1600"/>
         <source>Time Format</source>
         <translation>Μορφή ώρας</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1600"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1607"/>
         <source>Format</source>
         <translation>Μορφή</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1605"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1612"/>
         <source>12 Hour</source>
         <translation>12 ώρες</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1606"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1613"/>
         <source>24 Hour</source>
         <translation>24 ώρες</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1621"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1628"/>
         <source>Date &amp;&amp; Time</source>
         <translation>Ημερομηνία &amp;&amp; Ώρα</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1634"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1641"/>
         <source>Interface</source>
         <translation>Διασύνδεση</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1642"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1649"/>
         <source>WiFi</source>
         <translation>WiFi</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1645"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1652"/>
         <source>WiFi Network</source>
         <translation>Δίκτυο WiFi</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1648"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1655"/>
         <source>LAN</source>
         <translation>LAN</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1651"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1658"/>
         <source>Wired LAN Network</source>
         <translation>Ενσύρματο δίκτυο LAN</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1665"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1672"/>
         <source>Network</source>
         <translation>Δίκτυο</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1928"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1935"/>
         <source>Select Background Color</source>
         <translation>Επιλογή χρώματος φόντου</translation>
     </message>
@@ -593,7 +593,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="189"/>
         <source>Configure conky search paths</source>
-        <translation>Ρύθμιση διαδρομών αναζήτησης για conky</translation>
+        <translation>Ρύθμιση διαδρομών αναζήτησης</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="191"/>
@@ -603,7 +603,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="193"/>
         <source>Refresh conky list</source>
-        <translation>Ανανέωση της λίστας conky</translation>
+        <translation>Ανανέωση λίστας</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="195"/>
@@ -613,7 +613,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="197"/>
         <source>Start all enabled conkies</source>
-        <translation>&apos;Εναρξη όλων των ενεργοποιημένων conkies</translation>
+        <translation>&apos;Εναρξη όλων των ενεργοποιημένων</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="199"/>
@@ -623,7 +623,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="201"/>
         <source>Stop all running conkies</source>
-        <translation>Διακοπή όλων των διεργασιών conkies</translation>
+        <translation>Διακοπή όλων των διεργασιών</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="931"/>
@@ -640,12 +640,12 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="209"/>
         <source>Search conky by name...</source>
-        <translation>Αναζήτηση conky με όνομα...</translation>
+        <translation>Αναζήτηση με όνομα...</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="211"/>
         <source>Search conkies by name (Ctrl+F)</source>
-        <translation>Αναζήτηση στα conkies με όνομα.(Ctrl+F)</translation>
+        <translation>Αναζήτηση conkies με όνομα (Ctrl+F)</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="256"/>
@@ -656,7 +656,7 @@ otherwise this setting will not have any effect</source>
         <location filename="../src/mainwindow.cpp" line="432"/>
         <location filename="../src/mainwindow.cpp" line="608"/>
         <source>Copy Conky</source>
-        <translation>Αντιγραφή conky</translation>
+        <translation>Αντιγραφή</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="478"/>
@@ -708,7 +708,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="185"/>
         <source>Generate preview images for conkies</source>
-        <translation>Δημιουργία εικόνων προεπισκόπησης για τα conkies</translation>
+        <translation>Δημιουργία εικόνων προεπισκόπησης</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="205"/>
@@ -722,7 +722,7 @@ otherwise this setting will not have any effect</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="206"/>
         <source>Filter conkies by running status or location</source>
-        <translation>Εμφάνιση των conkies με βάση τη κατάσταση λειτουργίας ή τη τοποθεσία</translation>
+        <translation>Εμφάνιση με βάση τη κατάσταση λειτουργίας ή τη τοποθεσία</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="428"/>
@@ -807,7 +807,7 @@ Do you want to customize it with elevated privileges?</source>
     <message>
         <location filename="../src/mainwindow.cpp" line="818"/>
         <source>Editor Error</source>
-        <translation>Σφάλμα επεξεργαστή</translation>
+        <translation>Σφάλμα επεξεργασίας</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="818"/>

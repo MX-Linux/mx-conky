@@ -1,3 +1,11 @@
+mx-conky (25.10.2) mx; urgency=medium
+
+ * Add graphicsmagick-imagemagick-compat as a recommend and popup a message that it's missing if the user tries to create a preview
+ * When backing up a conky refresh and add it to the list Don't show successful deletion dialog, it should be obvious since the entry disappears from list
+ * Preserve filter selection when editing a conky
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 20 Oct 2025 14:11:55 -0400
+
 mx-conky (25.10.1) mx; urgency=medium
 
   * Change transparenty detection scheme
