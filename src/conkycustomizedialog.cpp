@@ -642,15 +642,38 @@ void ConkyCustomizeDialog::parseContent()
         }
     }
 
-    // Parse time format (detect 12-hour vs 24-hour format)
+    // Parse time format (detect 12-hour vs 24-hour vs 'auto' format)
     if (cmbTimeFormat) {
-        if (file_content.contains("%I") || file_content.contains("%l") || file_content.contains("%p")) {
+        if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*lua \s*(hours?|ampm|AMPM|am_pm|AM_PM)\s*}))",
+                QRegularExpression::MultilineOption).match(file_content).hasMatch()
+            || QRegularExpression(R"(^(?!\s*#|\s*--)(.*if_match \s*"pmfix\${time \s*%[pP]}"))",
+                QRegularExpression::MultilineOption).match(file_content).hasMatch()
+        ) {
+            cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("auto"));
+        } else if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*lua \s*(hours?|ampm|AMPM|am_pm|AM_PM) \s*12[^}]*}))",
+                    QRegularExpression::MultilineOption).match(file_content).hasMatch()
+                    || QRegularExpression(R"(^(?!\s*#|\s*--)(.*if_match \s*"pmfix\${time \s*12[^}]*}"))",
+                        QRegularExpression::MultilineOption).match(file_content).hasMatch()
+        ) {
             cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("12"));
-        } else if (file_content.contains("%H") || file_content.contains("%k")) {
+        } else if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*lua \s*(hours?|ampm|AMPM|am_pm|AM_PM) \s*24[^}]*}))",
+                    QRegularExpression::MultilineOption).match(file_content).hasMatch()
+                    || QRegularExpression(R"(^(?!\s*#|\s*--)(.*if_match \s*"pmfix\${time \s*24[^}]*}"))",
+                        QRegularExpression::MultilineOption).match(file_content).hasMatch()
+                ) {
+            cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("24"));
+        } else if (file_content.contains("%I")
+            || file_content.contains("%l")
+            || file_content.contains("%p")
+        ) {
+            cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("12"));
+        } else if (file_content.contains("%H")
+                    || file_content.contains("%k")
+                ) {
             cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("24"));
         } else {
-            // Default to 24-hour if no time format detected
-            cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("24"));
+            // Default to auto detection 12/24-hour
+            cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("auto"));
         }
     }
 
@@ -1637,6 +1660,7 @@ void ConkyCustomizeDialog::createTimeTab()
     cmbTimeFormat = new QComboBox;
     cmbTimeFormat->addItem(tr("12 Hour"), "12");
     cmbTimeFormat->addItem(tr("24 Hour"), "24");
+    cmbTimeFormat->addItem(tr("auto"), "auto");
     timeFormatLayout->addWidget(cmbTimeFormat, row, 1);
 
     // Note about time format
@@ -1824,21 +1848,73 @@ void ConkyCustomizeDialog::applyTimeFormatChanges()
 
     QString format = cmbTimeFormat->currentData().toString();
     if (format == "12") {
-        // Replace 24-hour format with 12-hour format
-        file_content.replace("%H", "%I");
-        file_content.replace("%k", "%l");
-        // Add AM/PM indicator if not present
-        if (!file_content.contains("%p")) {
-            file_content.replace("%M", "%M %p");
+        if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*lua \s*(hours?|ampm|AMPM|am_pm|AM_PM)[^}]*}))",
+            QRegularExpression::MultilineOption).match(file_content).hasMatch()
+        ) {
+            file_content.replace(
+                QRegularExpression(R"(^(?!\s*#|\s*--)(.*)(lua \s*(hours?|ampm|AMPM|am_pm|AM_PM)[^}]*}))",
+                    QRegularExpression::MultilineOption), R"(\1lua \3 12H})");
+
+        } else if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*if_match \s*"pmfix\${time[^}]*}"))",
+                        QRegularExpression::MultilineOption).match(file_content).hasMatch()
+        ) {
+            file_content.replace(
+                QRegularExpression(R"(^(?!\s*#|\s*--)(.*)(if_match "pmfix\${time[^}]*}"\s*==\s*"pmfix[^}]*}))",
+                    QRegularExpression::MultilineOption), R"(\1if_match "pmfix${time 12H}" == "pmfix"})");
+        } else {
+            // Replace 24-hour format with 12-hour format
+            file_content.replace("%H", "%I");
+            file_content.replace("%k", "%l");
+            // Add AM/PM indicator if not present
+            if (!file_content.contains("%p")) {
+                file_content.replace("%M", "%M %p");
+            }
         }
+
     } else if (format == "24") {
-        // Replace 12-hour format with 24-hour format
-        file_content.replace("%I", "%H");
-        file_content.replace("%l", "%k");
-        // Remove AM/PM indicator
-        file_content.replace(QRegularExpression("\\s*%p"), "");
+        if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*lua \s*(hours?|ampm|AMPM|am_pm|AM_PM)[^}]*}))",
+            QRegularExpression::MultilineOption).match(file_content).hasMatch()
+        ) {
+            file_content.replace(
+                QRegularExpression(R"(^(?!\s*#|\s*--)(.*)(lua \s*(hours?|ampm|AMPM|am_pm|AM_PM)[^}]*}))",
+                    QRegularExpression::MultilineOption), R"(\1lua \3 24H})");
+
+        } else if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*if_match \s*"pmfix\${time[^}]*}"))",
+                        QRegularExpression::MultilineOption).match(file_content).hasMatch()
+        ) {
+            file_content.replace(
+                QRegularExpression(R"(^(?!\s*#|\s*--)(.*)(if_match "pmfix\${time[^}]*}"\s*==\s*"pmfix[^}]*}))",
+                    QRegularExpression::MultilineOption), R"(\1if_match "pmfix${time 24H}" == "pmfix24H"})");
+        } else {
+
+            // Replace 12-hour format with 24-hour format
+            file_content.replace("%I", "%H");
+            file_content.replace("%l", "%k");
+            // Remove AM/PM indicator
+            file_content.replace(QRegularExpression("\\s*%p"), "");
+        }
+
+    } else if (format == "auto") {
+        // Replace back to autodetected format; remove 12H or 24h force-format strings
+
+        if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*lua \s*(hours?|ampm|AMPM|am_pm|AM_PM)[^}]*}))",
+            QRegularExpression::MultilineOption).match(file_content).hasMatch()
+        ) {
+            file_content.replace(
+                QRegularExpression(R"(^(?!\s*#|\s*--)(.*)(lua \s*(hours?|ampm|AMPM|am_pm|AM_PM)[^}]*}))",
+                    QRegularExpression::MultilineOption), R"(\1lua \3})");
+
+        } else if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*if_match \s*"pmfix\${time[^}]*}"))",
+                        QRegularExpression::MultilineOption).match(file_content).hasMatch()
+        ) {
+            file_content.replace(
+                QRegularExpression(R"(^(?!\s*#|\s*--)(.*)(if_match \s*"pmfix\${time[^}]*}"\s*==\s*"pmfix[^}]*}))",
+                    QRegularExpression::MultilineOption), R"(\1if_match "pmfix${time %p}" == "pmfix"})");
+
+        }
     }
-    writeFile(file_name, file_content);
+
+    writeFile(file_name, file_content.trimmed() + "\n");
 }
 
 void ConkyCustomizeDialog::onNetworkDeviceChanged()
