@@ -95,244 +95,244 @@
         <translation>Pysäytä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="690"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="713"/>
         <source>Select Color</source>
         <translation>Valitse väri</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="796"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="819"/>
         <source>Permission Denied</source>
         <translation>Ei käyttöoikeutta</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="797"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="820"/>
         <source>Cannot write to file: %1
 Insufficient permissions.</source>
-        <translation>Ei voi kirjoittaa tiedostoon: %1
-Riittämättömät käyttöoikeudet.</translation>
+        <translation>Tiedostoon %1 ei voi kirjoittaa.
+Ei riittäviä käyttöoikeuksia.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="807"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="830"/>
         <source>Write Error</source>
         <translation>Kirjoitusvirhe</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="807"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="830"/>
         <source>Cannot write to file: %1</source>
         <translation>Ei voi kirjoittaa tiedostoon: %1</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="898"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="921"/>
         <source>Backup Config File</source>
         <translation>Varmuuskopioi asetustiedosto</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="898"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="921"/>
         <source>Do you want to preserve the original file?</source>
         <translation>Haluatko säilyttää alkuperäisen tiedoston?</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="922"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="945"/>
         <source>Backed Up Config File</source>
         <translation>Varmuuskopioitu asetustiedosto</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="923"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="946"/>
         <source>The original configuration was backed up to %1</source>
         <translation>Alkuperäinen asetus varmistettiin tiedostoon %1</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="925"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="948"/>
         <source>Backup Failed</source>
         <translation>Varmuuskopio epäonnistui</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="925"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="948"/>
         <source>Failed to create a backup file.</source>
         <translation>Varmistuksen luominen epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1006"/>
-        <location filename="../src/conkycustomizedialog.cpp" line="1009"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1029"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1032"/>
         <source>Restore Failed</source>
         <translation>Palautus epäonnistui</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1006"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1029"/>
         <source>Failed to restore from backup file.</source>
         <translation>Palautus varmuuskopiosta epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1009"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1032"/>
         <source>Backup file does not exist.</source>
         <translation>Varmuuskopiota ei ole olemassa.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1361"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1384"/>
         <source>Position</source>
         <translation>Asento</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1368"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1391"/>
         <source>Alignment</source>
         <translation>Tasattu</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1373"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1396"/>
         <source>Top Left</source>
         <translation>Vasen yläkulma</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1374"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1397"/>
         <source>Top Right</source>
         <translation>Oikea yläkulma</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1375"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1398"/>
         <source>Top Middle</source>
         <translation>Yläosa keskellä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1376"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1399"/>
         <source>Bottom Left</source>
         <translation>Vasen alakulma</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1377"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1400"/>
         <source>Bottom Right</source>
         <translation>Oikea alakulma</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1378"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1401"/>
         <source>Bottom Middle</source>
         <translation>Alaosa keskellä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1379"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1402"/>
         <source>Middle Left</source>
         <translation>Keskellä vasemmalla</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1380"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1403"/>
         <source>Middle Right</source>
         <translation>Keskellä oikealla</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1381"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1404"/>
         <source>Middle Middle</source>
         <translation>Keskipiste</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1386"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1409"/>
         <source>Horizontal Gap</source>
         <translation>Vaakaetäisyys</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1387"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1410"/>
         <source>[GAP_X] Horizontal distance from window border (in pixels)</source>
         <translation>[GAP_X] Vaakasuora etäisyys ikkunan reunasta (pikseleinä)</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1399"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1422"/>
         <source>Vertical Gap</source>
         <translation>Pystyetäisyys</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1400"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1423"/>
         <source>[GAP_Y] Vertical distance from window border (in pixels)</source>
         <translation>[GAP_Y] Pystysuora etäisyys ikkunan reunasta (pikseleinä)</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1412"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1435"/>
         <source>Desktop</source>
         <translation>Työpöytä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1415"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1438"/>
         <source>Desktop 1</source>
         <translation>Työpöytä 1</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1416"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1439"/>
         <source>All Desktops</source>
         <translation>Kaikki työpöydät</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1428"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1451"/>
         <source>Location</source>
         <translation>Paikka</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1440"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1463"/>
         <source>Width should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
         <translation>Leveyden tulisi olla suurempi kuin ikkunan sisällön koko,
 muuten asetuksella ei ole vaikutusta.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1444"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1467"/>
         <source>Minimum Width</source>
         <translation>Minimileveys</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1459"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1482"/>
         <source>Height should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
         <translation>Korkeuden tulisi olla suurempi kuin ikkunan sisällön koko,
 muuten asetuksella ei ole vaikutusta.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1461"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1484"/>
         <source>Minimum Height</source>
         <translation>Minimikorkeus</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1475"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1498"/>
         <source>Increases the window height by adding empty lines at the end of the Conky config file</source>
         <translation>Suurentaa ikkunan korkeutta lisäämällä tyhjiä rivejä Conky-määritystiedoston loppuun</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1476"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1499"/>
         <source>Height Padding</source>
         <translation>Korkeuspehmuste</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1491"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1514"/>
         <source>Size</source>
         <translation>Koko</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1504"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1527"/>
         <source>Transparency Type</source>
         <translation>Läpinäkyvyys</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1509"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1532"/>
         <source>Opaque</source>
         <translation>Läpinäkymätön</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1510"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1533"/>
         <source>Transparent</source>
         <translation>Läpinäkyvä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1511"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1534"/>
         <source>Pseudo-Transparent</source>
         <translation>Näennäisläpinäkyvä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1512"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1535"/>
         <source>Semi-Transparent</source>
         <translation>Puoliläpinäkyvä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1517"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1540"/>
         <source>Opacity (%)</source>
         <translation>Peittävyys (%)</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1518"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1541"/>
         <source>Window Opacity
 
 0 = Fully Transparent, 100 = Fully Opaque</source>
@@ -341,124 +341,129 @@ muuten asetuksella ei ole vaikutusta.</translation>
 0 = Täysin läpinäkyvä, 100 = Täysin läpinäkymätön</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1532"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1555"/>
         <source>Background Color</source>
         <translation>Taustaväri</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1537"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1560"/>
         <source>Choose Color</source>
         <translation>Valitse väri</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1557"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1580"/>
         <source>Setting Type to &quot;Transparent&quot; will make the whole window transparent (including any images). Use &quot;Pseudo-Transparent&quot; if you want the images to be opaque.</source>
         <translation>Asettaminen arvoon &quot;Läpinäkyvä&quot; se tekee koko ikkunasta läpinäkyvän (mukaan lukien kaikki kuvat). Käytä arvoa &quot;Näennäisläpinäkyvä&quot;, jos haluat kuvien olevan läpinäkymättömiä.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1567"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1590"/>
         <source>Setting Type to &quot;Pseudo-Transparent&quot; will make the window transparent but the window will have a shadow. The shadow can be disabled by configuring your window manager.</source>
         <translation>Asettaminen arvoon &quot;Näennäisläpinäkyvä&quot; tekee ikkunasta läpinäkyvän, mutta ikkunaan tulee varjo. Varjon voi poistaa käytöstä ikkunanhallinan asetuksista.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1578"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1601"/>
         <source>Transparency</source>
         <translation>Läpinäkyvä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1589"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1612"/>
         <source>Date Format</source>
         <translation>Päiväyksen muoto</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1592"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1615"/>
         <source>Day</source>
         <translation>Päivämäärä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1594"/>
-        <location filename="../src/conkycustomizedialog.cpp" line="1605"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1617"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1628"/>
         <source>Long</source>
         <translation>Pitkä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1595"/>
-        <location filename="../src/conkycustomizedialog.cpp" line="1606"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1618"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1629"/>
         <source>Short</source>
         <translation>Lyhyt</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1596"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1619"/>
         <source>Abbreviated name, e.g. Tu</source>
         <translation>Nimi lyhennetty, esim. ti</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1603"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1626"/>
         <source>Month</source>
         <translation>Kuukausi</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1607"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1630"/>
         <source>Abbreviated name, e.g. Oct</source>
         <translation>Nimi lyhennetty, esim. Tam</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1626"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1649"/>
         <source>Time Format</source>
         <translation>Kellonaika</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1633"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1656"/>
         <source>Format</source>
         <translation>Aika muodossa</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1638"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1661"/>
         <source>12 Hour</source>
         <translation>12H</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1639"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1662"/>
         <source>24 Hour</source>
         <translation>24H</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1654"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1663"/>
+        <source>auto</source>
+        <translation>automaattinen</translation>
+    </message>
+    <message>
+        <location filename="../src/conkycustomizedialog.cpp" line="1678"/>
         <source>Date &amp;&amp; Time</source>
         <translation>Päivämäärä &amp;&amp; aika</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1667"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1691"/>
         <source>Interface</source>
         <translation>Käyttöliittymä</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1675"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1699"/>
         <source>WiFi</source>
         <translation>WiFi</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1678"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1702"/>
         <source>WiFi Network</source>
         <translation>WiFi verkko</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1681"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1705"/>
         <source>LAN</source>
         <translation>LAN</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1684"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1708"/>
         <source>Wired LAN Network</source>
         <translation>Kiinteä LAN verkko</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1698"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1722"/>
         <source>Network</source>
         <translation>Verkko</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1961"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="2037"/>
         <source>Select Background Color</source>
         <translation>Valitse taustaväri</translation>
     </message>
@@ -805,7 +810,7 @@ Haluatko muokata sitä laajennetuilla oikeuksilla?</translation>
     <message>
         <location filename="../src/mainwindow.cpp" line="848"/>
         <source>About MX Conky</source>
-        <translation>Lisätietoja MX Conky:sta</translation>
+        <translation>Tietoja MX Conky</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="850"/>
@@ -815,7 +820,7 @@ Haluatko muokata sitä laajennetuilla oikeuksilla?</translation>
     <message>
         <location filename="../src/mainwindow.cpp" line="851"/>
         <source>GUI program for configuring Conky in MX Linux</source>
-        <translation>Ohjelma Conkyn konfigurointiin MX Linux:ssa</translation>
+        <translation>MX Linux Conkyn konfigurointi</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="854"/>
@@ -836,7 +841,7 @@ Haluatko muokata sitä laajennetuilla oikeuksilla?</translation>
     <message>
         <location filename="../src/mainwindow.cpp" line="857"/>
         <source>Cancel</source>
-        <translation>Peruuta</translation>
+        <translation>Peru</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="879"/>
@@ -885,7 +890,7 @@ Haluatko muokata sitä laajennetuilla oikeuksilla?</translation>
     <message>
         <location filename="../src/previewdialog.cpp" line="85"/>
         <source>No conky is currently selected</source>
-        <translation>Conkya ei ole valittuna tällä hetkellä</translation>
+        <translation>Conky ei ole valittuna</translation>
     </message>
     <message>
         <location filename="../src/previewdialog.cpp" line="93"/>
@@ -925,13 +930,15 @@ Haluatko muokata sitä laajennetuilla oikeuksilla?</translation>
     <message>
         <location filename="../src/previewdialog.cpp" line="151"/>
         <source>Missing Dependency</source>
-        <translation type="unfinished"/>
+        <translation>Puuttuva riippuvuus</translation>
     </message>
     <message>
         <location filename="../src/previewdialog.cpp" line="152"/>
         <source>Preview generation requires the GraphicsMagick compatibility tools.
 Please install the graphicsmagick-imagemagick-compat package to enable this feature.</source>
-        <translation type="unfinished"/>
+        <translation>Esikatselun luominen vaatii GraphicsMagick työkaluja.
+
+Asenna ensin graphicsmagick-imagemagick-compat paketti saadaksesi tämän ominaisuuden.</translation>
     </message>
     <message>
         <location filename="../src/previewdialog.cpp" line="163"/>
@@ -974,7 +981,7 @@ Please install the graphicsmagick-imagemagick-compat package to enable this feat
     <message>
         <location filename="../src/main.cpp" line="67"/>
         <source>Select Conky Manager config file</source>
-        <translation>Valitse Conky Manager:in asetustiedosto</translation>
+        <translation>Valitse Conky Manager asetustiedosto</translation>
     </message>
     <message>
         <location filename="../src/main.cpp" line="112"/>
@@ -984,7 +991,7 @@ Please install the graphicsmagick-imagemagick-compat package to enable this feat
     <message>
         <location filename="../src/main.cpp" line="112"/>
         <source>You must run this program as normal user</source>
-        <translation>Sinun täytyy suorittaa tämä ohjelma tavallisena käyttäjänä</translation>
+        <translation>Suorittaa tämä ohjelma tavallisena käyttäjänä</translation>
     </message>
 </context>
 <context>
@@ -1038,7 +1045,7 @@ Please install the graphicsmagick-imagemagick-compat package to enable this feat
     <message>
         <location filename="../src/settingsdialog.cpp" line="209"/>
         <source>Start conky at system startup</source>
-        <translation>Conky käynnistyy tietokoneen käynnistyksen aikana</translation>
+        <translation>Käynnistä conky käynnistyksen yhteydessä</translation>
     </message>
     <message>
         <location filename="../src/settingsdialog.cpp" line="212"/>

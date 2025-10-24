@@ -1,3 +1,9 @@
+mx-conky (25.10.5) mx; urgency=medium
+
+  * Allow 'auto' time display selection for conky's which are auto-capable
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 24 Oct 2025 09:23:50 -0400
+
 mx-conky (25.10.4) mx; urgency=medium
 
   * Allow "auto" 12h/24h time display selection for conky's which are auto-capable

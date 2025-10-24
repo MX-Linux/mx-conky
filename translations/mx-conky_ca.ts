@@ -95,244 +95,244 @@
         <translation>Atura</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="690"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="713"/>
         <source>Select Color</source>
         <translation>Trieu el color</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="796"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="819"/>
         <source>Permission Denied</source>
         <translation>Permís denegat</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="797"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="820"/>
         <source>Cannot write to file: %1
 Insufficient permissions.</source>
         <translation>No es pot escriure al fitxer %1
 No teniu prou permisos.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="807"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="830"/>
         <source>Write Error</source>
         <translation>Error d&apos;escriptura</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="807"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="830"/>
         <source>Cannot write to file: %1</source>
         <translation>No es pot escriure al fitxer %1.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="898"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="921"/>
         <source>Backup Config File</source>
         <translation>Còpia de seguretat del fitxer de configuració </translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="898"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="921"/>
         <source>Do you want to preserve the original file?</source>
         <translation>Voleu conservar el fitxer original?</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="922"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="945"/>
         <source>Backed Up Config File</source>
         <translation>S&apos;ha fet còpia de seguretat del fitxer de configuració</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="923"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="946"/>
         <source>The original configuration was backed up to %1</source>
         <translation>S&apos;ha fet una còpia de seguretat de la configuració original a %1</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="925"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="948"/>
         <source>Backup Failed</source>
         <translation>Ha fallat la còpia de seguretat.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="925"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="948"/>
         <source>Failed to create a backup file.</source>
         <translation>Ha fallat en crear la còpia de seguretat.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1006"/>
-        <location filename="../src/conkycustomizedialog.cpp" line="1009"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1029"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1032"/>
         <source>Restore Failed</source>
         <translation>Ha fallat la restauració.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1006"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1029"/>
         <source>Failed to restore from backup file.</source>
         <translation>Ha fallat en restaurar la còpia de seguretat.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1009"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1032"/>
         <source>Backup file does not exist.</source>
         <translation>No hi ha fitxer de còpia de seguretat.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1361"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1384"/>
         <source>Position</source>
         <translation>Posició </translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1368"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1391"/>
         <source>Alignment</source>
         <translation>Alineació</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1373"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1396"/>
         <source>Top Left</source>
         <translation>Dalt a l&apos;esquerra</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1374"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1397"/>
         <source>Top Right</source>
         <translation>Dalt a la dreta</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1375"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1398"/>
         <source>Top Middle</source>
         <translation>Dalt al mig</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1376"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1399"/>
         <source>Bottom Left</source>
         <translation>A baix a l&apos;esquerra</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1377"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1400"/>
         <source>Bottom Right</source>
         <translation>A baix a la dreta</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1378"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1401"/>
         <source>Bottom Middle</source>
         <translation>A baix al mig</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1379"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1402"/>
         <source>Middle Left</source>
         <translation>Al mig a l&apos;esquerra</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1380"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1403"/>
         <source>Middle Right</source>
         <translation>Al mig a la dreta</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1381"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1404"/>
         <source>Middle Middle</source>
         <translation>Al mig al centre</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1386"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1409"/>
         <source>Horizontal Gap</source>
         <translation>Espaiat horitzontal</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1387"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1410"/>
         <source>[GAP_X] Horizontal distance from window border (in pixels)</source>
         <translation>[GAP_X] Distància horitzontal de la finestra a la vora (en píxels)</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1399"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1422"/>
         <source>Vertical Gap</source>
         <translation>Espaiat vertical</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1400"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1423"/>
         <source>[GAP_Y] Vertical distance from window border (in pixels)</source>
         <translation>[GAP_Y] Distància vertical de la finestra a la vora (en píxels)</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1412"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1435"/>
         <source>Desktop</source>
         <translation>Escriptori</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1415"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1438"/>
         <source>Desktop 1</source>
         <translation>Escriptori 1</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1416"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1439"/>
         <source>All Desktops</source>
         <translation>Tots els escriptoris</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1428"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1451"/>
         <source>Location</source>
         <translation>Ubicació</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1440"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1463"/>
         <source>Width should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
         <translation>L&apos;amplada ha de ser més grossa que la mida del contingut,
 altrament aquest paràmetre no tindrà cap efecte.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1444"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1467"/>
         <source>Minimum Width</source>
         <translation>Amplada mínima</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1459"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1482"/>
         <source>Height should be larger than the size of window contents,
 otherwise this setting will not have any effect</source>
         <translation>L&apos;alçada ha de ser més grossa que la mida del contingut,
 altrament aquest paràmetre no tindrà cap efecte.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1461"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1484"/>
         <source>Minimum Height</source>
         <translation>Alçada mínima</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1475"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1498"/>
         <source>Increases the window height by adding empty lines at the end of the Conky config file</source>
         <translation>Incrementa l&apos;alçada de la finestra afegint línies buides al final del fitxer de configuració del Conky</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1476"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1499"/>
         <source>Height Padding</source>
         <translation>Farciment de l&apos;alçada</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1491"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1514"/>
         <source>Size</source>
         <translation>Mida </translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1504"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1527"/>
         <source>Transparency Type</source>
         <translation>Tipus de transparència</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1509"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1532"/>
         <source>Opaque</source>
         <translation>Opaca</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1510"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1533"/>
         <source>Transparent</source>
         <translation>Transparent</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1511"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1534"/>
         <source>Pseudo-Transparent</source>
         <translation>Pseudotransparent</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1512"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1535"/>
         <source>Semi-Transparent</source>
         <translation>Semitransparent</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1517"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1540"/>
         <source>Opacity (%)</source>
         <translation>Opacitat (%)</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1518"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1541"/>
         <source>Window Opacity
 
 0 = Fully Transparent, 100 = Fully Opaque</source>
@@ -341,124 +341,129 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
 0 = transparent del tot, 100 = opaca del tot</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1532"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1555"/>
         <source>Background Color</source>
         <translation>Color de fons</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1537"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1560"/>
         <source>Choose Color</source>
         <translation>Trieu un color</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1557"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1580"/>
         <source>Setting Type to &quot;Transparent&quot; will make the whole window transparent (including any images). Use &quot;Pseudo-Transparent&quot; if you want the images to be opaque.</source>
         <translation>Si definiu el tipus com a transparent, tota la finestra serà transparent (incloses les imatges). Feu servir pseudotransparent, si voleu que les imatges siguin opaques.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1567"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1590"/>
         <source>Setting Type to &quot;Pseudo-Transparent&quot; will make the window transparent but the window will have a shadow. The shadow can be disabled by configuring your window manager.</source>
         <translation>Si definiu el tipus com a pseudotransparent, la finestra serà transparent, però tindrà una ombra. L&apos;ombra es pot desactivar configurant el gestor de finestres.</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1578"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1601"/>
         <source>Transparency</source>
         <translation>Transparència </translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1589"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1612"/>
         <source>Date Format</source>
         <translation>Format de la data</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1592"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1615"/>
         <source>Day</source>
         <translation>Dia</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1594"/>
-        <location filename="../src/conkycustomizedialog.cpp" line="1605"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1617"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1628"/>
         <source>Long</source>
         <translation>Llarg</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1595"/>
-        <location filename="../src/conkycustomizedialog.cpp" line="1606"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1618"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1629"/>
         <source>Short</source>
         <translation>Curt</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1596"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1619"/>
         <source>Abbreviated name, e.g. Tu</source>
         <translation>Nom abreujat, p. ex.: dc </translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1603"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1626"/>
         <source>Month</source>
         <translation>Mes</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1607"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1630"/>
         <source>Abbreviated name, e.g. Oct</source>
         <translation>Nom abreujat, p. ex.: oct </translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1626"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1649"/>
         <source>Time Format</source>
         <translation>Format de l&apos;hora</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1633"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1656"/>
         <source>Format</source>
         <translation>Format </translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1638"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1661"/>
         <source>12 Hour</source>
         <translation>12 hores</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1639"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1662"/>
         <source>24 Hour</source>
         <translation>24 hores</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1654"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1663"/>
+        <source>auto</source>
+        <translation>automàtic</translation>
+    </message>
+    <message>
+        <location filename="../src/conkycustomizedialog.cpp" line="1678"/>
         <source>Date &amp;&amp; Time</source>
         <translation>Data i hora</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1667"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1691"/>
         <source>Interface</source>
         <translation>Interfície</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1675"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1699"/>
         <source>WiFi</source>
         <translation>WiFi</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1678"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1702"/>
         <source>WiFi Network</source>
         <translation>Xarxa de WiFi</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1681"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1705"/>
         <source>LAN</source>
         <translation>LAN</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1684"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1708"/>
         <source>Wired LAN Network</source>
         <translation>Xarxa LAN amb cable</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1698"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="1722"/>
         <source>Network</source>
         <translation>Xarxa</translation>
     </message>
     <message>
-        <location filename="../src/conkycustomizedialog.cpp" line="1961"/>
+        <location filename="../src/conkycustomizedialog.cpp" line="2037"/>
         <source>Select Background Color</source>
         <translation>Trieu el color de fons</translation>
     </message>
