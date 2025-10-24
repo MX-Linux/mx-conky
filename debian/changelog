@@ -1,16 +1,22 @@
+mx-conky (25.10.4) mx; urgency=medium
+
+  * Allow "auto" 12h/24h time display selection for conky's which are auto-capable
+
+ -- fehlix <fehlix@mxlinux.org>  Fri, 24 Oct 2025 06:13:00 -0400
+
 mx-conky (25.10.3) mx; urgency=medium
 
- * Add 12h/24h auto time-format detection and toggle for template-pmfix
- * Add 12h/24h auto time-format detection and toggle for lua hour and lua am_pm
- * Fix to ignore comment lines when detecting and adjusting 12h/24h auto time-format
+  * Add 12h/24h auto time-format detection and toggle for template-pmfix
+  * Add 12h/24h auto time-format detection and toggle for lua hour and lua am_pm
+  * Fix to ignore comment lines when detecting and adjusting 12h/24h auto time-format
 
  -- fehlix <fehlix@mxlinux.org>  Wed, 22 Oct 2025 19:38:40 -0400
 
 mx-conky (25.10.2) mx; urgency=medium
 
- * Add graphicsmagick-imagemagick-compat as a recommend and popup a message that it's missing if the user tries to create a preview
- * When backing up a conky refresh and add it to the list Don't show successful deletion dialog, it should be obvious since the entry disappears from list
- * Preserve filter selection when editing a conky
+  * Add graphicsmagick-imagemagick-compat as a recommend and popup a message that it's missing if the user tries to create a preview
+  * When backing up a conky refresh and add it to the list Don't show successful deletion dialog, it should be obvious since the entry disappears from list
+  * Preserve filter selection when editing a conky
 
  -- Adrian <adrian@mxlinux.org>  Mon, 20 Oct 2025 14:11:55 -0400
 
