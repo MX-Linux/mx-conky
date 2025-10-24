@@ -649,18 +649,27 @@ void ConkyCustomizeDialog::parseContent()
             || QRegularExpression(R"(^(?!\s*#|\s*--)(.*if_match \s*"pmfix\${time \s*%[pP]}"))",
                 QRegularExpression::MultilineOption).match(file_content).hasMatch()
         ) {
+            if (cmbTimeFormat->findData("auto") == -1) {
+                cmbTimeFormat->addItem(tr("auto"), "auto");
+            }
             cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("auto"));
         } else if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*lua \s*(hours?|ampm|AMPM|am_pm|AM_PM) \s*12[^}]*}))",
                     QRegularExpression::MultilineOption).match(file_content).hasMatch()
                     || QRegularExpression(R"(^(?!\s*#|\s*--)(.*if_match \s*"pmfix\${time \s*12[^}]*}"))",
                         QRegularExpression::MultilineOption).match(file_content).hasMatch()
         ) {
+            if (cmbTimeFormat->findData("auto") == -1) {
+                cmbTimeFormat->addItem(tr("auto"), "auto");
+            }
             cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("12"));
         } else if (QRegularExpression(R"(^(?!\s*#|\s*--)(.*lua \s*(hours?|ampm|AMPM|am_pm|AM_PM) \s*24[^}]*}))",
                     QRegularExpression::MultilineOption).match(file_content).hasMatch()
                     || QRegularExpression(R"(^(?!\s*#|\s*--)(.*if_match \s*"pmfix\${time \s*24[^}]*}"))",
                         QRegularExpression::MultilineOption).match(file_content).hasMatch()
                 ) {
+            if (cmbTimeFormat->findData("auto") == -1) {
+                cmbTimeFormat->addItem(tr("auto"), "auto");
+            }
             cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("24"));
         } else if (file_content.contains("%I")
             || file_content.contains("%l")
@@ -672,8 +681,8 @@ void ConkyCustomizeDialog::parseContent()
                 ) {
             cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("24"));
         } else {
-            // Default to auto detection 12/24-hour
-            cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("auto"));
+            // Default to 24-hour
+            cmbTimeFormat->setCurrentIndex(cmbTimeFormat->findData("24"));
         }
     }
 
@@ -1660,7 +1669,6 @@ void ConkyCustomizeDialog::createTimeTab()
     cmbTimeFormat = new QComboBox;
     cmbTimeFormat->addItem(tr("12 Hour"), "12");
     cmbTimeFormat->addItem(tr("24 Hour"), "24");
-    cmbTimeFormat->addItem(tr("auto"), "auto");
     timeFormatLayout->addWidget(cmbTimeFormat, row, 1);
 
     // Note about time format
