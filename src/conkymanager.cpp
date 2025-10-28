@@ -195,6 +195,13 @@ QList<ConkyItem *> ConkyManager::conkyItems() const
     return m_conkyItems;
 }
 
+bool ConkyManager::hasRunningConkies() const
+{
+    return std::any_of(m_conkyItems.cbegin(), m_conkyItems.cend(), [](const ConkyItem *item) {
+        return item && item->isRunning();
+    });
+}
+
 void ConkyManager::startConky(ConkyItem *item)
 {
     if (!item || item->isRunning()) {

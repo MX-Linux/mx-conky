@@ -92,6 +92,7 @@ void MainWindow::onConkyItemsLoaded()
 
     // Refresh filter options based on current search paths
     populateFilterComboBox();
+    updateControlStates();
 }
 
 MainWindow::~MainWindow()
@@ -200,6 +201,7 @@ void MainWindow::setupMainWidget()
     m_stopAllButton = new QPushButton(tr("Stop All"));
     m_stopAllButton->setIcon(QIcon::fromTheme("media-playback-stop"));
     m_stopAllButton->setToolTip(tr("Stop all running conkies"));
+    m_stopAllButton->setEnabled(false);
 
     m_filterComboBox = new QComboBox;
     populateFilterComboBox();
@@ -327,6 +329,9 @@ void MainWindow::setConnections()
 
     // Connect to know when conkies are loaded
     connect(m_conkyManager, &ConkyManager::conkyItemsChanged, this, &MainWindow::onConkyItemsLoaded);
+    connect(m_conkyManager, &ConkyManager::conkyItemsChanged, this, &MainWindow::updateControlStates);
+    connect(m_conkyManager, &ConkyManager::conkyStarted, this, &MainWindow::updateControlStates);
+    connect(m_conkyManager, &ConkyManager::conkyStopped, this, &MainWindow::updateControlStates);
 }
 
 void MainWindow::onPreviewsClicked()
@@ -378,6 +383,8 @@ void MainWindow::onRefreshClicked()
     }
     m_conkyManager->scanForConkies();
     m_conkyListWidget->refreshList();
+    m_conkyListWidget->reapplyFilters();
+    updateControlStates();
 }
 
 void MainWindow::onStartAllClicked()
@@ -386,6 +393,10 @@ void MainWindow::onStartAllClicked()
         return;
     }
     m_conkyManager->startAutostart();
+    if (m_conkyListWidget) {
+        m_conkyListWidget->reapplyFilters();
+    }
+    updateControlStates();
 }
 
 void MainWindow::onStopAllClicked()
@@ -394,6 +405,10 @@ void MainWindow::onStopAllClicked()
         return;
     }
     m_conkyManager->stopAllRunning();
+    if (m_conkyListWidget) {
+        m_conkyListWidget->reapplyFilters();
+    }
+    updateControlStates();
 }
 
 void MainWindow::onItemSelectionChanged(ConkyItem *item)
@@ -975,6 +990,14 @@ void MainWindow::focusSearchField()
     if (m_searchLineEdit) {
         m_searchLineEdit->setFocus();
         m_searchLineEdit->selectAll();
+    }
+}
+
+void MainWindow::updateControlStates()
+{
+    const bool hasRunningConkies = m_conkyManager && m_conkyManager->hasRunningConkies();
+    if (m_stopAllButton) {
+        m_stopAllButton->setEnabled(hasRunningConkies);
     }
 }
 
