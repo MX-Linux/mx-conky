@@ -421,6 +421,10 @@ void ConkyManager::onStatusProcessFinished()
                 configPath = argument.mid(3);
                 break;
             }
+            if (argument.startsWith("-c") && argument.length() > 2) {
+                configPath = argument.mid(2);
+                break;
+            }
         }
 
         if (configPath.isEmpty()) {
