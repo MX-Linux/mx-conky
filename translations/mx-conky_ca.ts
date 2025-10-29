@@ -516,17 +516,17 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
 <context>
     <name>ConkyListWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="344"/>
+        <location filename="../src/conkylistwidget.cpp" line="345"/>
         <source>Total: 0 conkies</source>
         <translation>Total: 0 monitors</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="598"/>
+        <location filename="../src/conkylistwidget.cpp" line="599"/>
         <source>Total: %1 conkies</source>
         <translation>Total: %1 monitors</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="601"/>
+        <location filename="../src/conkylistwidget.cpp" line="602"/>
         <source>Showing: %1 of %2 conkies</source>
         <translation>Mostra: %1 de %2 monitors</translation>
     </message>
@@ -534,22 +534,22 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
 <context>
     <name>ConkyPreviewWidget</name>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="550"/>
+        <location filename="../src/conkylistwidget.cpp" line="551"/>
         <source>No Conky Selected</source>
         <translation>No s&apos;ha triat cap Conky.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="552"/>
+        <location filename="../src/conkylistwidget.cpp" line="553"/>
         <source>Select a conky from the list to see its preview</source>
         <translation>Trieu un monitor de la llista per veure&apos;n la previsualització.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="571"/>
+        <location filename="../src/conkylistwidget.cpp" line="572"/>
         <source>Preview image could not be loaded</source>
         <translation>No s&apos;ha pogut carregar la imatge de previsualització.</translation>
     </message>
     <message>
-        <location filename="../src/conkylistwidget.cpp" line="574"/>
+        <location filename="../src/conkylistwidget.cpp" line="575"/>
         <source>No preview image available</source>
         <translation>No hi ha imatge de previsualització disponible.</translation>
     </message>
@@ -558,216 +558,216 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
     <name>MainWindow</name>
     <message>
         <location filename="../src/mainwindow.cpp" line="58"/>
-        <location filename="../src/mainwindow.cpp" line="849"/>
+        <location filename="../src/mainwindow.cpp" line="864"/>
         <source>MX Conky</source>
         <translation>MX Conky</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="250"/>
+        <location filename="../src/mainwindow.cpp" line="252"/>
         <source>About this application</source>
         <translation>Quant a aquest programa</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="248"/>
+        <location filename="../src/mainwindow.cpp" line="250"/>
         <source>About...</source>
         <translation>Quant a...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="255"/>
+        <location filename="../src/mainwindow.cpp" line="257"/>
         <source>Help</source>
         <translation>Ajuda </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="270"/>
+        <location filename="../src/mainwindow.cpp" line="272"/>
         <source>Quit application</source>
         <translation>Surt de l&apos;aplicació </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="268"/>
+        <location filename="../src/mainwindow.cpp" line="270"/>
         <source>Close</source>
         <translation>Tanca </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="158"/>
+        <location filename="../src/mainwindow.cpp" line="159"/>
         <source>Loading Conky configurations...</source>
         <translation>Es carreguen les configuracions del Conky...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="188"/>
+        <location filename="../src/mainwindow.cpp" line="189"/>
         <source>Settings</source>
         <translation>Paràmetres</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="190"/>
+        <location filename="../src/mainwindow.cpp" line="191"/>
         <source>Configure conky search paths</source>
         <translation>Configura els camins de cerca del Conky</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="192"/>
+        <location filename="../src/mainwindow.cpp" line="193"/>
         <source>Refresh</source>
         <translation>Refresca</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="194"/>
+        <location filename="../src/mainwindow.cpp" line="195"/>
         <source>Refresh conky list</source>
         <translation>Refresca la llista de monitors</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="196"/>
+        <location filename="../src/mainwindow.cpp" line="197"/>
         <source>Start All</source>
         <translation>Inicia&apos;ls tots</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="198"/>
+        <location filename="../src/mainwindow.cpp" line="199"/>
         <source>Start all enabled conkies</source>
         <translation>Incia tots els monitors activats</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="200"/>
+        <location filename="../src/mainwindow.cpp" line="201"/>
         <source>Stop All</source>
         <translation>Atura&apos;ls tots</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="202"/>
+        <location filename="../src/mainwindow.cpp" line="203"/>
         <source>Stop all running conkies</source>
         <translation>Atura tots els monitors en execució</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="951"/>
-        <location filename="../src/mainwindow.cpp" line="995"/>
+        <location filename="../src/mainwindow.cpp" line="966"/>
+        <location filename="../src/mainwindow.cpp" line="1018"/>
         <source>Running</source>
         <translation>S&apos;executa</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="953"/>
-        <location filename="../src/mainwindow.cpp" line="996"/>
+        <location filename="../src/mainwindow.cpp" line="968"/>
+        <location filename="../src/mainwindow.cpp" line="1019"/>
         <source>Stopped</source>
         <translation>Aturat</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="210"/>
+        <location filename="../src/mainwindow.cpp" line="212"/>
         <source>Search conky by name...</source>
         <translation>Cerca un monitor pel nom...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="212"/>
+        <location filename="../src/mainwindow.cpp" line="214"/>
         <source>Search conkies by name (Ctrl+F)</source>
         <translation>Cerca monitors pel nom (Ctrl+F)</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="257"/>
+        <location filename="../src/mainwindow.cpp" line="259"/>
         <source>Display help</source>
         <translation>Mostra&apos;n l&apos;ajuda </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="433"/>
-        <location filename="../src/mainwindow.cpp" line="607"/>
+        <location filename="../src/mainwindow.cpp" line="448"/>
+        <location filename="../src/mainwindow.cpp" line="622"/>
         <source>Copy Conky</source>
         <translation>Copia el monitor</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="479"/>
-        <location filename="../src/mainwindow.cpp" line="655"/>
+        <location filename="../src/mainwindow.cpp" line="494"/>
+        <location filename="../src/mainwindow.cpp" line="670"/>
         <source>Conky Copied</source>
         <translation>Monitor copiat</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="480"/>
+        <location filename="../src/mainwindow.cpp" line="495"/>
         <source>Conky has been copied to your personal folder for editing:
 %1</source>
         <translation>S&apos;ha copiat el monitor a la carpeta personal per a editar-lo:
 %1</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="482"/>
-        <location filename="../src/mainwindow.cpp" line="658"/>
+        <location filename="../src/mainwindow.cpp" line="497"/>
+        <location filename="../src/mainwindow.cpp" line="673"/>
         <source>Copy Failed</source>
         <translation>Ha fallat la còpia.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="482"/>
-        <location filename="../src/mainwindow.cpp" line="658"/>
+        <location filename="../src/mainwindow.cpp" line="497"/>
+        <location filename="../src/mainwindow.cpp" line="673"/>
         <source>Failed to copy conky to your personal folder.</source>
         <translation>Ha fallat copiar el monitor a la carpeta personal.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="544"/>
+        <location filename="../src/mainwindow.cpp" line="559"/>
         <source>Delete Conky</source>
         <translation>Esborra el monitor</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="656"/>
+        <location filename="../src/mainwindow.cpp" line="671"/>
         <source>Conky has been copied to your personal folder for customization:
 %1</source>
         <translation>S&apos;ha copiat el monitor a la carpeta personal per personalitzar-lo:
 %1</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="184"/>
+        <location filename="../src/mainwindow.cpp" line="185"/>
         <source>Previews</source>
         <translation>Previsualitzacions</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="186"/>
+        <location filename="../src/mainwindow.cpp" line="187"/>
         <source>Generate preview images for conkies</source>
         <translation>Genera imatges de previsualització per a monitors</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="206"/>
-        <location filename="../src/mainwindow.cpp" line="467"/>
-        <location filename="../src/mainwindow.cpp" line="643"/>
-        <location filename="../src/mainwindow.cpp" line="949"/>
-        <location filename="../src/mainwindow.cpp" line="994"/>
+        <location filename="../src/mainwindow.cpp" line="208"/>
+        <location filename="../src/mainwindow.cpp" line="482"/>
+        <location filename="../src/mainwindow.cpp" line="658"/>
+        <location filename="../src/mainwindow.cpp" line="964"/>
+        <location filename="../src/mainwindow.cpp" line="1017"/>
         <source>All</source>
         <translation>Tots </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="207"/>
+        <location filename="../src/mainwindow.cpp" line="209"/>
         <source>Filter conkies by running status or location</source>
         <translation>Filtra els monitors per estat d&apos;execució o ubicació</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="429"/>
-        <location filename="../src/mainwindow.cpp" line="603"/>
+        <location filename="../src/mainwindow.cpp" line="444"/>
+        <location filename="../src/mainwindow.cpp" line="618"/>
         <source>Enter a name for the copy:</source>
         <translation>Introduïu un nom per a la còpia:</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="430"/>
-        <location filename="../src/mainwindow.cpp" line="604"/>
+        <location filename="../src/mainwindow.cpp" line="445"/>
+        <location filename="../src/mainwindow.cpp" line="619"/>
         <source>In order for you to edit and save a conky, it must first be copied to ~/.conky where you have permission.
 Enter a name for the copy.</source>
         <translation>Per tal d&apos;editar i desar un monitor, primer cal copiar-lo a ~/.conky on tingueu permís.
 Introduïu un nom per a la còpia.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="447"/>
-        <location filename="../src/mainwindow.cpp" line="623"/>
+        <location filename="../src/mainwindow.cpp" line="462"/>
+        <location filename="../src/mainwindow.cpp" line="638"/>
         <source>Directory Exists</source>
         <translation>El directori ja hi és.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="448"/>
-        <location filename="../src/mainwindow.cpp" line="624"/>
+        <location filename="../src/mainwindow.cpp" line="463"/>
+        <location filename="../src/mainwindow.cpp" line="639"/>
         <source>A conky with the name '%1' already exists in your personal folder.
 Do you want to overwrite it?</source>
         <translation>Ja hi ha un monitor amb el nom %1 a la carpeta personal.
 El voleu sobreescriure?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="515"/>
+        <location filename="../src/mainwindow.cpp" line="530"/>
         <source>Edit Conky</source>
         <translation>Edita el monitor</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="516"/>
+        <location filename="../src/mainwindow.cpp" line="531"/>
         <source>This conky file is read-only and requires administrator privileges to edit.
 Do you want to edit it with elevated privileges?</source>
         <translation>Aquest fitxer de Conky és de només lectura i calen privilegis d&apos;administrador per editar-lo.
 Voleu editar-lo amb privilegis superiors?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="545"/>
+        <location filename="../src/mainwindow.cpp" line="560"/>
         <source>Are you sure you want to delete the conky file:
 %1
 
@@ -778,88 +778,88 @@ This action cannot be undone.</source>
 Aquesta acció no es pot desfer.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="577"/>
+        <location filename="../src/mainwindow.cpp" line="592"/>
         <source>Delete Failed</source>
         <translation>Ha fallat en esborrar.</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="577"/>
+        <location filename="../src/mainwindow.cpp" line="592"/>
         <source>Failed to delete conky file:
 %1</source>
         <translation>Ha fallat en esborrar el fitxer de Conky següent:
 %1</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="665"/>
+        <location filename="../src/mainwindow.cpp" line="680"/>
         <source>Customize Conky</source>
         <translation>Personalitza el Conky</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="666"/>
+        <location filename="../src/mainwindow.cpp" line="681"/>
         <source>This conky file is read-only and requires administrator privileges to customize.
 Do you want to customize it with elevated privileges?</source>
         <translation>Aquest fitxer de Conky és de només lectura i calen privilegis d&apos;administrador per personalitzar-lo.
 Voleu personalitzar-lo amb privilegis superiors?</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="838"/>
+        <location filename="../src/mainwindow.cpp" line="853"/>
         <source>Editor Error</source>
         <translation>Error de l&apos;editor</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="838"/>
+        <location filename="../src/mainwindow.cpp" line="853"/>
         <source>Cannot start editor for file: %1</source>
         <translation>No es pot iniciar l&apos;editor per al fitxer %1</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="848"/>
+        <location filename="../src/mainwindow.cpp" line="863"/>
         <source>About MX Conky</source>
         <translation>Quant a l&apos;MX Conky </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="850"/>
+        <location filename="../src/mainwindow.cpp" line="865"/>
         <source>Version: </source>
         <translation>Versió: </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="851"/>
+        <location filename="../src/mainwindow.cpp" line="866"/>
         <source>GUI program for configuring Conky in MX Linux</source>
         <translation>Programa gràfic per configurar Conky a l&apos;MX Linux</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="854"/>
+        <location filename="../src/mainwindow.cpp" line="869"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="855"/>
+        <location filename="../src/mainwindow.cpp" line="870"/>
         <source>License</source>
         <translation>Llicència </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="856"/>
-        <location filename="../src/mainwindow.cpp" line="868"/>
+        <location filename="../src/mainwindow.cpp" line="871"/>
+        <location filename="../src/mainwindow.cpp" line="883"/>
         <source>Changelog</source>
         <translation>Registre de canvis</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="857"/>
+        <location filename="../src/mainwindow.cpp" line="872"/>
         <source>Cancel</source>
         <translation>Cancel·la </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="879"/>
+        <location filename="../src/mainwindow.cpp" line="894"/>
         <source>&amp;Close</source>
         <translation>Tan&amp;ca </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="910"/>
+        <location filename="../src/mainwindow.cpp" line="925"/>
         <source>MX Conky Help</source>
         <translation>Ajuda per a l&apos;MX Conky </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="955"/>
-        <location filename="../src/mainwindow.cpp" line="997"/>
+        <location filename="../src/mainwindow.cpp" line="970"/>
+        <location filename="../src/mainwindow.cpp" line="1020"/>
         <source>Autostart</source>
         <translation>Inici automàtic</translation>
     </message>

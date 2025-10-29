@@ -1,3 +1,9 @@
+mx-conky (25.10.7) mx; urgency=medium
+
+  * Change default delay to 10 seconds.
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 28 Oct 2025 22:29:15 -0400
+
 mx-conky (25.10.6) mx; urgency=medium
 
   * Stop All now stays disabled when no conkys are running, and the
