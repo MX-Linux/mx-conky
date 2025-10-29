@@ -44,7 +44,7 @@ ConkyManager::ConkyManager(QObject *parent)
       m_autostartTimer(new QTimer(this)),
       m_statusTimer(new QTimer(this)),
       m_statusCheckRunning(false),
-      m_startupDelay(5)
+      m_startupDelay(10)
 {
     m_statusTimer->setInterval(2s);
     connect(m_statusTimer, &QTimer::timeout, this, &ConkyManager::updateRunningStatus);
@@ -309,7 +309,7 @@ void ConkyManager::loadSettings()
               .value("searchPaths", QStringList() << QDir::homePath() + "/.conky" << "/usr/share/mx-conky-data/themes")
               .toStringList();
 
-    m_startupDelay = m_settings.value("startupDelay", 5).toInt();
+    m_startupDelay = m_settings.value("startupDelay", 10).toInt();
     m_settings.endGroup();
 
     scanForConkies();
