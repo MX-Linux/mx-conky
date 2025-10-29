@@ -1,3 +1,12 @@
+mx-conky (25.10.8) mx; urgency=medium
+
+  * Stop All now stays enabled and sends a pkill/killall sweep so every
+    conky owned by the user is terminated, even when detection misses
+    them.
+  * Improve running conkys detection/stopping
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 29 Oct 2025 12:18:14 -0400
+
 mx-conky (25.10.7) mx; urgency=medium
 
   * Change default delay to 10 seconds.
