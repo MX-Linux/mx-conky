@@ -1,3 +1,9 @@
+mx-conky (25.10.9) mx; urgency=medium
+
+  * Additional conky detection fix
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 29 Oct 2025 13:38:48 -0400
+
 mx-conky (25.10.8) mx; urgency=medium
 
   * Stop All now stays enabled and sends a pkill/killall sweep so every
