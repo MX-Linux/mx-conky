@@ -201,7 +201,6 @@ void MainWindow::setupMainWidget()
     m_stopAllButton = new QPushButton(tr("Stop All"));
     m_stopAllButton->setIcon(QIcon::fromTheme("media-playback-stop"));
     m_stopAllButton->setToolTip(tr("Stop all running conkies"));
-    m_stopAllButton->setEnabled(false);
 
     m_filterComboBox = new QComboBox;
     populateFilterComboBox();
@@ -580,7 +579,7 @@ void MainWindow::onDeleteRequested(ConkyItem *item)
 
     if (needsElevation) {
         QString command = elevate + " rm '" + filePath + "'";
-        success = QProcess::execute("sh", QStringList() << "-c" << command) == 0;
+        success = QProcess::execute("sh", { "-c", command }) == 0;
     } else {
         success = QFile::remove(filePath);
     }
@@ -691,7 +690,7 @@ void MainWindow::onCustomizeRequested(ConkyItem *item)
                     = QFile::exists("/usr/bin/pkexec") ? "pkexec" : (QFile::exists("/usr/bin/gksu") ? "gksu" : "sudo");
                 QString testCommand = QString("%1 touch '%2'").arg(elevationTool, filePath);
 
-                int exitCode = QProcess::execute("sh", QStringList() << "-c" << testCommand);
+                int exitCode = QProcess::execute("sh", { "-c", testCommand });
                 if (exitCode != 0) {
                     // User cancelled elevation or it failed
                     return;
@@ -838,7 +837,7 @@ void MainWindow::editConkyFile(const QString &filePath)
         qDebug() << "Final command:" << command;
     }
 
-    bool started = QProcess::startDetached("sh", QStringList() << "-c" << command);
+    bool started = QProcess::startDetached("sh", { "-c", command });
 
     if (!started) {
         if (debug) {
@@ -847,7 +846,7 @@ void MainWindow::editConkyFile(const QString &filePath)
 
         // Fallback to simple featherpad launch
         QString fallbackCommand = needsElevation ? elevate + " featherpad " + filePath : "featherpad " + filePath;
-        started = QProcess::startDetached("sh", QStringList() << "-c" << fallbackCommand);
+        started = QProcess::startDetached("sh", { "-c", fallbackCommand });
 
         if (!started) {
             QMessageBox::warning(this, tr("Editor Error"), tr("Cannot start editor for file: %1").arg(filePath));
@@ -913,7 +912,7 @@ void MainWindow::pushHelp_clicked()
     QProcess checkProcess;
     qDebug() << "MainWindow::pushHelp_clicked: Creating which QProcess object";
     checkProcess.setProgram("which");
-    checkProcess.setArguments(QStringList() << "mx-viewer");
+    checkProcess.setArguments({ "mx-viewer" });
     checkProcess.start();
 
     bool started = false;
@@ -922,10 +921,10 @@ void MainWindow::pushHelp_clicked()
 
         if (checkProcess.exitCode() == 0) {
             qDebug() << "MainWindow: Using mx-viewer for help";
-            started = QProcess::startDetached("mx-viewer", QStringList() << url << tr("MX Conky Help"));
+            started = QProcess::startDetached("mx-viewer", { url, tr("MX Conky Help") });
         } else {
             qDebug() << "MainWindow: Using xdg-open for help";
-            started = QProcess::startDetached("xdg-open", QStringList() << url);
+            started = QProcess::startDetached("xdg-open", { url });
         }
 
         // Ensure process is fully finished and cleaned up
@@ -935,7 +934,7 @@ void MainWindow::pushHelp_clicked()
         qDebug() << "MainWindow: which command timed out, using xdg-open as fallback";
         checkProcess.kill();
         checkProcess.waitForFinished(1000);
-        started = QProcess::startDetached("xdg-open", QStringList() << url);
+        started = QProcess::startDetached("xdg-open", { url });
     }
     qDebug() << "MainWindow::pushHelp_clicked: Destroying which QProcess object";
 
@@ -995,9 +994,8 @@ void MainWindow::focusSearchField()
 
 void MainWindow::updateControlStates()
 {
-    const bool hasRunningConkies = m_conkyManager && m_conkyManager->hasRunningConkies();
     if (m_stopAllButton) {
-        m_stopAllButton->setEnabled(hasRunningConkies);
+        m_stopAllButton->setEnabled(m_conkyManager != nullptr);
     }
 }
 
