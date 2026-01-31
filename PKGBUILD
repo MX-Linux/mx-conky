@@ -8,8 +8,9 @@ url="https://mxlinux.org"
 license=('GPL3')
 depends=('conky' 'qt6-base')
 makedepends=('cmake' 'ninja' 'qt6-tools')
-source=()
-sha256sums=()
+source=("mx-conky.install")
+sha256sums=("SKIP")
+install=mx-conky.install
 
 build() {
     cd "${startdir}"
@@ -50,6 +51,9 @@ package() {
     install -dm755 "${pkgdir}/usr/share/doc/mx-conky"
     if [ -d help ]; then
         cp -r help/* "${pkgdir}/usr/share/doc/mx-conky/" 2>/dev/null || true
+    fi
+    if [ -f debian/changelog ]; then
+        gzip -9 -c debian/changelog > "${pkgdir}/usr/share/doc/mx-conky/changelog.gz"
     fi
 
     # Install license and icon credit
