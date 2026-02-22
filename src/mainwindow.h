@@ -23,6 +23,13 @@
  **********************************************************************/
 #pragma once
 
+#include "cmd.h"
+#include "conkycustomizedialog.h"
+#include "conkylistwidget.h"
+#include "conkymanager.h"
+#include "previewdialog.h"
+#include "settingsdialog.h"
+
 #include <QAction>
 #include <QComboBox>
 #include <QDialog>
@@ -38,13 +45,6 @@
 #include <QSplitter>
 #include <QStackedWidget>
 #include <QVBoxLayout>
-
-#include "cmd.h"
-#include "conkycustomizedialog.h"
-#include "conkylistwidget.h"
-#include "conkymanager.h"
-#include "previewdialog.h"
-#include "settingsdialog.h"
 
 class MainWindow : public QDialog
 {

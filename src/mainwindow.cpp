@@ -147,7 +147,7 @@ void MainWindow::setupLoadingWidget()
     } else {
         // Fallback: create a simple animated text
         m_loadingLabel->setText("⏳");
-        QFont loadingFont = m_loadingLabel->font();
+        auto loadingFont = m_loadingLabel->font();
         if (loadingFont.pointSizeF() > 0) {
             loadingFont.setPointSizeF(loadingFont.pointSizeF() * 3.5);
         } else {
@@ -158,7 +158,7 @@ void MainWindow::setupLoadingWidget()
 
     auto *textLabel = new QLabel(tr("Loading Conky configurations..."));
     textLabel->setAlignment(Qt::AlignCenter);
-    QFont textFont = textLabel->font();
+    auto textFont = textLabel->font();
     if (textFont.pointSizeF() > 0) {
         textFont.setPointSizeF(textFont.pointSizeF() + 2.0);
     } else {
@@ -231,7 +231,7 @@ void MainWindow::setupMainWidget()
     // Widgets will be added to splitter when they're created
 
     // Set default splitter geometry to equal panels when no saved state
-    QByteArray splitterState = settings.value("splitter").toByteArray();
+    auto splitterState = settings.value("splitter").toByteArray();
     if (splitterState.isEmpty()) {
         // Set equal split (50/50)
         QList<int> sizes;
@@ -283,7 +283,7 @@ void MainWindow::setupMainWidget()
     bottomLayout->addStretch();
 
     // Add a spacer to the right of the logo, same width as the close button
-    QSpacerItem *buttonSpacer
+    auto *buttonSpacer
         = new QSpacerItem(m_closeButton->sizeHint().width(), 0, QSizePolicy::Fixed, QSizePolicy::Minimum);
     bottomLayout->addItem(buttonSpacer);
 
@@ -501,9 +501,9 @@ void MainWindow::onEditRequested(ConkyItem *item)
             if (!fileInfo.isWritable()) {
                 // Check if the detected editor can handle elevation automatically
                 QString editor;
-                QString default_editor = Cmd().getCmdOut("xdg-mime query default text/plain");
-                QString desktop_file = QStandardPaths::locate(QStandardPaths::ApplicationsLocation, default_editor,
-                                                              QStandardPaths::LocateFile);
+                auto default_editor = Cmd().getCmdOut("xdg-mime query default text/plain");
+                auto desktop_file = QStandardPaths::locate(QStandardPaths::ApplicationsLocation, default_editor,
+                                                           QStandardPaths::LocateFile);
 
                 QFile file(desktop_file);
                 if (file.open(QIODevice::ReadOnly)) {
@@ -779,8 +779,8 @@ void MainWindow::editConkyFile(const QString &filePath)
     bool debug = !QProcessEnvironment::systemEnvironment().value("DEBUG").isEmpty();
 
     QString editor;
-    QString default_editor = Cmd().getCmdOut("xdg-mime query default text/plain");
-    QString desktop_file
+    auto default_editor = Cmd().getCmdOut("xdg-mime query default text/plain");
+    auto desktop_file
         = QStandardPaths::locate(QStandardPaths::ApplicationsLocation, default_editor, QStandardPaths::LocateFile);
 
     QFile file(desktop_file);
@@ -1018,17 +1018,17 @@ void MainWindow::populateFilterComboBox()
         m_filterComboBox->addItem(tr("Autostart"));
 
         // Add folder-based filters from search paths
-        QStringList searchPaths = m_conkyManager->searchPaths();
+        auto searchPaths = m_conkyManager->searchPaths();
         for (const QString &path : searchPaths) {
-            QFileInfo pathInfo(path);
-            QString folderName = pathInfo.fileName();
+            auto pathInfo = QFileInfo(path);
+            auto folderName = pathInfo.fileName();
             if (folderName.isEmpty()) {
                 folderName = pathInfo.absolutePath().split('/').last();
             }
 
             // Include parent directory for better clarity (e.g., "mx-conky-data/themes", "~/.conky")
-            QFileInfo parentInfo(pathInfo.absolutePath());
-            QString parentFolderName = parentInfo.fileName();
+            auto parentInfo = QFileInfo(pathInfo.absolutePath());
+            auto parentFolderName = parentInfo.fileName();
             QString displayName;
 
             if (path.startsWith(QDir::homePath())) {
@@ -1089,11 +1089,11 @@ void MainWindow::setupConkyFonts()
 
     // Create symlinks for each font file
     for (const QString &fontFile : fontFiles) {
-        QFileInfo fontInfo(fontFile);
-        QString fontName = fontInfo.fileName();
+        auto fontInfo = QFileInfo(fontFile);
+        auto fontName = fontInfo.fileName();
         QString linkPath = userFontsPath + fontName;
 
-        QFileInfo linkInfo(linkPath);
+        auto linkInfo = QFileInfo(linkPath);
         if (linkInfo.exists()) {
             // Check if it's already the correct symlink
             if (linkInfo.isSymLink() && linkInfo.symLinkTarget() == fontFile) {
