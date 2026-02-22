@@ -29,7 +29,7 @@
 #include <QHeaderView>
 #include <QPixmap>
 #include <QTimer>
-#include <algorithm>
+
 
 ConkyItemWidget::ConkyItemWidget(ConkyItem *item, QWidget *parent)
     : QWidget(parent),
@@ -207,9 +207,9 @@ ConkyItem *ConkyListWidget::selectedConkyItem() const
         return nullptr;
     }
 
-    for (auto it = m_treeItems.begin(); it != m_treeItems.end(); ++it) {
-        if (it.value() == currentItem) {
-            return it.key();
+    for (auto &&[item, treeItem] : m_treeItems.asKeyValueRange()) {
+        if (treeItem == currentItem) {
+            return item;
         }
     }
 
@@ -392,10 +392,7 @@ void ConkyListWidget::setSearchText(const QString &searchText)
 
 void ConkyListWidget::applyFilters()
 {
-    for (auto it = m_treeItems.begin(); it != m_treeItems.end(); ++it) {
-        ConkyItem *item = it.key();
-        QTreeWidgetItem *treeItem = it.value();
-
+    for (auto &&[item, treeItem] : m_treeItems.asKeyValueRange()) {
         bool visible = itemMatchesFilters(item);
         treeItem->setHidden(!visible);
     }
@@ -585,9 +582,8 @@ void ConkyListWidget::updateCountLabel()
     int totalCount = 0;
     int visibleCount = 0;
 
-    for (auto it = m_treeItems.begin(); it != m_treeItems.end(); ++it) {
+    for (auto &&[item, treeItem] : m_treeItems.asKeyValueRange()) {
         totalCount++;
-        QTreeWidgetItem *treeItem = it.value();
         if (!treeItem->isHidden()) {
             visibleCount++;
         }

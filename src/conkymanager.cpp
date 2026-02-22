@@ -36,6 +36,7 @@
 #include "cmd.h"
 #include "conkymanager.h"
 #include <algorithm>
+#include <ranges>
 #include <chrono>
 
 using namespace std::chrono_literals;
@@ -118,12 +119,10 @@ void ConkyManager::scanForConkies()
 
     // Now scan folders with priority logic for "All" view
     // but keep all versions for filtering
-    for (auto it = conkyFolders.begin(); it != conkyFolders.end(); ++it) {
-        const QStringList &paths = it.value();
-
+    for (auto &&[name, paths] : conkyFolders.asKeyValueRange()) {
         // Sort paths to prioritize ~/.conky first
         QStringList sortedPaths = paths;
-        std::sort(sortedPaths.begin(), sortedPaths.end(), [&userConkyPath](const QString &a, const QString &b) {
+        std::ranges::sort(sortedPaths, [&userConkyPath](const QString &a, const QString &b) {
             bool aIsUser = a.startsWith(userConkyPath);
             bool bIsUser = b.startsWith(userConkyPath);
 
@@ -144,7 +143,7 @@ void ConkyManager::scanForConkies()
     }
 
     // Sort conky items by folder name, then by filename within each folder
-    std::sort(m_conkyItems.begin(), m_conkyItems.end(), [](const ConkyItem *a, const ConkyItem *b) {
+    std::ranges::sort(m_conkyItems, [](const ConkyItem *a, const ConkyItem *b) {
         QString folderA = QFileInfo(a->directory()).fileName().toLower();
         QString folderB = QFileInfo(b->directory()).fileName().toLower();
 
@@ -173,7 +172,7 @@ void ConkyManager::addConkyItemsFromDirectory(const QString &directoryPath)
     scanConkyDirectory(directoryPath);
 
     // Sort conky items by folder name, then by filename within each folder (maintain consistent ordering)
-    std::sort(m_conkyItems.begin(), m_conkyItems.end(), [](const ConkyItem *a, const ConkyItem *b) {
+    std::ranges::sort(m_conkyItems, [](const ConkyItem *a, const ConkyItem *b) {
         QString folderA = QFileInfo(a->directory()).fileName().toLower();
         QString folderB = QFileInfo(b->directory()).fileName().toLower();
 
@@ -199,7 +198,7 @@ QList<ConkyItem *> ConkyManager::conkyItems() const
 
 bool ConkyManager::hasRunningConkies() const
 {
-    return std::any_of(m_conkyItems.cbegin(), m_conkyItems.cend(), [](const ConkyItem *item) {
+    return std::ranges::any_of(m_conkyItems, [](const ConkyItem *item) {
         return item && item->isRunning();
     });
 }
