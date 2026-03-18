@@ -38,7 +38,7 @@
 #include <QShortcut>
 #include <QSignalBlocker>
 #include <QStackedWidget>
-#include <QStandardPaths>
+#include <QTextBrowser>
 #include <QTextEdit>
 #include <QTimer>
 #include <chrono>
@@ -102,6 +102,77 @@ MainWindow::~MainWindow()
     }
     if (m_loadingMovie) {
         m_loadingMovie->stop();
+    }
+}
+
+QString MainWindow::docPath(const QString &fileName) const
+{
+    const QString installedPath = QStringLiteral("/usr/share/doc/mx-conky/") + fileName;
+    const QString appDirPath = QCoreApplication::applicationDirPath();
+    const QStringList candidates {
+        QDir(appDirPath).filePath(QStringLiteral("../help/") + fileName),
+        QDir(appDirPath).filePath(QStringLiteral("../../help/") + fileName),
+        QDir::current().filePath(QStringLiteral("help/") + fileName),
+        installedPath,
+    };
+
+    for (const QString &candidate : candidates) {
+        const QString normalized = QFileInfo(candidate).canonicalFilePath();
+        if (!normalized.isEmpty() && QFileInfo::exists(normalized)) {
+            return normalized;
+        }
+        if (QFileInfo::exists(candidate)) {
+            return QFileInfo(candidate).absoluteFilePath();
+        }
+    }
+
+    return installedPath;
+}
+
+void MainWindow::showHtmlDocument(const QString &path, const QString &title, bool largeWindow)
+{
+    auto *dialog = new QDialog(this);
+    auto *browser = new QTextBrowser(dialog);
+    auto *btnClose = new QPushButton(tr("&Close"), dialog);
+    auto *layout = new QVBoxLayout(dialog);
+    const QFileInfo fileInfo(path);
+    const QUrl sourceUrl = QUrl::fromLocalFile(path);
+    const bool nonModal = largeWindow;
+
+    dialog->setWindowTitle(title);
+    if (largeWindow) {
+        dialog->setWindowFlags(Qt::Window);
+        dialog->resize(1000, 800);
+    } else {
+        dialog->resize(700, 600);
+    }
+
+    browser->setOpenExternalLinks(true);
+    browser->setSearchPaths({fileInfo.absolutePath()});
+
+    btnClose->setIcon(QIcon::fromTheme("window-close"));
+    connect(btnClose, &QPushButton::clicked, dialog, &QDialog::close);
+
+    layout->addWidget(browser);
+    layout->addWidget(btnClose);
+
+    auto loadDocument = [browser, path, sourceUrl]() {
+        if (QFileInfo::exists(path)) {
+            browser->setSource(sourceUrl);
+        } else {
+            browser->setText(QObject::tr("Could not load %1").arg(path));
+            qDebug() << "MainWindow: Could not load HTML document" << path;
+        }
+    };
+
+    if (nonModal) {
+        dialog->setAttribute(Qt::WA_DeleteOnClose);
+        dialog->show();
+        QTimer::singleShot(0, dialog, loadDocument);
+    } else {
+        QTimer::singleShot(0, dialog, loadDocument);
+        dialog->exec();
+        dialog->deleteLater();
     }
 }
 
@@ -858,7 +929,7 @@ void MainWindow::editConkyFile(const QString &filePath)
 void MainWindow::pushAbout_clicked()
 {
     hide();
-    const QString url = "file:///usr/share/doc/mx-conky/license.html";
+    const QString licensePath = docPath(QStringLiteral("license.html"));
     QMessageBox msgBox(QMessageBox::NoIcon, tr("About MX Conky"),
                        "<p align=\"center\"><b><h2>" + tr("MX Conky") + "</h2></b></p><p align=\"center\">"
                            + tr("Version: ") + QCoreApplication::applicationVersion() + "</p><p align=\"center\"><h3>"
@@ -874,9 +945,7 @@ void MainWindow::pushAbout_clicked()
     msgBox.exec();
 
     if (msgBox.clickedButton() == btnLicense) {
-        const QString executablePath = QStandardPaths::findExecutable("mx-viewer");
-        const QString cmd_str = executablePath.isEmpty() ? "xdg-open" : "mx-viewer";
-        QProcess::startDetached(cmd_str, {url});
+        showHtmlDocument(licensePath, tr("MX Conky License"));
     } else if (msgBox.clickedButton() == btnChangelog) {
         auto *changelog = new QDialog(this);
         changelog->setWindowTitle(tr("Changelog"));
@@ -905,44 +974,9 @@ void MainWindow::pushAbout_clicked()
 
 void MainWindow::pushHelp_clicked()
 {
-    QString url = "/usr/share/doc/mx-conky/mx-conky.html";
-    qDebug() << "MainWindow: Opening help URL:" << url;
-
-    // Check if mx-viewer exists using synchronous approach
-    QProcess checkProcess;
-    qDebug() << "MainWindow::pushHelp_clicked: Creating which QProcess object";
-    checkProcess.setProgram("which");
-    checkProcess.setArguments({ "mx-viewer" });
-    checkProcess.start();
-
-    bool started = false;
-    if (checkProcess.waitForFinished(3000)) {
-        qDebug() << "MainWindow: which command finished with exit code:" << checkProcess.exitCode();
-
-        if (checkProcess.exitCode() == 0) {
-            qDebug() << "MainWindow: Using mx-viewer for help";
-            started = QProcess::startDetached("mx-viewer", { url, tr("MX Conky Help") });
-        } else {
-            qDebug() << "MainWindow: Using xdg-open for help";
-            started = QProcess::startDetached("xdg-open", { url });
-        }
-
-        // Ensure process is fully finished and cleaned up
-        checkProcess.kill();
-        checkProcess.waitForFinished(1000);
-    } else {
-        qDebug() << "MainWindow: which command timed out, using xdg-open as fallback";
-        checkProcess.kill();
-        checkProcess.waitForFinished(1000);
-        started = QProcess::startDetached("xdg-open", { url });
-    }
-    qDebug() << "MainWindow::pushHelp_clicked: Destroying which QProcess object";
-
-    if (started) {
-        qDebug() << "MainWindow: Help viewer started successfully";
-    } else {
-        qDebug() << "MainWindow: Failed to start help viewer";
-    }
+    const QString helpPath = docPath(QStringLiteral("mx-conky.html"));
+    qDebug() << "MainWindow: Opening help document:" << helpPath;
+    showHtmlDocument(helpPath, tr("MX Conky Help"), true);
 }
 
 void MainWindow::pushCM_clicked()

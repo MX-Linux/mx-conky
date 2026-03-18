@@ -108,8 +108,10 @@ private:
     bool m_copyDialogShownThisSession;
 
     void editConkyFile(const QString &filePath);
+    [[nodiscard]] QString docPath(const QString &fileName) const;
     void populateFilterComboBox();
     void setConnections();
+    void showHtmlDocument(const QString &path, const QString &title, bool largeWindow = false);
     void setupConkyFonts();
     void setupLoadingWidget();
     void setupMainWidget();
