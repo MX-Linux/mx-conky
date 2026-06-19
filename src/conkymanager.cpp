@@ -49,9 +49,13 @@ ConkyManager::ConkyManager(QObject *parent)
       m_statusCheckRunning(false),
       m_startupDelay(10)
 {
-    m_statusTimer->setInterval(10s);
+    m_statusTimer->setInterval(5s);
     connect(m_statusTimer, &QTimer::timeout, this, &ConkyManager::updateRunningStatus);
     m_statusTimer->start();
+
+    // Run an initial status check now rather than waiting the full interval,
+    // so running conkys are detected within ~1s of startup.
+    QTimer::singleShot(0, this, &ConkyManager::updateRunningStatus);
 
     m_autostartTimer->setSingleShot(true);
     connect(m_autostartTimer, &QTimer::timeout, this, &ConkyManager::onAutostartTimer);

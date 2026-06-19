@@ -1,10 +1,3 @@
-mx-conky (26.07) mx; urgency=medium
-
-  * Preview from Customize dialog now auto-saves all changes to the
-    config file before launching
-
- -- Adrian <adrian@mxlinux.org>  Thu, 18 Jun 2026 23:54:57 -0400
-
 mx-conky (26.06) mx; urgency=medium
 
   * Show a clear message when generating previews on Wayland, where the
@@ -12,6 +5,9 @@ mx-conky (26.06) mx; urgency=medium
   * Keep the window from freezing indefinitely when a background command
     gets stuck; such commands now time out after 30 seconds.
   * Check conky running status less frequently to reduce idle CPU usage.
+  * Preview from Customize dialog now auto-saves all changes to the
+    config file before launching
+  * Faster conky detection at startup
 
  -- Adrian <adrian@mxlinux.org>  Thu, 18 Jun 2026 23:00:37 -0400
 
