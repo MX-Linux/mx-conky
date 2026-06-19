@@ -36,6 +36,7 @@
 #include <QRegularExpression>
 #include <QShortcut>
 #include <QSignalBlocker>
+#include <QStandardPaths>
 #include <QStackedWidget>
 #include <QTextBrowser>
 #include <QTextEdit>
@@ -550,7 +551,13 @@ void MainWindow::onDeleteRequested(ConkyItem *item)
     }
 
     bool success = false;
-    QString elevate = QFile::exists("/usr/bin/pkexec") ? "/usr/bin/pkexec" : "/usr/bin/gksu";
+    QString elevate = QStandardPaths::findExecutable("pkexec");
+    if (elevate.isEmpty()) {
+        elevate = QStandardPaths::findExecutable("gksu");
+    }
+    if (elevate.isEmpty()) {
+        elevate = QStringLiteral("/usr/bin/gksu"); // well-known fallback
+    }
 
     if (needsElevation) {
         QString command = elevate + " rm '" + filePath + "'";
@@ -602,8 +609,13 @@ void MainWindow::onCustomizeRequested(ConkyItem *item)
                 }
 
                 // Test if elevation works by attempting a quick touch test
-                QString elevationTool
-                    = QFile::exists("/usr/bin/pkexec") ? "pkexec" : (QFile::exists("/usr/bin/gksu") ? "gksu" : "sudo");
+                QString elevationTool = QStandardPaths::findExecutable("pkexec");
+                if (elevationTool.isEmpty()) {
+                    elevationTool = QStandardPaths::findExecutable("gksu");
+                }
+                if (elevationTool.isEmpty()) {
+                    elevationTool = QStringLiteral("sudo");
+                }
                 QString testCommand = QString("%1 touch '%2'").arg(elevationTool, filePath);
 
                 int exitCode = QProcess::execute("sh", { "-c", testCommand });
@@ -705,7 +717,13 @@ void MainWindow::editConkyFile(const QString &filePath)
         = QRegularExpression(R"((kate|kwrite|featherpad|code|codium)$)").match(editor).hasMatch();
     const bool isCliEditor = QRegularExpression(R"(nano|vi|vim|nvim|micro|emacs)").match(editor).hasMatch();
 
-    QString elevate = QFile::exists("/usr/bin/pkexec") ? "/usr/bin/pkexec" : "/usr/bin/gksu";
+    QString elevate = QStandardPaths::findExecutable("pkexec");
+    if (elevate.isEmpty()) {
+        elevate = QStandardPaths::findExecutable("gksu");
+    }
+    if (elevate.isEmpty()) {
+        elevate = QStringLiteral("/usr/bin/gksu"); // well-known fallback
+    }
     QString command;
 
     if (needsElevation) {

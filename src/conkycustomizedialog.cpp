@@ -855,8 +855,14 @@ bool ConkyCustomizeDialog::writeFileWithElevation(const QString &fileName, const
     out << content;
     tempFile.close();
 
-    // Use pkexec if available, otherwise fall back to gksu
-    QString elevationTool = QFile::exists("/usr/bin/pkexec") ? "pkexec" : (QFile::exists("/usr/bin/gksu") ? "gksu" : "sudo");
+    // Use pkexec if available, otherwise fall back to gksu/sudo
+    QString elevationTool = QStandardPaths::findExecutable("pkexec");
+    if (elevationTool.isEmpty()) {
+        elevationTool = QStandardPaths::findExecutable("gksu");
+    }
+    if (elevationTool.isEmpty()) {
+        elevationTool = QStringLiteral("sudo");
+    }
     QString command = QString("%1 cp '%2' '%3'").arg(elevationTool, tempFileName, fileName);
 
     QProcess process;
@@ -877,8 +883,14 @@ bool ConkyCustomizeDialog::writeFileWithElevation(const QString &fileName, const
 
 bool ConkyCustomizeDialog::copyFileWithElevation(const QString &sourceFile, const QString &destFile)
 {
-    // Use pkexec if available, otherwise fall back to gksu
-    QString elevationTool = QFile::exists("/usr/bin/pkexec") ? "pkexec" : (QFile::exists("/usr/bin/gksu") ? "gksu" : "sudo");
+    // Use pkexec if available, otherwise fall back to gksu/sudo
+    QString elevationTool = QStandardPaths::findExecutable("pkexec");
+    if (elevationTool.isEmpty()) {
+        elevationTool = QStandardPaths::findExecutable("gksu");
+    }
+    if (elevationTool.isEmpty()) {
+        elevationTool = QStringLiteral("sudo");
+    }
     QString command = QString("%1 cp '%2' '%3'").arg(elevationTool, sourceFile, destFile);
 
     QProcess process;
@@ -896,7 +908,14 @@ bool ConkyCustomizeDialog::copyFileWithElevation(const QString &sourceFile, cons
 
 bool ConkyCustomizeDialog::removeFileWithElevation(const QString &fileName)
 {
-    QString elevationTool = QFile::exists("/usr/bin/pkexec") ? "pkexec" : (QFile::exists("/usr/bin/gksu") ? "gksu" : "sudo");
+    // Use pkexec if available, otherwise fall back to gksu/sudo
+    QString elevationTool = QStandardPaths::findExecutable("pkexec");
+    if (elevationTool.isEmpty()) {
+        elevationTool = QStandardPaths::findExecutable("gksu");
+    }
+    if (elevationTool.isEmpty()) {
+        elevationTool = QStringLiteral("sudo");
+    }
     QString command = QString("%1 rm '%2'").arg(elevationTool, fileName);
 
     QProcess process;
