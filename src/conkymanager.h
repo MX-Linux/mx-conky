@@ -23,7 +23,6 @@
  **********************************************************************/
 #pragma once
 
-#include "cmd.h"
 #include "conkyitem.h"
 #include <QObject>
 #include <QProcess>
@@ -95,7 +94,6 @@ private:
     QTimer *m_statusTimer;
     bool m_statusCheckRunning;
     int m_startupDelay;
-    mutable Cmd m_cmd; // Reusable Cmd object for process checking
 
     QString getConkyProcess(const QString &configPath) const;
     bool isConkyRunning(const QString &configPath) const;

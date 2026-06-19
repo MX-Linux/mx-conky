@@ -38,18 +38,7 @@
 
 ConkyCustomizeDialog::ConkyCustomizeDialog(const QString &filePath, QWidget *parent)
     : QDialog(parent),
-      file_name(filePath),
-      capture_lua_color(
-          R"(^(?<before>(.*\]\])?\s*(?<color_item>default_color|color\d)(?:\s*=\s*[\"\']))(?:#?)(?<color_value>[[:alnum:]]+)(?<after>(?:[\"\']).*))"),
-      capture_old_color(
-          R"(^(?<before>\s*(?<color_item>default_color|color\d)(?:\s+))(?:#?)(?<color_value>[[:alnum:]]+)(?<after>.*))"),
-      lua_comment_end(R"(^\s*\]\])"),
-      lua_comment_line(R"(^\s*--)"),
-      lua_comment_start(R"(^\s*--\[\[)"),
-      lua_config(R"(^\s*(conky.config\s*=\s*{))"),
-      lua_format(R"(^\s*(--|conky.config\s*=\s*{|conky.text\s*=\s*{))"),
-      old_comment_line(R"(^\s*#)"),
-      old_format(R"(^\s*#|^TEXT$)")
+      file_name(filePath)
 {
     debug = !QProcessEnvironment::systemEnvironment().value("DEBUG").isEmpty();
 
@@ -215,11 +204,11 @@ void ConkyCustomizeDialog::setConnections()
     connect(radioMonthShort, &QRadioButton::clicked, this, &ConkyCustomizeDialog::radioMonthShort_clicked);
     connect(pushDefaultColor, &QToolButton::clicked, this, &ConkyCustomizeDialog::pushDefaultColor_clicked);
 
+    // Connect color buttons using stored member pointers instead of findChild
+    QToolButton *colorBtns[10] = {pushColor0, pushColor1, pushColor2, pushColor3, pushColor4,
+                                   pushColor5, pushColor6, pushColor7, pushColor8, pushColor9};
     for (int i = 0; i < 10; ++i) {
-        auto *colorButton = groupBoxColors->findChild<QToolButton *>(QString("pushColor%1").arg(i));
-        if (colorButton) {
-            connect(colorButton, &QToolButton::clicked, this, [this, i]() { pushColorButton_clicked(i); });
-        }
+        connect(colorBtns[i], &QToolButton::clicked, this, [this, i]() { pushColorButton_clicked(i); });
     }
 
     // New tab connections
@@ -346,8 +335,8 @@ bool ConkyCustomizeDialog::checkConkyRunning()
 
 void ConkyCustomizeDialog::detectConkyFormat()
 {
-    QRegularExpression lua_format_regexp(lua_format);
-    QRegularExpression old_format_regexp(old_format);
+    static const QRegularExpression lua_format_regexp(lua_format);
+    static const QRegularExpression old_format_regexp(old_format);
     const QStringList list = file_content.split('\n');
 
     if (debug) {
@@ -378,8 +367,9 @@ void ConkyCustomizeDialog::detectConkyFormat()
 
 void ConkyCustomizeDialog::parseContent()
 {
-    QRegularExpression regexp_color
-        = is_lua_format ? QRegularExpression(capture_lua_color) : QRegularExpression(capture_old_color);
+    static const QRegularExpression luaColorRe(capture_lua_color);
+    static const QRegularExpression oldColorRe(capture_old_color);
+    QRegularExpression regexp_color = is_lua_format ? luaColorRe : oldColorRe;
     QString comment_sep = is_lua_format ? "--" : "#";
     bool own_window_hints_found = false;
     const QStringList list = file_content.split('\n', Qt::SkipEmptyParts);
@@ -729,8 +719,9 @@ void ConkyCustomizeDialog::pickColor(QWidget *widget)
 
 void ConkyCustomizeDialog::writeColor(QWidget *widget, const QColor &color)
 {
-    QRegularExpression regexp_color
-        = is_lua_format ? QRegularExpression(capture_lua_color) : QRegularExpression(capture_old_color);
+    static const QRegularExpression luaColorRe_w(capture_lua_color);
+    static const QRegularExpression oldColorRe_w(capture_old_color);
+    QRegularExpression regexp_color = is_lua_format ? luaColorRe_w : oldColorRe_w;
     QString comment_sep = is_lua_format ? "--" : "#";
 
     QString item_name

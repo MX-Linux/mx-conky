@@ -22,7 +22,6 @@
  * along with mx-conky.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "cmd.h"
 #include "conkymanager.h"
 
 #include <QDebug>
@@ -238,10 +237,8 @@ void ConkyManager::stopConky(ConkyItem *item)
         process.setArguments(QStringList() << pid);
         process.start();
 
-        if (process.waitForFinished(3000)) {
-            // Process killed successfully or failed
-        } else {
-            // Timeout - force kill the kill process
+        if (!process.waitForFinished(3000)) {
+            // Timeout - force kill
             process.kill();
             process.waitForFinished(1000);
         }

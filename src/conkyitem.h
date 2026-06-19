@@ -69,7 +69,7 @@ private:
     QString m_description;
     QString m_filePath;
     QString m_name;
-    QString m_previewImage;
+    mutable QString m_previewImage;
     bool m_autostart = false;
     bool m_enabled = false;
     bool m_running = false;

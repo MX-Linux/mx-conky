@@ -206,15 +206,17 @@ private:
     QFrame *frame9;
 
     // Regexp patterns
-    QString capture_lua_color;
-    QString capture_old_color;
-    QString lua_comment_end;
-    QString lua_comment_line;
-    QString lua_comment_start;
-    QString lua_config;
-    QString lua_format;
-    QString old_comment_line;
-    QString old_format;
+    inline static const QString capture_lua_color = QStringLiteral(
+        R"(^(?<before>(.*\]\])?\s*(?<color_item>default_color|color\d)(?:\s*=\s*[\"']))(?:#?)(?<color_value>[[:alnum:]]+)(?<after>(?:[\"']).*))");
+    inline static const QString capture_old_color = QStringLiteral(
+        R"(^(?<before>\s*(?<color_item>default_color|color\d)(?:\s+))(?:#?)(?<color_value>[[:alnum:]]+)(?<after>.*))");
+    inline static const QString lua_comment_end = QStringLiteral(R"(^\s*\]\])");
+    inline static const QString lua_comment_line = QStringLiteral(R"(^\s*--)");
+    inline static const QString lua_comment_start = QStringLiteral(R"(^\s*--\[\[)");
+    inline static const QString lua_config = QStringLiteral(R"(^\s*(conky.config\s*=\s*{))");
+    inline static const QString lua_format = QStringLiteral(R"(^\s*(--|conky.config\s*=\s*{|conky.text\s*=\s*{))");
+    inline static const QString old_comment_line = QStringLiteral(R"(^\s*#)");
+    inline static const QString old_format = QStringLiteral(R"(^\s*#|^TEXT$)");
 
     QString capture_lua_owh = QStringLiteral(R"(^(\s*own_window_hints\s*=\s*')([^']*)('.*))");
     QString capture_old_owh = QStringLiteral(R"(^(\s*own_window_hints\s+)([^\s]*)(.*))");
