@@ -32,7 +32,6 @@
 #include <QInputDialog>
 #include <QKeySequence>
 #include <QMessageBox>
-#include <QMovie>
 #include <QProcess>
 #include <QRegularExpression>
 #include <QShortcut>
@@ -49,7 +48,6 @@ using namespace std::chrono_literals;
 MainWindow::MainWindow(QWidget *parent)
     : QDialog(parent),
       m_conkyManager(nullptr),
-      m_loadingMovie(nullptr),
       m_copyDialogShownThisSession(false)
 {
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << QCoreApplication::applicationVersion();
@@ -85,9 +83,6 @@ MainWindow::MainWindow(QWidget *parent)
 void MainWindow::onConkyItemsLoaded()
 {
     // Switch from loading to main content
-    if (m_loadingMovie) {
-        m_loadingMovie->stop();
-    }
     m_stackedWidget->setCurrentWidget(m_mainWidget);
 
     // Refresh filter options based on current search paths
@@ -99,9 +94,6 @@ MainWindow::~MainWindow()
 {
     if (m_conkyManager) {
         m_conkyManager->saveSettings();
-    }
-    if (m_loadingMovie) {
-        m_loadingMovie->stop();
     }
 }
 
@@ -209,19 +201,11 @@ void MainWindow::setupLoadingWidget()
     m_loadingLabel->setAlignment(Qt::AlignCenter);
     m_loadingLabel->setMinimumSize(64, 64);
 
-    // Try to use a spinner animation - fallback to text if no animation available
-    QString iconPath = ":/icons/loading.gif";
-    if (QFile::exists(iconPath)) {
-        m_loadingMovie = new QMovie(iconPath);
-        m_loadingLabel->setMovie(m_loadingMovie);
-        m_loadingMovie->start();
-    } else {
-        // Fallback: create a simple animated text
-        m_loadingLabel->setText("⏳");
-        auto loadingFont = m_loadingLabel->font();
-        loadingFont.setPointSize(36);
-        m_loadingLabel->setFont(loadingFont);
-    }
+    // Show a simple animated text indicator while loading
+    m_loadingLabel->setText("⏳");
+    auto loadingFont = m_loadingLabel->font();
+    loadingFont.setPointSize(36);
+    m_loadingLabel->setFont(loadingFont);
 
     auto *textLabel = new QLabel(tr("Loading Conky configurations..."));
     textLabel->setAlignment(Qt::AlignCenter);
@@ -1129,13 +1113,17 @@ void MainWindow::setupConkyFonts()
             if (linkInfo.isSymLink() && linkInfo.symLinkTarget() == fontFile) {
                 continue; // Already correctly linked
             }
+            // Collision: different font with same name from another directory
+            qWarning() << "Font collision:" << fontName << "already exists from"
+                       << (linkInfo.isSymLink() ? linkInfo.symLinkTarget() : linkPath)
+                       << ", replacing with" << fontFile;
             // Remove existing file/link
             QFile::remove(linkPath);
         }
 
         QFile fontSource(fontFile);
 
-        // Create symlink, fall back to copying the font if linking isn't permitted
+        // Create symlink, fall back to copying the font if the symlink can't be created
         if (!fontSource.link(linkPath)) {
             const QString linkError = fontSource.errorString();
             qWarning() << "Failed to create symlink:" << linkPath << "->" << fontFile << "-" << linkError
@@ -1149,7 +1137,8 @@ void MainWindow::setupConkyFonts()
             }
 
             if (!fontSource.copy(linkPath)) {
-                qWarning() << "Failed to copy font file:" << fontFile << "to" << linkPath << "-" << fontSource.errorString();
+                qWarning() << "Failed to copy font file:" << fontFile << "to" << linkPath << "-"
+                           << fontSource.errorString();
             }
         }
     }
