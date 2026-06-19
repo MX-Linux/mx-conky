@@ -219,11 +219,7 @@ void MainWindow::setupLoadingWidget()
         // Fallback: create a simple animated text
         m_loadingLabel->setText("⏳");
         auto loadingFont = m_loadingLabel->font();
-        if (loadingFont.pointSizeF() > 0) {
-            loadingFont.setPointSizeF(loadingFont.pointSizeF() * 3.5);
-        } else {
-            loadingFont.setPointSize(36);
-        }
+        loadingFont.setPointSize(36);
         m_loadingLabel->setFont(loadingFont);
     }
 
