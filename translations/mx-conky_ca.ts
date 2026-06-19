@@ -614,12 +614,12 @@ altrament aquest paràmetre no tindrà cap efecte.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="197"/>
-        <source>Start All</source>
+        <source>Start Selected</source>
         <translation>Inicia&apos;ls tots</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="199"/>
-        <source>Start all enabled conkies</source>
+        <source>Start selected conkies</source>
         <translation>Incia tots els monitors activats</translation>
     </message>
     <message>

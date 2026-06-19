@@ -614,12 +614,12 @@ anders heeft deze instelling geen effect.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="197"/>
-        <source>Start All</source>
+        <source>Start Selected</source>
         <translation>Alles Starten</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="199"/>
-        <source>Start all enabled conkies</source>
+        <source>Start selected conkies</source>
         <translation>Start alle ingeschakelde conkies</translation>
     </message>
     <message>

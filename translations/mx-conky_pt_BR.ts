@@ -625,12 +625,12 @@ nenhum efeito</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="197"/>
-        <source>Start All</source>
+        <source>Start Selected</source>
         <translation>Iniciar Todos</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="199"/>
-        <source>Start all enabled conkies</source>
+        <source>Start selected conkies</source>
         <translation>Iniciar todos os Conkies que estão ativados</translation>
     </message>
     <message>

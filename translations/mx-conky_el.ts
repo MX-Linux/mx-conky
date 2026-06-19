@@ -614,12 +614,12 @@ otherwise this setting will not have any effect</source>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="197"/>
-        <source>Start All</source>
+        <source>Start Selected</source>
         <translation>Έναρξη όλων</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="199"/>
-        <source>Start all enabled conkies</source>
+        <source>Start selected conkies</source>
         <translation>&apos;Εναρξη όλων των ενεργοποιημένων</translation>
     </message>
     <message>

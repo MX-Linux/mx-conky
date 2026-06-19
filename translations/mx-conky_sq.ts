@@ -614,12 +614,12 @@ otherwise this setting will not have any effect</source>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="197"/>
-        <source>Start All</source>
+        <source>Start Selected</source>
         <translation>Nisi Krejt</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="199"/>
-        <source>Start all enabled conkies</source>
+        <source>Start selected conkies</source>
         <translation>Nisi krejt kartelat e formësimit të Conky-t të aktivizuara</translation>
     </message>
     <message>

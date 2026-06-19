@@ -614,12 +614,12 @@ ellers vil ikke denne innstillingen ha noen effekt</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="197"/>
-        <source>Start All</source>
+        <source>Start Selected</source>
         <translation>Vis alle</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="199"/>
-        <source>Start all enabled conkies</source>
+        <source>Start selected conkies</source>
         <translation>Start alle aktiverte conkier</translation>
     </message>
     <message>

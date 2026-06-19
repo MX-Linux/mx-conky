@@ -614,12 +614,12 @@ sinon ce paramètre n’aura aucun effet.</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="197"/>
-        <source>Start All</source>
+        <source>Start Selected</source>
         <translation>Tout démarrer</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="199"/>
-        <source>Start all enabled conkies</source>
+        <source>Start selected conkies</source>
         <translation>Démarrer tous les conkies activés</translation>
     </message>
     <message>

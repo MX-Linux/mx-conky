@@ -614,13 +614,13 @@ otherwise this setting will not have any effect</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="197"/>
-        <source>Start All</source>
-        <translation>Start All</translation>
+        <source>Start Selected</source>
+        <translation>Start Selected</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="199"/>
-        <source>Start all enabled conkies</source>
-        <translation>Start all enabled conkies</translation>
+        <source>Start selected conkies</source>
+        <translation>Start selected conkies</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="201"/>
