@@ -49,7 +49,7 @@ ConkyManager::ConkyManager(QObject *parent)
       m_statusCheckRunning(false),
       m_startupDelay(10)
 {
-    m_statusTimer->setInterval(2s);
+    m_statusTimer->setInterval(10s);
     connect(m_statusTimer, &QTimer::timeout, this, &ConkyManager::updateRunningStatus);
     m_statusTimer->start();
 
@@ -214,11 +214,13 @@ void ConkyManager::startConky(ConkyItem *item)
     QStringList arguments;
     arguments << "-c" << item->filePath();
 
-    bool started = QProcess::startDetached(program, arguments, item->directory());
+    qint64 pid = 0;
+    bool started = QProcess::startDetached(program, arguments, item->directory(), &pid);
 
     if (!started) {
         return;
     }
+    m_pids[item] = pid;
     item->setRunning(true);
     emit conkyStarted(item);
 }
@@ -229,7 +231,8 @@ void ConkyManager::stopConky(ConkyItem *item)
         return;
     }
 
-    QString pid = getConkyProcess(item->filePath());
+    // Use tracked PID first, fall back to cmdline scan if unknown
+    QString pid = m_pids.contains(item) ? QString::number(m_pids.take(item)) : getConkyProcess(item->filePath());
     if (!pid.isEmpty()) {
         // Use synchronous approach to avoid lingering processes
         QProcess process;
@@ -259,6 +262,9 @@ void ConkyManager::removeConkyItem(ConkyItem *item)
         stopConky(item);
     }
 
+    // Remove from PID tracking if still present
+    m_pids.remove(item);
+
     // Remove from the list
     m_conkyItems.removeAll(item);
 
@@ -281,36 +287,14 @@ void ConkyManager::startAutostart()
 
 void ConkyManager::stopAllRunning()
 {
-    QList<ConkyItem *> runningItems;
-    runningItems.reserve(m_conkyItems.size());
-    for (ConkyItem *item : m_conkyItems) {
+    // Stop every conky shown as running. stopConky() uses the tracked PID when
+    // known and falls back to a cmdline scan otherwise, so this also stops
+    // conkies started outside this session (e.g. autostarted at login) while
+    // still avoiding a blanket pkill that would hit conkies we don't manage.
+    const QList<ConkyItem *> items = m_conkyItems;
+    for (ConkyItem *item : items) {
         if (item && item->isRunning()) {
-            runningItems.append(item);
-        }
-    }
-
-    const auto userId = QString::number(getuid());
-    QProcess killProcess;
-    killProcess.start("pkill", { "-u", userId, "-x", "conky" });
-
-    if (!killProcess.waitForFinished(3000)) {
-        killProcess.kill();
-        killProcess.waitForFinished(1000);
-    }
-
-    if (killProcess.exitStatus() != QProcess::NormalExit
-        || (killProcess.exitCode() != 0 && killProcess.exitCode() != 1)) {
-        // pkill returns 1 when no matching processes are found; fallback only on other failures
-        QProcess::execute("killall", { "-e", "-u", userId, "conky" });
-    }
-
-    for (ConkyItem *item : runningItems) {
-        if (!item) {
-            continue;
-        }
-        if (item->isRunning()) {
-            item->setRunning(false);
-            emit conkyStopped(item);
+            stopConky(item);
         }
     }
 }
@@ -485,6 +469,7 @@ void ConkyManager::onAutostartTimer()
 
 void ConkyManager::clearConkyItems()
 {
+    m_pids.clear();
     qDeleteAll(m_conkyItems);
     m_conkyItems.clear();
 }

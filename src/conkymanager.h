@@ -24,6 +24,7 @@
 #pragma once
 
 #include "conkyitem.h"
+#include <QHash>
 #include <QObject>
 #include <QProcess>
 #include <QSettings>
@@ -94,6 +95,7 @@ private:
     QTimer *m_statusTimer;
     bool m_statusCheckRunning;
     int m_startupDelay;
+    QHash<ConkyItem *, qint64> m_pids; // Track PIDs for targeted kill
 
     QString getConkyProcess(const QString &configPath) const;
     bool isConkyRunning(const QString &configPath) const;
