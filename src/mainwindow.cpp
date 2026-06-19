@@ -246,9 +246,9 @@ void MainWindow::setupMainWidget()
     m_refreshButton->setIcon(QIcon::fromTheme("view-refresh"));
     m_refreshButton->setToolTip(tr("Refresh conky list"));
 
-    m_startAllButton = new QPushButton(tr("Start All"));
+    m_startAllButton = new QPushButton(tr("Start Selected"));
     m_startAllButton->setIcon(QIcon::fromTheme("media-playback-start"));
-    m_startAllButton->setToolTip(tr("Start all enabled conkies"));
+    m_startAllButton->setToolTip(tr("Start selected conkies"));
 
     m_stopAllButton = new QPushButton(tr("Stop All"));
     m_stopAllButton->setIcon(QIcon::fromTheme("media-playback-stop"));
@@ -973,15 +973,13 @@ void MainWindow::setupConkyFonts()
 
         auto linkInfo = QFileInfo(linkPath);
         if (linkInfo.exists()) {
-            // Check if it's already the correct symlink
-            if (linkInfo.isSymLink() && linkInfo.symLinkTarget() == fontFile) {
-                continue; // Already correctly linked
-            }
-            // Collision: different font with same name from another directory
-            qWarning() << "Font collision:" << fontName << "already exists from"
-                       << (linkInfo.isSymLink() ? linkInfo.symLinkTarget() : linkPath)
-                       << ", replacing with" << fontFile;
-            // Remove existing file/link
+            // A font with this name is already linked. Different themes often ship
+            // identically named (interchangeable) fonts, so keep the first one and
+            // skip the rest — avoids needless relinking and console noise on startup.
+            continue;
+        }
+        if (linkInfo.isSymLink()) {
+            // Dangling symlink (target removed) — clear it so it can be recreated.
             QFile::remove(linkPath);
         }
 

@@ -1,3 +1,13 @@
+mx-conky (26.06) mx; urgency=medium
+
+  * Show a clear message when generating previews on Wayland, where the
+    feature is not supported, instead of failing silently.
+  * Keep the window from freezing indefinitely when a background command
+    gets stuck; such commands now time out after 30 seconds.
+  * Check conky running status less frequently to reduce idle CPU usage.
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 18 Jun 2026 23:00:37 -0400
+
 mx-conky (26.03) mx; urgency=medium
 
   * Use internal Qt help and license viewer

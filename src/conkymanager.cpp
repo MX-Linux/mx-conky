@@ -231,24 +231,19 @@ void ConkyManager::stopConky(ConkyItem *item)
         return;
     }
 
-    // Use tracked PID first, fall back to cmdline scan if unknown
-    QString pid = m_pids.contains(item) ? QString::number(m_pids.take(item)) : getConkyProcess(item->filePath());
+    // Always locate the live process by its config, robust to conky forking
+    QString pid = getConkyProcess(item->filePath());
+
+    m_pids.remove(item);
+
     if (!pid.isEmpty()) {
-        // Use synchronous approach to avoid lingering processes
         QProcess process;
-        process.setProgram("kill");
-        process.setArguments(QStringList() << pid);
-        process.start();
-
-        if (!process.waitForFinished(3000)) {
-            // Timeout - force kill
-            process.kill();
-            process.waitForFinished(1000);
-        }
-
-        item->setRunning(false);
-        emit conkyStopped(item);
+        process.start("kill", {pid});
+        process.waitForFinished(3000);
     }
+
+    item->setRunning(false);
+    emit conkyStopped(item);
 }
 
 void ConkyManager::removeConkyItem(ConkyItem *item)
@@ -287,15 +282,43 @@ void ConkyManager::startAutostart()
 
 void ConkyManager::stopAllRunning()
 {
-    // Stop every conky shown as running. stopConky() uses the tracked PID when
-    // known and falls back to a cmdline scan otherwise, so this also stops
-    // conkies started outside this session (e.g. autostarted at login) while
-    // still avoiding a blanket pkill that would hit conkies we don't manage.
-    const QList<ConkyItem *> items = m_conkyItems;
-    for (ConkyItem *item : items) {
+    QList<ConkyItem *> runningItems;
+    runningItems.reserve(m_conkyItems.size());
+    for (ConkyItem *item : m_conkyItems) {
         if (item && item->isRunning()) {
-            stopConky(item);
+            runningItems.append(item);
         }
+    }
+
+    if (runningItems.isEmpty()) {
+        return;
+    }
+
+    // pkill by user ID ensures we only kill conkies belonging to this user and
+    // avoids a blanket killall that would hit conkies we don't manage.  The -x
+    // flag matches the exact name "conky" so mx-conky itself is not targeted.
+    const auto userId = QString::number(getuid());
+    QProcess killProcess;
+    killProcess.start("pkill", {"-u", userId, "-x", "conky"});
+
+    if (!killProcess.waitForFinished(3000)) {
+        killProcess.kill();
+        killProcess.waitForFinished(1000);
+    }
+
+    if (killProcess.exitStatus() != QProcess::NormalExit
+        || (killProcess.exitCode() != 0 && killProcess.exitCode() != 1)) {
+        // pkill returns 1 when no matching processes found; fallback only on other failures
+        QProcess::execute("killall", {"-e", "-u", userId, "conky"});
+    }
+
+    for (ConkyItem *item : runningItems) {
+        if (!item) {
+            continue;
+        }
+        item->setRunning(false);
+        m_pids.remove(item);
+        emit conkyStopped(item);
     }
 }
 
