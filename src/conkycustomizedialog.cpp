@@ -1748,6 +1748,7 @@ void ConkyCustomizeDialog::onAlignmentChanged()
     }
 
     changedFlags.alignment = true;
+    applyAlignmentChanges();
 }
 
 void ConkyCustomizeDialog::applyAlignmentChanges()
@@ -1763,6 +1764,7 @@ void ConkyCustomizeDialog::applyAlignmentChanges()
 void ConkyCustomizeDialog::onGapChanged()
 {
     changedFlags.gaps = true;
+    applyGapChanges();
 }
 
 void ConkyCustomizeDialog::applyGapChanges()
@@ -1778,6 +1780,7 @@ void ConkyCustomizeDialog::applyGapChanges()
 void ConkyCustomizeDialog::onSizeChanged()
 {
     changedFlags.size = true;
+    applySizeChanges();
 }
 
 void ConkyCustomizeDialog::applySizeChanges()
@@ -1806,6 +1809,7 @@ void ConkyCustomizeDialog::onTransparencyChanged()
     }
 
     changedFlags.transparency = true;
+    applyTransparencyChanges();
 }
 
 void ConkyCustomizeDialog::applyTransparencyChanges()
@@ -1856,6 +1860,7 @@ void ConkyCustomizeDialog::onTimeFormatChanged()
     }
 
     changedFlags.timeFormat = true;
+    applyTimeFormatChanges();
 }
 
 void ConkyCustomizeDialog::applyTimeFormatChanges()
@@ -1942,6 +1947,7 @@ void ConkyCustomizeDialog::onNetworkDeviceChanged()
     }
 
     changedFlags.networkDevice = true;
+    applyNetworkDeviceChanges();
 }
 
 void ConkyCustomizeDialog::applyNetworkDeviceChanges()
