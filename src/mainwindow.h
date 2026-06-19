@@ -115,4 +115,8 @@ private:
     void setupMainWidget();
     void setupUI();
     void updateControlStates();
+
+    // Shared helpers (extracted from duplicate code)
+    static QString detectEditor();
+    QString copyConkyFromThemes(const QFileInfo &fileInfo, bool forCustomization);
 };
