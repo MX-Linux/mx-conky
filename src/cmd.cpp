@@ -72,8 +72,14 @@ bool Cmd::runImpl(const QString &prog, const QStringList &args, QString &output,
     timer.start(30000); // 30-second timeout to prevent UI freeze on hung processes
     start(prog, args);
     loop.exec();
-    if (timer.isActive()) {
-        timer.stop(); // Process finished before timeout — clean up timer
+    const bool finishedInTime = timer.isActive(); // active => process finished before timeout
+    timer.stop();
+    if (!finishedInTime) {
+        qWarning() << "Cmd: command timed out after 30s, killing:" << prog << args;
+        kill();
+        waitForFinished(1000);
+        output = trim ? out_buffer.trimmed() : out_buffer;
+        return false;
     }
     output = trim ? out_buffer.trimmed() : out_buffer;
     return (exitStatus() == QProcess::NormalExit && exitCode() == 0);
