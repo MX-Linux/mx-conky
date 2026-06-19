@@ -1010,9 +1010,9 @@ void MainWindow::setupConkyFonts()
 
 QString MainWindow::detectEditor()
 {
-    auto default_editor = Cmd().getCmdOut("xdg-mime query default text/plain");
+    auto defaultEditor = Cmd().getCmdOut("xdg-mime query default text/plain");
     auto desktop_file
-        = QStandardPaths::locate(QStandardPaths::ApplicationsLocation, default_editor, QStandardPaths::LocateFile);
+        = QStandardPaths::locate(QStandardPaths::ApplicationsLocation, defaultEditor, QStandardPaths::LocateFile);
     QFile file(desktop_file);
     if (file.open(QIODevice::ReadOnly)) {
         while (!file.atEnd()) {

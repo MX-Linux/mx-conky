@@ -96,7 +96,7 @@ private:
     Cmd cmd;
     QSettings settings;
     QString file_content;
-    QString file_name;
+    QString m_fileName;
     bool modified = false;
 
     // Change tracking
@@ -226,7 +226,7 @@ private:
 
     QRegularExpression regexp_lua_color;
 
-    [[nodiscard]] bool readFile(const QString &file_name);
+    [[nodiscard]] bool readFile(const QString &fileName);
     [[nodiscard]] static QColor strToColor(const QString &colorstr);
     bool checkConkyRunning();
     void detectConkyFormat();
