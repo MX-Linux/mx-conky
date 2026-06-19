@@ -36,31 +36,31 @@ public:
     explicit ConkyItem(QObject *parent = nullptr);
     explicit ConkyItem(const QString &filePath, QObject *parent = nullptr);
 
-    QString filePath() const;
+    [[nodiscard]] QString filePath() const;
     void setFilePath(const QString &path);
 
-    QString name() const;
+    [[nodiscard]] QString name() const;
     void setName(const QString &name);
 
-    QString description() const;
+    [[nodiscard]] QString description() const;
     void setDescription(const QString &description);
 
-    QString previewImage() const;
+    [[nodiscard]] QString previewImage() const;
     void setPreviewImage(const QString &imagePath);
 
-    bool isEnabled() const;
+    [[nodiscard]] bool isEnabled() const;
     void setEnabled(bool enabled);
 
-    bool isAutostart() const;
+    [[nodiscard]] bool isAutostart() const;
     void setAutostart(bool autostart);
 
-    int autostartDelay() const;
+    [[nodiscard]] int autostartDelay() const;
     void setAutostartDelay(int seconds);
 
-    bool isRunning() const;
+    [[nodiscard]] bool isRunning() const;
     void setRunning(bool running);
 
-    QString directory() const;
+    [[nodiscard]] QString directory() const;
 
 signals:
     void dataChanged();
@@ -76,5 +76,5 @@ private:
     int m_autostartDelay = 0;
 
     void updateFromFile();
-    QString findPreviewImage() const;
+    [[nodiscard]] QString findPreviewImage() const;
 };
