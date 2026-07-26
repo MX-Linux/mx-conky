@@ -387,10 +387,13 @@ QString PreviewDialog::generatePreviewImage(ConkyItem *item)
     conkyProcess.kill();
     conkyProcess.waitForFinished(1000);
 
-    // Additional cleanup - make sure conky is really dead
-    QProcess killallProcess;
-    killallProcess.start("pkill", {"-f", configPath});
-    killallProcess.waitForFinished(1000);
+    // Additional cleanup - conky can double-fork, so waitForFinished() above may miss
+    // a lingering child. Find it by exact config-path match (not a pattern match, so
+    // it can never catch an unrelated process) and kill just that one, if still alive.
+    const QString lingeringPid = m_manager->getConkyProcess(configPath);
+    if (!lingeringPid.isEmpty()) {
+        QProcess::execute("kill", {lingeringPid});
+    }
 
     if (screenshotSuccess && QFile::exists(outputPath)) {
         qDebug() << "Successfully generated preview:" << outputPath;
