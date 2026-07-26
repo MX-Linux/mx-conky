@@ -66,7 +66,13 @@ PreviewDialog::PreviewDialog(ConkyManager *manager, ConkyItem *selectedItem, QWi
     connect(m_generationTimer, &QTimer::timeout, this, &PreviewDialog::onPreviewGenerated);
 }
 
-PreviewDialog::~PreviewDialog() = default;
+PreviewDialog::~PreviewDialog()
+{
+    // Safety net: if the dialog was closed/cancelled mid-generation, make sure any
+    // conkies we paused for clean screenshots get restarted (no-op once already
+    // restored in onAllPreviewsComplete()).
+    restoreConkiesAfterPreviewGeneration();
+}
 
 void PreviewDialog::setupUI()
 {
@@ -154,6 +160,10 @@ void PreviewDialog::onAccepted()
                "Please install the graphicsmagick-imagemagick-compat package to enable this feature."));
         return;
     }
+
+    // Pause any conkies the user currently has running so they don't visually
+    // interfere with the preview screenshots; restored once generation ends.
+    stopConkiesForPreviewGeneration();
 
     // Show progress UI
     m_progressBar->setVisible(true);
@@ -432,6 +442,7 @@ void PreviewDialog::onAllPreviewsComplete()
 
     // Final cleanup after all previews are done
     cleanupBeforeNextPreview();
+    restoreConkiesAfterPreviewGeneration();
 
     m_progressBar->setValue(m_progressBar->maximum());
     m_statusLabel->setText(tr("Preview generation complete! Generated %1 previews.").arg(m_itemsToProcess.size()));
@@ -498,12 +509,9 @@ ConkyItem *PreviewDialog::ensureConkyInUserDir(ConkyItem *item)
 
 void PreviewDialog::cleanupBeforeNextPreview()
 {
-    // Kill all running conky processes
-    QProcess killProcess;
-    killProcess.start("killall", {"conky"});
-    killProcess.waitForFinished(3000);
-
-    // Wait a bit for cleanup
+    // The preview conky for the previous item is already killed by
+    // generatePreviewImage() itself (direct kill + `pkill -f <configPath>`), so all
+    // that's left here is letting the desktop settle before the next capture.
     QThread::msleep(500);
 
     // Refresh desktop by triggering a small screen update
@@ -519,4 +527,34 @@ void PreviewDialog::cleanupBeforeNextPreview()
         dotoolProcess.start("xdotool", {"search", "--name", "Desktop", "windowmove", "0", "0"});
         dotoolProcess.waitForFinished(1000);
     }
+}
+
+void PreviewDialog::stopConkiesForPreviewGeneration()
+{
+    m_conkiesStoppedForGeneration.clear();
+
+    for (ConkyItem *item : m_manager->conkyItems()) {
+        if (item && item->isRunning()) {
+            m_conkiesStoppedForGeneration << item->filePath();
+            m_manager->stopConky(item);
+        }
+    }
+}
+
+void PreviewDialog::restoreConkiesAfterPreviewGeneration()
+{
+    if (m_conkiesStoppedForGeneration.isEmpty()) {
+        return;
+    }
+
+    for (const QString &path : std::as_const(m_conkiesStoppedForGeneration)) {
+        for (ConkyItem *item : m_manager->conkyItems()) {
+            if (item->filePath() == path) {
+                m_manager->startConky(item);
+                break;
+            }
+        }
+    }
+
+    m_conkiesStoppedForGeneration.clear();
 }
