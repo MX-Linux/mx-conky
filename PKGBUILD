@@ -49,8 +49,12 @@ package() {
 
     # Install documentation
     install -dm755 "${pkgdir}/usr/share/doc/mx-conky"
+
+    install -Dm644 help/*.1 "${pkgdir}/usr/share/man/man1/" 2>/dev/null || true
     if [ -d help ]; then
-        cp -r help/* "${pkgdir}/usr/share/doc/mx-conky/" 2>/dev/null || true
+        for help_file in help/*.html help/*.jpg help/*.png help/*.css; do
+            [ -f "$help_file" ] && install -Dm644 "$help_file" "${pkgdir}/usr/share/doc/mx-conky/$(basename "$help_file")"
+        done
     fi
     if [ -f debian/changelog ]; then
         gzip -9 -c debian/changelog > "${pkgdir}/usr/share/doc/mx-conky/changelog.gz"
