@@ -1,6 +1,3 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
-
 Format: 3.0 (native)
 Source: mx-conky
 Binary: mx-conky
@@ -14,20 +11,8 @@ Build-Depends: debhelper-compat (= 12), cmake (>= 3.16), ninja-build, qt6-base-d
 Package-List:
  mx-conky deb admin optional arch=any
 Checksums-Sha1:
- d4da463553320dadf650d7cd89e01aeeeb36225e 513268 mx-conky_26.07.tar.xz
+ 3efe5557a7efd1d0d67f0875609dc3e500fffa37 819228 mx-conky_26.07.tar.xz
 Checksums-Sha256:
- eaaf87fdff99e45f7bab49285e7ae7dc8c3fe6a654866374878dde1476095348 513268 mx-conky_26.07.tar.xz
+ b630b6135fdf3687bd5756f099794a681241ada53130d7ecaf67555cf4832a10 819228 mx-conky_26.07.tar.xz
 Files:
- 4bb6ea962ae47de6f69c0dfd9beb258b 513268 mx-conky_26.07.tar.xz
-
------BEGIN PGP SIGNATURE-----
-
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmpmouATHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumGwNB/0cL5Aqn4q9mUQDclQazlc5I5Ccm5EN
-cQj27MnmQi2xV9leSGZLVdQC3q6J8yNwkRc3s6YJSeIEZGUdRvAncON++a+XJ2+w
-7pKMYg0VUnovEXhB1440l+40VtHkxZBrhTTAFlZekRXVKtES6pAgH3PCQ4YuES0z
-SqaeUjMCDKpp3P6LsJOnwckbFxQlyZD7Mpl4bAPkg1Qd1z3LZS7BJdNqYjbhW7nS
-wW10s3RTSdjW70HRcUAGgRq2kecBdN8nRMTkiO2HdFDUFpRNvUddOtKeOBEJkpRw
-Q3WDY0/B9htuaQTbfL5DK2HDzJX3dcwmnccpivxOLXTYLGSvXtNP6fYr
-=HYAA
------END PGP SIGNATURE-----
+ 1a36abe365b8705eba92e319199d7e46 819228 mx-conky_26.07.tar.xz
