@@ -1,3 +1,12 @@
+mx-conky (26.09) mx; urgency=medium
+
+  * Stop all conky processes belonging to the current user, including ones
+    that mx-conky cannot see or did not start.
+  * Show a clear error and exit when mx-conky is started without a graphical
+    session instead of failing later with an unclear message.
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 13 Sep 2026 08:49:44 -0400
+
 mx-conky (26.07) mx; urgency=medium
 
   * Keep conkies that were already running active after preview generation,
