@@ -50,8 +50,11 @@ package() {
     install -Dm755 build/mx-conky "${pkgdir}/usr/bin/mx-conky"
 
     # Install translations
-    install -dm755 "${pkgdir}/usr/share/mx-conky/locale"
-    install -Dm644 build/*.qm "${pkgdir}/usr/share/mx-conky/locale/" 2>/dev/null || true
+    # "install -D" with several sources needs -t, and then creates the
+    # destination directory itself, so the separate install -dm755 is gone. No
+    # error suppression either: the old "2>/dev/null || true" swallowed a glob
+    # that matched nothing, shipping the package with no translations at all.
+    install -Dm644 -t "${pkgdir}/usr/share/mx-conky/locale/" build/*.qm
 
     # Install desktop file
     install -Dm644 mx-conky.desktop "${pkgdir}/usr/share/applications/mx-conky.desktop"
