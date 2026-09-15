@@ -1,6 +1,6 @@
 # Maintainer: Adrian <adrian@mxlinux.org>
 pkgname=mx-conky
-pkgver=${PKGVER:-25.12.3}
+pkgver=${PKGVER:-26.09}
 pkgrel=1
 pkgdesc="MX Conky - Conky configuration tool for MX Linux"
 arch=('x86_64' 'i686')

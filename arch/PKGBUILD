@@ -60,7 +60,7 @@ package() {
     install -Dm644 mx-conky.desktop "${pkgdir}/usr/share/applications/mx-conky.desktop"
 
     # Install icons
-    install -Dm644 icons/mx-conky.png "${pkgdir}/usr/share/icons/hicolor/96x96/apps/mx-conky.png" 2>/dev/null || true
+    install -Dm644 icons/mx-conky.png "${pkgdir}/usr/share/icons/hicolor/64x64/apps/mx-conky.png" 2>/dev/null || true
     install -Dm644 icons/mx-conky.svg "${pkgdir}/usr/share/icons/hicolor/scalable/apps/mx-conky.svg"
 
     # Install documentation
